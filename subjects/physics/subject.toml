@@ -1,0 +1,582 @@
+schema_version = 3
+subject = "physics"
+destination = "whole-field"
+deck_granularity = "course"
+focus = []
+
+[[decks]]
+id = "physical-reasoning-and-measurement"
+order = 1
+tier = "core"
+level = "foundational"
+prerequisites = ["mathematics/elementary-algebra-and-functions"]
+recommended_after = ["mathematics/geometry-and-measurement"]
+estimated_chapters = 10
+status = "proposed"
+description = "Define systems and quantities; measure, estimate, graph, scale, model, and check physical claims."
+
+[[decks]]
+id = "experimental-physics-and-data"
+order = 2
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["physical-reasoning-and-measurement"]
+recommended_after = ["mathematics/mathematical-computing-and-experimentation", "mathematics/statistical-inference-and-data-analysis"]
+estimated_chapters = 10
+status = "proposed"
+description = "Plan introductory investigations, calibrate instruments, propagate uncertainty, analyze data, and defend conclusions."
+
+[[decks]]
+id = "computational-physics-and-modeling"
+order = 3
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["physical-reasoning-and-measurement", "mathematics/mathematical-computing-and-experimentation"]
+recommended_after = ["mathematics/differential-equations"]
+estimated_chapters = 10
+status = "proposed"
+description = "Translate physical models into tested code, visualize results, assess numerical error, and extract physical insight."
+
+[[decks]]
+id = "classical-mechanics-and-oscillations"
+order = 4
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["physical-reasoning-and-measurement", "mathematics/single-variable-integral-calculus"]
+recommended_after = ["mathematics/differential-equations"]
+estimated_chapters = 12
+status = "proposed"
+description = "Model motion, forces, momentum, energy, rotation, gravitation, and oscillation with conservation and checks."
+
+[[decks]]
+id = "waves-acoustics-and-optics"
+order = 5
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["classical-mechanics-and-oscillations"]
+recommended_after = ["mathematics/differential-equations"]
+estimated_chapters = 11
+status = "proposed"
+description = "Predict propagation, interference, diffraction, sound, imaging, polarization, and spectra across representations."
+
+[[decks]]
+id = "thermodynamics-and-kinetic-theory"
+order = 6
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["physical-reasoning-and-measurement", "mathematics/single-variable-integral-calculus"]
+recommended_after = ["classical-mechanics-and-oscillations"]
+estimated_chapters = 10
+status = "proposed"
+description = "Relate state variables, energy transfer, entropy, cycles, kinetic models, and limits of equilibrium reasoning."
+
+[[decks]]
+id = "electric-circuits-and-fields"
+order = 7
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["physical-reasoning-and-measurement", "mathematics/single-variable-integral-calculus"]
+recommended_after = ["classical-mechanics-and-oscillations"]
+estimated_chapters = 11
+status = "proposed"
+description = "Analyze charge, DC and AC circuit elements, electric fields, potential, capacitance, and energy."
+
+[[decks]]
+id = "magnetism-induction-and-radiation"
+order = 8
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["electric-circuits-and-fields"]
+recommended_after = ["waves-acoustics-and-optics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Connect magnetic interactions, induction, Maxwell structure, electromagnetic waves, radiation, and circuits."
+
+[[decks]]
+id = "special-relativity-and-spacetime"
+order = 9
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["classical-mechanics-and-oscillations"]
+recommended_after = ["magnetism-induction-and-radiation"]
+estimated_chapters = 8
+status = "proposed"
+description = "Use events, frames, invariants, spacetime diagrams, causal structure, and relativistic energy-momentum."
+
+[[decks]]
+id = "quantum-phenomena-and-matter"
+order = 10
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["waves-acoustics-and-optics"]
+recommended_after = ["special-relativity-and-spacetime", "thermodynamics-and-kinetic-theory"]
+estimated_chapters = 10
+status = "proposed"
+description = "Interpret quantization, wave-particle evidence, simple wavefunctions, spectra, and quantum structure of matter."
+
+[[decks]]
+id = "analytical-mechanics-and-nonlinear-dynamics"
+order = 11
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["classical-mechanics-and-oscillations", "mathematics/differential-equations"]
+recommended_after = ["computational-physics-and-modeling"]
+estimated_chapters = 11
+status = "proposed"
+description = "Use generalized coordinates, variational principles, Hamiltonian structure, phase portraits, stability, and chaos."
+
+[[decks]]
+id = "continuum-mechanics-and-fluids"
+order = 12
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["classical-mechanics-and-oscillations", "mathematics/multivariable-and-vector-calculus"]
+recommended_after = ["thermodynamics-and-kinetic-theory", "analytical-mechanics-and-nonlinear-dynamics"]
+estimated_chapters = 11
+status = "proposed"
+description = "Model stress, strain, conservation, flow, viscosity, vorticity, waves, instabilities, and scaling in continua."
+
+[[decks]]
+id = "statistical-mechanics"
+order = 13
+tier = "core"
+level = "undergraduate-advanced"
+prerequisites = ["thermodynamics-and-kinetic-theory", "mathematics/probability"]
+recommended_after = ["computational-physics-and-modeling"]
+estimated_chapters = 12
+status = "proposed"
+description = "Move between microstates and macrostates using ensembles, partition functions, fluctuations, phases, and transport foundations."
+
+[[decks]]
+id = "electromagnetic-theory"
+order = 14
+tier = "core"
+level = "undergraduate-advanced"
+prerequisites = ["magnetism-induction-and-radiation", "mathematics/multivariable-and-vector-calculus"]
+recommended_after = ["special-relativity-and-spacetime"]
+estimated_chapters = 12
+status = "proposed"
+description = "Solve boundary-value, field, wave, radiation, and relativistic electrodynamics problems with Maxwell theory."
+
+[[decks]]
+id = "quantum-mechanics"
+order = 15
+tier = "core"
+level = "undergraduate-advanced"
+prerequisites = ["quantum-phenomena-and-matter", "mathematics/differential-equations"]
+recommended_after = ["special-relativity-and-spacetime"]
+estimated_chapters = 12
+status = "proposed"
+description = "Use states, operators, symmetries, angular momentum, identical particles, approximation, and scattering methods."
+
+[[decks]]
+id = "advanced-experimental-physics-and-instrumentation"
+order = 16
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["experimental-physics-and-data", "electric-circuits-and-fields"]
+recommended_after = ["computational-physics-and-modeling", "waves-acoustics-and-optics", "magnetism-induction-and-radiation"]
+estimated_chapters = 12
+status = "proposed"
+description = "Design open-ended experiments; build and troubleshoot instruments; handle signals, noise, controls, and reproducible reports."
+
+[[decks]]
+id = "solid-state-and-condensed-matter-physics"
+order = 17
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["statistical-mechanics", "quantum-mechanics"]
+recommended_after = ["electromagnetic-theory"]
+estimated_chapters = 12
+status = "proposed"
+description = "Reason with lattices, reciprocal space, bands, quasiparticles, magnetism, superconductivity, and collective phases."
+
+[[decks]]
+id = "atomic-molecular-and-optical-physics"
+order = 18
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["quantum-mechanics"]
+recommended_after = ["electromagnetic-theory", "advanced-experimental-physics-and-instrumentation"]
+estimated_chapters = 11
+status = "proposed"
+description = "Model atomic and molecular structure, spectra, collisions, selection rules, and light-matter interactions."
+
+[[decks]]
+id = "nuclear-physics"
+order = 19
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["quantum-mechanics", "special-relativity-and-spacetime"]
+recommended_after = ["advanced-experimental-physics-and-instrumentation"]
+estimated_chapters = 10
+status = "proposed"
+description = "Interpret nuclear structure, decay, reactions, symmetries, energetics, detectors, and model limits."
+
+[[decks]]
+id = "astrophysics-of-stars-and-galaxies"
+order = 20
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["thermodynamics-and-kinetic-theory", "waves-acoustics-and-optics"]
+recommended_after = ["quantum-phenomena-and-matter", "nuclear-physics", "computational-physics-and-modeling"]
+estimated_chapters = 12
+status = "proposed"
+description = "Infer stellar, galactic, compact-object, and high-energy processes from dynamics, radiation, spectra, and observations."
+
+[[decks]]
+id = "plasma-physics"
+order = 21
+tier = "specialization"
+level = "graduate"
+prerequisites = ["continuum-mechanics-and-fluids", "statistical-mechanics", "electromagnetic-theory"]
+recommended_after = ["computational-physics-and-modeling"]
+estimated_chapters = 11
+status = "proposed"
+description = "Translate among single-particle, kinetic, fluid, wave, instability, confinement, and space-plasma models."
+
+[[decks]]
+id = "soft-matter-and-polymer-physics"
+order = 22
+tier = "specialization"
+level = "graduate"
+prerequisites = ["continuum-mechanics-and-fluids", "statistical-mechanics"]
+recommended_after = ["computational-physics-and-modeling"]
+estimated_chapters = 10
+status = "proposed"
+description = "Explain mesoscale structure, Brownian motion, rheology, polymers, colloids, liquid crystals, and self-assembly."
+
+[[decks]]
+id = "chemical-physics"
+order = 23
+tier = "specialization"
+level = "graduate"
+prerequisites = ["statistical-mechanics", "quantum-mechanics"]
+recommended_after = ["atomic-molecular-and-optical-physics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Connect electronic structure, bonding, spectroscopy, molecular motion, reaction dynamics, and statistical rate models."
+
+[[decks]]
+id = "biological-physics"
+order = 24
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["classical-mechanics-and-oscillations", "thermodynamics-and-kinetic-theory"]
+recommended_after = ["continuum-mechanics-and-fluids", "statistical-mechanics", "computational-physics-and-modeling"]
+estimated_chapters = 10
+status = "proposed"
+description = "Use scaling, mechanics, transport, stochasticity, energetics, and information to model living systems."
+
+[[decks]]
+id = "medical-physics"
+order = 25
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["experimental-physics-and-data", "quantum-phenomena-and-matter"]
+recommended_after = ["advanced-experimental-physics-and-instrumentation", "atomic-molecular-and-optical-physics", "nuclear-physics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Explain imaging, radiation interactions, dosimetry, therapy, reconstruction, uncertainty, safety, and clinical model limits."
+
+[[decks]]
+id = "climate-and-earth-system-physics"
+order = 26
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["thermodynamics-and-kinetic-theory", "continuum-mechanics-and-fluids"]
+recommended_after = ["computational-physics-and-modeling", "statistical-mechanics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze radiation balance, rotating fluids, transport, feedback, variability, observations, and model uncertainty."
+
+[[decks]]
+id = "particle-physics"
+order = 27
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["quantum-mechanics", "special-relativity-and-spacetime"]
+recommended_after = ["nuclear-physics", "electromagnetic-theory"]
+estimated_chapters = 10
+status = "proposed"
+description = "Interpret particles, symmetries, interactions, conservation rules, accelerators, detectors, and Standard Model evidence."
+
+[[decks]]
+id = "general-relativity-and-gravitation"
+order = 28
+tier = "specialization"
+level = "graduate"
+prerequisites = ["special-relativity-and-spacetime", "mathematics/differential-geometry-and-manifolds"]
+recommended_after = ["analytical-mechanics-and-nonlinear-dynamics", "astrophysics-of-stars-and-galaxies"]
+estimated_chapters = 12
+status = "proposed"
+description = "Relate geometry, stress-energy, field equations, weak fields, black holes, orbital tests, and gravitational radiation."
+
+[[decks]]
+id = "cosmology-and-early-universe"
+order = 29
+tier = "specialization"
+level = "graduate"
+prerequisites = ["statistical-mechanics", "general-relativity-and-gravitation"]
+recommended_after = ["astrophysics-of-stars-and-galaxies", "particle-physics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Connect expansion, thermal history, perturbations, nucleosynthesis, structure, observations, and parameter inference."
+
+[[decks]]
+id = "laser-and-quantum-optics"
+order = 30
+tier = "specialization"
+level = "graduate"
+prerequisites = ["electromagnetic-theory", "atomic-molecular-and-optical-physics"]
+recommended_after = ["advanced-experimental-physics-and-instrumentation"]
+estimated_chapters = 9
+status = "proposed"
+description = "Analyze resonators, gain, coherence, photon statistics, open systems, nonlinear optics, and coherent control."
+
+[[decks]]
+id = "quantum-information-science"
+order = 31
+tier = "specialization"
+level = "graduate"
+prerequisites = ["quantum-mechanics", "mathematics/information-theory"]
+recommended_after = ["computational-physics-and-modeling", "laser-and-quantum-optics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze states, channels, entanglement, measurement, error correction, algorithms, and physical platforms."
+
+[[decks]]
+id = "accelerator-beam-and-detector-physics"
+order = 32
+tier = "specialization"
+level = "graduate"
+prerequisites = ["special-relativity-and-spacetime", "analytical-mechanics-and-nonlinear-dynamics", "electromagnetic-theory", "advanced-experimental-physics-and-instrumentation"]
+recommended_after = ["nuclear-physics", "particle-physics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze beam optics, collective effects, acceleration, sources, detectors, calibration, and event inference."
+
+[[decks]]
+id = "quantum-field-theory-and-standard-model"
+order = 33
+tier = "specialization"
+level = "graduate"
+prerequisites = ["electromagnetic-theory", "particle-physics"]
+recommended_after = ["analytical-mechanics-and-nonlinear-dynamics", "mathematics/complex-analysis"]
+estimated_chapters = 12
+status = "proposed"
+description = "Develop fields, symmetries, quantization, amplitudes, renormalization, gauge theory, and Standard Model structure."
+
+[[decks]]
+id = "nonequilibrium-and-complex-systems"
+order = 34
+tier = "specialization"
+level = "graduate"
+prerequisites = ["computational-physics-and-modeling", "analytical-mechanics-and-nonlinear-dynamics", "statistical-mechanics"]
+recommended_after = ["mathematics/stochastic-processes", "soft-matter-and-polymer-physics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze stochastic dynamics, response, transport, pattern formation, networks, emergence, and driven matter."
+
+[[decks]]
+id = "gravitational-wave-and-multimessenger-physics"
+order = 35
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["advanced-experimental-physics-and-instrumentation", "astrophysics-of-stars-and-galaxies", "general-relativity-and-gravitation", "mathematics/statistical-inference-and-data-analysis"]
+recommended_after = ["computational-physics-and-modeling", "particle-physics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Enter literature on sources, detectors, signals, inference, populations, and joint electromagnetic, particle, and gravitational observations."
+
+[[coverage]]
+domain = "physical-reasoning-measurement-models-approximation-and-communication"
+disposition = "included"
+decks = ["physical-reasoning-and-measurement"]
+rationale = "Establishes the physics-specific grammar needed before any phenomenon deck."
+
+[[coverage]]
+domain = "experimental-design-uncertainty-instrumentation-and-data"
+disposition = "included"
+decks = ["experimental-physics-and-data", "advanced-experimental-physics-and-instrumentation"]
+rationale = "Scaffolds empirical inference from first measurements to open-ended instrumentation."
+
+[[coverage]]
+domain = "computation-simulation-visualization-and-reproducibility"
+disposition = "included"
+decks = ["computational-physics-and-modeling", "nonequilibrium-and-complex-systems"]
+rationale = "Gives computation its own transferable spine and then applies it to research-scale systems."
+
+[[coverage]]
+domain = "classical-mechanics"
+disposition = "included"
+decks = ["classical-mechanics-and-oscillations", "analytical-mechanics-and-nonlinear-dynamics"]
+rationale = "Progresses from Newtonian and conservation models to variational, phase-space, and nonlinear reasoning."
+
+[[coverage]]
+domain = "continuum-mechanics-and-fluid-dynamics"
+disposition = "included"
+decks = ["continuum-mechanics-and-fluids"]
+rationale = "Its representation grammar and applications justify a separate course-scale deck."
+
+[[coverage]]
+domain = "nonlinear-dynamics-and-complex-systems"
+disposition = "included"
+decks = ["analytical-mechanics-and-nonlinear-dynamics", "nonequilibrium-and-complex-systems"]
+rationale = "Introduces stability and chaos before graduate nonequilibrium, emergence, and driven-system analysis."
+
+[[coverage]]
+domain = "oscillations-waves-acoustics-and-wave-phenomena"
+disposition = "included"
+decks = ["classical-mechanics-and-oscillations", "waves-acoustics-and-optics"]
+rationale = "Shares a progression from oscillators to propagation, interference, spectra, and sound."
+
+[[coverage]]
+domain = "geometrical-optics-physical-optics-lasers-and-quantum-optics"
+disposition = "included"
+decks = ["waves-acoustics-and-optics", "atomic-molecular-and-optical-physics", "laser-and-quantum-optics"]
+rationale = "Separates classical optical representations from quantum light-matter specialization."
+
+[[coverage]]
+domain = "thermodynamics-and-kinetic-theory"
+disposition = "included"
+decks = ["thermodynamics-and-kinetic-theory"]
+rationale = "Builds macroscopic state reasoning and microscopic interpretation without assuming later ensembles."
+
+[[coverage]]
+domain = "statistical-physics-and-nonequilibrium-systems"
+disposition = "included"
+decks = ["statistical-mechanics", "nonequilibrium-and-complex-systems"]
+rationale = "Equilibrium ensembles precede fluctuation, transport, emergence, and driven systems."
+
+[[coverage]]
+domain = "electricity-circuits-fields-and-potential"
+disposition = "included"
+decks = ["electric-circuits-and-fields"]
+rationale = "Unifies charge, circuit, field, energy, and potential representations at introductory depth."
+
+[[coverage]]
+domain = "magnetism-induction-electromagnetic-fields-and-radiation"
+disposition = "included"
+decks = ["magnetism-induction-and-radiation", "electromagnetic-theory"]
+rationale = "Moves from phenomena and Maxwell structure to upper-level field methods."
+
+[[coverage]]
+domain = "special-relativity-and-spacetime"
+disposition = "included"
+decks = ["special-relativity-and-spacetime"]
+rationale = "Provides frame, invariant, causal, energy, and momentum reasoning used by later branches."
+
+[[coverage]]
+domain = "gravitation-and-general-relativity"
+disposition = "included"
+decks = ["classical-mechanics-and-oscillations", "general-relativity-and-gravitation"]
+rationale = "Keeps Newtonian gravitation in the entry course and geometric gravitation in an advanced course."
+
+[[coverage]]
+domain = "cosmology-and-the-early-universe"
+disposition = "included"
+decks = ["astrophysics-of-stars-and-galaxies", "cosmology-and-early-universe"]
+rationale = "Observational astrophysics prepares the distinct relativistic and thermal cosmology synthesis."
+
+[[coverage]]
+domain = "quantum-phenomena-foundations-and-mechanics"
+disposition = "included"
+decks = ["quantum-phenomena-and-matter", "quantum-mechanics"]
+rationale = "A phenomenon-first bridge precedes formal state, operator, symmetry, and approximation methods."
+
+[[coverage]]
+domain = "quantum-information-science"
+disposition = "included"
+decks = ["quantum-information-science"]
+rationale = "Provides a contemporary graduate route with its own operational and informational grammar."
+
+[[coverage]]
+domain = "atomic-molecular-and-optical-physics"
+disposition = "included"
+decks = ["atomic-molecular-and-optical-physics", "laser-and-quantum-optics"]
+rationale = "Connects quantum structure, spectra, collisions, light-matter interaction, and coherent control."
+
+[[coverage]]
+domain = "chemical-physics"
+disposition = "included"
+decks = ["chemical-physics"]
+rationale = "Applies quantum and statistical physics to bonding, reaction, spectroscopy, and molecular dynamics."
+
+[[coverage]]
+domain = "condensed-matter-solid-state-and-materials-physics"
+disposition = "included"
+decks = ["solid-state-and-condensed-matter-physics"]
+rationale = "Develops lattice, reciprocal-space, band, quasiparticle, magnetic, and collective models."
+
+[[coverage]]
+domain = "soft-matter-and-polymer-physics"
+disposition = "included"
+decks = ["soft-matter-and-polymer-physics"]
+rationale = "Uses continuum and statistical ideas for mesoscale structure, rheology, polymers, and self-assembly."
+
+[[coverage]]
+domain = "nuclear-physics"
+disposition = "included"
+decks = ["nuclear-physics"]
+rationale = "Separates nuclear structure, reactions, decays, and experimental inference from particle theory."
+
+[[coverage]]
+domain = "particle-physics-and-quantum-field-ideas"
+disposition = "included"
+decks = ["particle-physics", "quantum-field-theory-and-standard-model"]
+rationale = "Phenomenology and Standard Model evidence precede field-theoretic construction and frontier reading."
+
+[[coverage]]
+domain = "accelerator-beam-and-detector-physics"
+disposition = "included"
+decks = ["accelerator-beam-and-detector-physics"]
+rationale = "Integrates fields, relativity, instrumentation, beam optics, and detector inference as a coherent practice."
+
+[[coverage]]
+domain = "plasma-physics"
+disposition = "included"
+decks = ["plasma-physics"]
+rationale = "Combines collective electromagnetic, kinetic, and fluid representations in a distinct regime."
+
+[[coverage]]
+domain = "astrophysics-and-high-energy-multimessenger-observation"
+disposition = "included"
+decks = ["astrophysics-of-stars-and-galaxies", "gravitational-wave-and-multimessenger-physics"]
+rationale = "Builds from stellar and galactic systems to research-facing inference across messengers."
+
+[[coverage]]
+domain = "biological-physics"
+disposition = "included"
+decks = ["biological-physics"]
+rationale = "Applies mechanics, thermodynamics, stochasticity, transport, and scaling to living systems."
+
+[[coverage]]
+domain = "medical-physics"
+disposition = "included"
+decks = ["medical-physics"]
+rationale = "Organizes imaging, radiation, dosimetry, safety, and inverse problems around clinical physical models."
+
+[[coverage]]
+domain = "climate-and-earth-system-physics"
+disposition = "included"
+decks = ["climate-and-earth-system-physics"]
+rationale = "Applies radiation, thermodynamics, fluids, feedback, and data-model comparison to climate systems."
+
+[[coverage]]
+domain = "physics-education-research"
+disposition = "deferred"
+decks = []
+rationale = "A future route needs education-research and social-science capabilities absent from the supplied external catalog."
+
+[[coverage]]
+domain = "history-philosophy-policy-and-society-of-physics"
+disposition = "deferred"
+decks = []
+rationale = "Valuable contextual study, but not required for the current physical-science capability graph."
+
+[[coverage]]
+domain = "additional-research-microfields-and-technology-specific-applications"
+disposition = "deferred"
+decks = []
+rationale = "Narrower routes can extend the map after learner priorities and required external capabilities are confirmed."

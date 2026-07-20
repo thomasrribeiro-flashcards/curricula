@@ -1,0 +1,8 @@
+schema_version = 1
+id = "thomas-ribeiro"
+name = "Thomas Ribeiro Curricula"
+repository = "thomasrribeiro-flashcards/curricula"
+default_ref = "master"
+subjects_dir = "subjects"
+output = "dist/curriculum.json"
+deck_owner = "thomasrribeiro-flashcards"

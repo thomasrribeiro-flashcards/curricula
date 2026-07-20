@@ -1,0 +1,642 @@
+schema_version = 3
+subject = "biology"
+destination = "whole-field"
+deck_granularity = "course"
+focus = []
+
+[[decks]]
+id = "biology-and-scientific-inquiry"
+order = 1
+tier = "core"
+level = "foundational"
+prerequisites = []
+recommended_after = []
+estimated_chapters = 10
+status = "proposed"
+description = "Use biology's unifying ideas and elementary evidence reasoning to explain living systems across scales."
+
+[[decks]]
+id = "quantitative-foundations-for-biology"
+order = 2
+tier = "core"
+level = "foundational"
+prerequisites = []
+recommended_after = ["biology-and-scientific-inquiry"]
+estimated_chapters = 10
+status = "proposed"
+description = "Use units, ratios, algebra, logarithms, functions, graphs, probability, and estimation in biological contexts."
+
+[[decks]]
+id = "chemistry-for-living-systems"
+order = 3
+tier = "core"
+level = "foundational"
+prerequisites = ["quantitative-foundations-for-biology"]
+recommended_after = ["biology-and-scientific-inquiry"]
+estimated_chapters = 10
+status = "proposed"
+description = "Reason from atomic interactions, water, pH, concentration, energetics, and macromolecular chemistry to biological behavior."
+
+[[decks]]
+id = "biological-data-and-statistical-reasoning"
+order = 4
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["quantitative-foundations-for-biology"]
+recommended_after = ["biology-and-scientific-inquiry"]
+estimated_chapters = 10
+status = "proposed"
+description = "Describe variation, quantify uncertainty, choose basic analyses, and make bounded inferences from biological data."
+
+[[decks]]
+id = "cell-biology"
+order = 5
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["biology-and-scientific-inquiry", "chemistry-for-living-systems"]
+recommended_after = []
+estimated_chapters = 12
+status = "proposed"
+description = "Explain how membranes, compartments, structures, transport, signaling, division, and energy transformations make cells work."
+
+[[decks]]
+id = "biochemistry-and-metabolism"
+order = 6
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["cell-biology"]
+recommended_after = []
+estimated_chapters = 12
+status = "proposed"
+description = "Connect biomolecular structure, enzymes, thermodynamics, pathways, regulation, and compartmentation to metabolic function."
+
+[[decks]]
+id = "genetics-and-inheritance"
+order = 7
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["cell-biology"]
+recommended_after = ["biological-data-and-statistical-reasoning"]
+estimated_chapters = 10
+status = "proposed"
+description = "Predict and interpret inheritance using chromosomes, recombination, probability, pedigrees, variation, and gene interactions."
+
+[[decks]]
+id = "molecular-biology-and-gene-regulation"
+order = 8
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["biochemistry-and-metabolism", "genetics-and-inheritance"]
+recommended_after = []
+estimated_chapters = 12
+status = "proposed"
+description = "Explain genome replication, expression, regulation, mutation, repair, and molecular experiments without treating information flow as a rigid slogan."
+
+[[decks]]
+id = "evolution"
+order = 9
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["genetics-and-inheritance"]
+recommended_after = ["biochemistry-and-metabolism"]
+estimated_chapters = 12
+status = "proposed"
+description = "Use population processes, selection, drift, gene flow, speciation, phylogeny, and evidence to explain biological change and diversity."
+
+[[decks]]
+id = "ecology"
+order = 10
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["biology-and-scientific-inquiry", "quantitative-foundations-for-biology"]
+recommended_after = ["evolution", "biological-data-and-statistical-reasoning"]
+estimated_chapters = 12
+status = "proposed"
+description = "Analyze organisms, populations, communities, ecosystems, landscapes, and the biosphere across space and time."
+
+[[decks]]
+id = "biodiversity-and-phylogenetics"
+order = 11
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["evolution"]
+recommended_after = ["ecology"]
+estimated_chapters = 12
+status = "proposed"
+description = "Interpret the tree of life, organismal diversity, classification, form, life cycles, and natural-history evidence."
+
+[[decks]]
+id = "biological-research-practice"
+order = 12
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["biology-and-scientific-inquiry", "biological-data-and-statistical-reasoning"]
+recommended_after = ["cell-biology", "ecology"]
+estimated_chapters = 10
+status = "proposed"
+description = "Plan ethical, safe, reproducible laboratory and field investigations; document methods; evaluate literature; and communicate results."
+
+[[decks]]
+id = "computational-biology-foundations"
+order = 13
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["quantitative-foundations-for-biology"]
+recommended_after = ["biological-data-and-statistical-reasoning"]
+estimated_chapters = 10
+status = "proposed"
+description = "Use a first programming environment, structured biological data, databases, reproducible workflows, and simple simulations."
+
+[[decks]]
+id = "microbiology-and-virology"
+order = 14
+tier = "recommended"
+level = "undergraduate-core"
+prerequisites = ["molecular-biology-and-gene-regulation"]
+recommended_after = ["ecology"]
+estimated_chapters = 12
+status = "proposed"
+description = "Explain microbial and viral diversity, growth, metabolism, genetics, ecology, host interactions, and methods."
+
+[[decks]]
+id = "plant-form-and-function"
+order = 15
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["biochemistry-and-metabolism"]
+recommended_after = ["biodiversity-and-phylogenetics", "ecology"]
+estimated_chapters = 10
+status = "proposed"
+description = "Connect plant anatomy, transport, photosynthesis, nutrition, signaling, development, reproduction, defense, and environmental response."
+
+[[decks]]
+id = "comparative-animal-physiology"
+order = 16
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["biochemistry-and-metabolism"]
+recommended_after = ["biodiversity-and-phylogenetics"]
+estimated_chapters = 12
+status = "proposed"
+description = "Use gradients, mass balance, feedback, structure-function, and comparative evidence to explain integrated animal function."
+
+[[decks]]
+id = "developmental-biology"
+order = 17
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["molecular-biology-and-gene-regulation"]
+recommended_after = ["plant-form-and-function", "comparative-animal-physiology"]
+estimated_chapters = 10
+status = "proposed"
+description = "Explain how cells generate form through specification, patterning, morphogenesis, growth, regeneration, and environmental interaction."
+
+[[decks]]
+id = "neuroscience"
+order = 18
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["comparative-animal-physiology"]
+recommended_after = ["molecular-biology-and-gene-regulation"]
+estimated_chapters = 12
+status = "proposed"
+description = "Relate neural signaling, circuits, sensory and motor systems, plasticity, and cognition across levels of organization."
+
+[[decks]]
+id = "animal-behavior"
+order = 19
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["evolution"]
+recommended_after = ["ecology", "neuroscience"]
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze behavior through mechanism, development, function, evolutionary history, communication, learning, and social systems."
+
+[[decks]]
+id = "immunology"
+order = 20
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["molecular-biology-and-gene-regulation"]
+recommended_after = ["microbiology-and-virology"]
+estimated_chapters = 10
+status = "proposed"
+description = "Explain barrier, innate, and adaptive defense; recognition; signaling; tolerance; memory; and immune-system failure."
+
+[[decks]]
+id = "conservation-biology-and-global-change"
+order = 21
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["ecology", "biodiversity-and-phylogenetics"]
+recommended_after = []
+estimated_chapters = 10
+status = "proposed"
+description = "Evaluate biodiversity loss, population viability, climate and land-use change, conservation evidence, restoration, and human dimensions."
+
+[[decks]]
+id = "genomics-and-bioinformatics"
+order = 22
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["molecular-biology-and-gene-regulation", "biological-data-and-statistical-reasoning", "computational-biology-foundations"]
+recommended_after = ["biological-research-practice"]
+estimated_chapters = 12
+status = "proposed"
+description = "Interpret sequence, variation, expression, annotation, comparative genomics, pipelines, databases, and reproducible genomic evidence."
+
+[[decks]]
+id = "systems-biology-and-quantitative-modeling"
+order = 23
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["molecular-biology-and-gene-regulation", "biological-data-and-statistical-reasoning", "computational-biology-foundations"]
+recommended_after = ["genomics-and-bioinformatics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Build, analyze, fit, and critique network, dynamical, stochastic, and multiscale models of biological systems."
+
+[[decks]]
+id = "structural-biology-and-biophysics"
+order = 24
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["biochemistry-and-metabolism"]
+recommended_after = ["computational-biology-foundations"]
+estimated_chapters = 10
+status = "proposed"
+description = "Infer molecular mechanism from forces, energy landscapes, macromolecular structure, dynamics, and complementary measurement methods."
+
+[[decks]]
+id = "synthetic-biology-and-biotechnology"
+order = 25
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["molecular-biology-and-gene-regulation"]
+recommended_after = ["microbiology-and-virology", "systems-biology-and-quantitative-modeling", "biological-research-practice"]
+estimated_chapters = 10
+status = "proposed"
+description = "Design and evaluate engineered biological parts, circuits, cells, products, measurement standards, risks, and societal tradeoffs."
+
+[[decks]]
+id = "human-biology-and-disease-mechanisms"
+order = 26
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["comparative-animal-physiology", "immunology"]
+recommended_after = ["microbiology-and-virology"]
+estimated_chapters = 12
+status = "proposed"
+description = "Integrate physiology, immunity, genetics, environment, development, and evolution to explain bounded human disease mechanisms."
+
+[[decks]]
+id = "evolutionary-genomics"
+order = 27
+tier = "specialization"
+level = "graduate"
+prerequisites = ["evolution", "genomics-and-bioinformatics"]
+recommended_after = ["systems-biology-and-quantitative-modeling"]
+estimated_chapters = 10
+status = "proposed"
+description = "Use genome-scale variation and comparative data to test demographic, selective, phylogenomic, and molecular-evolution hypotheses."
+
+[[decks]]
+id = "microbial-ecology-and-evolution"
+order = 28
+tier = "specialization"
+level = "graduate"
+prerequisites = ["evolution", "ecology", "microbiology-and-virology"]
+recommended_after = ["conservation-biology-and-global-change"]
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze microbial communities, interactions, biogeochemistry, host associations, horizontal transfer, and community evolution."
+
+[[decks]]
+id = "evolution-of-development"
+order = 29
+tier = "specialization"
+level = "graduate"
+prerequisites = ["evolution", "developmental-biology"]
+recommended_after = ["genomics-and-bioinformatics"]
+estimated_chapters = 8
+status = "proposed"
+description = "Explain morphological innovation and constraint by comparing developmental mechanisms, gene networks, life histories, and phylogenies."
+
+[[decks]]
+id = "ecological-forecasting-and-conservation-data"
+order = 30
+tier = "specialization"
+level = "graduate"
+prerequisites = ["conservation-biology-and-global-change", "biological-data-and-statistical-reasoning", "computational-biology-foundations"]
+recommended_after = ["microbial-ecology-and-evolution"]
+estimated_chapters = 10
+status = "proposed"
+description = "Combine monitoring data, hierarchical models, uncertainty, scenarios, and decision analysis for ecological forecasts and conservation."
+
+[[decks]]
+id = "integrative-systems-and-synthetic-biology"
+order = 31
+tier = "specialization"
+level = "graduate"
+prerequisites = ["systems-biology-and-quantitative-modeling", "synthetic-biology-and-biotechnology"]
+recommended_after = ["structural-biology-and-biophysics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Integrate measurement, inference, control, design-build-test cycles, multiscale models, and responsible engineering of living systems."
+
+[[decks]]
+id = "single-cell-and-spatial-biology"
+order = 32
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["biological-research-practice", "genomics-and-bioinformatics", "systems-biology-and-quantitative-modeling"]
+recommended_after = ["integrative-systems-and-synthetic-biology"]
+estimated_chapters = 8
+status = "proposed"
+description = "Critique and integrate single-cell and spatial measurements, preprocessing, uncertainty, multimodal inference, and biological validation."
+
+[[decks]]
+id = "engineering-living-systems"
+order = 33
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["biological-research-practice", "integrative-systems-and-synthetic-biology"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Read frontier literature and design research programs for programmable cells, multicellular systems, biomaterials, and biomanufacturing."
+
+[[decks]]
+id = "global-change-biosphere-science"
+order = 34
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["microbial-ecology-and-evolution", "ecological-forecasting-and-conservation-data"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Synthesize organismal, microbial, ecological, remote-sensing, and Earth-system evidence about biosphere responses and feedbacks."
+
+[[decks]]
+id = "origins-and-evolution-of-life"
+order = 35
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["evolution", "microbiology-and-virology", "structural-biology-and-biophysics"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Evaluate competing hypotheses and evidence for prebiotic chemistry, early cells, metabolic and genetic systems, and major evolutionary transitions."
+
+[[coverage]]
+domain = "biological-literacy-and-unifying-concepts"
+disposition = "included"
+decks = ["biology-and-scientific-inquiry"]
+rationale = "Cold-start orientation establishes evolution, structure-function, information, energy and matter, systems, scale, and variation before specialization."
+
+[[coverage]]
+domain = "scientific-inquiry-evidence-and-causal-reasoning"
+disposition = "included"
+decks = ["biology-and-scientific-inquiry", "biological-research-practice"]
+rationale = "Inquiry begins with bounded evidence reasoning and later develops into independent design, critique, documentation, and communication."
+
+[[coverage]]
+domain = "mathematics-units-and-quantitative-reasoning"
+disposition = "included"
+decks = ["quantitative-foundations-for-biology"]
+rationale = "An explicit entry deck prevents hidden arithmetic, algebra, logarithm, graph, probability, and estimation assumptions."
+
+[[coverage]]
+domain = "chemistry-for-biological-systems"
+disposition = "included"
+decks = ["chemistry-for-living-systems"]
+rationale = "Biological chemistry is taught as an explicit bridge rather than presumed by cell and molecular courses."
+
+[[coverage]]
+domain = "biological-data-statistics-and-uncertainty"
+disposition = "included"
+decks = ["biological-data-and-statistical-reasoning", "biological-research-practice"]
+rationale = "Statistical reasoning is separated from elementary mathematics and connected to authentic biological inference and study practice."
+
+[[coverage]]
+domain = "cell-biology"
+disposition = "included"
+decks = ["cell-biology"]
+rationale = "A coherent cell course establishes the structural and mechanistic platform for molecular and organismal branches."
+
+[[coverage]]
+domain = "biochemistry-bioenergetics-and-metabolism"
+disposition = "included"
+decks = ["biochemistry-and-metabolism"]
+rationale = "Molecular structure, energy, catalysis, pathways, and regulation share one mechanistic and representational spine."
+
+[[coverage]]
+domain = "genetics-inheritance-and-variation"
+disposition = "included"
+decks = ["genetics-and-inheritance"]
+rationale = "Chromosomal and probabilistic inheritance forms a distinct bridge from cells to molecular biology and evolution."
+
+[[coverage]]
+domain = "molecular-biology-gene-expression-and-regulation"
+disposition = "included"
+decks = ["molecular-biology-and-gene-regulation"]
+rationale = "Information flow, mutation, repair, regulation, and molecular evidence are integrated without collapsing them into genetics or biochemistry."
+
+[[coverage]]
+domain = "evolutionary-processes-and-population-change"
+disposition = "included"
+decks = ["evolution", "evolutionary-genomics"]
+rationale = "The core deck establishes evolutionary reasoning; the advanced deck adds genome-scale inference."
+
+[[coverage]]
+domain = "ecology-from-organisms-to-biosphere"
+disposition = "included"
+decks = ["ecology", "ecological-forecasting-and-conservation-data"]
+rationale = "Core ecological levels and interactions precede advanced forecasting and decision work."
+
+[[coverage]]
+domain = "biodiversity-systematics-phylogenetics-and-natural-history"
+disposition = "included"
+decks = ["biodiversity-and-phylogenetics"]
+rationale = "The tree of life, organismal diversity, classification, and observation form one comparative capability rather than a list of taxa."
+
+[[coverage]]
+domain = "laboratory-field-and-reproducible-research-practice"
+disposition = "included"
+decks = ["biological-research-practice"]
+rationale = "Conceptual preparation for safe, ethical, reproducible practice is explicit; physical competence still requires work outside SRS."
+
+[[coverage]]
+domain = "computational-thinking-programming-and-data-workflows"
+disposition = "included"
+decks = ["computational-biology-foundations", "genomics-and-bioinformatics", "systems-biology-and-quantitative-modeling"]
+rationale = "A language-neutral entry deck prevents programming assumptions before domain-specific computation."
+
+[[coverage]]
+domain = "microbiology-virology-and-microbial-diversity"
+disposition = "included"
+decks = ["microbiology-and-virology"]
+rationale = "Microbial cellular life and acellular infectious agents share methods and interaction themes while retaining clear distinctions."
+
+[[coverage]]
+domain = "plant-biology"
+disposition = "included"
+decks = ["plant-form-and-function"]
+rationale = "Plant-specific structure, physiology, development, reproduction, and environmental response warrant a coherent organismal course."
+
+[[coverage]]
+domain = "animal-form-function-and-physiology"
+disposition = "included"
+decks = ["comparative-animal-physiology"]
+rationale = "Comparative principles avoid an unstated human default and prepare neuroscience and human-disease branches."
+
+[[coverage]]
+domain = "development-growth-and-regeneration"
+disposition = "included"
+decks = ["developmental-biology", "evolution-of-development"]
+rationale = "Core developmental mechanisms precede a distinct graduate synthesis with evolutionary change."
+
+[[coverage]]
+domain = "neuroscience"
+disposition = "included"
+decks = ["neuroscience"]
+rationale = "Neural cells, circuits, systems, and plasticity use a representation grammar distinct from general physiology and behavior."
+
+[[coverage]]
+domain = "animal-behavior"
+disposition = "included"
+decks = ["animal-behavior"]
+rationale = "Mechanistic and evolutionary analysis of behavior can be learned independently of a full neuroscience course."
+
+[[coverage]]
+domain = "immunology-and-host-defense"
+disposition = "included"
+decks = ["immunology"]
+rationale = "Recognition, response, tolerance, memory, and immune failure form a coherent systems-level branch."
+
+[[coverage]]
+domain = "conservation-restoration-and-global-change"
+disposition = "included"
+decks = ["conservation-biology-and-global-change", "ecological-forecasting-and-conservation-data", "global-change-biosphere-science"]
+rationale = "The route moves from applied ecological evidence to quantitative decisions and research-scale biosphere synthesis."
+
+[[coverage]]
+domain = "genomics-omics-and-bioinformatics"
+disposition = "included"
+decks = ["genomics-and-bioinformatics", "evolutionary-genomics", "single-cell-and-spatial-biology"]
+rationale = "A general genomic analysis course supports evolutionary and high-dimensional research extensions."
+
+[[coverage]]
+domain = "systems-biology-and-mathematical-modeling"
+disposition = "included"
+decks = ["systems-biology-and-quantitative-modeling", "integrative-systems-and-synthetic-biology"]
+rationale = "Undergraduate model construction leads to graduate integration with experimental design and control."
+
+[[coverage]]
+domain = "structural-biology-and-biophysics"
+disposition = "included"
+decks = ["structural-biology-and-biophysics"]
+rationale = "Physical mechanism and structural evidence require a distinct molecular representation and measurement portfolio."
+
+[[coverage]]
+domain = "synthetic-biology-biotechnology-and-biomanufacturing"
+disposition = "included"
+decks = ["synthetic-biology-and-biotechnology", "integrative-systems-and-synthetic-biology", "engineering-living-systems"]
+rationale = "Design fundamentals, systems integration, and research-facing engineering are separated by maturity and practice."
+
+[[coverage]]
+domain = "human-biology-health-and-disease-mechanisms"
+disposition = "included"
+decks = ["human-biology-and-disease-mechanisms"]
+rationale = "A bounded biological specialization integrates mechanisms without claiming to provide clinical training."
+
+[[coverage]]
+domain = "microbial-ecology-host-associations-and-biogeochemistry"
+disposition = "included"
+decks = ["microbial-ecology-and-evolution", "global-change-biosphere-science"]
+rationale = "The graduate route joins microbial mechanisms to communities, elemental cycles, hosts, and biosphere feedbacks."
+
+[[coverage]]
+domain = "evolutionary-developmental-biology"
+disposition = "included"
+decks = ["evolution-of-development"]
+rationale = "Evo-devo is a representative integrative graduate branch rather than hidden inside either parent course."
+
+[[coverage]]
+domain = "single-cell-spatial-and-multimodal-biology"
+disposition = "included"
+decks = ["single-cell-and-spatial-biology"]
+rationale = "A visible research extension represents contemporary measurement and inference across molecular, cellular, and tissue scales."
+
+[[coverage]]
+domain = "origins-of-life-and-major-transitions"
+disposition = "included"
+decks = ["origins-and-evolution-of-life"]
+rationale = "A research-facing synthesis links molecular physics, microbes, evolution, and explicit uncertainty."
+
+[[coverage]]
+domain = "marine-freshwater-soil-polar-and-urban-biomes"
+disposition = "included"
+decks = ["ecology", "biodiversity-and-phylogenetics", "conservation-biology-and-global-change", "microbial-ecology-and-evolution", "global-change-biosphere-science"]
+rationale = "Biomes are recurring comparative contexts, not separate prerequisite courses."
+
+[[coverage]]
+domain = "anatomy-morphology-and-comparative-form"
+disposition = "included"
+decks = ["biodiversity-and-phylogenetics", "plant-form-and-function", "comparative-animal-physiology", "developmental-biology"]
+rationale = "Form is distributed where it supports phylogeny, function, or development rather than isolated as memorized description."
+
+[[coverage]]
+domain = "science-society-history-ethics-equity-and-sustainability"
+disposition = "included"
+decks = ["biology-and-scientific-inquiry", "biological-research-practice", "conservation-biology-and-global-change", "synthetic-biology-and-biotechnology", "human-biology-and-disease-mechanisms"]
+rationale = "These concerns recur at authentic decision points and are not confined to a detachable survey deck."
+
+[[coverage]]
+domain = "paleobiology-and-deep-time-methods"
+disposition = "deferred"
+decks = []
+rationale = "Core fossil evidence and deep time appear in evolution and biodiversity; a methods-rich paleobiology course is a future extension."
+
+[[coverage]]
+domain = "taxon-specific-natural-history-and-identification"
+disposition = "deferred"
+decks = []
+rationale = "The core route develops comparative natural-history practice; regional floras, faunas, fungi, and specialist identification require learner-selected extensions."
+
+[[coverage]]
+domain = "agricultural-food-and-veterinary-biology"
+disposition = "deferred"
+decks = []
+rationale = "Relevant mechanisms occur across plant, animal, microbial, ecological, and biotechnology decks; professional applied routes need a later destination and jurisdiction."
+
+[[coverage]]
+domain = "biological-anthropology-and-human-evolution"
+disposition = "deferred"
+decks = []
+rationale = "Human variation and evolution appear where biologically relevant, while a full anthropology route needs archaeological and social-science context."
+
+[[coverage]]
+domain = "astrobiology-and-life-beyond-earth"
+disposition = "deferred"
+decks = []
+rationale = "Origins-of-life foundations create a future entry point, but planetary science prerequisites are outside the current route."
+
+[[coverage]]
+domain = "biology-education-research"
+disposition = "deferred"
+decks = []
+rationale = "Teaching examples may use evidence-informed practice, but education research requires its own learning-science and methods bridge."
+
+[[coverage]]
+domain = "clinical-diagnosis-treatment-and-patient-care"
+disposition = "out-of-scope"
+decks = []
+rationale = "The roadmap explains biological mechanisms but does not substitute for accredited clinical education, supervised practice, or medical advice."
+
+[[coverage]]
+domain = "professional-licensure-and-jurisdiction-specific-compliance"
+disposition = "out-of-scope"
+decks = []
+rationale = "No jurisdiction or profession is specified, so regulated competencies must be designed in a separate confirmed route."

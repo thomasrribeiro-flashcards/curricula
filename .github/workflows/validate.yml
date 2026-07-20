@@ -1,0 +1,29 @@
+name: Validate curriculum registry
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: thomasrribeiro/flashcards
+          path: flashcards-cli
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: flashcards-cli/package-lock.json
+      - run: npm ci
+        working-directory: flashcards-cli
+      - run: node flashcards-cli/bin/flashcards.js registry validate .
+      - run: node flashcards-cli/bin/flashcards.js registry build .
+      - run: git diff --exit-code -- dist/curriculum.json
