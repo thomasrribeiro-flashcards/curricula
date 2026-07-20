@@ -1335,7 +1335,7 @@
       "order": 2,
       "tier": "core",
       "level": "foundational",
-      "status": "scaffolded",
+      "status": "pilot-built",
       "description": "Translate among situations, expressions, equations, inequalities, tables, and graphs and solve elementary algebraic models.",
       "prerequisites": [
         "mathematics/quantitative-reasoning-and-arithmetic"
@@ -1344,9 +1344,30 @@
       "materialized": true,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/elementary-algebra-and-functions",
-        "configured": false
+        "configured": true
       },
-      "chapters": [],
+      "chapters": [
+        {
+          "id": "01_variables_and_expressions",
+          "order": 1,
+          "title": "Variables and expressions",
+          "file": "flashcards/01_variables_and_expressions.md",
+          "card_count": 18,
+          "prerequisites": [],
+          "provides": [
+            "variable",
+            "algebraic-expression",
+            "equation",
+            "term",
+            "coefficient",
+            "constant-term",
+            "substitution",
+            "expression-evaluation",
+            "verbal-expression-translation"
+          ],
+          "resolved_dependencies": []
+        }
+      ],
       "generation_command": "flashcards curriculum materialize mathematics/elementary-algebra-and-functions"
     },
     {
