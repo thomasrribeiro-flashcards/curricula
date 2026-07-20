@@ -10,4 +10,6 @@ flashcards registry build .
 git diff --exit-code -- dist/curriculum.json
 ```
 
+When a deck repository or chapter manifest changes, refresh `deck-metadata.json` with `flashcards curriculum build /path/to/notes --output deck-metadata.json` before rebuilding the registry. Subject-only edits must leave the snapshot unchanged.
+
 Do not author flashcards in this repository. Materialize a deck in its own repository, begin with one pilot chapter, and wait for human approval before expanding it.

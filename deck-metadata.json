@@ -1,11 +1,5 @@
 {
-  "schema_version": 3,
-  "registry": {
-    "id": "thomas-ribeiro",
-    "name": "Thomas Ribeiro Curricula",
-    "repository": "thomasrribeiro-flashcards/curricula",
-    "ref": "master"
-  },
+  "schema_version": 2,
   "subjects": [
     {
       "id": "biology",

@@ -10,3 +10,10 @@ npx --yes github:thomasrribeiro/flashcards registry build .
 ```
 
 Edit a subject package under `subjects/`, validate the complete graph, rebuild `dist/curriculum.json`, and publish changes through a pull request. The compiled index is deterministic and is consumed by the flashcards website.
+
+`deck-metadata.json` is the committed discovery snapshot for independently published deck repositories and their chapter manifests. Refresh it from a materialized notes collection before publishing deck availability or chapter changes:
+
+```sh
+flashcards curriculum build /path/to/notes --output deck-metadata.json
+flashcards registry build .
+```
