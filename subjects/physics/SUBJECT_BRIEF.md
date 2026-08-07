@@ -1,100 +1,185 @@
 # Physics subject brief
 
-This brief records learner-specific assumptions and the evidence boundary for a
-whole-field physics curriculum. Reusable physics authoring rules remain in the
-staged domain guide; the deck graph and coverage decisions live in `ROADMAP.md`
-and `subject.toml`.
+This file records decisions specific to this learner and collection. Reusable
+domain-wide authoring guidance belongs in `templates/guides/physics.md`
+when that maintained guide exists, or in this subject's `DOMAIN_GUIDE.md` for a
+new domain. The explained deck sequence belongs in `ROADMAP.md`; its executable
+curriculum belongs in `subject.toml`.
 
 ## Learner and destination
 
-- Intended learner: not specified. The proposal therefore supports a
-  cold-start learner and does not treat any unconfirmed physics knowledge as
-  mastered. Confirm whether this is for one learner or a general collection.
-- Current mathematical/tool mastery: unconfirmed. Required mathematics and
-  computing capabilities are explicit cross-subject prerequisites from the
-  supplied catalog; they are route requirements, not assumed prior attainment.
-- Current domain mastery: none confirmed.
-- Requested destination and use horizon: `whole-field`—a layered, navigable map
-  from physical reasoning through the shared undergraduate spine, major
-  graduate specializations, and a representative literature-facing research
-  route with explicit future extension points.
-- Graduate or research focus branches: none specified. The roadmap gives
-  representative branches without privileging a personal specialization.
-- Deck granularity: `course`, with every proposed deck estimated at 6–14
-  coherent chapters.
-- Durable capabilities: choose and test physical models; translate among
-  situations, diagrams, graphs, data, code, and equations; make qualitative and
-  quantitative predictions; estimate and check results; reason from
-  measurements with uncertainty; and enter advanced subfields with explicit
-  prerequisites and limits of validity.
-- Deliberate exclusions: exhaustive coverage of every active research
-  microfield, engineering design qualifications, and replacement of laboratory,
-  computational, project, derivation, or extended-problem practice by SRS.
+- Intended learner: not specified by the request. The curriculum is designed for
+  a learner starting from **first contact with physics** — no confirmed physics
+  vocabulary of any kind — who wants a navigable map of the whole field rather
+  than one course. **Needs confirmation:** whether this learner is a self-studier,
+  a student shadowing formal coursework, or a professional re-entering the field.
+  The deck graph does not depend on the answer, but chapter register and
+  worked-example choice do.
+- Current mathematical/tool mastery: **unconfirmed, therefore treated as none.**
+  The roadmap consequently imports every mathematical capability explicitly from
+  the `mathematics` subject rather than assuming it. If the learner confirms
+  existing mathematics mastery, the corresponding external prerequisite edges are
+  satisfied immediately without any change to this roadmap.
+- Current domain mastery: none unless explicitly confirmed here. Nothing is
+  confirmed. Force, energy, velocity, vectors, fields, and oscillators are all
+  treated as unseen technical vocabulary, not as common knowledge.
+- Requested destination and use horizon: **whole-field**. The route must map the
+  major domains and contemporary branches of physics across learning levels,
+  from pre-calculus literacy through representative graduate and
+  research-specialization branches, with deliberate future extension points.
+  Destination controls the current route, not a ceiling: later extensions may add
+  branches without renaming or deleting approved decks.
+- Graduate or research focus branches: **none specified.** Because no focus slug
+  was supplied, the roadmap terminates in seven *representative* research
+  branches chosen from evidence of current field activity (see evidence
+  authorities below), not from preference. **Needs confirmation:** if the learner
+  has a real target subfield, that branch should be promoted and the others
+  demoted to `deferred` rather than all seven being pursued.
+- Deck granularity: **course**. One deck is one coherent course-scale capability,
+  planning-estimated at 6–14 ordered chapters.
+- Durable capabilities: describe and measure physical situations with explicit
+  units, uncertainty, and stated idealizations; choose a system, frame, and sign
+  convention; predict qualitatively before calculating; select among competing
+  physical models and state each model's regime of validity; translate among
+  situations, diagrams, graphs, words, equations, and code; reason about
+  evidence, systematic error, and what data can and cannot support; and navigate
+  the contemporary literature of at least one research branch.
+- Deliberate exclusions: accelerator and beam physics, medical physics, physics of
+  climate and Earth systems, geophysics/space/atmospheric physics, energy science
+  and technology, chemical physics, quantum gravity and string theory, and the
+  history and philosophy of physics are **deferred** — visible future extension
+  points, not judgments about the learner. Physics education research and the
+  general theory of networks and complex systems are **out of scope** for this
+  subject; `ROADMAP.md` records where each is handled instead.
 
 ## Conventions and boundaries
 
-- Preferred notation, terminology, language, or jurisdiction: not supplied.
-  Proposed default, pending confirmation: English, SI units as the primary
-  system, standard international symbols, explicit vector/scalar distinctions,
-  and a declared right-handed coordinate and sign convention on each problem.
-- Simplifications that must be labeled: point-particle, rigid-body, continuum,
-  equilibrium, ideal-gas, weak-field, nonrelativistic, semiclassical,
-  perturbative, linear-response, ideal-instrument, and standard-cosmology
-  assumptions whenever they control the result.
-- Claims requiring current verification: fundamental constants and recommended
-  values; particle properties and nomenclature; cosmological parameters;
-  climate observations; medical or radiation standards; software behavior;
-  safety guidance; and any statement presented as a current frontier consensus.
-- Accessibility or device constraints: none supplied. Use the collection
-  baseline of phone-width legibility, meaningful text alternatives, high
-  contrast, redundant non-color cues, and accessible mathematical and graphical
-  explanations. Confirm any learner-specific accommodations before deck build.
+- Preferred notation, terminology, language, or jurisdiction: SI units
+  throughout, using the post-2019 SI in which the base units are fixed by exact
+  defining constants. Prefer BIPM/IUPAP symbol conventions. English. Where a
+  convention is genuinely not universal — the metric signature, the sign of the
+  Fourier kernel, the direction of the thermodynamic work convention, the
+  handedness of a coordinate system — the card must state its choice rather than
+  assume one.
+- Simplifications that must be labeled: point-particle and rigid-body
+  idealizations; frictionless, inviscid, incompressible, and non-relativistic
+  limits; the ideal-gas and harmonic approximations; mean-field treatments;
+  semiclassical light–matter models; single-particle band theory; the Bohr atom
+  as a superseded model retained for historical and heuristic use; and every
+  perturbative expansion. Each is introduced with its regime of validity and at
+  least one breakdown case.
+- Claims requiring current verification: values and uncertainties of physical
+  constants (CODATA/NIST at authoring time); particle properties and limits
+  (Particle Data Group); astronomical and cosmological parameters (the current
+  mission data release, not a textbook table); gravitational-wave catalog
+  contents and event counts; fusion energy-gain records; and any claim about
+  "the current state" of a research frontier. These decay quickly and must carry
+  an access date in the deck source register.
+- Accessibility or device constraints: **needs confirmation.** Assume phone-width
+  study by default. Figures must be legible at phone width, must not rely on
+  color alone, and must carry meaningful alt text that does not leak the answer.
+  Mathematics renders through KaTeX, so notation must stay within KaTeX support.
 
-## Decisions needing learner confirmation
+Do not infer domain knowledge from the target level. Anything not explicitly
+confirmed above is treated as unseen during cold-start review.
 
-1. Whether to prioritize experimental, theoretical, computational, or applied
-   routes once the shared spine is in place.
-2. Which, if any, research branches should move ahead of the representative
-   order proposed here.
-3. Preferred language, notation conventions, unit-system exceptions, available
-   laboratory/computing resources, and accessibility accommodations.
-4. Which catalogued mathematics and computing decks are already mastered; until
-   confirmed, all remain unseen and must be completed when required.
+## Evidence authorities
 
-## Evidence authorities and source register
-
-Live research was used to choose field boundaries and capabilities, not to copy
-source prose or figures. Accessed 2026-07-18.
-
-| Source | Authority and role | License/terms and use boundary |
-|---|---|---|
-| [QAA Subject Benchmark Statement: Physics, Astronomy and Astrophysics (2025)](https://www.qaa.ac.uk/docs/qaa/sbs/subject-benchmark-statement-physics-astronomy-and-astrophysics-2025.pdf) | Current sector-owned benchmark for fundamental areas, graduate capabilities, experiments, computation, modeling, communication, and progression. | Copyrighted framework; used as a curricular reference and paraphrased, not reproduced. |
-| [Institute of Physics Degree Accreditation Framework](https://www.iop.org/sites/default/files/2022-09/IOP-Degree-Accreditation-Framework-July-2022.pdf) | Professional accreditation reference for the shared physics spine, breadth, cross-topic transfer, practical work, and open-ended investigation. | Copyrighted professional guidance; reference use only. |
-| [AAPT undergraduate curriculum resources](https://www.aapt.org/Resources/HigherEd/Undergraduate_Physics_Curriculum.cfm) | Professional teaching association hub for laboratory, computational, and program guidance. | Website terms apply; used only to identify curricular authorities. |
-| [AAPT Recommendations for Computational Physics](https://www.aapt.org/Resources/upload/AAPT_UCTF_CompPhysReport_final_B.pdf) | Professional framework for model-to-code translation, data visualization, validation, physical insight, and integration of computation across the curriculum. | Copyrighted report; paraphrased curricular guidance only. |
-| [AAPT Recommendations for the Undergraduate Physics Laboratory Curriculum](https://www.aapt.org/Resources/upload/LabGuidlinesDocument_EBendorsed_nov10.pdf) | Professional framework for scaffolded measurement, modeling, experimental design, uncertainty, instrumentation, and communication. | Copyrighted report; paraphrased curricular guidance only. |
-| [APS units](https://www.aps.org/membership/units) | Current professional-society breadth check for active subfields and interdisciplinary boundaries. | Website terms apply; taxonomy used as a coverage check, not copied as a course sequence. |
-| [NSF Physics](https://www.nsf.gov/focus-areas/physics) and [NSF Division of Physics programs](https://www.nsf.gov/funding/opportunities/phy-division-physics-investigator-initiated-research-projects) | Public-agency breadth check for contemporary research areas, including living systems, plasma, gravitational, particle, and quantum information science. | U.S. government source; verify page-specific media and third-party rights before reuse. |
-| [NIST fundamental constants and measurement guidance](https://www.nist.gov/pml/fundamental-physical-constants) | Public-agency authority for SI, constants, calibration, and measurement uncertainty. | Reference data/guidance; verify notices and current recommended values at deck build time. |
-| [Particle Data Group, Review of Particle Physics 2026](https://pdg.lbl.gov/) | Current consensus reference for particle properties, constants, experimental methods, and Standard Model topics. | CC BY 4.0 except where noted; record edition and attribution for any later adaptation. |
-| [OpenStax University Physics](https://openstax.org/details/university-physics-volume-1) | Open course-scope reference for the calculus-based introductory sequence, not the whole-field architecture. | Current page states CC BY-NC-SA 4.0; licensing changed in 2026, so verify the exact edition and asset license before reuse. |
-| [MIT OpenCourseWare: Relativistic Quantum Field Theory I](https://ocw.mit.edu/courses/8-323-relativistic-quantum-field-theory-i-spring-2023/pages/syllabus/) | Graduate-course maturity check: a one-term QFT course can build action, classical fields, symmetry, and Noether reasoning internally after advanced quantum theory. | MIT OCW Creative Commons terms apply; used as course-structure evidence, with no copied instructional content. |
-| [MIT OpenCourseWare: Quantum Computation](https://ocw.mit.edu/courses/18-435j-quantum-computation-fall-2003/pages/syllabus/) and [Quantum Information Science](https://ocw.mit.edu/courses/mas-865j-quantum-information-science-spring-2006/pages/syllabus/) | Graduate-course maturity check for quantum algorithms, error correction, entanglement, communication, and research projects; supports a graduate sequence rather than labeling the broad first course research-specialization. | MIT OCW Creative Commons terms apply; syllabi used only as curricular evidence. |
-| [U.S. Particle Accelerator School: graduate Accelerator Physics](https://uspas.fnal.gov/programs/2012/uta/courses/accelerator-physics.shtml) | National graduate-training reference identifying entry-level mechanics, electromagnetism, linear algebra, vector calculus, differential equations, Lagrangian formalism, Maxwell theory, and special relativity for accelerator study. | Fermilab/USPAS site terms apply; paraphrased prerequisite and scope evidence only. |
-| [MIT OpenCourseWare: Non-Equilibrium Statistical Mechanics](https://ocw.mit.edu/courses/5-72-non-equilibrium-statistical-mechanics-spring-2012/pages/syllabus/) | Graduate-course maturity check showing stochastic processes, response, hydrodynamics, and complex liquids as course content built after statistical thermodynamics and advanced calculus. | MIT OCW Creative Commons terms apply; syllabus used only as curricular evidence. |
-| [LIGO Scientific Collaboration data-analysis guide](https://ligo.org/science-summaries/DataAnalysisGuide/) and [GWOSC tutorials](https://gwosc.org/tutorials/) | Research-practice evidence that gravitational-wave work integrates calibration, nonstationary noise, spectra, matched filtering, likelihoods, source probability distributions, software, and open data. | LIGO page is copyrighted reference material; GWOSC states released data are CC BY 4.0. Verify item-level terms before any later adaptation. |
-
-Curriculum frameworks select capabilities but do not verify every future card
-claim. Consequential or unstable claims require a current primary, consensus,
-or public-agency source in the eventual deck source register.
+- Consensus or professional frameworks:
+  - APS **PhySH** (Physics Subject Headings), the current successor to PACS,
+    used as the authoritative map of the field's disciplines and research areas —
+    https://physh.org (accessed 2026-08-06; vocabulary released CC0 1.0, concepts
+    carry DOIs under `10.29172/`).
+  - **Phys21: Preparing Physics Students for 21st-Century Careers**, the APS/AAPT
+    Joint Task Force on Undergraduate Physics Programs report —
+    https://www.compadre.org/jtupp/docs/J-Tupp_Report.pdf (accessed 2026-08-06;
+    **CC BY 4.0**, so it may be quoted and adapted with attribution).
+  - **AAPT Recommendations for the Undergraduate Physics Laboratory Curriculum**
+    (Board-endorsed 2014-11-10) —
+    https://www.aapt.org/resources/upload/labguidlinesdocument_ebendorsed_nov10.pdf
+    (accessed 2026-08-06; © AAPT, no open license — use the outcomes, do not copy prose).
+  - **AAPT Recommendations for Computational Physics in the Undergraduate Physics
+    Curriculum** (Undergraduate Curriculum Task Force, 2016) —
+    https://www.aapt.org/resources/upload/aapt_uctf_compphysreport_final_b.pdf
+    (accessed 2026-08-06; © AAPT).
+  - **IOP Degree Accreditation Framework, July 2022** (current in 2026) —
+    https://www.iop.org/sites/default/files/2022-09/IOP-Degree-Accreditation-Framework-July-2022.pdf
+    (accessed 2026-08-06; © IOP). The IOP's older prescriptive "Core of Physics"
+    is explicitly no longer in use and must not be cited as a mandated syllabus.
+  - APS/AAPT **EP3 Guide** (Effective Practices for Physics Programs), for its
+    ethics, computational-skills, undergraduate-research, and capstone sections —
+    https://ep3guide.org/ (accessed 2026-08-06; the site returned HTTP 403 to
+    automated fetch and section titles were confirmed only indirectly —
+    **re-verify manually** before citing any specific text).
+  - APS **Guidelines for Professional Conduct**, for research results and data
+    retention, publication and authorship, peer review, and conflict of interest —
+    https://www.aps.org/about/governance/statements/guidelines-professional-conduct
+    (accessed 2026-08-06; returned HTTP 403 to automated fetch — **re-verify the
+    current revision manually**; a widely repeated "October 2025 update" could not
+    be confirmed and must not be asserted as fact).
+- Preferred primary sources or public agencies:
+  - NIST/CODATA fundamental constants — https://physics.nist.gov/cuu/Constants/
+  - BIPM SI Brochure — https://www.bipm.org/en/publications/si-brochure
+  - Particle Data Group, *Review of Particle Physics* — https://pdg.lbl.gov/
+  - NSF Division of Physics program areas, as a breadth check —
+    https://www.nsf.gov/div/index.jsp?div=PHY (accessed 2026-08-06; US Government
+    work, public domain). Note the NSF "focus areas" marketing page carries only
+    six blurbs and is not the program list.
+  - US National Academies decadal and strategic reports, used to choose
+    representative research branches (all accessed 2026-08-06 via
+    nationalacademies.org / nap.nationalacademies.org): Astro2020 *Pathways to
+    Discovery in Astronomy and Astrophysics for the 2020s*; *Elementary Particle
+    Physics: The Higgs and Beyond* (EPP-2024, published 2025); the 2023 P5 report
+    *Exploring the Quantum Universe*; the 2023 NSAC *Long Range Plan for Nuclear
+    Science*; the 2021 plasma decadal *Plasma Science: Enabling Technology,
+    Sustainability, Security, and Exploration*; the 2022 *Physics of Life*
+    report; and the 2020 AMO decadal *Manipulating Quantum Systems*.
+  - NASEM, *Reproducibility and Replicability in Science* (2019), for the
+    operative distinction the research-practice deck must encode —
+    https://nap.nationalacademies.org/catalog/25303/ (accessed 2026-08-06).
+  - arXiv category taxonomy and submission statistics, as a reality check on
+    where the field's activity actually is — https://arxiv.org/category_taxonomy
+    and https://info.arxiv.org/about/reports/submission_category_by_year.html
+    (accessed 2026-08-06; taxonomy metadata CC0).
+- Open educational sources and license constraints:
+  - **PhysPort** research-based teaching methods — https://www.physport.org/
+    (accessed 2026-08-06; © AAPT, all rights reserved — use for design decisions,
+    do not reproduce).
+  - **OpenStax** physics titles — https://openstax.org/subjects/science — openly
+    licensed, but the exact license and edition **must be re-checked per title**
+    at authoring time before any reuse.
+  - **PICUP** computational exercise collection — https://www.compadre.org/PICUP/
+    (accessed 2026-08-06; © AAPT/ComPADRE, all rights reserved).
+  - Policy: free access is not permission. No proprietary textbook prose or
+    figures. All technical figures are original TikZ compiled to SVG.
 
 ## Authentic practice outside SRS
 
-Competence requires sustained work that cards cannot replace: multistep and
-open-ended problems; derivations; estimation notebooks; real laboratory design,
-calibration, troubleshooting, safety, and uncertainty analysis; reproducible
-code and simulation projects; analysis of authentic data; oral and written
-scientific communication; literature searches and critical reading; teamwork;
-and at least one extended investigation in experimental, computational, or
-theoretical physics. These practices should recur from the first layer and grow
-in autonomy rather than being postponed to a final capstone.
+Spaced retrieval maintains concepts, representations, and method triggers. It
+cannot produce physics competence on its own. This subject explicitly depends on:
+
+- **Laboratory work.** The six AAPT laboratory outcomes — constructing knowledge,
+  modeling, designing experiments, developing technical and practical skills,
+  analyzing and visualizing data, and communicating physics — require real
+  apparatus, real troubleshooting, and real failure. Cards can maintain the
+  reasoning; they cannot substitute for aligning an interferometer or chasing
+  down a ground loop.
+- **Extended multi-step problems.** Long synthesis problems, full derivations,
+  and qualifying-exam-style problem sets stay outside SRS; fragmenting them into
+  cards destroys the skill they build.
+- **Computation as a practice, not a topic.** AAPT is explicit that computation
+  should be introduced in the introductory course and reinforced throughout, and
+  that relying entirely on a dedicated computational course is not sufficient.
+  Every deck from `computational-physics` onward should carry accompanying code
+  work — simulation, numerical solution, data reduction, visualization — done
+  outside the card set.
+- **Estimation and Fermi problems** worked aloud or on paper.
+- **Reading the literature.** Preprint reading, journal club, and referee-style
+  critique are the actual entry to any research branch.
+- **Scientific writing and speaking.** Lab reports, a paper draft, a poster, a
+  talk, and teaching an idea to someone else (Phys21 §C).
+- **Instrumentation and shop practice.** Electronics, vacuum, optics, cryogenics,
+  sensors, and data acquisition (Phys21 §B.3).
+- **Professional practice.** Teamwork, project management, safety culture, and
+  research ethics including authorship, peer review, conflict of interest, and
+  data retention (Phys21 §D; APS Guidelines for Professional Conduct).

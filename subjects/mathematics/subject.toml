@@ -4,115 +4,127 @@ destination = "whole-field"
 deck_granularity = "course"
 focus = []
 
+# Executable copy of ROADMAP.md. Orders are topological: every prerequisite and
+# recommended_after reference names a lower-ordered deck in this subject, or a
+# catalog deck in another subject using the "subject/deck" form.
+
+# ---------------------------------------------------------------------------
+# Foundational layer
+# ---------------------------------------------------------------------------
+
 [[decks]]
-id = "quantitative-reasoning-and-arithmetic"
+id = "number-sense-and-arithmetic"
 order = 1
 tier = "core"
 level = "foundational"
 prerequisites = []
 recommended_after = []
-estimated_chapters = 10
+estimated_chapters = 9
 status = "proposed"
-description = "Reason fluently with whole, signed, rational, decimal, percent, proportional, and estimated quantities in authentic contexts."
+description = "Reason with whole numbers, integers, fractions, decimals, ratio, percent, place value, and estimation, and justify why each operation applies."
 
 [[decks]]
 id = "elementary-algebra-and-functions"
 order = 2
 tier = "core"
 level = "foundational"
-prerequisites = ["quantitative-reasoning-and-arithmetic"]
+prerequisites = ["number-sense-and-arithmetic"]
 recommended_after = []
 estimated_chapters = 12
 status = "proposed"
-description = "Translate among situations, expressions, equations, inequalities, tables, and graphs and solve elementary algebraic models."
+description = "Manipulate symbolic expressions, solve equations, inequalities, and systems, and model with linear, quadratic, polynomial, rational, exponential, and logarithmic functions and their graphs."
 
 [[decks]]
 id = "geometry-and-measurement"
 order = 3
 tier = "core"
 level = "foundational"
-prerequisites = ["quantitative-reasoning-and-arithmetic"]
-recommended_after = ["elementary-algebra-and-functions"]
+prerequisites = ["elementary-algebra-and-functions"]
+recommended_after = []
 estimated_chapters = 10
 status = "proposed"
-description = "Reason with Euclidean shape, congruence, similarity, coordinates, units, area, volume, scale, and spatial representations."
+description = "Reason about congruence, similarity, transformations, circles, right-triangle trigonometry, coordinate geometry, area, volume, units, and short deductive geometric arguments."
 
 [[decks]]
-id = "precalculus-functions-and-trigonometry"
+id = "mathematical-computing-and-experimentation"
 order = 4
 tier = "core"
 level = "foundational"
 prerequisites = ["elementary-algebra-and-functions"]
 recommended_after = ["geometry-and-measurement"]
-estimated_chapters = 12
+estimated_chapters = 9
 status = "proposed"
-description = "Analyze polynomial, rational, exponential, logarithmic, and trigonometric functions as preparation for continuous mathematics."
+description = "Use a programming environment, symbolic and numeric tools, plotting, floating-point awareness, and reproducible notebooks to explore mathematical objects and test conjectures."
 
 [[decks]]
-id = "mathematical-computing-and-experimentation"
+id = "precalculus-and-trigonometry"
 order = 5
 tier = "core"
 level = "foundational"
-prerequisites = ["elementary-algebra-and-functions"]
+prerequisites = ["geometry-and-measurement"]
 recommended_after = []
-estimated_chapters = 8
+estimated_chapters = 10
 status = "proposed"
-description = "Use code, symbolic and numerical tools, visualization, testing, and reproducible experiments to investigate mathematics responsibly."
+description = "Work fluently with circular trigonometric functions and identities, conic sections, polar and parametric descriptions, plane vectors, sequences, and limit-ready behavior of functions."
+
+# ---------------------------------------------------------------------------
+# Undergraduate core layer
+# ---------------------------------------------------------------------------
 
 [[decks]]
-id = "logic-sets-and-proof"
+id = "mathematical-reasoning-and-proof"
 order = 6
 tier = "core"
 level = "undergraduate-core"
-prerequisites = ["quantitative-reasoning-and-arithmetic"]
-recommended_after = ["elementary-algebra-and-functions"]
+prerequisites = ["elementary-algebra-and-functions"]
+recommended_after = ["geometry-and-measurement", "precalculus-and-trigonometry"]
 estimated_chapters = 10
 status = "proposed"
-description = "Read and construct proofs using logic, sets, functions, relations, induction, contradiction, counterexamples, and precise quantifiers."
+description = "Read, evaluate, and write correct proofs using logic, quantifiers, sets, relations, functions, induction, contradiction, contraposition, and elementary cardinality."
 
 [[decks]]
 id = "single-variable-differential-calculus"
 order = 7
 tier = "core"
 level = "undergraduate-core"
-prerequisites = ["precalculus-functions-and-trigonometry"]
+prerequisites = ["precalculus-and-trigonometry"]
 recommended_after = []
-estimated_chapters = 10
+estimated_chapters = 9
 status = "proposed"
-description = "Interpret limits, continuity, derivatives, approximation, and optimization across symbolic, graphical, numerical, and applied forms."
-
-[[decks]]
-id = "discrete-mathematics"
-order = 8
-tier = "core"
-level = "undergraduate-core"
-prerequisites = ["logic-sets-and-proof", "elementary-algebra-and-functions"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Reason with finite structures, counting, recurrence, graphs, algorithms, invariants, and discrete proof methods."
+description = "Use limits, continuity, and derivatives to model rates, approximate locally, and analyze extrema, concavity, and optimization in one variable."
 
 [[decks]]
 id = "linear-algebra"
-order = 9
+order = 8
 tier = "core"
 level = "undergraduate-core"
 prerequisites = ["elementary-algebra-and-functions"]
-recommended_after = ["logic-sets-and-proof"]
-estimated_chapters = 12
+recommended_after = ["mathematical-reasoning-and-proof", "single-variable-differential-calculus"]
+estimated_chapters = 11
 status = "proposed"
-description = "Use vectors, matrices, linear maps, subspaces, eigenstructure, inner products, and decompositions to solve and explain linear problems."
+description = "Reason with vector spaces, linear maps, matrices, rank, determinants, eigenstructure, inner products, orthogonality, and matrix factorizations across algebraic, geometric, and computational views."
 
 [[decks]]
 id = "single-variable-integral-calculus"
-order = 10
+order = 9
 tier = "core"
 level = "undergraduate-core"
 prerequisites = ["single-variable-differential-calculus"]
 recommended_after = []
-estimated_chapters = 12
+estimated_chapters = 11
 status = "proposed"
-description = "Connect accumulation and change through integration, differential equations, parametric curves, sequences, series, and approximation."
+description = "Use Riemann sums, the fundamental theorem, integration techniques, improper integrals, accumulation applications, and infinite series including Taylor expansions."
+
+[[decks]]
+id = "discrete-mathematics-and-combinatorics"
+order = 10
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["mathematical-reasoning-and-proof"]
+recommended_after = ["linear-algebra"]
+estimated_chapters = 10
+status = "proposed"
+description = "Count with bijections, inclusion-exclusion, recurrences, and generating functions, and analyze graphs, trees, orders, and discrete structures with proof."
 
 [[decks]]
 id = "multivariable-and-vector-calculus"
@@ -121,9 +133,9 @@ tier = "core"
 level = "undergraduate-core"
 prerequisites = ["single-variable-integral-calculus"]
 recommended_after = ["linear-algebra"]
-estimated_chapters = 12
+estimated_chapters = 11
 status = "proposed"
-description = "Differentiate and integrate scalar and vector fields in several variables and interpret the major integral theorems."
+description = "Differentiate and integrate functions of several variables, use gradients and Jacobians, change coordinates, and apply the line, surface, Green, Stokes, and divergence theorems."
 
 [[decks]]
 id = "probability"
@@ -131,10 +143,10 @@ order = 12
 tier = "core"
 level = "undergraduate-core"
 prerequisites = ["single-variable-integral-calculus"]
-recommended_after = ["discrete-mathematics"]
-estimated_chapters = 12
+recommended_after = ["discrete-mathematics-and-combinatorics"]
+estimated_chapters = 11
 status = "proposed"
-description = "Model uncertainty with random variables, conditioning, independence, distributions, expectation, transforms, and limit reasoning."
+description = "Model uncertainty with sample spaces, conditioning, independence, discrete and continuous random variables, joint behavior, expectation, and limit laws."
 
 [[decks]]
 id = "differential-equations"
@@ -142,843 +154,734 @@ order = 13
 tier = "core"
 level = "undergraduate-core"
 prerequisites = ["single-variable-integral-calculus", "linear-algebra"]
-recommended_after = []
-estimated_chapters = 12
+recommended_after = ["multivariable-and-vector-calculus", "mathematical-computing-and-experimentation"]
+estimated_chapters = 11
 status = "proposed"
-description = "Classify, solve, approximate, and interpret ordinary differential equations and linear systems while checking model assumptions."
+description = "Formulate, solve, and qualitatively analyze ordinary differential equations and linear systems using analytic methods, transforms, eigenstructure, phase planes, and numerical schemes."
 
 [[decks]]
 id = "statistical-inference-and-data-analysis"
 order = 14
 tier = "core"
 level = "undergraduate-core"
-prerequisites = ["probability", "mathematical-computing-and-experimentation"]
-recommended_after = []
-estimated_chapters = 12
+prerequisites = ["probability"]
+recommended_after = ["mathematical-computing-and-experimentation", "linear-algebra"]
+estimated_chapters = 11
 status = "proposed"
-description = "Carry out an ethical statistical investigation from question and study design through estimation, testing, uncertainty, and communication."
+description = "Summarize data honestly, reason about sampling distributions, estimate with uncertainty, test hypotheses, fit and criticize regression models, and state the limits of an inference."
 
 [[decks]]
-id = "mathematical-modeling"
+id = "number-theory"
 order = 15
-tier = "core"
+tier = "recommended"
 level = "undergraduate-core"
-prerequisites = ["mathematical-computing-and-experimentation"]
-recommended_after = ["differential-equations", "statistical-inference-and-data-analysis"]
+prerequisites = ["mathematical-reasoning-and-proof"]
+recommended_after = ["discrete-mathematics-and-combinatorics"]
 estimated_chapters = 10
 status = "proposed"
-description = "Formulate, analyze, validate, compare, and communicate models while making assumptions, scales, sensitivity, and limitations explicit."
+description = "Prove and apply results about divisibility, primes, congruences, multiplicative functions, primitive roots, quadratic reciprocity, and Diophantine equations."
+
+# ---------------------------------------------------------------------------
+# Undergraduate advanced layer
+# ---------------------------------------------------------------------------
 
 [[decks]]
 id = "real-analysis"
 order = 16
 tier = "core"
-level = "undergraduate-core"
-prerequisites = ["logic-sets-and-proof", "single-variable-integral-calculus"]
+level = "undergraduate-advanced"
+prerequisites = ["mathematical-reasoning-and-proof", "single-variable-integral-calculus"]
 recommended_after = []
-estimated_chapters = 12
+estimated_chapters = 11
 status = "proposed"
-description = "Prove and apply the foundations of limits, continuity, differentiation, integration, sequences, series, and metric-space reasoning."
+description = "Prove theorems about completeness, sequences, series, limits, continuity, differentiation, Riemann integration, and uniform convergence, and construct counterexamples."
 
 [[decks]]
 id = "abstract-algebra"
 order = 17
 tier = "core"
-level = "undergraduate-core"
-prerequisites = ["logic-sets-and-proof", "elementary-algebra-and-functions"]
-recommended_after = []
+level = "undergraduate-advanced"
+prerequisites = ["mathematical-reasoning-and-proof"]
+recommended_after = ["linear-algebra", "number-theory"]
 estimated_chapters = 12
 status = "proposed"
-description = "Reason structurally with groups, rings, fields, homomorphisms, quotients, actions, and polynomial constructions."
-
-[[decks]]
-id = "combinatorics-and-graph-theory"
-order = 18
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["discrete-mathematics"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Use structural, enumerative, extremal, algebraic, and algorithmic methods on graphs and finite configurations."
-
-[[decks]]
-id = "number-theory"
-order = 19
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["logic-sets-and-proof", "elementary-algebra-and-functions"]
-recommended_after = ["abstract-algebra"]
-estimated_chapters = 10
-status = "proposed"
-description = "Prove and compute with divisibility, congruences, Diophantine equations, arithmetic functions, quadratic residues, and prime structure."
+description = "Reason with groups, subgroups, cosets, homomorphisms, quotients, group actions, rings, ideals, polynomial rings, and first field extensions."
 
 [[decks]]
 id = "complex-analysis"
-order = 20
-tier = "recommended"
+order = 18
+tier = "core"
 level = "undergraduate-advanced"
-prerequisites = ["real-analysis"]
-recommended_after = ["multivariable-and-vector-calculus"]
-estimated_chapters = 12
-status = "proposed"
-description = "Analyze holomorphic functions through complex differentiation, contour integration, series, residues, conformal maps, and harmonic links."
-
-[[decks]]
-id = "topology"
-order = 21
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["real-analysis"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Work with topological spaces, continuity, products, quotients, compactness, connectedness, separation, and elementary homotopy."
-
-[[decks]]
-id = "modern-geometry"
-order = 22
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["logic-sets-and-proof", "linear-algebra"]
-recommended_after = ["topology"]
-estimated_chapters = 10
-status = "proposed"
-description = "Compare Euclidean, affine, projective, spherical, hyperbolic, and transformation geometries through invariants and constructions."
-
-[[decks]]
-id = "history-and-philosophy-of-mathematics"
-order = 23
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["logic-sets-and-proof"]
-recommended_after = ["real-analysis", "abstract-algebra"]
-estimated_chapters = 10
-status = "proposed"
-description = "Relate major mathematical ideas to their historical development, foundational debates, proof cultures, and changing standards of rigor."
-
-[[decks]]
-id = "nonlinear-dynamics-and-chaos"
-order = 24
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["differential-equations"]
-recommended_after = ["multivariable-and-vector-calculus"]
-estimated_chapters = 10
-status = "proposed"
-description = "Analyze phase portraits, stability, bifurcations, oscillations, maps, chaos, and qualitative behavior of nonlinear systems."
-
-[[decks]]
-id = "partial-differential-equations-and-fourier-methods"
-order = 25
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["differential-equations", "multivariable-and-vector-calculus"]
+prerequisites = ["multivariable-and-vector-calculus", "mathematical-reasoning-and-proof"]
 recommended_after = ["real-analysis"]
-estimated_chapters = 12
-status = "proposed"
-description = "Classify and solve canonical partial differential equations using characteristics, separation, Fourier methods, energy, and boundary data."
-
-[[decks]]
-id = "numerical-analysis"
-order = 26
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["mathematical-computing-and-experimentation", "single-variable-integral-calculus", "linear-algebra"]
-recommended_after = ["differential-equations"]
-estimated_chapters = 12
-status = "proposed"
-description = "Design and assess numerical algorithms using approximation, conditioning, stability, convergence, error bounds, and reproducible experiments."
-
-[[decks]]
-id = "convex-and-continuous-optimization"
-order = 27
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["mathematical-computing-and-experimentation", "multivariable-and-vector-calculus", "linear-algebra"]
-recommended_after = []
 estimated_chapters = 10
 status = "proposed"
-description = "Formulate and solve linear, convex, constrained, and smooth optimization problems using duality, optimality conditions, and algorithms."
+description = "Use holomorphy, the Cauchy-Riemann equations, contour integration, Cauchy theory, power and Laurent series, residues, and conformal mapping."
 
 [[decks]]
-id = "combinatorial-optimization-and-networks"
-order = 28
-tier = "recommended"
+id = "general-topology"
+order = 19
+tier = "core"
 level = "undergraduate-advanced"
-prerequisites = ["mathematical-computing-and-experimentation", "discrete-mathematics", "linear-algebra"]
+prerequisites = ["real-analysis"]
 recommended_after = []
-estimated_chapters = 10
+estimated_chapters = 9
 status = "proposed"
-description = "Model and solve network, matching, flow, scheduling, integer, and combinatorial optimization problems with exact and approximate methods."
-
-[[decks]]
-id = "stochastic-processes"
-order = 29
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["probability", "linear-algebra"]
-recommended_after = ["differential-equations"]
-estimated_chapters = 12
-status = "proposed"
-description = "Analyze discrete- and continuous-time random processes, Markov chains, Poisson processes, martingales, queues, and long-run behavior."
-
-[[decks]]
-id = "regression-and-multivariate-statistics"
-order = 30
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["statistical-inference-and-data-analysis", "linear-algebra"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Build, diagnose, interpret, and communicate regression and multivariate models with principled uncertainty and validation."
-
-[[decks]]
-id = "mathematical-logic-and-computability"
-order = 31
-tier = "recommended"
-level = "undergraduate-advanced"
-prerequisites = ["discrete-mathematics"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Analyze formal languages, deduction, semantics, computability, undecidability, incompleteness, and the limits of formal methods."
+description = "Work with topological spaces, bases, continuity, homeomorphism, connectedness, compactness, separation axioms, product and quotient constructions, and metrization."
 
 [[decks]]
 id = "differential-geometry-and-manifolds"
-order = 32
+order = 20
 tier = "recommended"
 level = "undergraduate-advanced"
-prerequisites = ["multivariable-and-vector-calculus", "linear-algebra", "logic-sets-and-proof"]
-recommended_after = ["topology"]
-estimated_chapters = 12
+prerequisites = ["multivariable-and-vector-calculus", "linear-algebra"]
+recommended_after = ["real-analysis", "general-topology"]
+estimated_chapters = 13
 status = "proposed"
-description = "Study curves, surfaces, manifolds, tangent structures, metrics, curvature, differential forms, and geometric integration."
+description = "Analyze curves and surfaces with curvature and fundamental forms, then work on smooth manifolds with tangent spaces, vector fields, differential forms, Stokes' theorem, and first Riemannian metrics."
+
+[[decks]]
+id = "partial-differential-equations"
+order = 21
+tier = "core"
+level = "undergraduate-advanced"
+prerequisites = ["differential-equations", "multivariable-and-vector-calculus"]
+recommended_after = ["real-analysis"]
+estimated_chapters = 11
+status = "proposed"
+description = "Classify and solve first-order, heat, wave, and Laplace equations using characteristics, separation of variables, Fourier methods, Green's functions, and maximum principles."
+
+[[decks]]
+id = "numerical-analysis"
+order = 22
+tier = "core"
+level = "undergraduate-advanced"
+prerequisites = ["linear-algebra", "single-variable-integral-calculus", "mathematical-computing-and-experimentation"]
+recommended_after = ["differential-equations", "real-analysis"]
+estimated_chapters = 11
+status = "proposed"
+description = "Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear systems, eigenvalues, and initial-value problems."
+
+[[decks]]
+id = "optimization-and-operations-research"
+order = 23
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["multivariable-and-vector-calculus", "linear-algebra"]
+recommended_after = ["numerical-analysis", "mathematical-computing-and-experimentation"]
+estimated_chapters = 11
+status = "proposed"
+description = "Formulate and solve linear, convex, and constrained optimization problems using duality, optimality conditions, descent and Newton methods, network models, and integer formulations."
+
+[[decks]]
+id = "stochastic-processes"
+order = 24
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["probability", "linear-algebra"]
+recommended_after = ["differential-equations", "mathematical-computing-and-experimentation"]
+estimated_chapters = 10
+status = "proposed"
+description = "Model systems evolving randomly in time with Markov chains, Poisson and renewal processes, queues, branching processes, elementary martingales, and Brownian motion."
 
 [[decks]]
 id = "information-theory"
-order = 33
+order = 25
 tier = "recommended"
 level = "undergraduate-advanced"
 prerequisites = ["probability"]
-recommended_after = ["linear-algebra"]
+recommended_after = ["discrete-mathematics-and-combinatorics", "linear-algebra"]
 estimated_chapters = 10
 status = "proposed"
-description = "Quantify information, compression, channel capacity, divergence, coding limits, and statistical decision tradeoffs."
+description = "Quantify information with entropy, relative entropy, and mutual information, and derive source-coding, channel-capacity, and error-correcting limits."
 
 [[decks]]
-id = "coding-theory-and-cryptography"
-order = 34
-tier = "specialization"
-level = "undergraduate-advanced"
-prerequisites = ["number-theory", "abstract-algebra", "probability"]
-recommended_after = ["combinatorics-and-graph-theory"]
-estimated_chapters = 10
-status = "proposed"
-description = "Construct and analyze error-correcting codes and classical cryptosystems using finite algebra, number theory, probability, and adversarial models."
-
-[[decks]]
-id = "game-theory-and-social-choice"
-order = 35
-tier = "specialization"
-level = "undergraduate-advanced"
-prerequisites = ["elementary-algebra-and-functions"]
-recommended_after = ["probability", "discrete-mathematics", "linear-algebra"]
-estimated_chapters = 10
-status = "proposed"
-description = "Analyze strategic interaction, equilibrium, bargaining, voting, allocation, incentives, and the assumptions behind social-choice results."
-
-[[decks]]
-id = "mathematical-biology-and-network-models"
-order = 36
-tier = "specialization"
-level = "undergraduate-advanced"
-prerequisites = ["mathematical-modeling", "differential-equations", "probability"]
-recommended_after = ["stochastic-processes"]
-estimated_chapters = 10
-status = "proposed"
-description = "Build and critique dynamical, stochastic, spatial, and network models of biological systems across scales."
-
-[[decks]]
-id = "financial-mathematics-and-risk"
-order = 37
-tier = "specialization"
-level = "undergraduate-advanced"
-prerequisites = ["probability"]
-recommended_after = ["statistical-inference-and-data-analysis", "stochastic-processes"]
-estimated_chapters = 10
-status = "proposed"
-description = "Model interest, contingent claims, portfolios, insurance losses, dependence, and risk while stating market and actuarial assumptions."
-
-[[decks]]
-id = "measure-theory-and-integration"
-order = 38
+id = "mathematical-logic-and-set-theory"
+order = 26
 tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["mathematical-reasoning-and-proof"]
+recommended_after = ["discrete-mathematics-and-combinatorics", "abstract-algebra"]
+estimated_chapters = 11
+status = "proposed"
+description = "Reason about formal languages, deduction, models, soundness, completeness, compactness, axiomatic set theory, ordinals and cardinals, computability, and incompleteness."
+
+[[decks]]
+id = "theory-of-computation-and-complexity"
+order = 27
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["discrete-mathematics-and-combinatorics"]
+recommended_after = ["mathematical-computing-and-experimentation", "mathematical-logic-and-set-theory"]
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze automata, formal languages, Turing machines, decidability, reductions, complexity classes, NP-completeness, and randomized computation."
+
+[[decks]]
+id = "mathematical-modeling-and-asymptotic-methods"
+order = 28
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["differential-equations", "mathematical-computing-and-experimentation"]
+recommended_after = ["partial-differential-equations", "multivariable-and-vector-calculus", "physics/measurement-and-physical-reasoning"]
+estimated_chapters = 10
+status = "proposed"
+description = "Build, nondimensionalize, approximate, and validate models using scaling, dimensional analysis, perturbation and asymptotic expansions, compartment and continuum formulations, and sensitivity checks."
+
+# ---------------------------------------------------------------------------
+# Graduate layer
+# ---------------------------------------------------------------------------
+
+[[decks]]
+id = "measure-theory-and-lebesgue-integration"
+order = 29
+tier = "core"
 level = "graduate"
 prerequisites = ["real-analysis"]
 recommended_after = []
-estimated_chapters = 12
+estimated_chapters = 10
 status = "proposed"
-description = "Reason with sigma-algebras, measures, measurable functions, Lebesgue integration, convergence theorems, product measures, and signed measures."
+description = "Build sigma-algebras, measures, measurable functions, and the Lebesgue integral, and use convergence theorems, L^p spaces, product measures, and differentiation of measures."
 
 [[decks]]
-id = "functional-analysis-and-operator-theory"
-order = 39
-tier = "recommended"
-level = "graduate"
-prerequisites = ["measure-theory-and-integration", "linear-algebra"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Analyze normed, Banach, and Hilbert spaces and bounded, compact, and spectral operators with applications to analysis."
-
-[[decks]]
-id = "measure-theoretic-probability"
-order = 40
-tier = "recommended"
-level = "graduate"
-prerequisites = ["measure-theory-and-integration", "probability"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Develop probability on measure spaces through conditional expectation, modes of convergence, laws of large numbers, and central limit theory."
-
-[[decks]]
-id = "graduate-algebra"
-order = 41
-tier = "recommended"
+id = "advanced-algebra-and-galois-theory"
+order = 30
+tier = "core"
 level = "graduate"
 prerequisites = ["abstract-algebra", "linear-algebra"]
 recommended_after = []
 estimated_chapters = 12
 status = "proposed"
-description = "Develop groups, rings, modules, fields, tensor constructions, canonical forms, and Galois theory at graduate depth."
+description = "Use group actions and Sylow theory, modules over a PID with canonical forms, field extensions, and the Galois correspondence to settle solvability and constructibility questions."
 
 [[decks]]
-id = "commutative-algebra"
-order = 42
-tier = "specialization"
+id = "mathematical-research-practice"
+order = 31
+tier = "core"
 level = "graduate"
-prerequisites = ["graduate-algebra"]
-recommended_after = []
-estimated_chapters = 12
+prerequisites = ["mathematical-reasoning-and-proof"]
+recommended_after = ["real-analysis", "abstract-algebra", "mathematical-computing-and-experimentation"]
+estimated_chapters = 8
 status = "proposed"
-description = "Use ideals, localization, modules, chain conditions, dimension, primary decomposition, and homological tools in commutative rings."
+description = "Search and read the mathematical literature, write and typeset rigorous exposition, referee and present seminars, manage collaboration and attribution, and formulate tractable open questions."
+
+[[decks]]
+id = "functional-analysis"
+order = 32
+tier = "core"
+level = "graduate"
+prerequisites = ["measure-theory-and-lebesgue-integration", "linear-algebra"]
+recommended_after = ["general-topology"]
+estimated_chapters = 11
+status = "proposed"
+description = "Analyze normed, Banach, and Hilbert spaces, bounded and compact operators, the Hahn-Banach, open-mapping, closed-graph, and uniform-boundedness theorems, duality, weak topologies, and spectra."
+
+[[decks]]
+id = "measure-theoretic-probability"
+order = 33
+tier = "core"
+level = "graduate"
+prerequisites = ["measure-theory-and-lebesgue-integration", "probability"]
+recommended_after = []
+estimated_chapters = 11
+status = "proposed"
+description = "Ground probability in measure theory: independence, modes of convergence, laws of large numbers, characteristic functions, central limit theorems, conditional expectation, and martingales."
 
 [[decks]]
 id = "algebraic-topology"
-order = 43
-tier = "specialization"
+order = 34
+tier = "core"
 level = "graduate"
-prerequisites = ["topology", "abstract-algebra"]
+prerequisites = ["general-topology", "abstract-algebra"]
 recommended_after = []
-estimated_chapters = 12
+estimated_chapters = 11
 status = "proposed"
-description = "Compute and interpret fundamental groups, covering spaces, homology, cohomology, products, and exact sequences as topological invariants."
+description = "Compute and interpret fundamental groups, covering spaces, CW structures, simplicial and singular homology, exact sequences, cohomology, and duality."
 
 [[decks]]
-id = "differential-topology-and-global-analysis"
-order = 44
-tier = "specialization"
+id = "harmonic-and-fourier-analysis"
+order = 35
+tier = "recommended"
 level = "graduate"
-prerequisites = ["differential-geometry-and-manifolds", "topology"]
-recommended_after = []
+prerequisites = ["measure-theory-and-lebesgue-integration"]
+recommended_after = ["functional-analysis", "complex-analysis"]
 estimated_chapters = 10
 status = "proposed"
-description = "Use transversality, degree, intersection, Morse ideas, vector bundles, and elliptic viewpoints to derive global conclusions."
+description = "Analyze Fourier series and transforms on the circle and Euclidean space, convergence and summability, distributions, maximal functions, and singular integral operators."
 
 [[decks]]
 id = "category-theory-and-homological-algebra"
-order = 45
+order = 36
+tier = "recommended"
+level = "graduate"
+prerequisites = ["advanced-algebra-and-galois-theory"]
+recommended_after = ["algebraic-topology"]
+estimated_chapters = 9
+status = "proposed"
+description = "Use categories, functors, natural transformations, limits, adjunctions, abelian categories, chain complexes, derived functors, and first spectral sequences as working tools."
+
+[[decks]]
+id = "commutative-algebra"
+order = 37
+tier = "recommended"
+level = "graduate"
+prerequisites = ["advanced-algebra-and-galois-theory"]
+recommended_after = ["number-theory"]
+estimated_chapters = 10
+status = "proposed"
+description = "Work with Noetherian rings, modules, localization, primary decomposition, integral extensions, Hilbert basis and Nullstellensatz results, and dimension theory."
+
+[[decks]]
+id = "representation-theory-and-lie-theory"
+order = 38
 tier = "specialization"
 level = "graduate"
-prerequisites = ["graduate-algebra"]
-recommended_after = ["algebraic-topology"]
-estimated_chapters = 12
+prerequisites = ["advanced-algebra-and-galois-theory"]
+recommended_after = ["general-topology", "differential-geometry-and-manifolds"]
+estimated_chapters = 11
 status = "proposed"
-description = "Reason with categories, universal properties, adjunctions, limits, abelian categories, complexes, derived functors, and spectral sequences."
+description = "Decompose representations of finite groups with characters and orthogonality, induce and restrict, and extend to Lie algebras, root systems, weights, and their classification."
+
+[[decks]]
+id = "algebraic-and-analytic-number-theory"
+order = 39
+tier = "specialization"
+level = "graduate"
+prerequisites = ["advanced-algebra-and-galois-theory", "complex-analysis", "number-theory"]
+recommended_after = []
+estimated_chapters = 11
+status = "proposed"
+description = "Study number fields, rings of integers, ideal factorization, class groups and units, and use Dirichlet series, zeta and L-functions to prove distribution results about primes."
+
+[[decks]]
+id = "modern-pde-and-sobolev-theory"
+order = 40
+tier = "specialization"
+level = "graduate"
+prerequisites = ["functional-analysis", "partial-differential-equations"]
+recommended_after = ["harmonic-and-fourier-analysis"]
+estimated_chapters = 11
+status = "proposed"
+description = "Use distributions, Sobolev spaces, weak formulations, variational and energy methods, elliptic regularity, and semigroup techniques to establish existence, uniqueness, and regularity."
 
 [[decks]]
 id = "algebraic-geometry"
-order = 46
+order = 41
 tier = "specialization"
 level = "graduate"
 prerequisites = ["commutative-algebra"]
-recommended_after = ["topology"]
-estimated_chapters = 12
+recommended_after = ["complex-analysis", "category-theory-and-homological-algebra", "algebraic-topology"]
+estimated_chapters = 11
 status = "proposed"
-description = "Study affine and projective varieties and schemes through coordinate rings, morphisms, sheaves, dimension, smoothness, and cohomological ideas."
+description = "Relate ideals to affine and projective varieties, work with morphisms, sheaves, and first schemes, and analyze curves through divisors and Riemann-Roch."
 
 [[decks]]
-id = "representation-theory"
+id = "riemannian-geometry-and-geometric-analysis"
+order = 42
+tier = "specialization"
+level = "graduate"
+prerequisites = ["differential-geometry-and-manifolds", "real-analysis"]
+recommended_after = ["general-topology", "functional-analysis"]
+estimated_chapters = 11
+status = "proposed"
+description = "Use connections, curvature tensors, geodesics, Jacobi fields, and comparison theorems, and connect curvature to topology through Laplacians, heat flow, and minimal surfaces."
+
+[[decks]]
+id = "dynamical-systems-and-ergodic-theory"
+order = 43
+tier = "specialization"
+level = "graduate"
+prerequisites = ["measure-theory-and-lebesgue-integration", "differential-equations"]
+recommended_after = ["mathematical-computing-and-experimentation", "functional-analysis"]
+estimated_chapters = 11
+status = "proposed"
+description = "Analyze flows and maps through invariant sets, stability, bifurcation, hyperbolicity, symbolic dynamics, invariant measures, ergodic theorems, mixing, and entropy."
+
+[[decks]]
+id = "stochastic-analysis-and-sdes"
+order = 44
+tier = "specialization"
+level = "graduate"
+prerequisites = ["measure-theoretic-probability"]
+recommended_after = ["stochastic-processes", "partial-differential-equations"]
+estimated_chapters = 10
+status = "proposed"
+description = "Construct the Ito integral, apply Ito's formula, solve and approximate stochastic differential equations, and connect diffusions to parabolic equations and changes of measure."
+
+[[decks]]
+id = "advanced-combinatorics-and-graph-theory"
+order = 45
+tier = "specialization"
+level = "graduate"
+prerequisites = ["discrete-mathematics-and-combinatorics", "probability", "linear-algebra"]
+recommended_after = ["theory-of-computation-and-complexity", "abstract-algebra"]
+estimated_chapters = 10
+status = "proposed"
+description = "Prove extremal, Ramsey, and probabilistic-method results, analyze random graphs and thresholds, and use spectral and algebraic methods on combinatorial structures."
+
+[[decks]]
+id = "numerical-methods-for-differential-equations"
+order = 46
+tier = "specialization"
+level = "graduate"
+prerequisites = ["numerical-analysis", "partial-differential-equations"]
+recommended_after = ["functional-analysis", "optimization-and-operations-research"]
+estimated_chapters = 10
+status = "proposed"
+description = "Design and analyze finite difference, finite element, and spectral discretizations with consistency, stability, convergence, conservation, and modern solver strategies."
+
+[[decks]]
+id = "mathematics-of-machine-learning-and-data-science"
 order = 47
 tier = "specialization"
 level = "graduate"
-prerequisites = ["graduate-algebra"]
-recommended_after = []
-estimated_chapters = 10
+prerequisites = ["statistical-inference-and-data-analysis", "optimization-and-operations-research", "measure-theoretic-probability"]
+recommended_after = ["numerical-analysis", "functional-analysis"]
+estimated_chapters = 11
 status = "proposed"
-description = "Analyze symmetries through group and algebra representations, characters, modules, decomposition, induction, and structural examples."
+description = "Establish learning guarantees with concentration, complexity measures, and empirical risk minimization, and analyze kernels, high-dimensional estimation, and optimization for modern learning models."
+
+# ---------------------------------------------------------------------------
+# Research specialization layer
+# ---------------------------------------------------------------------------
 
 [[decks]]
-id = "lie-groups-and-lie-algebras"
+id = "arithmetic-geometry-and-modern-number-theory"
 order = 48
 tier = "specialization"
-level = "graduate"
-prerequisites = ["differential-geometry-and-manifolds", "graduate-algebra"]
-recommended_after = ["representation-theory"]
-estimated_chapters = 12
+level = "research-specialization"
+prerequisites = ["algebraic-and-analytic-number-theory", "algebraic-geometry", "mathematical-research-practice"]
+recommended_after = ["representation-theory-and-lie-theory"]
+estimated_chapters = 10
 status = "proposed"
-description = "Connect continuous symmetry, manifolds, Lie algebras, exponential maps, roots, weights, and representations."
+description = "Read current work on elliptic curves, modular forms, Galois representations, rational points, L-functions, computational databases, and arithmetic statistics."
 
 [[decks]]
-id = "analytic-number-theory"
+id = "low-dimensional-topology-and-geometric-topology"
 order = 49
 tier = "specialization"
-level = "graduate"
-prerequisites = ["number-theory", "complex-analysis"]
-recommended_after = []
-estimated_chapters = 10
-status = "proposed"
-description = "Study primes and arithmetic functions using Dirichlet series, complex methods, sieves, exponential sums, and asymptotic reasoning."
-
-[[decks]]
-id = "algebraic-number-theory"
-order = 50
-tier = "specialization"
-level = "graduate"
-prerequisites = ["number-theory", "graduate-algebra"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Analyze number fields, rings of integers, ideals, ramification, valuations, local fields, and class and unit structures."
-
-[[decks]]
-id = "probabilistic-and-extremal-combinatorics"
-order = 51
-tier = "specialization"
-level = "graduate"
-prerequisites = ["combinatorics-and-graph-theory", "probability"]
-recommended_after = []
-estimated_chapters = 10
-status = "proposed"
-description = "Use probabilistic, extremal, algebraic, and asymptotic methods to prove existence and structure in large discrete systems."
-
-[[decks]]
-id = "set-theory-and-model-theory"
-order = 52
-tier = "specialization"
-level = "graduate"
-prerequisites = ["mathematical-logic-and-computability"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Study axiomatic set theory, ordinals, cardinals, choice, models, compactness, types, and independence phenomena."
-
-[[decks]]
-id = "harmonic-analysis"
-order = 53
-tier = "specialization"
-level = "graduate"
-prerequisites = ["functional-analysis-and-operator-theory"]
-recommended_after = ["complex-analysis"]
-estimated_chapters = 12
-status = "proposed"
-description = "Analyze functions and operators through Fourier series and transforms, convolution, maximal estimates, distributions, and function spaces."
-
-[[decks]]
-id = "graduate-pde-and-distributions"
-order = 54
-tier = "specialization"
-level = "graduate"
-prerequisites = ["functional-analysis-and-operator-theory", "partial-differential-equations-and-fourier-methods"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Treat weak solutions, distributions, Sobolev spaces, elliptic, parabolic, and hyperbolic equations, regularity, and variational methods."
-
-[[decks]]
-id = "stochastic-analysis"
-order = 55
-tier = "specialization"
-level = "graduate"
-prerequisites = ["measure-theoretic-probability", "stochastic-processes"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Work with martingales, Brownian motion, stochastic integration, stochastic differential equations, change of measure, and diffusion generators."
-
-[[decks]]
-id = "statistical-learning-and-high-dimensional-inference"
-order = 56
-tier = "specialization"
-level = "graduate"
-prerequisites = ["regression-and-multivariate-statistics", "convex-and-continuous-optimization"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Analyze prediction, regularization, generalization, resampling, sparsity, kernels, ensembles, and high-dimensional uncertainty."
-
-[[decks]]
-id = "systems-and-control-theory"
-order = 57
-tier = "specialization"
-level = "graduate"
-prerequisites = ["differential-equations"]
-recommended_after = ["convex-and-continuous-optimization", "combinatorial-optimization-and-networks"]
-estimated_chapters = 12
-status = "proposed"
-description = "Analyze state-space systems, stability, controllability, observability, feedback, estimation, optimal control, and robustness."
-
-[[decks]]
-id = "numerical-pde-and-scientific-computing"
-order = 58
-tier = "specialization"
-level = "graduate"
-prerequisites = ["numerical-analysis", "partial-differential-equations-and-fourier-methods"]
-recommended_after = []
-estimated_chapters = 12
-status = "proposed"
-description = "Discretize and solve differential equations with finite difference, finite element, spectral, iterative, adaptive, and scalable methods."
-
-[[decks]]
-id = "variational-methods-and-mathematical-physics"
-order = 59
-tier = "specialization"
-level = "graduate"
-prerequisites = ["functional-analysis-and-operator-theory", "partial-differential-equations-and-fourier-methods"]
-recommended_after = ["differential-geometry-and-manifolds"]
-estimated_chapters = 12
-status = "proposed"
-description = "Use variational principles, symmetries, conservation laws, spectral methods, and field equations across continuum and quantum models."
-
-[[decks]]
-id = "arithmetic-geometry"
-order = 60
-tier = "specialization"
 level = "research-specialization"
-prerequisites = ["algebraic-geometry", "algebraic-number-theory"]
-recommended_after = []
+prerequisites = ["algebraic-topology", "riemannian-geometry-and-geometric-analysis", "mathematical-research-practice"]
+recommended_after = ["representation-theory-and-lie-theory"]
 estimated_chapters = 10
 status = "proposed"
-description = "Enter literature on rational and integral points, elliptic curves, heights, reduction, moduli, and arithmetic invariants."
-
-[[decks]]
-id = "geometric-analysis"
-order = 61
-tier = "specialization"
-level = "research-specialization"
-prerequisites = ["differential-topology-and-global-analysis", "graduate-pde-and-distributions"]
-recommended_after = []
-estimated_chapters = 10
-status = "proposed"
-description = "Enter literature connecting curvature, geometric variational problems, elliptic and parabolic PDE, flows, compactness, and singularities."
+description = "Engage literature on knots and links, surfaces and mapping class groups, three- and four-manifolds, hyperbolic structures, geometrization, and quantum and gauge-theoretic invariants."
 
 [[decks]]
 id = "topological-and-geometric-data-analysis"
-order = 62
+order = 50
 tier = "specialization"
 level = "research-specialization"
-prerequisites = ["algebraic-topology", "regression-and-multivariate-statistics"]
-recommended_after = []
-estimated_chapters = 10
+prerequisites = ["algebraic-topology", "statistical-inference-and-data-analysis", "mathematical-computing-and-experimentation", "mathematical-research-practice"]
+recommended_after = ["mathematics-of-machine-learning-and-data-science", "category-theory-and-homological-algebra"]
+estimated_chapters = 9
 status = "proposed"
-description = "Enter literature on persistent homology, shape summaries, manifold methods, stability, algorithms, and statistical validation for data."
+description = "Compute and interpret persistent homology and related invariants, justify stability and statistical guarantees, and critique applied topological and geometric inference in the literature."
 
 [[decks]]
-id = "inverse-problems-and-uncertainty-quantification"
-order = 63
+id = "formalization-and-proof-assistants"
+order = 51
 tier = "specialization"
 level = "research-specialization"
-prerequisites = ["graduate-pde-and-distributions", "stochastic-analysis", "numerical-pde-and-scientific-computing"]
-recommended_after = []
-estimated_chapters = 12
+prerequisites = ["mathematical-logic-and-set-theory", "mathematical-computing-and-experimentation", "mathematical-research-practice"]
+recommended_after = ["abstract-algebra", "real-analysis", "category-theory-and-homological-algebra"]
+estimated_chapters = 9
 status = "proposed"
-description = "Enter literature on identifiability, regularization, Bayesian inversion, sensitivity, uncertainty propagation, and computational inference."
+description = "Formalize definitions, theorems, and proofs in a dependent-type proof assistant, navigate a mathematical library, and assess what machine-checked mathematics does and does not certify."
 
 [[decks]]
-id = "networks-and-complex-systems"
-order = 64
+id = "random-matrices-and-high-dimensional-probability"
+order = 52
 tier = "specialization"
 level = "research-specialization"
-prerequisites = ["probabilistic-and-extremal-combinatorics", "nonlinear-dynamics-and-chaos", "stochastic-processes"]
-recommended_after = ["combinatorial-optimization-and-networks"]
+prerequisites = ["measure-theoretic-probability", "mathematical-research-practice"]
+recommended_after = ["functional-analysis", "harmonic-and-fourier-analysis", "mathematics-of-machine-learning-and-data-science"]
 estimated_chapters = 10
 status = "proposed"
-description = "Enter literature on random, temporal, and multilayer networks, spreading, synchronization, emergence, inference, and intervention."
+description = "Work with concentration of measure, empirical processes, spectral limits, universality, and free probability, and read current high-dimensional probability literature."
 
-[[decks]]
-id = "quantum-information-mathematics"
-order = 65
-tier = "specialization"
-level = "research-specialization"
-prerequisites = ["information-theory", "functional-analysis-and-operator-theory"]
-recommended_after = ["representation-theory"]
-estimated_chapters = 10
-status = "proposed"
-description = "Enter literature on quantum states, channels, entanglement, entropy, coding, algorithms, and operator-theoretic limits."
+# ---------------------------------------------------------------------------
+# Field coverage
+# ---------------------------------------------------------------------------
 
 [[coverage]]
-domain = "quantitative-literacy-and-arithmetic"
+domain = "number-sense-and-quantitative-literacy"
 disposition = "included"
-decks = ["quantitative-reasoning-and-arithmetic"]
-rationale = "The mandatory cold-start deck establishes number sense, estimation, proportional reasoning, and usable arithmetic."
+decks = ["number-sense-and-arithmetic"]
+rationale = "First contact requires operational number reasoning before any symbolic or analytic work; nothing else in the graph is learnable without it."
 
 [[coverage]]
-domain = "elementary-algebra-and-functions"
+domain = "school-algebra-and-elementary-functions"
 disposition = "included"
-decks = ["elementary-algebra-and-functions"]
-rationale = "A dedicated foundation prevents later decks from silently assuming symbolic and functional fluency."
+decks = ["elementary-algebra-and-functions", "precalculus-and-trigonometry"]
+rationale = "Symbolic fluency and the function concept are the shared entry point for calculus, linear algebra, and every modeling route, and are the capability neighboring subjects import."
 
 [[coverage]]
-domain = "geometry-measurement-and-spatial-reasoning"
+domain = "euclidean-geometry-trigonometry-and-measurement"
 disposition = "included"
-decks = ["geometry-and-measurement", "modern-geometry"]
-rationale = "Foundational spatial reasoning is separated from proof-based study of geometric structures and invariants."
+decks = ["geometry-and-measurement", "precalculus-and-trigonometry"]
+rationale = "Metric and transformational geometry supply the spatial vocabulary and first deductive arguments used throughout analysis, geometry, and applications."
 
 [[coverage]]
-domain = "precalculus-and-trigonometry"
+domain = "mathematical-logic-and-foundations"
 disposition = "included"
-decks = ["precalculus-functions-and-trigonometry"]
-rationale = "A coherent functions-and-trigonometry bridge supports calculus without burdening unrelated foundational decks."
+decks = ["mathematical-reasoning-and-proof", "mathematical-logic-and-set-theory"]
+rationale = "Proof competence gates every advanced deck; the formal study of languages, models, and computability is then a distinct upper-division capability."
 
 [[coverage]]
-domain = "mathematical-computing-and-experimentation"
+domain = "single-variable-calculus-and-real-functions"
 disposition = "included"
-decks = ["mathematical-computing-and-experimentation", "numerical-analysis", "numerical-pde-and-scientific-computing"]
-rationale = "Computation begins as a general mathematical practice and later develops into numerical analysis and scalable scientific computing."
+decks = ["single-variable-differential-calculus", "single-variable-integral-calculus"]
+rationale = "Split into two decks because differentiation and integration have different capstone performances, and neighboring subjects depend on the integral deck specifically."
 
 [[coverage]]
-domain = "logic-proof-and-foundations"
+domain = "multivariable-and-vector-calculus"
 disposition = "included"
-decks = ["logic-sets-and-proof", "mathematical-logic-and-computability", "set-theory-and-model-theory"]
-rationale = "The route separates proof literacy from formal logic and from graduate foundational specialization."
+decks = ["multivariable-and-vector-calculus"]
+rationale = "Fields, flux, and the classical integral theorems form one coherent course and are the prerequisite that geometry, complex analysis, and continuum applications actually need."
 
 [[coverage]]
-domain = "calculus-and-continuous-change"
+domain = "linear-and-multilinear-algebra"
 disposition = "included"
-decks = ["single-variable-differential-calculus", "single-variable-integral-calculus", "multivariable-and-vector-calculus"]
-rationale = "Three course-scale decks develop local change, accumulation and series, then several-variable and vector structure."
-
-[[coverage]]
-domain = "discrete-mathematics-combinatorics-and-graphs"
-disposition = "included"
-decks = ["discrete-mathematics", "combinatorics-and-graph-theory", "probabilistic-and-extremal-combinatorics", "networks-and-complex-systems"]
-rationale = "The sequence moves from shared discrete tools to structural theory and representative advanced probabilistic and network routes."
-
-[[coverage]]
-domain = "linear-multilinear-and-representation-structures"
-disposition = "included"
-decks = ["linear-algebra", "graduate-algebra", "representation-theory"]
-rationale = "Linear reasoning is established early, deepened algebraically, and applied to symmetry without making representation theory universal."
-
-[[coverage]]
-domain = "probability-and-stochastic-processes"
-disposition = "included"
-decks = ["probability", "stochastic-processes", "measure-theoretic-probability", "stochastic-analysis"]
-rationale = "Finite and calculus-based probability precedes processes, measure-theoretic foundations, and stochastic calculus."
-
-[[coverage]]
-domain = "statistics-data-analysis-and-learning"
-disposition = "included"
-decks = ["statistical-inference-and-data-analysis", "regression-and-multivariate-statistics", "statistical-learning-and-high-dimensional-inference", "topological-and-geometric-data-analysis"]
-rationale = "Statistical investigation and ethics precede model families, advanced learning theory, and a representative geometric data branch."
-
-[[coverage]]
-domain = "ordinary-differential-equations-dynamics-and-control"
-disposition = "included"
-decks = ["differential-equations", "nonlinear-dynamics-and-chaos", "systems-and-control-theory", "networks-and-complex-systems"]
-rationale = "A shared ODE course supports distinct qualitative, control, and complex-systems branches."
-
-[[coverage]]
-domain = "mathematical-modeling-and-interdisciplinary-methods"
-disposition = "included"
-decks = ["mathematical-modeling", "mathematical-biology-and-network-models", "financial-mathematics-and-risk", "inverse-problems-and-uncertainty-quantification", "networks-and-complex-systems"]
-rationale = "Model formulation and validation form a core practice, with representative biological, financial, inverse, and network applications."
+decks = ["linear-algebra"]
+rationale = "Named by every surveyed framework as invariant core, and required by algebra, differential equations, numerics, optimization, and data-facing routes."
 
 [[coverage]]
 domain = "real-analysis-measure-and-integration"
 disposition = "included"
-decks = ["real-analysis", "measure-theory-and-integration"]
-rationale = "Proof-based real analysis supplies the direct foundation for modern measure and integration theory."
+decks = ["real-analysis", "measure-theory-and-lebesgue-integration"]
+rationale = "Rigorous single-variable analysis and abstract measure theory are separate courses with different prerequisites; measure theory is the universal graduate gate."
 
 [[coverage]]
-domain = "groups-rings-fields-and-modules"
+domain = "complex-analysis"
 disposition = "included"
-decks = ["abstract-algebra", "graduate-algebra", "commutative-algebra", "category-theory-and-homological-algebra"]
-rationale = "The algebra spine progresses from core structures to modules, commutative methods, and categorical or homological organization."
-
-[[coverage]]
-domain = "number-theory-and-cryptography"
-disposition = "included"
-decks = ["number-theory", "coding-theory-and-cryptography", "analytic-number-theory", "algebraic-number-theory", "arithmetic-geometry"]
-rationale = "Elementary number theory branches honestly into computational, analytic, algebraic, and arithmetic-geometric directions."
-
-[[coverage]]
-domain = "complex-and-harmonic-analysis"
-disposition = "included"
-decks = ["complex-analysis", "harmonic-analysis"]
-rationale = "A classical complex course and a graduate harmonic course provide distinct coherent analysis capabilities."
-
-[[coverage]]
-domain = "general-and-algebraic-topology"
-disposition = "included"
-decks = ["topology", "algebraic-topology", "differential-topology-and-global-analysis", "topological-and-geometric-data-analysis"]
-rationale = "Point-set foundations support algebraic and differential invariants and one contemporary computational application."
-
-[[coverage]]
-domain = "geometry-manifolds-and-geometric-analysis"
-disposition = "included"
-decks = ["modern-geometry", "differential-geometry-and-manifolds", "differential-topology-and-global-analysis", "geometric-analysis"]
-rationale = "Synthetic and transformation viewpoints precede smooth manifolds, global topology, and analysis on geometric structures."
-
-[[coverage]]
-domain = "history-and-philosophy-of-mathematics"
-disposition = "included"
-decks = ["history-and-philosophy-of-mathematics"]
-rationale = "A dedicated course keeps historical and philosophical reasoning visible without scattering decontextualized anecdotes across technical decks."
-
-[[coverage]]
-domain = "partial-differential-equations"
-disposition = "included"
-decks = ["partial-differential-equations-and-fourier-methods", "graduate-pde-and-distributions", "numerical-pde-and-scientific-computing", "geometric-analysis", "inverse-problems-and-uncertainty-quantification"]
-rationale = "Classical methods lead to weak theory, computation, geometric equations, and inverse problems through separate branches."
-
-[[coverage]]
-domain = "numerical-analysis-and-scientific-computing"
-disposition = "included"
-decks = ["numerical-analysis", "numerical-pde-and-scientific-computing", "inverse-problems-and-uncertainty-quantification"]
-rationale = "Core error and stability reasoning supports specialized discretization and computation under uncertainty."
-
-[[coverage]]
-domain = "continuous-optimization-and-variational-methods"
-disposition = "included"
-decks = ["convex-and-continuous-optimization", "statistical-learning-and-high-dimensional-inference", "systems-and-control-theory", "variational-methods-and-mathematical-physics"]
-rationale = "Optimization fundamentals support learning, control, and variational physics without forcing those branches on one another."
-
-[[coverage]]
-domain = "operations-research-and-discrete-optimization"
-disposition = "included"
-decks = ["combinatorial-optimization-and-networks", "systems-and-control-theory", "networks-and-complex-systems"]
-rationale = "Network and discrete optimization form a coherent course and feed selected systems and network applications."
-
-[[coverage]]
-domain = "information-coding-and-quantum-information"
-disposition = "included"
-decks = ["information-theory", "coding-theory-and-cryptography", "quantum-information-mathematics"]
-rationale = "Information measures, algebraic coding, and quantum information remain separate because their prerequisite structures differ."
-
-[[coverage]]
-domain = "game-theory-economics-and-social-choice"
-disposition = "included"
-decks = ["game-theory-and-social-choice"]
-rationale = "A bounded course represents strategic and collective-decision mathematics without assuming a full economics curriculum."
-
-[[coverage]]
-domain = "mathematical-biology"
-disposition = "included"
-decks = ["mathematical-biology-and-network-models"]
-rationale = "A representative interdisciplinary course integrates dynamical, stochastic, spatial, and network models with explicit biological assumptions."
-
-[[coverage]]
-domain = "financial-actuarial-and-risk-mathematics"
-disposition = "included"
-decks = ["financial-mathematics-and-risk"]
-rationale = "A coherent stochastic risk course provides a branch point for finance, insurance, and actuarial extensions."
+decks = ["complex-analysis"]
+rationale = "A recurring qualifying-exam cluster and a working tool for number theory, PDE, and applied transforms."
 
 [[coverage]]
 domain = "functional-analysis-and-operator-theory"
 disposition = "included"
-decks = ["functional-analysis-and-operator-theory", "harmonic-analysis", "graduate-pde-and-distributions", "variational-methods-and-mathematical-physics", "quantum-information-mathematics"]
-rationale = "The foundational graduate course supports distinct analytic, PDE, physics, and information-theoretic uses."
+decks = ["functional-analysis"]
+rationale = "Infinite-dimensional linear analysis is the shared graduate language of modern PDE, probability, and numerical approximation."
 
 [[coverage]]
-domain = "commutative-algebra-and-algebraic-geometry"
+domain = "harmonic-analysis-and-integral-transforms"
 disposition = "included"
-decks = ["commutative-algebra", "algebraic-geometry", "arithmetic-geometry"]
-rationale = "Commutative algebra is the minimal hard bridge to algebraic geometry and its arithmetic research route."
+decks = ["harmonic-and-fourier-analysis"]
+rationale = "Fourier and singular-integral methods are a distinct analytic area rather than an appendix to PDE, and support signal, dispersive, and number-theoretic work."
 
 [[coverage]]
-domain = "category-homological-and-algebraic-topological-methods"
+domain = "ordinary-differential-equations"
 disposition = "included"
-decks = ["algebraic-topology", "category-theory-and-homological-algebra", "topological-and-geometric-data-analysis"]
-rationale = "Topological invariants and categorical machinery are taught in distinct courses before a selected data application."
+decks = ["differential-equations"]
+rationale = "The central deterministic modeling course, and the specific capability that neighboring physical-science decks import."
 
 [[coverage]]
-domain = "lie-theory-representations-and-symmetry"
+domain = "partial-differential-equations"
 disposition = "included"
-decks = ["representation-theory", "lie-groups-and-lie-algebras", "variational-methods-and-mathematical-physics"]
-rationale = "Algebraic representation theory and smooth Lie theory are separated, then reused in mathematical physics."
+decks = ["partial-differential-equations", "modern-pde-and-sobolev-theory"]
+rationale = "Classical solution methods and modern weak-solution theory require different maturity, so the classical route is not gated on functional analysis."
 
 [[coverage]]
-domain = "analytic-and-algebraic-number-theory"
+domain = "dynamical-systems-and-ergodic-theory"
 disposition = "included"
-decks = ["analytic-number-theory", "algebraic-number-theory", "arithmetic-geometry"]
-rationale = "The roadmap exposes both principal graduate approaches and their arithmetic-geometric synthesis."
+decks = ["dynamical-systems-and-ergodic-theory"]
+rationale = "Qualitative long-run behavior of flows, maps, and invariant measures is a standing research area in its own right."
 
 [[coverage]]
-domain = "special-functions-transforms-and-approximation"
+domain = "groups-rings-fields-and-galois-theory"
 disposition = "included"
-decks = ["complex-analysis", "partial-differential-equations-and-fourier-methods", "numerical-analysis", "harmonic-analysis"]
-rationale = "These methods recur where they are operationally coherent instead of being isolated as a survey deck."
+decks = ["abstract-algebra", "advanced-algebra-and-galois-theory", "commutative-algebra"]
+rationale = "Three ordered capabilities: first structures, then modules and the Galois correspondence, then the ring theory that algebraic geometry and number theory consume."
 
 [[coverage]]
-domain = "mechanics-continuum-and-mathematical-physics"
+domain = "category-theory-and-homological-algebra"
 disposition = "included"
-decks = ["partial-differential-equations-and-fourier-methods", "variational-methods-and-mathematical-physics", "geometric-analysis", "quantum-information-mathematics"]
-rationale = "The mathematics side is represented through PDE, variational, geometric, spectral, and quantum-information routes."
+decks = ["category-theory-and-homological-algebra"]
+rationale = "Now a working language rather than a coda; recent growth in higher-categorical and homotopical classification headings supports a standalone deck."
 
 [[coverage]]
-domain = "systems-information-and-communications"
+domain = "representation-theory-and-lie-theory"
 disposition = "included"
-decks = ["information-theory", "systems-and-control-theory", "quantum-information-mathematics"]
-rationale = "Information and systems mathematics receive independent foundations with a visible quantum extension."
+decks = ["representation-theory-and-lie-theory"]
+rationale = "A named research section and a recurring departmental group, unified by decomposing actions on vector spaces from finite groups through Lie algebras."
+
+[[coverage]]
+domain = "number-theory"
+disposition = "included"
+decks = ["number-theory", "algebraic-and-analytic-number-theory", "arithmetic-geometry-and-modern-number-theory"]
+rationale = "An elementary proof-rich entry, a graduate algebraic and analytic core, and a literature-facing branch reflect how the area is actually staged."
+
+[[coverage]]
+domain = "algebraic-geometry"
+disposition = "included"
+decks = ["algebraic-geometry", "arithmetic-geometry-and-modern-number-theory"]
+rationale = "A top-level research section whose graduate entry is well defined once commutative algebra is in place."
+
+[[coverage]]
+domain = "general-topology"
+disposition = "included"
+decks = ["general-topology"]
+rationale = "Point-set topology is the shared language of convergence and continuity for analysis, geometry, and algebraic topology."
+
+[[coverage]]
+domain = "algebraic-and-geometric-topology"
+disposition = "included"
+decks = ["algebraic-topology", "low-dimensional-topology-and-geometric-topology"]
+rationale = "Algebraic invariants form the graduate core; low-dimensional and geometric topology is the representative frontier branch."
+
+[[coverage]]
+domain = "differential-geometry-and-global-analysis"
+disposition = "included"
+decks = ["differential-geometry-and-manifolds", "riemannian-geometry-and-geometric-analysis"]
+rationale = "Manifolds, forms, and first metrics are separable from comparison geometry and analytic methods on manifolds, which need real-analysis maturity."
+
+[[coverage]]
+domain = "convex-and-discrete-geometry"
+disposition = "included"
+decks = ["optimization-and-operations-research", "discrete-mathematics-and-combinatorics"]
+rationale = "Convexity, polyhedra, and separating hyperplanes are taught where they do work; deeper packing, lattice, and rigidity theory is a future extension."
+
+[[coverage]]
+domain = "combinatorics-and-graph-theory"
+disposition = "included"
+decks = ["discrete-mathematics-and-combinatorics", "advanced-combinatorics-and-graph-theory"]
+rationale = "A proof-based undergraduate entry and a graduate extremal, probabilistic, and spectral branch match how the area is taught and researched."
+
+[[coverage]]
+domain = "probability-and-stochastic-processes"
+disposition = "included"
+decks = ["probability", "stochastic-processes", "measure-theoretic-probability", "stochastic-analysis-and-sdes", "random-matrices-and-high-dimensional-probability"]
+rationale = "Probability spans four maturity levels with genuinely different tools, so it is staged rather than compressed into one oversized deck."
+
+[[coverage]]
+domain = "statistics-machine-learning-and-data-analysis"
+disposition = "included"
+decks = ["statistical-inference-and-data-analysis", "mathematics-of-machine-learning-and-data-science", "topological-and-geometric-data-analysis"]
+rationale = "Statistical inference is framework-mandated undergraduate core; the mathematics of learning and applied topological inference are current, separately staffed research directions."
+
+[[coverage]]
+domain = "numerical-analysis-and-scientific-computing"
+disposition = "included"
+decks = ["mathematical-computing-and-experimentation", "numerical-analysis", "numerical-methods-for-differential-equations"]
+rationale = "Computing literacy, error and stability analysis, and discretization of differential equations are three distinct capabilities with different prerequisites."
+
+[[coverage]]
+domain = "approximation-and-expansions"
+disposition = "included"
+decks = ["single-variable-integral-calculus", "numerical-analysis"]
+rationale = "Taylor and series expansions are established in calculus and extended into interpolation and best-approximation error analysis in numerics."
+
+[[coverage]]
+domain = "sequences-series-and-difference-equations"
+disposition = "included"
+decks = ["single-variable-integral-calculus", "discrete-mathematics-and-combinatorics"]
+rationale = "Convergence of series belongs with integral calculus; recurrences and generating functions belong with discrete structures."
+
+[[coverage]]
+domain = "optimization-and-operations-research"
+disposition = "included"
+decks = ["optimization-and-operations-research"]
+rationale = "Linear, convex, and combinatorial optimization share one conceptual spine of feasibility, optimality conditions, and duality."
+
+[[coverage]]
+domain = "information-and-communication-theory"
+disposition = "included"
+decks = ["information-theory"]
+rationale = "Entropy and coding limits are a coherent probabilistic capability that neighboring subjects import directly."
+
+[[coverage]]
+domain = "mathematics-of-computation-and-computer-science"
+disposition = "included"
+decks = ["theory-of-computation-and-complexity", "formalization-and-proof-assistants"]
+rationale = "Computability and complexity form the classical mathematical core of the interface; machine-checked mathematics is the current growth edge recognized by a new classification heading."
+
+[[coverage]]
+domain = "mathematical-modeling-and-asymptotic-analysis"
+disposition = "included"
+decks = ["mathematical-modeling-and-asymptotic-methods"]
+rationale = "Framework guidance requires deliberate modeling practice; scaling, nondimensionalization, and perturbation methods give it a real conceptual spine instead of a label."
+
+[[coverage]]
+domain = "mathematical-research-practice-and-scholarship"
+disposition = "included"
+decks = ["mathematical-research-practice"]
+rationale = "Literature navigation, exposition, refereeing, and problem formulation are taught skills; without them a research-specialization deck would be a level jump."
+
+[[coverage]]
+domain = "control-theory-and-systems"
+disposition = "deferred"
+decks = []
+rationale = "Optimal control shares the optimization deck's optimality-condition spine, but feedback, observability, and stabilization deserve their own deck in a later extension."
 
 [[coverage]]
 domain = "several-complex-variables-and-potential-theory"
 disposition = "deferred"
 decks = []
-rationale = "Visible future analysis branches after complex, harmonic, functional, and PDE foundations; omitted from the initial representative route."
+rationale = "A genuine domain that presupposes one-variable complex analysis plus manifold or PDE maturity; a visible extension point rather than an initial route."
 
 [[coverage]]
-domain = "k-theory-higher-categories-and-derived-geometry"
+domain = "k-theory"
 disposition = "deferred"
 decks = []
-rationale = "Visible future extensions after algebraic topology, homological algebra, and algebraic geometry rather than premature survey material."
+rationale = "Requires algebraic topology and homological algebra to already be durable; scheduled after those decks exist."
 
 [[coverage]]
-domain = "order-lattices-and-universal-algebra"
+domain = "order-lattices-and-general-algebraic-systems"
 disposition = "deferred"
 decks = []
-rationale = "A visible algebra extension after proof and abstract algebra; a dedicated course is preferable to a few disconnected survey chapters."
+rationale = "Partial orders appear inside discrete mathematics, but lattice theory and universal algebra as fields are postponed."
 
 [[coverage]]
-domain = "specialized-fluids-solids-relativity-and-materials"
+domain = "special-functions"
 disposition = "deferred"
 decks = []
-rationale = "The mathematical foundations are present, but each domain requires science-specific assumptions and a separate course-scale source base."
+rationale = "Orthogonal polynomials and classical special functions arise inside differential equations and harmonic analysis; a dedicated treatment is a later extension."
 
 [[coverage]]
-domain = "earth-space-climate-and-other-domain-science-models"
+domain = "non-euclidean-and-projective-geometry"
 disposition = "deferred"
 decks = []
-rationale = "Modeling, dynamics, PDE, probability, and numerics provide extension points; discipline-specific verification is postponed."
+rationale = "Axiomatic, projective, and synthetic hyperbolic geometry form a distinct route; hyperbolic structures currently appear only through the geometric-topology branch."
 
 [[coverage]]
-domain = "mathematics-education-research-and-teacher-preparation"
+domain = "mathematical-physics"
+disposition = "deferred"
+decks = []
+rationale = "Operator algebras, integrable systems, and field-theoretic mathematics need functional analysis, Lie theory, and geometry first; physical content is already reachable through the physics subject."
+
+[[coverage]]
+domain = "mathematical-biology"
+disposition = "deferred"
+decks = []
+rationale = "The modeling, dynamics, and stochastic tools are built here, while biological application decks already exist in the biology subject."
+
+[[coverage]]
+domain = "game-theory-economics-and-mathematical-finance"
+disposition = "deferred"
+decks = []
+rationale = "Equilibrium theory and arbitrage pricing build directly on optimization and stochastic analysis; a deliberate later branch rather than a hidden appendix."
+
+[[coverage]]
+domain = "history-and-philosophy-of-mathematics"
+disposition = "deferred"
+decks = []
+rationale = "Valuable for perspective and named in curriculum guidance, but a distinct scholarly register that is postponed rather than diluted into technical decks."
+
+[[coverage]]
+domain = "mathematics-education"
+disposition = "deferred"
+decks = []
+rationale = "A real research domain of the field, but its practice horizon is teaching rather than doing mathematics; postponed until requested."
+
+[[coverage]]
+domain = "mechanics-continua-optics-and-thermodynamics-applications"
 disposition = "out-of-scope"
 decks = []
-rationale = "Teaching practice and education research form a neighboring professional subject, not a branch of mathematical content in this workspace."
+rationale = "Classified under mathematics only as application headings; the physical content is owned by the physics subject and reachable through cross-subject references."
 
 [[coverage]]
-domain = "general-computer-science"
+domain = "astronomy-geophysics-and-earth-system-applications"
 disposition = "out-of-scope"
 decks = []
-rationale = "Only mathematical computing, algorithms, logic, coding, information, optimization, and learning overlaps are included here."
-
-[[coverage]]
-domain = "discipline-specific-science-engineering-and-economics"
-disposition = "out-of-scope"
-decks = []
-rationale = "The roadmap covers mathematical methods and model critique, while substantive domain curricula belong in their own subject workspaces."
+rationale = "Outside this subject's declared boundary; owned by physical-science subjects rather than duplicated here."

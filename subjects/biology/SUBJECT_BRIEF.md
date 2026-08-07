@@ -1,122 +1,237 @@
 # Biology subject brief
 
 This file records decisions specific to this learner and collection. Reusable
-biology authoring guidance remains in the supplied domain guide. The explained
-deck graph belongs in `ROADMAP.md`; its executable copy belongs in
-`subject.toml`.
+domain-wide authoring guidance lives in the maintained `templates/guides/biology.md`
+and is deliberately not duplicated here. The explained deck sequence belongs in
+`ROADMAP.md`; its executable curriculum belongs in `subject.toml`.
 
 ## Learner and destination
 
-- Intended learner: a cold-start adult or independent learner; no previous
-  biology course is confirmed.
-- Current mathematical/tool mastery: none confirmed. Arithmetic, algebra,
-  logarithms, probability, statistics, laboratory reasoning, field practice,
-  and programming must be taught before a dependent deck assumes them.
-- Current domain mastery: none unless explicitly confirmed here.
-- Requested destination and use horizon: `whole-field`—a navigable, layered map
-  of the major domains of biology from first contact through representative
-  graduate and research-facing extensions. This is a route, not a ceiling or a
-  claim that every learner must complete every branch.
-- Graduate or research focus branches: none requested. The roadmap therefore
-  shows balanced representative extensions rather than privileging one
-  laboratory, organism, health, or environmental branch.
-- Deck granularity: `course`; each coherent deck is estimated at 6–14 chapters.
-- Durable capabilities: explain biology's crosscutting principles across
-  scales; reason from evidence and uncertainty; interpret quantitative,
-  graphical, molecular, cellular, organismal, phylogenetic, and ecological
-  representations; design and critique investigations; and enter a chosen
-  advanced branch without a hidden chemistry, mathematics, statistics,
-  laboratory, field, or programming prerequisite.
-- Deliberate exclusions: card authoring and deck creation in this run; clinical
-  diagnosis or treatment training; professional licensure; and exhaustive
-  coverage of every taxon, technique, or active research microfield.
+- **Intended learner**: not confirmed by the learner. Designed for a
+  self-directed adult beginning biology at first contact and intending to reach
+  representative graduate and research-frontier branches of the field.
+  **Needs confirmation** — see *Decisions awaiting confirmation*.
+- **Current mathematical/tool mastery**: none confirmed. The curriculum
+  therefore assumes no external mathematics deck has been completed, and names
+  every genuinely required mathematics capability as an explicit
+  `mathematics/...` prerequisite. **Needs confirmation** — prior mathematics
+  work would unlock several advanced decks earlier.
+- **Current domain mastery**: none. No biological term, mechanism, organism,
+  representation, or laboratory convention may be treated as inbound knowledge
+  by the first deck. Level labels such as "introductory" or "college biology"
+  do not grant permission to assume vocabulary.
+- **Requested destination and use horizon**: `whole-field`. The roadmap is a
+  navigable map of biology's major domains and contemporary branches across
+  learning levels, with deliberate extension points — not a simulation of one
+  degree program, and not an attempt to enumerate every active microfield.
+  Destination sets the current route; it is not a ceiling and does not classify
+  the learner.
+- **Graduate or research focus branches**: none specified. Because no focus was
+  requested, the roadmap proposes *representative* graduate and
+  research-specialization routes chosen to span structurally distinct branches
+  of the field rather than to exhaust any one branch. **Needs confirmation.**
+- **Deck granularity**: `course`. One deck is one coherent course-scale
+  capability, planning-estimated at 6–14 ordered chapters.
+- **Durable capabilities** the whole route should produce:
+  1. explain living systems mechanistically across scales from molecule to
+     biosphere, with evolution as the unifying explanatory frame;
+  2. move fluently among biology's authentic representations — molecular
+     structures, pathway and compartment diagrams, chromosome states, pedigrees,
+     sequence alignments, phylogenies, dose–response and survival curves,
+     demographic matrices, food webs, and biogeochemical flux budgets;
+  3. reason about experiments: identify the manipulated variable, name the
+     missing control, distinguish direct evidence from inference, and state what
+     a dataset does *not* justify;
+  4. reason quantitatively and probabilistically about biological variation,
+     measurement uncertainty, and scale;
+  5. read, critique, and situate primary research literature;
+  6. enter a chosen branch's current frontier with an honest account of what is
+     established, contested, and unresolved.
+- **Deliberate exclusions** (full disposition table in `ROADMAP.md`):
+  - clinical medicine, diagnosis, treatment selection, and any individualized
+    human or veterinary health advice;
+  - hands-on wet-lab and field *technique* proficiency, which cards can support
+    but cannot confer;
+  - psychology, cognitive science, and biological anthropology beyond the
+    cellular and systems neurobiology that sits inside biology;
+  - the physics and mathematics of living systems already owned by other
+    subjects in this collection (see *Cross-subject boundary*).
 
-Anything not explicitly confirmed above is treated as unseen during cold-start
-review.
+## Cross-subject boundary
+
+The generated cross-subject catalog supplies `mathematics` and `physics` only.
+Four boundary decisions follow; each is argued in `ROADMAP.md`.
+
+- **Chemistry is supplied by no subject in the catalog.** Biology therefore owns
+  a chemistry bridge deck scoped strictly to the chemistry that biological
+  explanation depends on — bonding and water, pH and buffers, functional groups,
+  macromolecular structure, free energy, equilibrium, and reaction rate. It is
+  not a general chemistry course and must not drift into one. Inventing a
+  `chemistry/...` reference is forbidden because the catalog contains none.
+- **General statistical inference is supplied** by
+  `mathematics/statistical-inference-and-data-analysis`, but its prerequisite
+  closure runs through calculus-based probability. Making it a hard prerequisite
+  for undergraduate biology would be a false prerequisite, so biology owns a
+  narrowly scoped experimental-design and biological-data-interpretation deck
+  and names the mathematics deck as recommended preparation. Decks that
+  genuinely need inference or probability theory — population genetics,
+  statistical phylogenetics, quantitative ecology, genomics — name
+  `mathematics/probability` or `mathematics/statistical-inference-and-data-analysis`
+  as hard prerequisites without apology.
+- **Physical biology is supplied** by `physics/biological-physics`, and
+  mathematical modelling of biological systems by
+  `mathematics/dynamical-systems-and-ergodic-theory`. Biology references
+  these rather than duplicating them.
+- **Scientific computing is supplied** by
+  `mathematics/mathematical-computing-and-experimentation`, which is the hard
+  prerequisite for every computational biology deck. Biology does not teach
+  programming.
 
 ## Conventions and boundaries
 
-- Language and terminology: English is the working proposal, with current
-  international biological nomenclature, SI units, scientific names where they
-  disambiguate organisms, and common names where they improve accessibility.
-  The learner should confirm language and terminology preferences before deck
-  construction.
-- Organismal balance: use comparative examples across microbes, plants, fungi,
-  animals, and other eukaryotes; do not make humans or a single model organism
-  the unstated default.
-- Scale and representation: identify organism, compartment, spatial scale,
-  timescale, axes, units, sampling unit, and uncertainty whenever they affect
-  interpretation. Diagrams must not imply false relative scale.
-- Simplifications that must be labeled: equilibrium and steady-state models;
-  one-gene/one-trait and strictly Mendelian models; linear “central dogma”
-  summaries; tree-like histories where horizontal transfer or reticulation
-  matters; single species concepts; optimality and adaptation stories;
-  homeostatic set-point models; model-organism generalizations; and binary or
-  population-average descriptions of variable human traits.
-- Claims requiring current verification: taxonomy and nomenclature; genome and
-  biodiversity databases; conservation status; climate and epidemiological
-  measurements; health and disease claims; gene-editing, sequencing, imaging,
-  single-cell, spatial, AI, and computational methods; biosafety and biosecurity
-  guidance; and ethical or legal requirements.
-- Accessibility and device constraints: personal needs and laboratory/field
-  access are not confirmed. Until clarified, future decks should use phone-width
-  legibility, alt text, non-color cues, keyboard-readable notation, captions or
-  transcripts, and equivalent nonvisual descriptions. Hands-on work must offer
-  accessible alternatives without claiming that a simulation is identical to
-  physical practice.
-- Programming convention needing confirmation: the curriculum is language
-  neutral. Choose an R-first, Python-first, or paired pathway with the learner
-  before building `computational-biology-foundations`.
-- Jurisdiction needing confirmation: no legal or regulatory jurisdiction is
-  assumed. Decks may teach general ethical and safety principles, but must
-  verify local rules when built.
+- **Language and units**: English (US spelling). SI units with the customary
+  biological derived units — molar (M), dalton (Da), base pair (bp), millivolt
+  (mV), and °C for growth and incubation temperatures.
+- **Nomenclature**: species binomials italicized with capitalized genus
+  (*Escherichia coli*); genes italic and proteins roman, with the organism's own
+  convention stated whenever grading depends on it (human `TP53` → p53; mouse
+  `Trp53` → p53). Every card using a gene, enzyme, taxon, tissue, or disease
+  term names the organism or system, because biological generalizations have
+  exceptions.
+- **Simplifications that must be labeled as simplifications**:
+  - the "one gene → one protein → one trait" mapping;
+  - the central dogma stated without its documented exceptions;
+  - textbook cell and molecule diagrams, which routinely misrepresent relative
+    scale and molecular crowding;
+  - Mendelian ratios, which assume independent assortment, complete dominance,
+    equal viability, and large samples;
+  - the three-domain tree — the two-domain (eocyte/Asgard) placement of
+    eukaryotes within Archaea is now mainstream, and eukaryotic supergroup
+    boundaries and rooting are actively revised;
+  - "energy is produced" phrasing — energy is transferred and transformed while
+    matter cycles;
+  - linear textbook pathway diagrams, which omit branch points and regulation.
+- **Teleology ban**: no card may state or imply that a trait arose because an
+  organism needed it, or that evolution is directed toward an outcome.
+  Evolutionary explanation is population-level and across generations.
+- **Claims requiring current verification before authoring**: taxonomy, clade
+  names, and tree topology; genome and gene-count figures; anything about
+  vaccines, pathogens, antimicrobial resistance, or human disease; conservation
+  status and biodiversity statistics; climate and global-change figures;
+  research-governance policy; and the current capability limits of methods
+  (sequencing read length and cost, cryo-EM resolution, structure-prediction
+  accuracy, genome-editing precision, spatial-omics throughput).
+- **Accessibility and device constraints**: figures must be legible at phone
+  width, must never encode meaning by color alone, and must carry meaningful
+  `<title>`/`<desc>` and alt text that does not leak the answer. Diagrams must
+  not imply false relative scale between molecules, cells, and organisms.
 
-## Evidence policy
+Do not infer domain knowledge from the target level. Anything not explicitly
+confirmed above is treated as unseen during cold-start review.
 
-Curriculum frameworks determine capabilities and coverage; they do not verify
-individual biological claims. Consequential or unstable claims require current
-primary literature, consensus bodies, or public scientific agencies at deck
-build time. Source prose and figures are not copied merely because they are
-viewable. Original explanations and figures remain the default, with explicit
-attribution and license review for any external material.
+## Evidence authorities
 
-### Curriculum and field-structure source register
+**Curriculum and competency frameworks.** These choose scope and capabilities;
+they do not verify individual biological claims.
 
-Accessed 2026-07-18. “Reference only” means the source informed the map through
-paraphrase; no permission to redistribute its prose or figures is assumed.
+- AAAS/NSF, *Vision and Change in Undergraduate Biology Education*, and the
+  *Chronicling Change* follow-ups —
+  https://www.aaas.org/sites/default/files/content_files/VC_report.pdf ;
+  https://www.nsf.gov/news/vision-change-undergraduate-biology-initiative
+- BioCore Guide (validated core-concept statements) —
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC4041499/
+- BioSkills Guide (validated core-competency statements) —
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC8693931/
+- Ecological Society of America 4DEE framework — the only society-endorsed
+  ecology curriculum framework — https://esa.org/4dee/framework/
+- NRC, *BIO2010* and *A New Biology for the 21st Century* — the standing calls
+  for quantitative, computational, and physical-science integration —
+  https://www.nationalacademies.org/publications/10497 ;
+  https://nap.nationalacademies.org/catalog/12764/a-new-biology-for-the-21st-century
+- MIT OpenCourseWare 7.016 *Introductory Biology* —
+  https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/pages/syllabus/
+- MIT Biology graduate first-year requirements — Methods and Logic, graduate
+  biochemistry, graduate genetics, and a required quantitative/computational
+  subject — https://biologyopenhouse.mit.edu/requirements
+- NASEM, *The Age of AI in the Life Sciences: Benefits and Biosecurity
+  Considerations* (2025) — https://www.nationalacademies.org/publications/28868
 
-| Source | Authority and role | License or terms used here |
-|---|---|---|
-| [AAAS/NSF, *Vision and Change in Undergraduate Biology Education*](https://aaas-iuse.org/) | Consensus framework for five crosscutting concepts and six scientific competencies. | Publicly accessible AAAS material; reference only under site terms. |
-| [Brownell et al., BioCore Guide](https://doi.org/10.1187/cbe.13-12-0233) | Nationally validated elaboration of the five concepts across biological scales and subdisciplines. | CC BY-NC-SA 3.0; used for curricular alignment, not copied text. |
-| [Clemmons et al., BioSkills Guide](https://doi.org/10.1187/cbe.19-11-0259) | Nationally validated, measurable undergraduate outcomes for process of science, quantitative skills, modeling, interdisciplinarity, communication/collaboration, and science–society reasoning. | CC BY-NC-SA 3.0; used for curricular alignment, not copied text. |
-| [QAA, *Subject Benchmark Statement: Biosciences* (2023)](https://www.qaa.ac.uk/docs/qaa/sbs/sbs-biosciences-23.pdf) | Broad external benchmark spanning molecular-to-ecosystem knowledge, practical work, computation, statistics, literature, ethics, sustainability, accessibility, and independent inquiry. | QAA copyright and website terms; reference only. |
-| [NSF BIO, 2026 organizational update](https://www.nsf.gov/bio/updates/supporting-exciting-biological-sciences-ideas-impacts-ai) | Current cross-check for the field's research structure: Foundations of Life, Living Systems, and Bioinnovation & Infrastructure, including interdisciplinary AI and biotechnology interfaces. | U.S. government web source; reference only and verify item-specific rights before reuse. |
-| [NSF BIO programs](https://www.nsf.gov/bio/programs) | More granular inventory of molecular/cellular, organismal, evolutionary, ecological, biodiversity, systems, and infrastructure programs. The page itself warns that reorganization updates are in progress, so it is not treated as the current hierarchy. | U.S. government web source; reference only. |
-| [Ecological Society of America, 4DEE Framework](https://esa.org/4DEE/framework/) | Society-endorsed undergraduate ecology map integrating organisms through biosphere, ecological practice, human–environment interactions, and crosscutting concepts. | ESA site copyright; reference only. |
-| [American Society for Microbiology, 2024 Curriculum Guidelines](https://asm.org/guideline/asm-curriculum-guidelines-for-undergraduate-microb) | Current professional framework for microbiological concepts, scientific thinking, laboratory skills, and societal context. | ASM copyright; reference only. |
-| [American Physiological Society, physiology core concepts](https://doi.org/10.1152/advan.00188.2019) | Community framework emphasizing transferable physiological reasoning such as homeostasis, gradients, mass balance, membranes, and cell communication. | APS copyright; free-to-read material used as reference only. |
-| [OpenStax, *Biology 2e*](https://openstax.org/details/books/biology-2e) | Open educational scope check for a two-semester majors sequence and a possible future explanatory source, not the roadmap's organizing template. | CC BY-NC-SA 4.0; attribution and ShareAlike required for any adapted content. |
+**Nomenclature, reference-data, and assessment authorities.** These verify
+individual claims.
+
+- NCBI (GenBank, RefSeq, PubMed, Taxonomy) — https://www.ncbi.nlm.nih.gov/
+- UniProt — https://www.uniprot.org/ ; RCSB Protein Data Bank —
+  https://www.rcsb.org/
+- IUBMB/IUPAC enzyme and biochemical nomenclature —
+  https://iubmb.qmul.ac.uk/enzyme/
+- HGNC human gene nomenclature — https://www.genenames.org/
+- ICTV virus taxonomy, Master Species List release 40 (ratified 2025) —
+  https://ictv.global/
+- Catalogue of Life eXtended Release, which replaced the GBIF Backbone
+  Taxonomy in 2025, plus GBIF occurrence data —
+  https://www.catalogueoflife.org/ ; https://www.gbif.org/
+- PhyloCode and the RegNum clade-name registry, which coexist with ICZN/ICN
+  rather than replacing them — http://phylonames.org/code/ ;
+  https://www.phyloregnum.org/
+- IUCN Red List — https://www.iucnredlist.org/
+- WHO and US CDC for infectious-disease and public-health claims —
+  https://www.who.int/ ; https://www.cdc.gov/
+- IPCC and IPBES assessment reports, including the IPBES Nexus and
+  Transformative Change assessments (2024) — https://www.ipcc.ch/ ;
+  https://www.ipbes.net/nexus-assessment
+- US Government Policy for Oversight of Dual Use Research of Concern and
+  Pathogens with Enhanced Pandemic Potential, effective 2025-05-06, for
+  research-governance claims —
+  https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/05/USG-Policy-for-Oversight-of-DURC-and-PEPP.pdf
+
+**Open educational sources whose license permits reuse**: MIT OpenCourseWare
+(CC BY-NC-SA), OpenStax *Biology 2e* and *Concepts of Biology* (CC BY), NCBI
+Bookshelf items whose individual license permits reuse, and Wikimedia Commons
+images with recorded license and attribution. Each created deck's `README.md`
+records URL, source role (scope versus claim verification), license or terms,
+and access date. Free visibility is not permission to ingest, reproduce, or
+redistribute; no proprietary textbook prose or figures may be copied.
+
+Access date for every framework and authority listed above: **2026-08-06**.
 
 ## Authentic practice outside SRS
 
-Cards can maintain concepts, decisions, representations, and checks, but
-competence requires additional practice:
+Cards maintain retrievable components and decisions. They cannot produce
+competence in the following, which must be practiced directly:
 
-- sustained laboratory work with real instruments, samples, calibration,
-  contamination control, notebooks, waste handling, risk assessment, and
-  troubleshooting;
-- field observation, natural history, sampling design, species identification,
-  geospatial context, permitting, and low-impact conduct;
-- extended analysis of authentic messy datasets using spreadsheets and then
-  reproducible code, with versioning and data documentation;
-- multi-step modeling, parameter estimation, simulation, sensitivity analysis,
-  and comparison of predictions with observations;
-- reading primary literature, tracing claims to evidence, writing reports and
-  reviews, peer critique, oral and visual communication, and collaboration;
-- open-ended investigations or course-based research that include failed
-  approaches, iteration, uncertainty, ethics, and resource constraints.
+- **Wet-lab technique**: pipetting, sterile technique, cell culture, dissection,
+  bench microscopy, gel and blot handling, and troubleshooting a failed
+  experiment.
+- **Field practice**: identification in situ, sampling design executed on real
+  terrain, specimen and collection handling, and long-term monitoring.
+- **Extended experimental design**: proposing a multi-step study, choosing the
+  model system, and defending the control set under critique.
+- **Analysis of real data in code**: sequence and variant pipelines, ecological
+  and phylogenetic model fitting, image quantification, and version-controlled
+  reproducible workflows.
+- **Primary-literature practice**: reading whole papers, journal-club argument,
+  and reconstructing a figure's logic from supplementary data.
+- **Scientific writing and speaking**: proposals, figures, posters, and talks.
+- **Ethics and governance in practice**: institutional review, biosafety
+  training, animal-care protocols, and dual-use risk assessment.
 
-The learner should confirm available equipment, field access, computing setup,
-accessibility needs, preferred programming path, and desired first advanced
-branch before any deck is built.
+## Decisions awaiting confirmation
+
+These are genuinely personal choices. Each has been given a defensible default
+so the roadmap is coherent, but none should be treated as settled.
+
+1. **Learner identity and prior biology.** Default: complete cold start.
+2. **Prior mathematics.** Default: none completed. Confirming completed
+   mathematics decks would remove real gates on the advanced and graduate route.
+3. **Which branches to actually pursue.** The roadmap proposes representative
+   branches across molecular/structural, genomic/computational, organismal,
+   ecological/evolutionary, and infection/immunity biology. A learner with a
+   specific interest should promote one branch and defer the others rather than
+   attempt all of them.
+4. **Whether biomedical application is wanted.** Default: disease mechanism is
+   included; clinical practice is excluded.
+5. **Whether laboratory or field access exists.** This determines how much of
+   the methods decks is authentic practice rather than propositional knowledge.
+6. **Whether any currently deferred branch should be promoted** — agricultural
+   and crop science, marine and freshwater biology, aging biology, pharmacology
+   and toxicology, paleobiology, or astrobiology.

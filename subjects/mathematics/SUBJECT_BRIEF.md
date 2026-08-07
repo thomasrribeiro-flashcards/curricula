@@ -1,133 +1,218 @@
 # Mathematics subject brief
 
-This file records learner-specific assumptions and collection decisions. The
-explained sequence is in `ROADMAP.md`; the synchronized executable curriculum
-is in `subject.toml`. Reusable mathematical authoring guidance remains in the
-maintained mathematics domain guide and is not duplicated here.
+This file records decisions specific to this learner and collection. Reusable
+domain-wide authoring guidance belongs in `templates/guides/mathematics.md`
+when that maintained guide exists, or in this subject's `DOMAIN_GUIDE.md` for a
+new domain. The explained deck sequence belongs in `ROADMAP.md`; its executable
+curriculum belongs in `subject.toml`.
+
+The repository's maintained `templates/guides/mathematics.md` is the reusable
+domain guide for this subject and is deliberately **not** copied here.
 
 ## Learner and destination
 
-- Intended learner: provisional cold-start independent learner or curriculum
-  maintainer; age, educational setting, goals, and prior study are unconfirmed.
-- Current mathematical/tool mastery: none confirmed. Arithmetic, algebra,
-  proof, programming, calculator, and computer-algebra fluency must not be
-  assumed merely from the requested destination.
-- Current domain mastery: none unless explicitly confirmed in a later learner
-  update.
-- Requested destination and use horizon: `whole-field`; build a navigable,
-  extensible map from quantitative literacy through representative
-  literature-facing research routes.
-- Graduate or research focus branches: none specified. The roadmap therefore
-  preserves balanced pure, applied, computational, probabilistic, statistical,
-  and interdisciplinary routes without treating any one branch as the learner's
-  personal goal.
-- Deck granularity: `course`, with every coherent deck estimated at 6–14
-  ordered chapters.
-- Durable capabilities: calculate and estimate with understanding; translate
-  among verbal, numerical, symbolic, graphical, geometric, algorithmic, and
-  data representations; select and check methods; state definitions and
-  theorem hypotheses precisely; construct, critique, and communicate proofs;
-  formulate and validate models; quantify uncertainty and numerical error; use
-  computation reproducibly; and enter selected advanced literature with an
-  honest prerequisite chain.
-- Deliberate exclusions: no decks, chapters, or cards are created in this
-  subject-design run. General computer science, mathematics-education
-  professional preparation, and domain-specific science, engineering, and
-  economics content remain neighboring subjects. The roadmap includes their
-  mathematical overlaps and visible extension points.
+- Intended learner: not specified. The route is therefore designed for a
+  motivated adult self-learner with no confirmed prior mathematics, working
+  independently with spaced repetition plus written practice. **Needs
+  confirmation** (see "Decisions awaiting confirmation").
+- Current mathematical/tool mastery: none confirmed. No programming language,
+  computer algebra system, typesetting system, or proof assistant is assumed to
+  be installed or known.
+- Current domain mastery: none unless explicitly confirmed here.
+- Requested destination and use horizon: **whole-field**. The horizon is doing
+  mathematics across the field — computing reliably, reasoning from definitions,
+  writing and evaluating proofs, modeling real situations, and reading current
+  literature in at least one representative branch — rather than passing a
+  specific exam or serving one applied application.
+- Graduate or research focus branches: none requested. Because no branch was
+  named, the roadmap carries a balanced set of five representative research
+  routes — arithmetic geometry, geometric topology, topological and geometric
+  data analysis, formalization, and high-dimensional probability — chosen to
+  span algebraic, geometric, applied, foundational, and probabilistic styles of
+  current work. This is a coverage decision, not a claim about the learner's
+  interests. **Needs confirmation.**
+- Deck granularity: course. Each deck is one coherent course-sized capability,
+  estimated at 6–14 chapters. The 52 proposed decks range from 8 to 13.
+- Durable capabilities: fluent symbolic and numerical computation; the function
+  concept across representations; proof construction and evaluation; the
+  analysis, algebra, geometry, and probability cores that every advanced route
+  consumes; computational experimentation with honest error awareness;
+  disciplined modeling with stated conditions of validity; and literature-facing
+  competence in a chosen branch.
+- Deliberate exclusions: no deck is created for control theory, several complex
+  variables, K-theory, order and universal algebra, special functions,
+  non-Euclidean and projective geometry, mathematical physics, mathematical
+  biology, game theory and mathematical finance, history and philosophy of
+  mathematics, or mathematics education. These are recorded as `deferred` in the
+  coverage matrix with the graph position each would attach to. Physical-science
+  and earth-science application areas classified under mathematics are
+  `out-of-scope` because the collection's physics subject owns that content.
 
-The destination controls the current route, not the learner's identity or a
-permanent ceiling. Unconfirmed knowledge is unseen during every cold-start
-review.
+Because the destination is whole-field rather than a named endpoint, the route
+starts at `number-sense-and-arithmetic`. Destination controls the current route,
+not who may learn the subject and not the permanent ceiling of the roadmap.
 
 ## Conventions and boundaries
 
-- Working language: English for these artifacts; the learner's preferred
-  language remains unconfirmed.
-- Notation: use conventional contemporary notation, define every symbol and
-  domain before use, preserve quantifier order, and state local conventions
-  such as whether \(0\) is a natural number. Use SI units by default in applied
-  examples while retaining contextually authentic units when conversion is
-  itself part of the task.
-- Mathematical claims: distinguish definitions, conventions, theorems,
-  heuristics, numerical evidence, and conjectures. State hypotheses that change
-  truth or method, including finiteness, continuity, differentiability,
-  convergence, independence, orientation, branch, and nonzero conditions.
-- Simplifications that must be labeled: finite-dimensional or linear
-  approximations; smoothness and independence assumptions; asymptotic versus
-  finite-sample claims; deterministic versus stochastic models; exact versus
-  floating-point computation; idealized geometry or scale; and any replacement
-  of a domain mechanism by a toy model.
-- Claims requiring current verification: software interfaces and numerical
-  behavior; statistical, data-science, cryptographic, financial, and ethical
-  practice; terminology or consensus in active research areas; and any claim
-  about current applications, records, open problems, or literature status.
-  Stable mathematical results still require checking against an authoritative
-  source or direct derivation during deck construction.
-- Accessibility and device baseline: responsive phone-width figures, meaningful
-  alt text, high contrast, no color-only distinctions, legible notation, and no
-  answer leakage through labels. Specific visual, motor, language, or assistive
-  technology needs remain unconfirmed.
+- Preferred notation, terminology, language, or jurisdiction: English-language,
+  internationally standard mathematical notation. Where conventions genuinely
+  differ, decks state the convention in use and name the alternative rather than
+  silently picking one — for example whether the natural numbers include zero,
+  row versus column vector conventions, the sign and normalization of the
+  Fourier transform, whether "ring" presumes unity, and open versus closed
+  interval conventions in measure statements. Decimal point, SI units, and
+  ISO 8601 dates. **The default is standard notation with alternatives named;
+  a different house convention needs confirmation.**
+- Simplifications that must be labeled: any statement proved only under stronger
+  hypotheses than the theorem's usual form; any result quoted without proof
+  (regularity estimates in the geometry and PDE decks, deep classification
+  results in the research decks); heuristic or physical arguments used before a
+  rigorous version exists; finite-dimensional intuition transferred to infinite
+  dimensions; and every place where a foundational subtlety (choice, measurability,
+  convergence mode) is deferred rather than resolved.
+- Claims requiring current verification: the status of named open problems and
+  recent theorems in the research-specialization decks; the contents and API of
+  proof-assistant libraries, which change continuously; sizes and contents of
+  computational databases; and anything described as "recently proved" or
+  "state of the art", which must carry an access date.
+- Accessibility or device constraints: none stated. Figures are authored to the
+  general standard — TikZ source compiled to SVG, `viewBox` present, meaningful
+  `<title>` and `<desc>`, phone-width legibility, high contrast, and a redundant
+  cue beyond color. Mathematical notation is written so a screen reader can
+  render it from the source. **Confirm whether a specific screen reader, phone
+  screen size, or color-vision constraint should tighten these defaults.**
 
-## Evidence authorities and source register
+Do not infer domain knowledge from the target level. Anything not explicitly
+confirmed above is treated as unseen during cold-start review.
 
-All sources below are curriculum-scoping sources, not blanket verification for
-individual mathematical claims. They were consulted on 2026-07-17. No source
-text, exercise, or figure was copied.
+## Evidence authorities
 
-| Authority and source | Curriculum role | License or terms treatment |
-|---|---|---|
-| American Mathematical Society Mathematical Reviews and zbMATH, [MSC2020](https://mathscinet.ams.org/msc/msc2020.html) | Current research taxonomy used to audit whole-field domain coverage and identify advanced extension points. | Publicly searchable official classification; consulted as taxonomy metadata only. Do not bulk reproduce without checking current terms. |
-| Mathematical Association of America, [2015 CUPM Curriculum Guide](https://maa.org/resource/cupm-guide/) | Undergraduate mathematical-sciences capabilities, common foundations, depth, modeling, computation, communication, and major branches. | MAA material; consulted for scope and recommendations only. Confirm permission before reproducing any text or tables. |
-| National Research Council, [*Adding It Up*](https://doi.org/10.17226/9822) | Foundational proficiency as interwoven conceptual understanding, procedural fluency, strategic competence, adaptive reasoning, and productive disposition. | National Academies publication; free-to-read access does not grant redistribution. Paraphrased at high level only. |
-| Common Core State Standards Initiative, [Mathematics Standards](https://corestandards.org/mathematics-standards/) | Cross-check for foundational number, algebra, function, geometry, statistics, and mathematical-practice progression. | Publicly accessible standards; consulted for domain mapping only. Verify current rights before reuse. |
-| National Research Council, [*The Mathematical Sciences in 2025*](https://doi.org/10.17226/15269) | Whole-enterprise view of mathematics, statistics, computation, cross-disciplinary exchange, and the need to sustain the full spectrum. | National Academies copyright; consulted and paraphrased, not ingested or reproduced. |
-| Society for Industrial and Applied Mathematics, [Undergraduate Degree Programs in Applied Mathematics](https://doi.org/10.1137/15M1008002) | Applied-mathematics program structure, modeling, computation, interdisciplinary work, projects, and industry-facing practice. | Copyright SIAM; abstract and public metadata consulted only. |
-| COMAP and SIAM, [GAIMME, second edition](https://www.siam.org/publications/reports/guidelines-for-assessment-and-instruction-in-mathematical-modeling-education/) | Modeling cycle, levels of sophistication, assessment, and the case for modeling across learning levels. | Freely downloadable, but no redistribution license was assumed; used only for curricular decisions. |
-| American Statistical Association, [GAISE reports](https://www.amstat.org/education/guidelines-for-assessment-and-instruction-in-statistics-education-%28gaise%29-reports) | Statistical investigation, conceptual understanding, real data, multivariable thinking, technology, active learning, and assessment. | The 2016 College report is CC BY-SA 3.0 US; the 2020 Pre-K–12 report is all rights reserved with limited educational sharing. This design paraphrases only broad recommendations. |
-| National Academies of Sciences, Engineering, and Medicine, [*Data Science for Undergraduates*](https://nap.nationalacademies.org/catalog/25104/data-science-for-undergraduates-opportunities-and-options) | Cross-check for the intersection of mathematics, statistics, computing, data practice, communication, and ethics. | National Academies copyright; consulted for scope only. |
-| INFORMS Computing Society Education Committee, [OR/CS curriculum recommendations](https://doi.org/10.1287/ited.1110.0080) | Cross-check for algorithms, optimization, networks, computing, and operations-research preparation. | Copyright INFORMS; public abstract and metadata consulted only. |
+Consulted 2026-08-06. Curricular sources shaped the domain map and deck
+boundaries; they are not used to verify individual mathematical claims, which
+are verified against standard texts and primary literature at authoring time.
 
-Future deck builds must create deck-local source registers that distinguish
-scope sources from claim-verification sources and record URLs, authority,
-license or terms, and access dates. Freely viewable is not treated as
-permission to ingest, adapt, or redistribute.
-
-## Decisions requiring learner confirmation
-
-These decisions were not invented and do not block a coherent whole-field
-proposal:
-
-- prior mastery and any placement evidence;
-- preferred language, notation, units, and calculator or programming
-  environment;
-- accessibility and device needs beyond the baseline above;
-- time horizon and desired balance among calculation, proof, modeling,
-  computation, and data;
-- branches to prioritize after the shared foundations; and
-- whether professional goals require jurisdiction-specific actuarial,
-  financial, educational, or regulatory material.
-
-Confirmation should reprioritize pacing and optional branches without deleting
-the layered map or lowering its permanent ceiling.
+- Consensus or professional frameworks:
+  - **Mathematics Subject Classification 2020** (MSC2020), maintained jointly by
+    zbMATH Open and Mathematical Reviews — <https://msc2020.org/>,
+    <https://zbmath.org/classification/>. Authority: the two abstracting and
+    reviewing services of record. License: CC BY-NC-SA 4.0, so the scheme
+    informs the domain map but its text is not reproduced. Used as the primary
+    check that the coverage matrix names material domains rather than course
+    titles, including the newer machine-assisted and homotopical headings.
+  - **International Mathematical Union / ICM section structure** —
+    <https://www.mathunion.org/>, <https://icm2026.org/>. Authority: the
+    field's international body. Used to confirm which areas the research
+    community currently treats as top-level sections, which shaped the graduate
+    and research layers.
+  - **MAA Committee on the Undergraduate Program in Mathematics (CUPM)
+    Curriculum Guide** — <https://maa.org/> (CUPM guide and course-area study
+    group reports). Authority: the US professional society for collegiate
+    mathematics. Used for the undergraduate core, for the cognitive
+    recommendations (proof, communication, technology), and for Content
+    Recommendation 5 — experience mathematics from another discipline's
+    perspective — which motivates the single external `recommended_after` edge.
+  - **QAA Subject Benchmark Statement, Mathematics, Statistics and Operational
+    Research** — <https://www.qaa.ac.uk/quality-code/subject-benchmark-statements>.
+    Authority: the UK degree-standards body. Used as a non-US cross-check that
+    the undergraduate core is not a national artifact.
+  - **Common Core State Standards for Mathematics** —
+    <https://www.thecorestandards.org/Math/>. Authority: widely adopted US
+    school standards. Used only to sequence the foundational layer and its
+    practice standards.
+  - **CBMS survey of undergraduate mathematical sciences programs** —
+    <https://www.ams.org/cbms-survey>. Authority: AMS/CBMS statistical survey.
+    Used to check which courses are actually offered and required, as a guard
+    against designing an idealized curriculum.
+  - **SIAM guidance on computational science and data science education** —
+    <https://www.siam.org/>. Authority: the applied and computational
+    mathematics society. Used to justify treating computing, numerical analysis,
+    optimization, and the mathematics of learning as first-class decks.
+  - **Published PhD qualifying-exam syllabi from research mathematics
+    departments.** Authority: primary statements of what graduate programs
+    require. Used to fix the graduate core as measure theory, functional
+    analysis, complex analysis, algebra, topology, and probability, and to size
+    those decks.
+- Preferred primary sources or public agencies: peer-reviewed research
+  literature and preprint servers for research-layer claims (arXiv,
+  <https://arxiv.org/>, primarily as a discovery surface — the published version
+  is cited when one exists); NIST Digital Library of Mathematical Functions,
+  <https://dlmf.nist.gov/>, for special-function identities and conventions;
+  the L-functions and Modular Forms Database, <https://www.lmfdb.org/>, for
+  arithmetic-geometry data; and IEEE 754 for floating-point behavior.
+- Open educational sources and license constraints: openly licensed texts and
+  lecture notes may be consulted for pedagogical sequencing, and a source is
+  used only when its license permits the intended use. Freely viewable is not
+  the same as reusable, and no source is ingested or reproduced merely because
+  it is publicly readable. Each deck records the URL, authority, license or
+  terms, and access date of every source it relies on in its own README, and
+  distinguishes curricular sources from claim-verifying sources.
 
 ## Authentic practice outside SRS
 
-Competence requires sustained work that cards cannot replace:
+Record projects, extended problems, laboratories, writing, conversation, field
+work, or other practice needed for competence that cards cannot replace.
 
-- multi-step and mixed problem sets with complete solution checking;
-- proof discovery, full proof writing, peer critique, and revision;
-- mathematical reading and exposition in prose, notation, diagrams, talks, and
-  seminars;
-- open-ended modeling projects with data collection, sensitivity analysis,
-  validation, and stakeholder-aware limitations;
-- reproducible programming, numerical experiments, simulation, and software
-  testing;
-- statistical investigations using authentic data, study design, diagnostics,
-  ethics, and uncertainty communication;
-- geometric construction, visualization, and translation among
-  representations;
-- collaborative projects, undergraduate research, capstones, internships, and
-  literature reviews; and
-- literature-facing reconstruction of arguments, replication of computations,
-  conjecture generation, and consultation with domain experts.
+- **Untimed written problem sets** alongside every deck from
+  `mathematical-reasoning-and-proof` onward. Cards secure definitions,
+  mechanisms, and short discriminations; sustained multi-step computation and
+  full proof construction cannot be compressed into one grading decision.
+- **Proof writing with external critique.** Producing a complete argument and
+  having a competent reader challenge it is the core practice of
+  `mathematical-reasoning-and-proof`, `real-analysis`, `abstract-algebra`, and
+  `mathematical-research-practice`.
+- **Programming and numerical experiments** with real, runnable code and
+  reproducible artifacts, required by `mathematical-computing-and-experimentation`,
+  `numerical-analysis`, `theory-of-computation-and-complexity`,
+  `dynamical-systems-and-ergodic-theory`,
+  `numerical-methods-for-differential-equations`,
+  `topological-and-geometric-data-analysis`, and
+  `formalization-and-proof-assistants`.
+- **Open-ended modeling and data projects** for
+  `mathematical-modeling-and-asymptotic-methods`,
+  `statistical-inference-and-data-analysis`,
+  `mathematics-of-machine-learning-and-data-science`, and
+  `topological-and-geometric-data-analysis`, including defending modeling
+  choices and reporting what failed.
+- **Reading papers end to end, seminar presentation, and question formulation**
+  for `mathematical-research-practice` and all five research-specialization
+  decks. Cards can hold definitions and landmark results; they cannot hold the
+  practice of getting stuck productively.
+- **Formalization practice** in an installed proof assistant with its library,
+  since the feedback loop for `formalization-and-proof-assistants` is the
+  assistant itself.
+- **Explaining mathematics aloud and being questioned**, which exposes gaps that
+  recognition-level review conceals.
+
+## Decisions awaiting confirmation
+
+These are genuinely personal choices. They have been given defensible defaults
+above so the curriculum is executable, but they should be confirmed rather than
+treated as settled.
+
+1. **Starting point.** The route currently begins at
+   `number-sense-and-arithmetic` because no prior mastery was confirmed. If the
+   learner already has school algebra, calculus, or a degree, confirm the true
+   entry deck — ideally after a placement check — so mastered material is not
+   rehearsed. Confirmed knowledge should be recorded in "Learner and
+   destination" above; unconfirmed knowledge stays unseen.
+2. **Pure versus applied emphasis.** The graph is balanced. If the learner
+   leans pure or applied, tiers should shift — for example promoting
+   `optimization-and-operations-research` and `stochastic-processes`, or
+   `mathematical-logic-and-set-theory` and
+   `category-theory-and-homological-algebra`, from `recommended` to `core`.
+3. **Which research branches matter.** Five representative branches are
+   proposed. A learner with a real target may want one of them replaced by a
+   currently deferred domain (control theory, mathematical finance, several
+   complex variables, mathematical physics).
+4. **Available tooling.** `mathematical-computing-and-experimentation` needs a
+   chosen programming environment (Python with a scientific stack, a computer
+   algebra system, or both), and `formalization-and-proof-assistants` needs a
+   specific assistant and library. Naming these changes what those decks can
+   assume and test.
+5. **Notation conventions.** If the learner has a house style or a target
+   textbook tradition, fixing it now avoids per-deck drift.
+6. **Time budget and pace.** Fifty-two course-sized decks is a multi-year
+   commitment. If the horizon is shorter, the coverage matrix should be
+   narrowed deliberately rather than each deck thinned.
+7. **Accessibility and device constraints.** Confirm any screen reader, screen
+   size, or color-vision requirement that should tighten the figure defaults.
