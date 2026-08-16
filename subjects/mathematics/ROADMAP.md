@@ -50,7 +50,7 @@ included, deliberately deferred, or explicitly out of scope.
 | groups-rings-fields-and-galois-theory | included | abstract-algebra, advanced-algebra-and-galois-theory, commutative-algebra | Three ordered capabilities: first structures, then modules and the Galois correspondence, then the ring theory that algebraic geometry and number theory consume. |
 | category-theory-and-homological-algebra | included | category-theory-and-homological-algebra | Now a working language rather than a coda; recent growth in higher-categorical and homotopical classification headings supports a standalone deck. |
 | representation-theory-and-lie-theory | included | representation-theory-and-lie-theory | A named research section and a recurring departmental group, unified by decomposing actions on vector spaces from finite groups through Lie algebras. |
-| number-theory | included | number-theory, algebraic-and-analytic-number-theory, arithmetic-geometry-and-modern-number-theory | An elementary proof-rich entry, a graduate algebraic and analytic core, and a literature-facing branch reflect how the area is actually staged. |
+| number-theory | included | number-theory, algebraic-number-theory, analytic-number-theory, arithmetic-geometry-and-modern-number-theory | An elementary proof-rich entry, separate graduate algebraic and analytic routes with different prerequisites, and a literature-facing branch avoid forcing either graduate route through the other's tools. |
 | algebraic-geometry | included | algebraic-geometry, arithmetic-geometry-and-modern-number-theory | A top-level research section whose graduate entry is well defined once commutative algebra is in place. |
 | general-topology | included | general-topology | Point-set topology is the shared language of convergence and continuity for analysis, geometry, and algebraic topology. |
 | algebraic-and-geometric-topology | included | algebraic-topology, low-dimensional-topology-and-geometric-topology | Algebraic invariants form the graduate core; low-dimensional and geometric topology is the representative frontier branch. |
@@ -80,6 +80,31 @@ included, deliberately deferred, or explicitly out of scope.
 | mathematics-education | deferred | None | A real research domain of the field, but its practice horizon is teaching rather than doing mathematics; postponed until requested. |
 | mechanics-continua-optics-and-thermodynamics-applications | out-of-scope | None | Classified under mathematics only as application headings; the physical content is owned by the physics subject and reachable through cross-subject references. |
 | astronomy-geophysics-and-earth-system-applications | out-of-scope | None | Outside this subject's declared boundary; owned by physical-science subjects rather than duplicated here. |
+
+## Audit against the supplied baseline
+
+The staged curriculum was treated as a baseline, not accepted by inertia. Fifty-one
+of its 52 deck identities remain valid and are preserved. Three corrections follow
+from the course-coherence and prerequisite-closure stress tests:
+
+- `algebraic-and-analytic-number-theory` is replaced by
+  `algebraic-number-theory` and `analytic-number-theory`. The former needs advanced
+  algebra but not complex analysis; the latter needs complex analysis but not the
+  graduate algebra sequence. Keeping them together created two false prerequisites,
+  two source registers, and two independent capstone performances.
+- `numerical-analysis` keeps its identity but no longer claims initial-value-problem
+  methods. That material belongs to `numerical-methods-for-differential-equations`,
+  whose closure actually contains differential equations; the correction preserves
+  a coherent error, stability, and algebraic-algorithm course without adding a broad
+  ODE prerequisite for one internal topic.
+- `random-matrices-and-high-dimensional-probability` now directly requires
+  `linear-algebra`. Measure-theoretic probability does not establish eigenvalues,
+  singular values, matrix norms, or spectral decompositions, and recommended
+  sequencing cannot repair a missing hard capability.
+
+The field dispositions, the one soft external reference, and all other deck
+identities survived the audit. Orders after the number-theory split move by one;
+orders are topological presentation values, not identities.
 
 ## Deck sequence
 
@@ -113,7 +138,7 @@ helpful but is not inherited as a prerequisite.
 | 19 | general-topology | undergraduate-advanced | core | real-analysis | None | 9 | Work with topological spaces, bases, continuity, homeomorphism, connectedness, compactness, separation axioms, product and quotient constructions, and metrization. | proposed |
 | 20 | differential-geometry-and-manifolds | undergraduate-advanced | recommended | multivariable-and-vector-calculus, linear-algebra | real-analysis, general-topology | 13 | Analyze curves and surfaces with curvature and fundamental forms, then work on smooth manifolds with tangent spaces, vector fields, differential forms, Stokes' theorem, and first Riemannian metrics. | proposed |
 | 21 | partial-differential-equations | undergraduate-advanced | core | differential-equations, multivariable-and-vector-calculus | real-analysis | 11 | Classify and solve first-order, heat, wave, and Laplace equations using characteristics, separation of variables, Fourier methods, Green's functions, and maximum principles. | proposed |
-| 22 | numerical-analysis | undergraduate-advanced | core | linear-algebra, single-variable-integral-calculus, mathematical-computing-and-experimentation | differential-equations, real-analysis | 11 | Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear systems, eigenvalues, and initial-value problems. | proposed |
+| 22 | numerical-analysis | undergraduate-advanced | core | linear-algebra, single-variable-integral-calculus, mathematical-computing-and-experimentation | differential-equations, real-analysis | 11 | Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear and nonlinear systems, least squares, and eigenvalues. | proposed |
 | 23 | optimization-and-operations-research | undergraduate-advanced | recommended | multivariable-and-vector-calculus, linear-algebra | numerical-analysis, mathematical-computing-and-experimentation | 11 | Formulate and solve linear, convex, and constrained optimization problems using duality, optimality conditions, descent and Newton methods, network models, and integer formulations. | proposed |
 | 24 | stochastic-processes | undergraduate-advanced | recommended | probability, linear-algebra | differential-equations, mathematical-computing-and-experimentation | 10 | Model systems evolving randomly in time with Markov chains, Poisson and renewal processes, queues, branching processes, elementary martingales, and Brownian motion. | proposed |
 | 25 | information-theory | undergraduate-advanced | recommended | probability | discrete-mathematics-and-combinatorics, linear-algebra | 10 | Quantify information with entropy, relative entropy, and mutual information, and derive source-coding, channel-capacity, and error-correcting limits. | proposed |
@@ -130,20 +155,21 @@ helpful but is not inherited as a prerequisite.
 | 36 | category-theory-and-homological-algebra | graduate | recommended | advanced-algebra-and-galois-theory | algebraic-topology | 9 | Use categories, functors, natural transformations, limits, adjunctions, abelian categories, chain complexes, derived functors, and first spectral sequences as working tools. | proposed |
 | 37 | commutative-algebra | graduate | recommended | advanced-algebra-and-galois-theory | number-theory | 10 | Work with Noetherian rings, modules, localization, primary decomposition, integral extensions, Hilbert basis and Nullstellensatz results, and dimension theory. | proposed |
 | 38 | representation-theory-and-lie-theory | graduate | specialization | advanced-algebra-and-galois-theory | general-topology, differential-geometry-and-manifolds | 11 | Decompose representations of finite groups with characters and orthogonality, induce and restrict, and extend to Lie algebras, root systems, weights, and their classification. | proposed |
-| 39 | algebraic-and-analytic-number-theory | graduate | specialization | advanced-algebra-and-galois-theory, complex-analysis, number-theory | None | 11 | Study number fields, rings of integers, ideal factorization, class groups and units, and use Dirichlet series, zeta and L-functions to prove distribution results about primes. | proposed |
-| 40 | modern-pde-and-sobolev-theory | graduate | specialization | functional-analysis, partial-differential-equations | harmonic-and-fourier-analysis | 11 | Use distributions, Sobolev spaces, weak formulations, variational and energy methods, elliptic regularity, and semigroup techniques to establish existence, uniqueness, and regularity. | proposed |
-| 41 | algebraic-geometry | graduate | specialization | commutative-algebra | complex-analysis, category-theory-and-homological-algebra, algebraic-topology | 11 | Relate ideals to affine and projective varieties, work with morphisms, sheaves, and first schemes, and analyze curves through divisors and Riemann-Roch. | proposed |
-| 42 | riemannian-geometry-and-geometric-analysis | graduate | specialization | differential-geometry-and-manifolds, real-analysis | general-topology, functional-analysis | 11 | Use connections, curvature tensors, geodesics, Jacobi fields, and comparison theorems, and connect curvature to topology through Laplacians, heat flow, and minimal surfaces. | proposed |
-| 43 | dynamical-systems-and-ergodic-theory | graduate | specialization | measure-theory-and-lebesgue-integration, differential-equations | mathematical-computing-and-experimentation, functional-analysis | 11 | Analyze flows and maps through invariant sets, stability, bifurcation, hyperbolicity, symbolic dynamics, invariant measures, ergodic theorems, mixing, and entropy. | proposed |
-| 44 | stochastic-analysis-and-sdes | graduate | specialization | measure-theoretic-probability | stochastic-processes, partial-differential-equations | 10 | Construct the Ito integral, apply Ito's formula, solve and approximate stochastic differential equations, and connect diffusions to parabolic equations and changes of measure. | proposed |
-| 45 | advanced-combinatorics-and-graph-theory | graduate | specialization | discrete-mathematics-and-combinatorics, probability, linear-algebra | theory-of-computation-and-complexity, abstract-algebra | 10 | Prove extremal, Ramsey, and probabilistic-method results, analyze random graphs and thresholds, and use spectral and algebraic methods on combinatorial structures. | proposed |
-| 46 | numerical-methods-for-differential-equations | graduate | specialization | numerical-analysis, partial-differential-equations | functional-analysis, optimization-and-operations-research | 10 | Design and analyze finite difference, finite element, and spectral discretizations with consistency, stability, convergence, conservation, and modern solver strategies. | proposed |
-| 47 | mathematics-of-machine-learning-and-data-science | graduate | specialization | statistical-inference-and-data-analysis, optimization-and-operations-research, measure-theoretic-probability | numerical-analysis, functional-analysis | 11 | Establish learning guarantees with concentration, complexity measures, and empirical risk minimization, and analyze kernels, high-dimensional estimation, and optimization for modern learning models. | proposed |
-| 48 | arithmetic-geometry-and-modern-number-theory | research-specialization | specialization | algebraic-and-analytic-number-theory, algebraic-geometry, mathematical-research-practice | representation-theory-and-lie-theory | 10 | Read current work on elliptic curves, modular forms, Galois representations, rational points, L-functions, computational databases, and arithmetic statistics. | proposed |
-| 49 | low-dimensional-topology-and-geometric-topology | research-specialization | specialization | algebraic-topology, riemannian-geometry-and-geometric-analysis, mathematical-research-practice | representation-theory-and-lie-theory | 10 | Engage literature on knots and links, surfaces and mapping class groups, three- and four-manifolds, hyperbolic structures, geometrization, and quantum and gauge-theoretic invariants. | proposed |
-| 50 | topological-and-geometric-data-analysis | research-specialization | specialization | algebraic-topology, statistical-inference-and-data-analysis, mathematical-computing-and-experimentation, mathematical-research-practice | mathematics-of-machine-learning-and-data-science, category-theory-and-homological-algebra | 9 | Compute and interpret persistent homology and related invariants, justify stability and statistical guarantees, and critique applied topological and geometric inference in the literature. | proposed |
-| 51 | formalization-and-proof-assistants | research-specialization | specialization | mathematical-logic-and-set-theory, mathematical-computing-and-experimentation, mathematical-research-practice | abstract-algebra, real-analysis, category-theory-and-homological-algebra | 9 | Formalize definitions, theorems, and proofs in a dependent-type proof assistant, navigate a mathematical library, and assess what machine-checked mathematics does and does not certify. | proposed |
-| 52 | random-matrices-and-high-dimensional-probability | research-specialization | specialization | measure-theoretic-probability, mathematical-research-practice | functional-analysis, harmonic-and-fourier-analysis, mathematics-of-machine-learning-and-data-science | 10 | Work with concentration of measure, empirical processes, spectral limits, universality, and free probability, and read current high-dimensional probability literature. | proposed |
+| 39 | algebraic-number-theory | graduate | specialization | advanced-algebra-and-galois-theory, number-theory | commutative-algebra | 10 | Study number fields, rings of integers, norms and traces, ramification, ideal factorization, class groups, units, local methods, and the arithmetic of extensions. | proposed |
+| 40 | analytic-number-theory | graduate | specialization | complex-analysis, number-theory | harmonic-and-fourier-analysis | 10 | Use Dirichlet series, zeta and L-functions, character sums, Tauberian ideas, and sieve and circle methods to analyze primes and arithmetic functions. | proposed |
+| 41 | modern-pde-and-sobolev-theory | graduate | specialization | functional-analysis, partial-differential-equations | harmonic-and-fourier-analysis | 11 | Use distributions, Sobolev spaces, weak formulations, variational and energy methods, elliptic regularity, and semigroup techniques to establish existence, uniqueness, and regularity. | proposed |
+| 42 | algebraic-geometry | graduate | specialization | commutative-algebra | complex-analysis, category-theory-and-homological-algebra, algebraic-topology | 11 | Relate ideals to affine and projective varieties, work with morphisms, sheaves, and first schemes, and analyze curves through divisors and Riemann-Roch. | proposed |
+| 43 | riemannian-geometry-and-geometric-analysis | graduate | specialization | differential-geometry-and-manifolds, real-analysis | general-topology, functional-analysis | 11 | Use connections, curvature tensors, geodesics, Jacobi fields, and comparison theorems, and connect curvature to topology through Laplacians, heat flow, and minimal surfaces. | proposed |
+| 44 | dynamical-systems-and-ergodic-theory | graduate | specialization | measure-theory-and-lebesgue-integration, differential-equations | mathematical-computing-and-experimentation, functional-analysis | 11 | Analyze flows and maps through invariant sets, stability, bifurcation, hyperbolicity, symbolic dynamics, invariant measures, ergodic theorems, mixing, and entropy. | proposed |
+| 45 | stochastic-analysis-and-sdes | graduate | specialization | measure-theoretic-probability | stochastic-processes, partial-differential-equations | 10 | Construct the Ito integral, apply Ito's formula, solve and approximate stochastic differential equations, and connect diffusions to parabolic equations and changes of measure. | proposed |
+| 46 | advanced-combinatorics-and-graph-theory | graduate | specialization | discrete-mathematics-and-combinatorics, probability, linear-algebra | theory-of-computation-and-complexity, abstract-algebra | 10 | Prove extremal, Ramsey, and probabilistic-method results, analyze random graphs and thresholds, and use spectral and algebraic methods on combinatorial structures. | proposed |
+| 47 | numerical-methods-for-differential-equations | graduate | specialization | numerical-analysis, partial-differential-equations | functional-analysis, optimization-and-operations-research | 10 | Design and analyze finite difference, finite element, and spectral discretizations with consistency, stability, convergence, conservation, and modern solver strategies. | proposed |
+| 48 | mathematics-of-machine-learning-and-data-science | graduate | specialization | statistical-inference-and-data-analysis, optimization-and-operations-research, measure-theoretic-probability | numerical-analysis, functional-analysis | 11 | Establish learning guarantees with concentration, complexity measures, and empirical risk minimization, and analyze kernels, high-dimensional estimation, and optimization for modern learning models. | proposed |
+| 49 | arithmetic-geometry-and-modern-number-theory | research-specialization | specialization | algebraic-number-theory, analytic-number-theory, algebraic-geometry, mathematical-research-practice | representation-theory-and-lie-theory | 10 | Read current work on elliptic curves, modular forms, Galois representations, rational points, L-functions, computational databases, and arithmetic statistics. | proposed |
+| 50 | low-dimensional-topology-and-geometric-topology | research-specialization | specialization | algebraic-topology, riemannian-geometry-and-geometric-analysis, mathematical-research-practice | representation-theory-and-lie-theory | 10 | Engage literature on knots and links, surfaces and mapping class groups, three- and four-manifolds, hyperbolic structures, geometrization, and quantum and gauge-theoretic invariants. | proposed |
+| 51 | topological-and-geometric-data-analysis | research-specialization | specialization | algebraic-topology, statistical-inference-and-data-analysis, mathematical-computing-and-experimentation, mathematical-research-practice | mathematics-of-machine-learning-and-data-science, category-theory-and-homological-algebra | 9 | Compute and interpret persistent homology and related invariants, justify stability and statistical guarantees, and critique applied topological and geometric inference in the literature. | proposed |
+| 52 | formalization-and-proof-assistants | research-specialization | specialization | mathematical-logic-and-set-theory, mathematical-computing-and-experimentation, mathematical-research-practice | abstract-algebra, real-analysis, category-theory-and-homological-algebra | 9 | Formalize definitions, theorems, and proofs in a dependent-type proof assistant, navigate a mathematical library, and assess what machine-checked mathematics does and does not certify. | proposed |
+| 53 | random-matrices-and-high-dimensional-probability | research-specialization | specialization | measure-theoretic-probability, linear-algebra, mathematical-research-practice | functional-analysis, harmonic-and-fourier-analysis, mathematics-of-machine-learning-and-data-science | 10 | Work with concentration of measure, empirical processes, spectral limits, universality, and free probability, and read current high-dimensional probability literature. | proposed |
 
 ## Sequencing decisions and rejected alternatives
 
@@ -256,18 +282,19 @@ establishes it. No deck's opening assumptions exceed its closure.
   probability for the first time.
 - **algebraic-topology** (34) — assumes spaces, continuity, homeomorphism,
   compactness, connectedness, and quotient constructions from
-  `general-topology`, and groups, homomorphisms, quotients, and exact-sequence
-  reasoning about abelian groups from `abstract-algebra`. Both are hard; the
-  functorial framing is built here.
+  `general-topology`, and groups, homomorphisms, quotients, and abelian groups
+  from `abstract-algebra`. Both are hard; exact sequences and the functorial
+  framing are built here.
 - **harmonic-and-fourier-analysis** (35) — assumes L^p spaces, dominated
   convergence, Fubini, and approximation by simple functions from
   `measure-theory-and-lebesgue-integration`. Hilbert-space language and contour
   methods sharpen several chapters, so `functional-analysis` and
   `complex-analysis` are recommended; the deck develops the Hilbert-space facts
   it needs for L^2 theory directly from the inner product.
-- **category-theory-and-homological-algebra** (36) — assumes modules, exact
-  sequences, quotients, and enough structural experience for abstraction to be
-  motivated rather than empty, from `advanced-algebra-and-galois-theory`.
+- **category-theory-and-homological-algebra** (36) — assumes modules,
+  homomorphisms, quotients, and enough structural experience for abstraction to
+  be motivated rather than empty, from `advanced-algebra-and-galois-theory`.
+  Exact sequences are introduced here before they support homological algebra.
   Topological examples make the derived-functor chapters concrete, so
   `algebraic-topology` is recommended; every mandatory example is algebraic.
 - **commutative-algebra** (37) — assumes rings, ideals, quotients, polynomial
@@ -280,64 +307,75 @@ establishes it. No deck's opening assumptions exceed its closure.
   algebra transitively. Matrix Lie groups are introduced concretely, so
   topology and manifolds are recommended rather than required; the deck states
   which smooth-structure claims it takes on faith and which it proves.
-- **algebraic-and-analytic-number-theory** (39) — assumes ideal theory, field
-  extensions, and Galois language from `advanced-algebra-and-galois-theory`;
-  contour integration, residues, and analytic continuation from
-  `complex-analysis`; and congruences, quadratic reciprocity, and multiplicative
-  functions from `number-theory`. All three are hard because the deck genuinely
-  interleaves them from its first chapters.
-- **modern-pde-and-sobolev-theory** (40) — assumes Banach and Hilbert spaces,
-  bounded operators, duality, weak convergence, and the Riesz representation and
-  Lax-Milgram machinery from `functional-analysis`, and the classical equations,
+- **algebraic-number-theory** (39) — assumes fields, extensions, Galois
+  language, modules, and canonical forms from
+  `advanced-algebra-and-galois-theory`, plus divisibility, congruences, and
+  quadratic reciprocity from `number-theory`. Both are hard. The first chapter
+  constructs number fields and introduces norms, traces, and rings of integers;
+  localization and dimension theory from `commutative-algebra` are helpful later
+  but are not needed to begin, so that deck is recommended.
+- **analytic-number-theory** (40) — assumes holomorphic and meromorphic
+  functions, contour integration, residues, and power and Laurent series
+  from `complex-analysis`, plus multiplicative functions, congruences, and prime
+  arithmetic from `number-theory`. Both are hard. Analytic continuation,
+  Dirichlet characters, Tauberian arguments, and sieve language are introduced
+  here; Fourier methods enrich the circle-method chapters, so
+  `harmonic-and-fourier-analysis` is recommended rather than required.
+- **modern-pde-and-sobolev-theory** (41) — assumes Banach and Hilbert spaces,
+  bounded operators, duality, and weak convergence from `functional-analysis`,
+  and the classical equations,
   boundary conditions, and maximum principles from
-  `partial-differential-equations`. Both hard; `harmonic-and-fourier-analysis`
-  sharpens the regularity chapters and is recommended.
-- **algebraic-geometry** (41) — assumes Noetherian rings, localization, primary
+  `partial-differential-equations`. Both are hard. The opening variational
+  sequence establishes Riesz-representation and Lax-Milgram machinery before
+  using it; `harmonic-and-fourier-analysis` sharpens the regularity chapters and
+  is recommended.
+- **algebraic-geometry** (42) — assumes Noetherian rings, localization, primary
   decomposition, integral extensions, and the Nullstellensatz from
   `commutative-algebra`, which transitively supplies all needed algebra. Sheaf
   cohomology, Riemann surfaces, and homological tools appear as recommended
   companions; the first chapters stay with varieties and morphisms so the
   closure is sufficient.
-- **riemannian-geometry-and-geometric-analysis** (42) — assumes smooth
+- **riemannian-geometry-and-geometric-analysis** (43) — assumes smooth
   manifolds, tangent spaces, vector fields, differential forms, Stokes'
   theorem, and first metrics from `differential-geometry-and-manifolds`, and
   rigorous limit, compactness, and convergence arguments from `real-analysis`.
   The geometric-analysis chapters use elliptic estimates; those are stated with
   precise hypotheses and referenced, with `functional-analysis` recommended for
   learners who want the proofs.
-- **dynamical-systems-and-ergodic-theory** (43) — assumes measures, invariance,
-  and the Lebesgue integral from `measure-theory-and-lebesgue-integration`, and
+- **dynamical-systems-and-ergodic-theory** (44) — assumes measures and the
+  Lebesgue integral from `measure-theory-and-lebesgue-integration`, and
   flows, linearization, equilibria, and phase-plane analysis from
   `differential-equations`. Both hard, matching the deck's two halves.
-  Numerical experimentation and operator methods are recommended.
-- **stochastic-analysis-and-sdes** (44) — assumes filtrations, conditional
+  Invariant measures are introduced here. Numerical experimentation and operator
+  methods are recommended.
+- **stochastic-analysis-and-sdes** (45) — assumes filtrations, conditional
   expectation, martingale convergence, and modes of convergence from
   `measure-theoretic-probability`, which is the only genuinely required inbound
   deck since it transitively supplies both measure theory and elementary
   probability. Brownian motion is constructed here rather than assumed, so
   `stochastic-processes` is recommended; the Feynman-Kac chapter is where
   `partial-differential-equations` helps.
-- **advanced-combinatorics-and-graph-theory** (45) — assumes counting,
+- **advanced-combinatorics-and-graph-theory** (46) — assumes counting,
   generating functions, and graph fundamentals from
-  `discrete-mathematics-and-combinatorics`; expectation, variance, and
-  concentration-style estimates for the probabilistic method from `probability`;
-  and eigenvalues, adjacency and Laplacian spectra, and rank arguments from
-  `linear-algebra`. All three are used from the early chapters onward.
-- **numerical-methods-for-differential-equations** (46) — assumes conditioning,
+  `discrete-mathematics-and-combinatorics`; expectation, variance, independence,
+  and limit-law vocabulary from `probability`; and eigenvalues and rank arguments
+  from `linear-algebra`. All three are used from the early chapters onward;
+  probabilistic-method tail bounds and graph spectra are developed here.
+- **numerical-methods-for-differential-equations** (47) — assumes conditioning,
   stability, convergence analysis, interpolation, quadrature, and linear solvers
   from `numerical-analysis` (which transitively carries the computing deck), and
-  equation classification, well-posedness, and boundary conditions from
-  `partial-differential-equations`. The finite-element chapters introduce the
-  weak formulation concretely on their own; `functional-analysis` is recommended
-  for the abstract convergence theory.
-- **mathematics-of-machine-learning-and-data-science** (47) — assumes
+  equation classification, classical solution behavior, and boundary conditions
+  from `partial-differential-equations`. Well-posedness criteria and the weak
+  formulation are introduced here before discretization; `functional-analysis`
+  is recommended for the abstract convergence theory.
+- **mathematics-of-machine-learning-and-data-science** (48) — assumes
   estimation, risk, bias-variance reasoning, and model criticism from
   `statistical-inference-and-data-analysis`; convexity, duality, and gradient
   and Newton methods from `optimization-and-operations-research`; and rigorous
-  concentration, conditional expectation, and limit theory from
-  `measure-theoretic-probability`. The third edge is what separates this deck
-  from an undergraduate methods course, and is why the deck is graduate rather
-  than undergraduate-advanced.
+  conditional expectation, martingales, and convergence modes from
+  `measure-theoretic-probability`. Concentration inequalities are developed here.
+  The third edge is what separates this deck from an undergraduate methods course
+  and is why the deck is graduate rather than undergraduate-advanced.
 
 ### Research-specialization layer
 
@@ -346,14 +384,16 @@ current work. Every one therefore lists `mathematical-research-practice` as a
 hard prerequisite in addition to its technical closure, so no route reaches a
 paper without first learning to read one.
 
-- **arithmetic-geometry-and-modern-number-theory** (48) — first chapter assumes
-  number fields, ideal class groups, L-functions, and analytic estimates from
-  `algebraic-and-analytic-number-theory`; varieties, morphisms, divisors, and
-  Riemann-Roch from `algebraic-geometry`; and literature-navigation and
-  exposition skills from `mathematical-research-practice`. Galois
-  representations are built on the Galois theory carried transitively by both
-  technical edges; representation-theoretic depth is recommended, not required.
-- **low-dimensional-topology-and-geometric-topology** (49) — assumes fundamental
+- **arithmetic-geometry-and-modern-number-theory** (49) — first chapter assumes
+  number fields, ramification, class groups, and local methods from
+  `algebraic-number-theory`; Dirichlet series, L-functions, and analytic estimates
+  from `analytic-number-theory`; varieties, morphisms, divisors, and Riemann-Roch
+  from `algebraic-geometry`; and literature navigation and exposition from
+  `mathematical-research-practice`. These four capabilities are independently
+  needed by the deck, so none is redundant. Galois representations build on the
+  algebraic route's transitive Galois theory; deeper representation theory remains
+  recommended.
+- **low-dimensional-topology-and-geometric-topology** (50) — assumes fundamental
   groups, covering spaces, homology, and cohomological duality from
   `algebraic-topology`; curvature, geodesics, comparison arguments, and
   constant-curvature model spaces from
@@ -361,7 +401,7 @@ paper without first learning to read one.
   `mathematical-research-practice`. Hyperbolic structures and geometrization
   need both the topological invariants and the metric geometry, which is why the
   deck sits after both rather than after topology alone.
-- **topological-and-geometric-data-analysis** (50) — assumes simplicial and
+- **topological-and-geometric-data-analysis** (51) — assumes simplicial and
   singular homology and functoriality from `algebraic-topology`; sampling,
   estimation, confidence statements, and model criticism from
   `statistical-inference-and-data-analysis`; working computational practice from
@@ -371,24 +411,24 @@ paper without first learning to read one.
   asks whether the feature is real — which requires topology, statistics, and
   computation simultaneously. Category-theoretic framing of persistence modules
   is recommended and self-bridged where used.
-- **formalization-and-proof-assistants** (51) — assumes formal languages,
+- **formalization-and-proof-assistants** (52) — assumes formal languages,
   deduction, models, and the syntax-semantics distinction from
-  `mathematical-logic-and-set-theory`; practical tooling, environments, and
-  version control from `mathematical-computing-and-experimentation`; and
+  `mathematical-logic-and-set-theory`; practical programming and environment
+  fluency from `mathematical-computing-and-experimentation`; and
   literature and library navigation from `mathematical-research-practice`.
-  Dependent type theory is developed here against the learner's existing
-  first-order background. The deck formalizes mathematics the learner already
-  knows, so `abstract-algebra` and `real-analysis` are recommended to widen the
-  pool of formalizable targets rather than required.
-- **random-matrices-and-high-dimensional-probability** (52) — assumes
+  Version control and dependent type theory are developed here against the
+  learner's existing tooling and first-order background. The deck formalizes
+  mathematics the learner already knows, so `abstract-algebra` and
+  `real-analysis` are recommended to widen the pool of formalizable targets
+  rather than required.
+- **random-matrices-and-high-dimensional-probability** (53) — assumes
   characteristic functions, martingales, conditional expectation, and
-  convergence in distribution from `measure-theoretic-probability`, plus
-  research practice. Spectral statements are made for concrete matrix ensembles
-  using finite-dimensional spectral theory carried transitively through
-  `probability` → `single-variable-integral-calculus` and through the linear
-  algebra assumed by the surrounding decks; operator-theoretic and Fourier
-  refinements are recommended companions for the free-probability and
-  universality chapters.
+  convergence in distribution from `measure-theoretic-probability`; eigenvalues,
+  inner products, orthogonality, and matrix factorizations from the direct
+  `linear-algebra` edge; and literature practice from
+  `mathematical-research-practice`. Operator-theoretic and Fourier refinements
+  remain recommended companions for the free-probability and universality
+  chapters.
 
 No level jump is retained anywhere in the graph without a stated closure above.
 The one transition that would otherwise be a jump — undergraduate theory
@@ -406,28 +446,28 @@ than being duplicated independently.
 - **Linearity and approximation.** Proportional reasoning (1) → linear models
   (2) → tangent lines and Taylor polynomials (7, 9) → Jacobians and
   differentials (11) → best approximation and conditioning (22) → weak
-  formulations and Galerkin projection (40, 46).
+  formulations and Galerkin projection (41, 47).
 - **Limit and convergence.** Informal end behavior (5) → limits and continuity
   (7) → series convergence (9) → epsilon-delta proof and uniform convergence
   (16) → topological convergence (19) → almost-everywhere and L^p convergence
   (29) → convergence in distribution and weak-* convergence (32, 33).
 - **Invariance and symmetry.** Rigid motions (3) → trigonometric identities (5)
   → eigenvectors and invariant subspaces (8) → group actions (17) → Galois
-  correspondence (30) → topological invariants (34) → invariant measures (43).
+  correspondence (30) → topological invariants (34) → invariant measures (44).
 - **Uncertainty.** Counting and proportion (1, 10) → probability models (12) →
   sampling distributions and inference (14) → processes in time (24) →
-  measure-theoretic foundation (33) → stochastic calculus (44) →
-  high-dimensional concentration (52).
+  measure-theoretic foundation (33) → stochastic calculus (45) →
+  high-dimensional concentration (53).
 - **Proof standards.** Deductive geometric argument (3) → formal proof technique
   (6) → analysis and algebra proof idioms (16, 17) → literature-grade exposition
-  (31) → machine-checked proof (51).
+  (31) → machine-checked proof (52).
 - **Computation as evidence.** Exploration and conjecture (4) → numerical error
   and stability (22) → algorithmic feasibility and complexity (27) →
-  discretization and simulation (46) → computational databases and experiment in
-  research (48, 50).
+  discretization and simulation (47) → computational databases and experiment in
+  research (49, 51).
 - **Geometry of space.** Measurement and coordinates (3) → vectors and
   parametrization (5, 11) → curvature of curves and surfaces (20) → abstract
-  spaces (19) → curvature-topology interaction (42, 49).
+  spaces (19) → curvature-topology interaction (43, 50).
 
 ## Practice outside SRS
 
@@ -440,15 +480,15 @@ conversation, or other practice that flashcards cannot replace.
   a problem source.
 - **Proof writing under critique.** Writing a full proof and having it read is
   not reproducible on a card. Decks 6, 16, 17, and 31 depend on it most.
-- **Programming and numerical experiments.** Decks 4, 22, 27, 43, 46, 50, and 51
+- **Programming and numerical experiments.** Decks 4, 22, 27, 44, 47, 51, and 52
   require a working environment, real code, and reproducible artifacts.
-- **Modeling projects.** Deck 28 and the data-facing decks (14, 47, 50) need
+- **Modeling projects.** Deck 28 and the data-facing decks (14, 48, 51) need
   open-ended projects with real or realistic data, including defending modeling
   choices and reporting failure.
-- **Reading a paper end to end.** Decks 31 and 48–52 require sustained reading,
+- **Reading a paper end to end.** Decks 31 and 49–53 require sustained reading,
   seminar presentation, and question formulation. Cards can hold definitions and
   landmark results; they cannot hold the practice of getting stuck productively.
-- **Formalization practice.** Deck 51 requires an installed proof assistant and
+- **Formalization practice.** Deck 52 requires an installed proof assistant and
   library, since the feedback loop is the assistant itself.
 - **Mathematical conversation.** Explaining an argument aloud and being
   questioned exposes gaps that recognition-level review hides.
@@ -458,9 +498,9 @@ conversation, or other practice that flashcards cannot replace.
 Deferred domains in the coverage matrix are the intended growth directions and
 are ordered by how ready the current graph is to support them: control theory
 and systems (after 23), several complex variables and potential theory
-(after 18 and 20), game theory and mathematical finance (after 23 and 44),
+(after 18 and 20), game theory and mathematical finance (after 23 and 45),
 special functions (after 13 and 35), non-Euclidean and projective geometry
 (after 3 and 20), K-theory (after 34 and 36), order and universal algebra
-(after 10 and 17), mathematical physics (after 32, 38, and 42), mathematical
+(after 10 and 17), mathematical physics (after 32, 38, and 43), mathematical
 biology (after 13 and 28), and the history, philosophy, and education of
 mathematics as a distinct scholarly register.
