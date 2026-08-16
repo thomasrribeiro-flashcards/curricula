@@ -260,7 +260,7 @@ prerequisites = ["linear-algebra", "single-variable-integral-calculus", "mathema
 recommended_after = ["differential-equations", "real-analysis"]
 estimated_chapters = 11
 status = "proposed"
-description = "Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear systems, eigenvalues, and initial-value problems."
+description = "Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear and nonlinear systems, least squares, and eigenvalues."
 
 [[decks]]
 id = "optimization-and-operations-research"
@@ -443,19 +443,30 @@ status = "proposed"
 description = "Decompose representations of finite groups with characters and orthogonality, induce and restrict, and extend to Lie algebras, root systems, weights, and their classification."
 
 [[decks]]
-id = "algebraic-and-analytic-number-theory"
+id = "algebraic-number-theory"
 order = 39
 tier = "specialization"
 level = "graduate"
-prerequisites = ["advanced-algebra-and-galois-theory", "complex-analysis", "number-theory"]
-recommended_after = []
-estimated_chapters = 11
+prerequisites = ["advanced-algebra-and-galois-theory", "number-theory"]
+recommended_after = ["commutative-algebra"]
+estimated_chapters = 10
 status = "proposed"
-description = "Study number fields, rings of integers, ideal factorization, class groups and units, and use Dirichlet series, zeta and L-functions to prove distribution results about primes."
+description = "Study number fields, rings of integers, norms and traces, ramification, ideal factorization, class groups, units, local methods, and the arithmetic of extensions."
+
+[[decks]]
+id = "analytic-number-theory"
+order = 40
+tier = "specialization"
+level = "graduate"
+prerequisites = ["complex-analysis", "number-theory"]
+recommended_after = ["harmonic-and-fourier-analysis"]
+estimated_chapters = 10
+status = "proposed"
+description = "Use Dirichlet series, zeta and L-functions, character sums, Tauberian ideas, and sieve and circle methods to analyze primes and arithmetic functions."
 
 [[decks]]
 id = "modern-pde-and-sobolev-theory"
-order = 40
+order = 41
 tier = "specialization"
 level = "graduate"
 prerequisites = ["functional-analysis", "partial-differential-equations"]
@@ -466,7 +477,7 @@ description = "Use distributions, Sobolev spaces, weak formulations, variational
 
 [[decks]]
 id = "algebraic-geometry"
-order = 41
+order = 42
 tier = "specialization"
 level = "graduate"
 prerequisites = ["commutative-algebra"]
@@ -477,7 +488,7 @@ description = "Relate ideals to affine and projective varieties, work with morph
 
 [[decks]]
 id = "riemannian-geometry-and-geometric-analysis"
-order = 42
+order = 43
 tier = "specialization"
 level = "graduate"
 prerequisites = ["differential-geometry-and-manifolds", "real-analysis"]
@@ -488,7 +499,7 @@ description = "Use connections, curvature tensors, geodesics, Jacobi fields, and
 
 [[decks]]
 id = "dynamical-systems-and-ergodic-theory"
-order = 43
+order = 44
 tier = "specialization"
 level = "graduate"
 prerequisites = ["measure-theory-and-lebesgue-integration", "differential-equations"]
@@ -499,7 +510,7 @@ description = "Analyze flows and maps through invariant sets, stability, bifurca
 
 [[decks]]
 id = "stochastic-analysis-and-sdes"
-order = 44
+order = 45
 tier = "specialization"
 level = "graduate"
 prerequisites = ["measure-theoretic-probability"]
@@ -510,7 +521,7 @@ description = "Construct the Ito integral, apply Ito's formula, solve and approx
 
 [[decks]]
 id = "advanced-combinatorics-and-graph-theory"
-order = 45
+order = 46
 tier = "specialization"
 level = "graduate"
 prerequisites = ["discrete-mathematics-and-combinatorics", "probability", "linear-algebra"]
@@ -521,7 +532,7 @@ description = "Prove extremal, Ramsey, and probabilistic-method results, analyze
 
 [[decks]]
 id = "numerical-methods-for-differential-equations"
-order = 46
+order = 47
 tier = "specialization"
 level = "graduate"
 prerequisites = ["numerical-analysis", "partial-differential-equations"]
@@ -532,7 +543,7 @@ description = "Design and analyze finite difference, finite element, and spectra
 
 [[decks]]
 id = "mathematics-of-machine-learning-and-data-science"
-order = 47
+order = 48
 tier = "specialization"
 level = "graduate"
 prerequisites = ["statistical-inference-and-data-analysis", "optimization-and-operations-research", "measure-theoretic-probability"]
@@ -547,10 +558,10 @@ description = "Establish learning guarantees with concentration, complexity meas
 
 [[decks]]
 id = "arithmetic-geometry-and-modern-number-theory"
-order = 48
+order = 49
 tier = "specialization"
 level = "research-specialization"
-prerequisites = ["algebraic-and-analytic-number-theory", "algebraic-geometry", "mathematical-research-practice"]
+prerequisites = ["algebraic-number-theory", "analytic-number-theory", "algebraic-geometry", "mathematical-research-practice"]
 recommended_after = ["representation-theory-and-lie-theory"]
 estimated_chapters = 10
 status = "proposed"
@@ -558,7 +569,7 @@ description = "Read current work on elliptic curves, modular forms, Galois repre
 
 [[decks]]
 id = "low-dimensional-topology-and-geometric-topology"
-order = 49
+order = 50
 tier = "specialization"
 level = "research-specialization"
 prerequisites = ["algebraic-topology", "riemannian-geometry-and-geometric-analysis", "mathematical-research-practice"]
@@ -569,7 +580,7 @@ description = "Engage literature on knots and links, surfaces and mapping class 
 
 [[decks]]
 id = "topological-and-geometric-data-analysis"
-order = 50
+order = 51
 tier = "specialization"
 level = "research-specialization"
 prerequisites = ["algebraic-topology", "statistical-inference-and-data-analysis", "mathematical-computing-and-experimentation", "mathematical-research-practice"]
@@ -580,7 +591,7 @@ description = "Compute and interpret persistent homology and related invariants,
 
 [[decks]]
 id = "formalization-and-proof-assistants"
-order = 51
+order = 52
 tier = "specialization"
 level = "research-specialization"
 prerequisites = ["mathematical-logic-and-set-theory", "mathematical-computing-and-experimentation", "mathematical-research-practice"]
@@ -591,10 +602,10 @@ description = "Formalize definitions, theorems, and proofs in a dependent-type p
 
 [[decks]]
 id = "random-matrices-and-high-dimensional-probability"
-order = 52
+order = 53
 tier = "specialization"
 level = "research-specialization"
-prerequisites = ["measure-theoretic-probability", "mathematical-research-practice"]
+prerequisites = ["measure-theoretic-probability", "linear-algebra", "mathematical-research-practice"]
 recommended_after = ["functional-analysis", "harmonic-and-fourier-analysis", "mathematics-of-machine-learning-and-data-science"]
 estimated_chapters = 10
 status = "proposed"
@@ -709,8 +720,8 @@ rationale = "A named research section and a recurring departmental group, unifie
 [[coverage]]
 domain = "number-theory"
 disposition = "included"
-decks = ["number-theory", "algebraic-and-analytic-number-theory", "arithmetic-geometry-and-modern-number-theory"]
-rationale = "An elementary proof-rich entry, a graduate algebraic and analytic core, and a literature-facing branch reflect how the area is actually staged."
+decks = ["number-theory", "algebraic-number-theory", "analytic-number-theory", "arithmetic-geometry-and-modern-number-theory"]
+rationale = "An elementary proof-rich entry, separate graduate algebraic and analytic routes with different prerequisites, and a literature-facing branch avoid forcing either graduate route through the other's tools."
 
 [[coverage]]
 domain = "algebraic-geometry"

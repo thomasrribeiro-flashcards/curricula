@@ -32,7 +32,7 @@ domain guide for this subject and is deliberately **not** copied here.
   current work. This is a coverage decision, not a claim about the learner's
   interests. **Needs confirmation.**
 - Deck granularity: course. Each deck is one coherent course-sized capability,
-  estimated at 6–14 chapters. The 52 proposed decks range from 8 to 13.
+  estimated at 6–14 chapters. The 53 proposed decks range from 8 to 13.
 - Durable capabilities: fluent symbolic and numerical computation; the function
   concept across representations; proof construction and evaluation; the
   analysis, algebra, geometry, and probability cores that every advanced route
@@ -87,51 +87,74 @@ confirmed above is treated as unseen during cold-start review.
 
 ## Evidence authorities
 
-Consulted 2026-08-06. Curricular sources shaped the domain map and deck
-boundaries; they are not used to verify individual mathematical claims, which
-are verified against standard texts and primary literature at authoring time.
+Consulted 2026-08-16. Curricular sources shaped the domain map, deck boundaries,
+and maturity transitions; they are not used to verify individual mathematical
+claims, which must be verified against authoritative texts, direct derivation,
+or primary literature at authoring time. Except where a license is stated, the
+sources below were consulted under their publishers' website terms and no source
+text, table, or figure is reproduced.
 
 - Consensus or professional frameworks:
   - **Mathematics Subject Classification 2020** (MSC2020), maintained jointly by
-    zbMATH Open and Mathematical Reviews — <https://msc2020.org/>,
-    <https://zbmath.org/classification/>. Authority: the two abstracting and
-    reviewing services of record. License: CC BY-NC-SA 4.0, so the scheme
-    informs the domain map but its text is not reproduced. Used as the primary
-    check that the coverage matrix names material domains rather than course
-    titles, including the newer machine-assisted and homotopical headings.
-  - **International Mathematical Union / ICM section structure** —
-    <https://www.mathunion.org/>, <https://icm2026.org/>. Authority: the
-    field's international body. Used to confirm which areas the research
-    community currently treats as top-level sections, which shaped the graduate
-    and research layers.
-  - **MAA Committee on the Undergraduate Program in Mathematics (CUPM)
-    Curriculum Guide** — <https://maa.org/> (CUPM guide and course-area study
-    group reports). Authority: the US professional society for collegiate
-    mathematics. Used for the undergraduate core, for the cognitive
-    recommendations (proof, communication, technology), and for Content
-    Recommendation 5 — experience mathematics from another discipline's
-    perspective — which motivates the single external `recommended_after` edge.
-  - **QAA Subject Benchmark Statement, Mathematics, Statistics and Operational
-    Research** — <https://www.qaa.ac.uk/quality-code/subject-benchmark-statements>.
-    Authority: the UK degree-standards body. Used as a non-US cross-check that
-    the undergraduate core is not a national artifact.
-  - **Common Core State Standards for Mathematics** —
-    <https://www.thecorestandards.org/Math/>. Authority: widely adopted US
-    school standards. Used only to sequence the foundational layer and its
-    practice standards.
-  - **CBMS survey of undergraduate mathematical sciences programs** —
-    <https://www.ams.org/cbms-survey>. Authority: AMS/CBMS statistical survey.
-    Used to check which courses are actually offered and required, as a guard
-    against designing an idealized curriculum.
-  - **SIAM guidance on computational science and data science education** —
-    <https://www.siam.org/>. Authority: the applied and computational
-    mathematics society. Used to justify treating computing, numerical analysis,
-    optimization, and the mathematics of learning as first-class decks.
-  - **Published PhD qualifying-exam syllabi from research mathematics
-    departments.** Authority: primary statements of what graduate programs
-    require. Used to fix the graduate core as measure theory, functional
-    analysis, complex analysis, algebra, topology, and probability, and to size
-    those decks.
+    zbMATH Open and Mathematical Reviews — <https://msc2020.org/> and
+    <https://zbmath.org/classification/>. Authority: the two mathematical
+    reviewing services of record. License: CC BY-NC-SA. Used as the principal
+    literature-domain inventory, including computation, higher categories,
+    low-dimensional topology, rough analysis, topological data analysis, and
+    computer support for mathematical research.
+  - **2023 Report of the ICM Structure Committee for ICM 2026** —
+    <https://www.mathunion.org/fileadmin/IMU/Publications/CircularLetters/2023/IMU%20AO%20CL%208_2023_StructureCommitteeReport2023.pdf>
+    and the IMU's <https://www.mathunion.org/icm/icm-2026>. Authority: the
+    International Mathematical Union committee charged with defining the
+    Congress's scientific sections. Terms: IMU copyright/site terms; consulted,
+    not reproduced. Its 20-section structure confirms separate contemporary
+    homes for logic, algebra, number theory, geometry, topology, analysis,
+    dynamics, PDE, probability, combinatorics, computing, numerics, control,
+    statistics/machine learning, modeling, education, and history. It supports
+    both the included domains and the explicit deferred rows; section headings
+    were not converted mechanically into decks.
+  - **MAA CUPM 2015 Curriculum Guide to Majors in the Mathematical Sciences** —
+    <https://maa.org/wp-content/uploads/2024/06/2015-CUPM-Curriculum-Guide.pdf>
+    and <https://maa.org/resource/cupm-guide/>. Authority: the Mathematical
+    Association of America's undergraduate curriculum committee; still the
+    guide linked by MAA at the access date. Terms: MAA copyright/site terms;
+    consulted, not reproduced. Used for proof, communication, technology,
+    modeling, depth, project work, and course-area boundaries, including the
+    expectation that at least one area be studied through a sustained sequence.
+  - **QAA Subject Benchmark Statement: Mathematics, Statistics and Operational
+    Research (2023)** — <https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/subject-benchmark-statement-mathematics-statistics-and-operational-research>.
+    Authority: UK sector-owned degree benchmark. Terms: QAA terms and conditions;
+    consulted, not reproduced. Used as a non-US cross-check for proof,
+    statistics, operational research, modeling, computation, communication, and
+    the overlap among these areas.
+  - **Common Core State Standards for Mathematics and Standards for Mathematical
+    Practice** — <https://www.thecorestandards.org/Math/> and
+    <https://www.thecorestandards.org/Math/Practice/>. Authority: CCSSO/NGA
+    school standards. Terms: publisher website terms; consulted, not reproduced.
+    Used only for the foundational sequence and for the recurring practices of
+    reasoning, representation, modeling, tool choice, and checking.
+  - **2021 CBMS Survey of Undergraduate Programs in the Mathematical Sciences** —
+    <https://www.ams.org/cbms/cbms2021-Report.pdf>. Authority: the AMS/CBMS
+    national program survey. Terms: AMS copyright/site terms; consulted, not
+    reproduced. Used to compare the proposed undergraduate layer with courses
+    departments actually offered in 2020–22, rather than treating an idealized
+    taxonomy as a curriculum.
+  - **SIAM Education Subcommittee Report on Undergraduate Degree Programs in
+    Applied Mathematics** — <https://doi.org/10.1137/15M1008002>. Authority:
+    SIAM Education Committee report, free to read under SIAM publication terms.
+    Used to confirm the independent roles of modeling, computation, numerical
+    analysis, optimization, and application-facing project work.
+  - **Current graduate entry and qualifying materials:** Harvard's
+    <https://www.math.harvard.edu/graduate/study-the-qualifying-exam/the-qualifying-exam-syllabus/>
+    and Berkeley's
+    <https://math.berkeley.edu/graduate/phd-program/preliminary-exam>.
+    Authority: primary departmental statements; institutional website terms;
+    consulted, not reproduced. Harvard's six-area breadth syllabus and
+    Berkeley's honors-undergraduate diagnostic were used together so that one
+    institution's local exam structure would not be mistaken for a universal
+    graduate core. They support distinct advanced algebra, analysis, geometry,
+    topology, and complex-analysis capabilities and expose the need to audit
+    each maturity transition explicitly.
 - Preferred primary sources or public agencies: peer-reviewed research
   literature and preprint servers for research-layer claims (arXiv,
   <https://arxiv.org/>, primarily as a discovery surface — the published version
@@ -211,7 +234,7 @@ treated as settled.
    assume and test.
 5. **Notation conventions.** If the learner has a house style or a target
    textbook tradition, fixing it now avoids per-deck drift.
-6. **Time budget and pace.** Fifty-two course-sized decks is a multi-year
+6. **Time budget and pace.** Fifty-three course-sized decks is a multi-year
    commitment. If the horizon is shorter, the coverage matrix should be
    narrowed deliberately rather than each deck thinned.
 7. **Accessibility and device constraints.** Confirm any screen reader, screen

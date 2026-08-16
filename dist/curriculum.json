@@ -1961,7 +1961,7 @@
       "tier": "core",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear systems, eigenvalues, and initial-value problems.",
+      "description": "Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear and nonlinear systems, least squares, and eigenvalues.",
       "prerequisites": [
         "mathematics/linear-algebra",
         "mathematics/single-variable-integral-calculus",
@@ -2358,33 +2358,58 @@
       "generation_command": "flashcards curriculum materialize mathematics/representation-theory-and-lie-theory"
     },
     {
-      "id": "mathematics/algebraic-and-analytic-number-theory",
+      "id": "mathematics/algebraic-number-theory",
       "subject": "mathematics",
-      "deck": "algebraic-and-analytic-number-theory",
+      "deck": "algebraic-number-theory",
       "order": 39,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Study number fields, rings of integers, ideal factorization, class groups and units, and use Dirichlet series, zeta and L-functions to prove distribution results about primes.",
+      "description": "Study number fields, rings of integers, norms and traces, ramification, ideal factorization, class groups, units, local methods, and the arithmetic of extensions.",
       "prerequisites": [
         "mathematics/advanced-algebra-and-galois-theory",
-        "mathematics/complex-analysis",
         "mathematics/number-theory"
       ],
-      "recommended_after": [],
+      "recommended_after": [
+        "mathematics/commutative-algebra"
+      ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/algebraic-and-analytic-number-theory",
+        "url": "https://github.com/thomasrribeiro-flashcards/algebraic-number-theory",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/algebraic-and-analytic-number-theory"
+      "generation_command": "flashcards curriculum materialize mathematics/algebraic-number-theory"
+    },
+    {
+      "id": "mathematics/analytic-number-theory",
+      "subject": "mathematics",
+      "deck": "analytic-number-theory",
+      "order": 40,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Use Dirichlet series, zeta and L-functions, character sums, Tauberian ideas, and sieve and circle methods to analyze primes and arithmetic functions.",
+      "prerequisites": [
+        "mathematics/complex-analysis",
+        "mathematics/number-theory"
+      ],
+      "recommended_after": [
+        "mathematics/harmonic-and-fourier-analysis"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/analytic-number-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/analytic-number-theory"
     },
     {
       "id": "mathematics/modern-pde-and-sobolev-theory",
       "subject": "mathematics",
       "deck": "modern-pde-and-sobolev-theory",
-      "order": 40,
+      "order": 41,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2408,7 +2433,7 @@
       "id": "mathematics/algebraic-geometry",
       "subject": "mathematics",
       "deck": "algebraic-geometry",
-      "order": 41,
+      "order": 42,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2433,7 +2458,7 @@
       "id": "mathematics/riemannian-geometry-and-geometric-analysis",
       "subject": "mathematics",
       "deck": "riemannian-geometry-and-geometric-analysis",
-      "order": 42,
+      "order": 43,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2458,7 +2483,7 @@
       "id": "mathematics/dynamical-systems-and-ergodic-theory",
       "subject": "mathematics",
       "deck": "dynamical-systems-and-ergodic-theory",
-      "order": 43,
+      "order": 44,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2483,7 +2508,7 @@
       "id": "mathematics/stochastic-analysis-and-sdes",
       "subject": "mathematics",
       "deck": "stochastic-analysis-and-sdes",
-      "order": 44,
+      "order": 45,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2507,7 +2532,7 @@
       "id": "mathematics/advanced-combinatorics-and-graph-theory",
       "subject": "mathematics",
       "deck": "advanced-combinatorics-and-graph-theory",
-      "order": 45,
+      "order": 46,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2533,7 +2558,7 @@
       "id": "mathematics/numerical-methods-for-differential-equations",
       "subject": "mathematics",
       "deck": "numerical-methods-for-differential-equations",
-      "order": 46,
+      "order": 47,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2558,7 +2583,7 @@
       "id": "mathematics/mathematics-of-machine-learning-and-data-science",
       "subject": "mathematics",
       "deck": "mathematics-of-machine-learning-and-data-science",
-      "order": 47,
+      "order": 48,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2584,13 +2609,14 @@
       "id": "mathematics/arithmetic-geometry-and-modern-number-theory",
       "subject": "mathematics",
       "deck": "arithmetic-geometry-and-modern-number-theory",
-      "order": 48,
+      "order": 49,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
       "description": "Read current work on elliptic curves, modular forms, Galois representations, rational points, L-functions, computational databases, and arithmetic statistics.",
       "prerequisites": [
-        "mathematics/algebraic-and-analytic-number-theory",
+        "mathematics/algebraic-number-theory",
+        "mathematics/analytic-number-theory",
         "mathematics/algebraic-geometry",
         "mathematics/mathematical-research-practice"
       ],
@@ -2609,7 +2635,7 @@
       "id": "mathematics/low-dimensional-topology-and-geometric-topology",
       "subject": "mathematics",
       "deck": "low-dimensional-topology-and-geometric-topology",
-      "order": 49,
+      "order": 50,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
@@ -2634,7 +2660,7 @@
       "id": "mathematics/topological-and-geometric-data-analysis",
       "subject": "mathematics",
       "deck": "topological-and-geometric-data-analysis",
-      "order": 50,
+      "order": 51,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
@@ -2661,7 +2687,7 @@
       "id": "mathematics/formalization-and-proof-assistants",
       "subject": "mathematics",
       "deck": "formalization-and-proof-assistants",
-      "order": 51,
+      "order": 52,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
@@ -2688,13 +2714,14 @@
       "id": "mathematics/random-matrices-and-high-dimensional-probability",
       "subject": "mathematics",
       "deck": "random-matrices-and-high-dimensional-probability",
-      "order": 52,
+      "order": 53,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
       "description": "Work with concentration of measure, empirical processes, spectral limits, universality, and free probability, and read current high-dimensional probability literature.",
       "prerequisites": [
         "mathematics/measure-theoretic-probability",
+        "mathematics/linear-algebra",
         "mathematics/mathematical-research-practice"
       ],
       "recommended_after": [
