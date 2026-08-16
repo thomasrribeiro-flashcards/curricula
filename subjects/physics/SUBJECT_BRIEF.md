@@ -22,7 +22,9 @@ curriculum belongs in `subject.toml`.
   satisfied immediately without any change to this roadmap.
 - Current domain mastery: none unless explicitly confirmed here. Nothing is
   confirmed. Force, energy, velocity, vectors, fields, and oscillators are all
-  treated as unseen technical vocabulary, not as common knowledge.
+  treated as unseen technical vocabulary, not as common knowledge. First-contact
+  biological vocabulary is likewise unseen; the biological-physics branch now
+  imports the cataloged biological-literacy capability explicitly.
 - Requested destination and use horizon: **whole-field**. The route must map the
   major domains and contemporary branches of physics across learning levels,
   from pre-calculus literacy through representative graduate and
@@ -46,11 +48,11 @@ curriculum belongs in `subject.toml`.
   the contemporary literature of at least one research branch.
 - Deliberate exclusions: accelerator and beam physics, medical physics, physics of
   climate and Earth systems, geophysics/space/atmospheric physics, energy science
-  and technology, chemical physics, quantum gravity and string theory, and the
-  history and philosophy of physics are **deferred** — visible future extension
-  points, not judgments about the learner. Physics education research and the
-  general theory of networks and complex systems are **out of scope** for this
-  subject; `ROADMAP.md` records where each is handled instead.
+  and technology, chemical physics, networks and complex systems, quantum gravity
+  and string theory, and the history and philosophy of physics are **deferred** —
+  visible future extension points, not judgments about the learner. Physics
+  education research is **out of scope** because it is research about physics
+  learning rather than physics content.
 
 ## Conventions and boundaries
 
@@ -83,6 +85,33 @@ curriculum belongs in `subject.toml`.
 Do not infer domain knowledge from the target level. Anything not explicitly
 confirmed above is treated as unseen during cold-start review.
 
+## Cross-subject dependency decisions
+
+- The staged catalog, not live search, is authoritative for reusable deck IDs.
+  Every executable `mathematics/...` and `biology/...` reference in
+  `subject.toml` was matched exactly against that catalog on 2026-08-16.
+- General arithmetic, algebra, trigonometry, calculus, linear algebra,
+  differential equations, probability, statistics, computing, complex analysis,
+  and PDE capability stay owned by `mathematics`; physics decks teach only their
+  physical use and representation grammar.
+- `mathematical-methods-for-physics` remains the sole local mathematics bridge
+  because contextual transfer is its durable capability. It assumes the general
+  complex-analysis and PDE results it uses; it must not reteach their proof
+  courses.
+- `biology/biological-literacy-and-scientific-practice` is a hard prerequisite
+  for `biological-physics` because cell/gene concepts and causal evidence language
+  cannot be assumed from a zero-knowledge learner. Full `biology/cell-biology` is
+  recommended, not hard: organelles, cell cycle, and other portions of its
+  complete capability are not required by every biological-physics outcome.
+- `biology/systems-and-quantitative-biology` remains recommended for the
+  living-matter research branch. Its complete genomics, biological research-
+  methods, and differential-equation closure would be a false hard prerequisite;
+  `biological-physics` establishes the specific signaling and inference objects
+  the research deck consumes.
+- The staged catalog has no reusable general networks-and-complex-systems deck.
+  That domain is therefore deferred as a legitimate physics extension instead
+  of being assigned to an invented external owner.
+
 ## Evidence authorities
 
 - Consensus or professional frameworks:
@@ -111,12 +140,14 @@ confirmed above is treated as unseen during cold-start review.
     https://ep3guide.org/ (accessed 2026-08-06; the site returned HTTP 403 to
     automated fetch and section titles were confirmed only indirectly —
     **re-verify manually** before citing any specific text).
-  - APS **Guidelines for Professional Conduct**, for research results and data
-    retention, publication and authorship, peer review, and conflict of interest —
-    https://www.aps.org/about/governance/statements/guidelines-professional-conduct
-    (accessed 2026-08-06; returned HTTP 403 to automated fetch — **re-verify the
-    current revision manually**; a widely repeated "October 2025 update" could not
-    be confirmed and must not be asserted as fact).
+  - APS **Guidelines on Ethics** and **Ethics Standards**, for truthfulness,
+    treatment of people, authorship, peer review, conflicts, and professional
+    accountability — https://www.aps.org/about/governance/statements/ethics and
+    https://www.aps.org/about/governance/policies-procedures/ethics-standards
+    (accessed 2026-08-16; the Guidelines page identifies Council approval on
+    2024-04-18; © APS, use as an authority and do not reproduce prose). The older
+    Guidelines for Professional Conduct page is superseded and is not used as the
+    current standard.
 - Preferred primary sources or public agencies:
   - NIST/CODATA fundamental constants — https://physics.nist.gov/cuu/Constants/
   - BIPM SI Brochure — https://www.bipm.org/en/publications/si-brochure
@@ -152,6 +183,41 @@ confirmed above is treated as unseen during cold-start review.
     (accessed 2026-08-06; © AAPT/ComPADRE, all rights reserved).
   - Policy: free access is not permission. No proprietary textbook prose or
     figures. All technical figures are original TikZ compiled to SVG.
+
+### Independent redesign audit source register (accessed 2026-08-16)
+
+These live sources were used to stress-test the staged baseline. They select
+coverage and prerequisite maturity; they are not sources for copied deck prose.
+
+- APS, **About PhySH** — https://physh-alpha.aps.org/about — current field-
+  classification structure and the stated goal of covering all physics; PhySH
+  vocabulary is CC0, while APS page presentation remains subject to APS terms.
+- APS, **Units** — https://www.aps.org/membership/units — current division and
+  topical-group breadth check, including computational physics, quantum
+  information, soft matter, climate, data science, and precision measurement;
+  © APS, factual use only.
+- AAPT, **Undergraduate Physics Curriculum** —
+  https://aapt.org/Resources/HigherEd/Undergraduate_Physics_Curriculum.cfm —
+  current landing page confirming that the laboratory and computational-
+  curriculum recommendations remain the society's routed resources; © AAPT.
+- IOP, **Degree accreditation and recognition** and the linked July 2022
+  framework — https://www.iop.org/education/support-work-higher-education/degree-accreditation-recognition —
+  current accreditation route and outcome framework; © IOP, no prose reused.
+- NSF MPS, **Physics** — https://www.nsf.gov/mps/physics — current program-
+  breadth check for living systems, plasma, quantum information, instrumentation,
+  and other PHY programs; U.S. Government source, factual material used.
+- National Academies, **Physics of Life**, Chapter 8 —
+  https://www.nationalacademies.org/read/26403/chapter/14 — curriculum and
+  maturity check for principle-centered biological physics and the physics/
+  biology translation problem; © National Academy of Sciences, free to read but
+  not treated as openly licensed for reproduction.
+- MIT OpenCourseWare syllabi for **Modern Astrophysics**, **General Relativity**,
+  and **Quantum Physics I** —
+  https://ocw.mit.edu/courses/8-284-modern-astrophysics-spring-2006/pages/syllabus/,
+  https://ocw.mit.edu/courses/8-962-general-relativity-spring-2020/pages/syllabus/,
+  and https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2013/pages/syllabus/
+  — independent prerequisite stress tests; governed by MIT OpenCourseWare terms,
+  used only for factual syllabus and prerequisite comparisons.
 
 ## Authentic practice outside SRS
 

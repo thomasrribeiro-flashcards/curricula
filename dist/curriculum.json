@@ -3865,7 +3865,8 @@
       "status": "proposed",
       "description": "Apply physical reasoning to living systems: the scales and energy budget of the cell, diffusion and low-Reynolds-number transport, macromolecular conformation and folding energetics, molecular motors and free-energy transduction, membrane mechanics, stochastic gene expression, signaling and the physical limits of sensing, neural excitability, collective behavior, and evolutionary dynamics.",
       "prerequisites": [
-        "physics/statistical-physics"
+        "physics/statistical-physics",
+        "biology/biological-literacy-and-scientific-practice"
       ],
       "recommended_after": [
         "physics/soft-matter-and-complex-fluids",
@@ -4019,8 +4020,7 @@
         "physics/physics-research-practice"
       ],
       "recommended_after": [
-        "physics/electronics-and-instrumentation",
-        "physics/gravitational-wave-and-multimessenger-astrophysics"
+        "physics/electronics-and-instrumentation"
       ],
       "materialized": false,
       "repository": {
@@ -4041,10 +4041,10 @@
       "description": "Enter the physics-of-life literature: active-matter hydrodynamics and collective motion, cytoskeletal and tissue mechanics, nonequilibrium thermodynamics of biological energy use, information and inference limits in cellular decision-making, quantitative imaging and single-molecule evidence, and the standards a physical model of a living system must meet.",
       "prerequisites": [
         "physics/biological-physics",
+        "physics/soft-matter-and-complex-fluids",
         "physics/physics-research-practice"
       ],
       "recommended_after": [
-        "physics/soft-matter-and-complex-fluids",
         "biology/systems-and-quantitative-biology"
       ],
       "materialized": false,
