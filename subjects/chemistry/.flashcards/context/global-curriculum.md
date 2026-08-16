@@ -1,0 +1,408 @@
+# Established cross-subject curriculum catalog
+
+This file is generated input. It lists already-defined decks that may be referenced as `subject/deck` prerequisites.
+Reuse an established external deck only when its documented capability is genuinely required. Prefer `recommended_after` for helpful but nonessential preparation.
+Do not copy external decks into the new subject merely to make its roadmap self-contained.
+
+## biology
+
+- `biology/biological-literacy-and-scientific-practice` — foundational: Read and reason about living systems from first contact: what distinguishes living systems, scale and unit fluency from nanometres to biomes, the cell and gene concepts as organising ideas, hypothesis and prediction, observation versus inference, controls and variables, correlation versus causation, evidence quality and scientific consensus, and the causal language discipline that replaces purpose talk.
+  - requires: mathematics/number-sense-and-arithmetic
+  - recommended after: none
+- `biology/chemistry-of-life` — foundational: The chemical substrate biology depends on: atoms, bonding and electronegativity, water and hydrophobic effects, acids, bases and buffers, concentration and dilution, free energy and spontaneity qualitatively, coupled reactions, catalysis, and the structure-property logic of carbohydrates, lipids, nucleic acids and proteins. Biology owns this bridge because no chemistry subject exists in the collection.
+  - requires: biology/biological-literacy-and-scientific-practice
+  - recommended after: mathematics/elementary-algebra-and-functions
+- `biology/experimental-design-and-data-analysis-in-biology` — undergraduate-core: Design and read biological experiments: treatment and control structure, randomisation, blinding, true replication versus pseudoreplication, the experimental unit, model-organism choice and its limits, dose-response and time-course designs, biological versus technical variation, reading biological data displays and error bars, effect size versus significance, and rigor, reproducibility and research ethics. Interpretation-level statistics only; formal inference is imported from mathematics.
+  - requires: biology/chemistry-of-life, mathematics/elementary-algebra-and-functions
+  - recommended after: mathematics/statistical-inference-and-data-analysis
+- `biology/cell-biology` — undergraduate-core: The cell as a compartmentalised, self-maintaining system: membranes and selective permeability, transport and electrochemical gradients, organelles and the endomembrane route, protein targeting, cytoskeleton and motors, cell adhesion and the extracellular matrix, signal transduction, cell cycle control, cell death, and the microscopy evidence behind each claim.
+  - requires: biology/chemistry-of-life
+  - recommended after: none
+- `biology/bioenergetics-and-metabolism` — undergraduate-core: How cells acquire, store and spend energy and matter: ATP and redox carriers, glycolysis, pyruvate oxidation and the citric acid cycle, chemiosmosis and oxidative phosphorylation, fermentation, photosynthetic light reactions and carbon fixation, anabolic and catabolic integration, and regulation by allostery, covalent modification and substrate supply.
+  - requires: biology/cell-biology
+  - recommended after: none
+- `biology/genetics-and-heredity` — undergraduate-core: Transmission genetics grounded in chromosome behaviour: mitosis and meiosis, segregation and independent assortment, linkage and recombination mapping, sex linkage, pedigree analysis, dominance relations and epistasis, penetrance and expressivity, chromosomal and copy-number variation, extranuclear inheritance, and quantitative reasoning about ratios and genotype frequencies.
+  - requires: biology/cell-biology
+  - recommended after: none
+- `biology/molecular-biology-of-the-gene` — undergraduate-core: Information storage, expression and maintenance: DNA structure and replication, mutation, repair and recombination, transcription and its control, RNA processing, the genetic code and translation, protein folding and turnover, chromatin and epigenetic marks, non-coding and regulatory RNA, gene regulatory logic in bacteria and eukaryotes, and the experiments that established each mechanism.
+  - requires: biology/genetics-and-heredity
+  - recommended after: biology/bioenergetics-and-metabolism
+- `biology/evolutionary-biology` — undergraduate-core: Evolution as the unifying causal framework: variation and its origins, Hardy-Weinberg reasoning, selection, drift, migration and mutation as allele-frequency processes, fitness and adaptation without teleology, sexual selection, speciation and reproductive isolation, molecular evolution and neutrality, homology versus analogy, phylogenetic tree reading, and the evidence from fossils, comparative anatomy, biogeography and genomes.
+  - requires: biology/genetics-and-heredity
+  - recommended after: biology/molecular-biology-of-the-gene
+- `biology/animal-physiology-and-homeostasis` — undergraduate-core: Integrated animal function from a structure-function and regulation stance: exchange surfaces and scaling, circulation and gas transport, digestion and energy budgets, osmoregulation and excretion, thermoregulation, endocrine signalling and feedback loops, muscle and movement, reproduction, and comparative solutions to shared physical constraints.
+  - requires: biology/bioenergetics-and-metabolism
+  - recommended after: physics/measurement-and-physical-reasoning
+- `biology/plant-biology` — undergraduate-core: Plants as autotrophic, modular, sessile organisms: tissues and meristems, root and shoot architecture, water potential and long-distance transport, stomatal control and the water-carbon trade-off, mineral nutrition and symbioses, C4 and CAM variants, hormones and photomorphogenesis, flowering and reproduction, seed and fruit biology, and defence responses.
+  - requires: biology/bioenergetics-and-metabolism
+  - recommended after: biology/evolutionary-biology
+- `biology/microbiology-and-virology` — undergraduate-core: Microbial life and viruses: prokaryotic cell architecture, growth kinetics and culture, metabolic and respiratory diversity, horizontal gene transfer and mobile elements, antimicrobial action and resistance evolution, biofilms and quorum sensing, archaeal distinctiveness, microbial ecology and biogeochemical roles, viral structure, replication strategies and host interactions.
+  - requires: biology/bioenergetics-and-metabolism, biology/molecular-biology-of-the-gene
+  - recommended after: biology/evolutionary-biology
+- `biology/biological-diversity-and-the-tree-of-life` — undergraduate-core: Organise the living world phylogenetically: species concepts and their operational limits, nomenclature and classification practice, monophyly and character polarity, the domains and major eukaryotic supergroups, plant, fungal and animal body-plan radiations, key transitions such as multicellularity and terrestrialisation, the fossil and molecular evidence for deep relationships, and how to read and interpret published trees critically.
+  - requires: biology/evolutionary-biology
+  - recommended after: biology/microbiology-and-virology
+- `biology/population-and-community-ecology` — undergraduate-core: Distribution and abundance of organisms: niche and tolerance, population growth models and density dependence, life tables and life-history strategies, metapopulations and dispersal, competition and coexistence, predation, herbivory and parasitism, mutualism, food webs and trophic cascades, succession and disturbance, and diversity measurement and sampling design.
+  - requires: biology/evolutionary-biology, biology/experimental-design-and-data-analysis-in-biology
+  - recommended after: mathematics/statistical-inference-and-data-analysis
+- `biology/protein-structure-function-and-enzymology` — undergraduate-advanced: Quantitative biochemistry of macromolecules: folding energetics and the folding problem, structural hierarchy and motifs, binding equilibria and cooperativity, Michaelis-Menten and steady-state kinetics, inhibition patterns, catalytic strategies and transition-state stabilisation, allosteric and covalent regulation, membrane and nucleic-acid-binding proteins, and how structures are determined and validated.
+  - requires: biology/bioenergetics-and-metabolism
+  - recommended after: physics/thermodynamics-and-statistical-mechanics
+- `biology/experimental-methods-in-molecular-and-cell-biology` — undergraduate-advanced: What a modern wet-lab result actually shows: nucleic-acid and protein separation and detection, PCR and quantitative PCR, cloning and vectors, sequencing chemistries, CRISPR and RNA-interference perturbation, reporters and tagging, fluorescence and live-cell imaging, flow cytometry, immunoprecipitation and interaction assays, essential controls, and the failure modes and artefacts of each method.
+  - requires: biology/molecular-biology-of-the-gene, biology/experimental-design-and-data-analysis-in-biology
+  - recommended after: biology/protein-structure-function-and-enzymology
+- `biology/developmental-biology` — undergraduate-advanced: How a genome builds an organism: fertilisation and cleavage, axis specification, morphogen gradients and positional information, induction and competence, conserved signalling pathways, Hox genes and segmental identity, organogenesis case studies, stem cells and potency, regeneration, and evolutionary developmental comparison.
+  - requires: biology/molecular-biology-of-the-gene
+  - recommended after: biology/experimental-methods-in-molecular-and-cell-biology
+- `biology/neurobiology` — undergraduate-advanced: Nervous systems from membranes to circuits: resting potential and the Nernst and Goldman relations, voltage-gated channels and action-potential mechanism, cable properties and conduction, synaptic transmission and integration, neurotransmitter systems, sensory transduction and coding, motor control, circuit motifs, synaptic plasticity and learning, development and wiring, and the recording and stimulation methods that support each claim.
+  - requires: biology/animal-physiology-and-homeostasis
+  - recommended after: biology/developmental-biology, physics/electricity-magnetism-and-circuits
+- `biology/immunology` — undergraduate-advanced: Host defence as an information and selection system: barriers and innate recognition, complement and inflammation, antigen processing and MHC restriction, receptor gene rearrangement and repertoire generation, clonal selection and affinity maturation, T and B cell activation and effector programmes, tolerance and autoimmunity, memory and vaccination, immune evasion, and mucosal and tumour immunity.
+  - requires: biology/microbiology-and-virology
+  - recommended after: biology/experimental-methods-in-molecular-and-cell-biology
+- `biology/ecosystem-ecology-and-global-change` — undergraduate-advanced: Energy and matter at ecosystem and planetary scale: primary and secondary production, trophic efficiency, decomposition and soil processes, carbon, nitrogen and phosphorus cycles, water and energy budgets, landscape and biome patterns, ecosystem services, drivers and biological consequences of climate and land-use change, eutrophication and nutrient pollution, and observational and manipulative evidence at large scale.
+  - requires: biology/population-and-community-ecology
+  - recommended after: biology/plant-biology, biology/microbiology-and-virology
+- `biology/animal-behavior-and-behavioral-ecology` — undergraduate-advanced: Behaviour as an evolved and mechanistic phenotype: Tinbergen's four questions, measuring behaviour with ethograms and rigorous observation, learning and development of behaviour, optimal foraging, mating systems and sexual selection, parental investment and conflict, inclusive fitness and cooperation, communication and signal reliability, social organisation, and simple game-theoretic reasoning about strategies.
+  - requires: biology/evolutionary-biology
+  - recommended after: biology/population-and-community-ecology, biology/neurobiology
+- `biology/population-and-quantitative-genetics` — undergraduate-advanced: Formal models of genetic change and trait variation: allele and genotype frequency dynamics, effective population size and drift, mutation-selection balance, inbreeding and relatedness coefficients, linkage disequilibrium, population structure and coalescent intuition, variance partitioning and heritability, breeder's equation and selection response, multi-locus and polygenic traits, and association mapping and its confounds.
+  - requires: biology/evolutionary-biology, mathematics/probability
+  - recommended after: mathematics/statistical-inference-and-data-analysis
+- `biology/genomics-and-bioinformatics` — undergraduate-advanced: Genome-scale data and the computation that interprets it: genome architecture and content, sequencing platforms and their error models, read alignment and assembly, variant calling and quality filtering, sequence alignment and homology search, annotation and ontologies, transcriptome quantification and differential expression, epigenomic and chromatin assays, comparative and functional genomics, reproducible workflows, and multiple-testing discipline.
+  - requires: biology/molecular-biology-of-the-gene, mathematics/mathematical-computing-and-experimentation
+  - recommended after: biology/experimental-design-and-data-analysis-in-biology, biology/experimental-methods-in-molecular-and-cell-biology
+- `biology/statistical-phylogenetics-and-comparative-methods` — undergraduate-advanced: Inferring and using trees quantitatively: character and alignment choice, substitution models and rate heterogeneity, parsimony, likelihood and Bayesian inference, support measures and their meaning, gene trees versus species trees and coalescent discordance, molecular dating and calibration, ancestral state reconstruction, phylogenetically independent contrasts and comparative models, and diversification rate analysis.
+  - requires: biology/biological-diversity-and-the-tree-of-life, mathematics/probability
+  - recommended after: biology/genomics-and-bioinformatics, mathematics/statistical-inference-and-data-analysis
+- `biology/cancer-biology` — undergraduate-advanced: Cancer as somatic evolution and deregulated cell biology: mutation and clonal expansion, oncogenes and tumour suppressors, checkpoint and apoptosis failure, genome instability, replicative immortality, metabolic rewiring, angiogenesis, invasion and metastasis, tumour microenvironment and immune interaction, heterogeneity and resistance, and the logic of targeted and immune therapies.
+  - requires: biology/molecular-biology-of-the-gene
+  - recommended after: biology/immunology, biology/genomics-and-bioinformatics
+- `biology/infectious-disease-and-epidemiology` — undergraduate-advanced: How pathogens spread and how that is measured: pathogenesis and virulence determinants, transmission routes and reservoirs, incidence, prevalence and rate measures, study designs and bias, compartmental transmission models and the basic reproduction number, herd immunity thresholds, outbreak investigation and surveillance, vector-borne and zoonotic spillover, antimicrobial resistance in populations, and intervention evaluation.
+  - requires: biology/microbiology-and-virology, biology/experimental-design-and-data-analysis-in-biology
+  - recommended after: biology/immunology, mathematics/statistical-inference-and-data-analysis
+- `biology/conservation-biology-and-restoration` — undergraduate-advanced: Applying ecological and evolutionary theory to biodiversity loss: extinction risk and its drivers, small-population and declining-population paradigms, genetic issues in small populations, population viability analysis, habitat loss, fragmentation and connectivity, invasive species, protected-area design and systematic prioritisation, restoration approaches and success criteria, monitoring and adaptive management, and the human, legal and ethical dimensions.
+  - requires: biology/population-and-community-ecology
+  - recommended after: biology/ecosystem-ecology-and-global-change, biology/population-and-quantitative-genetics
+- `biology/biotechnology-and-synthetic-biology` — undergraduate-advanced: Engineering biological systems for defined purposes: heterologous expression and host choice, protein engineering and directed evolution, industrial and therapeutic biologics, metabolic engineering and pathway balancing, standardised parts, genetic circuits and their failure modes, biosensors, cell-free and in vitro systems, genome-scale construction, scale-up and process constraints, and biosafety, biosecurity and governance.
+  - requires: biology/experimental-methods-in-molecular-and-cell-biology
+  - recommended after: biology/protein-structure-function-and-enzymology, biology/genomics-and-bioinformatics
+- `biology/methods-and-logic-of-biological-research` — graduate: The research-practice layer that separates coursework from literature-facing work: dissecting primary papers claim by claim, matching inference to design, judging whether controls and sample structure license a conclusion, alternative explanations and confounding, model and effect-size reasoning, preregistration, reproducibility and statistical error culture, peer review and publication norms, and research ethics, authorship and integrity. Branch-neutral so both the molecular and eco-evolutionary routes pass through it.
+  - requires: biology/experimental-design-and-data-analysis-in-biology, biology/molecular-biology-of-the-gene, mathematics/statistical-inference-and-data-analysis
+  - recommended after: biology/experimental-methods-in-molecular-and-cell-biology, biology/genomics-and-bioinformatics, biology/population-and-community-ecology
+- `biology/macromolecular-structure-and-mechanism` — graduate: Mechanism at atomic resolution: conformational landscapes and dynamics, pre-steady-state and single-turnover kinetics, transition-state and isotope-effect analysis, allostery and ensemble models, macromolecular machines and motors, membrane protein and transporter mechanism, protein-nucleic-acid complexes, biomolecular condensates, and critical evaluation of crystallographic, cryo-EM, NMR and mass-spectrometry evidence.
+  - requires: biology/protein-structure-function-and-enzymology, biology/methods-and-logic-of-biological-research
+  - recommended after: none
+- `biology/advanced-genetics-and-genome-engineering` — graduate: Designing and interpreting genetic dissection at scale: forward and reverse genetic strategy, suppressor, enhancer and epistasis analysis, conditional and tissue-specific perturbation, precise editing, base and prime editing, pooled CRISPR screens and their readouts, saturation mutagenesis and deep mutational scanning, regulatory-element and non-coding perturbation, off-target and penetrance controls, and causal inference from perturbation data.
+  - requires: biology/experimental-methods-in-molecular-and-cell-biology, biology/genomics-and-bioinformatics, biology/methods-and-logic-of-biological-research
+  - recommended after: none
+- `biology/systems-and-quantitative-biology` — graduate: Treat cells and networks as dynamical, noisy, measurable systems: mass-action and enzymatic rate models, steady states, stability and bifurcation, feedback motifs, bistability and oscillation, network motifs and modularity, stochastic gene expression and single-cell variability, parameter estimation and model identifiability, high-dimensional data structure and dimensionality reduction, model selection and validation, and the limits of fitted models.
+  - requires: biology/genomics-and-bioinformatics, biology/methods-and-logic-of-biological-research, mathematics/differential-equations
+  - recommended after: mathematics/dynamical-systems-and-ergodic-theory, physics/biological-physics
+- `biology/theoretical-ecology-and-evolutionary-dynamics` — graduate: Formal theory for populations, communities and evolving systems: structured population models and matrix projection, stability and invasion analysis, coexistence and modern coexistence theory, spatial and metacommunity dynamics, stochastic demography and extinction risk, adaptive dynamics and evolutionarily stable strategies, eco-evolutionary feedback, epidemiological and multispecies dynamics, and confronting theoretical models with field and time-series data.
+  - requires: biology/methods-and-logic-of-biological-research, biology/population-and-quantitative-genetics, biology/population-and-community-ecology, mathematics/differential-equations
+  - recommended after: mathematics/dynamical-systems-and-ergodic-theory
+- `biology/protein-design-and-computational-structural-biology` — research-specialization: Current practice in predicting and designing macromolecules: energy functions and sampling, coevolution signals, deep-learning structure prediction and its confidence measures, complex and interface prediction, fixed-backbone and de novo design, binder and enzyme design, generative sequence and backbone models, benchmarking and data leakage, and mandatory experimental validation of computational claims.
+  - requires: biology/macromolecular-structure-and-mechanism, biology/systems-and-quantitative-biology
+  - recommended after: none
+- `biology/single-cell-and-spatial-omics` — research-specialization: Measuring and interpreting molecular state cell by cell and in situ: droplet and plate-based single-cell protocols, multiome and lineage-tracing readouts, spatial transcriptomics and imaging-based methods, dropout, ambient signal and doublet artefacts, normalisation and batch correction, clustering, annotation and label transfer, trajectory and RNA-velocity inference and their assumptions, differential abundance and expression across conditions, and reproducible atlas-scale analysis.
+  - requires: biology/systems-and-quantitative-biology, biology/experimental-methods-in-molecular-and-cell-biology
+  - recommended after: none
+- `biology/evolutionary-and-population-genomics` — research-specialization: Reading evolutionary history and selection from genome-scale variation: variation data sets and their ascertainment, site frequency spectra and demographic inference, coalescent and ancestral recombination graph methods, selection scans and their false-positive structure, background selection and linked selection, admixture and introgression statistics, ancient DNA, comparative genomics and molecular rate estimation, and polygenic architecture and portability limits.
+  - requires: biology/population-and-quantitative-genetics, biology/genomics-and-bioinformatics, biology/methods-and-logic-of-biological-research
+  - recommended after: none
+- `biology/neural-circuits-and-connectomics` — research-specialization: Circuit-level neuroscience as a measurement and modelling problem: large-scale electrophysiology and calcium and voltage imaging, optogenetic and chemogenetic causal manipulation, cell-type taxonomy and molecular identity, volume electron microscopy and connectome reconstruction, wiring statistics and circuit motifs, population coding and dimensionality, recurrent network models of computation, behavioural quantification, and matching circuit claims to the evidence that supports them.
+  - requires: biology/neurobiology, biology/systems-and-quantitative-biology
+  - recommended after: none
+- `biology/host-microbiome-and-infection-biology` — research-specialization: Host-associated microbial communities and pathogens at research level: amplicon versus shotgun metagenomic inference, assembly of genomes from communities, compositional data pitfalls, gnotobiotic and colonisation experiments, causation versus correlation in microbiome claims, metabolite and immune mediators, colonisation resistance and community ecology of the gut, within-host pathogen evolution and resistance emergence, and therapeutic and diagnostic translation.
+  - requires: biology/immunology, biology/genomics-and-bioinformatics, biology/methods-and-logic-of-biological-research
+  - recommended after: none
+- `biology/global-change-biology-and-biodiversity-science` — research-specialization: Biological research on planetary change: long-term monitoring networks, remote sensing and eDNA as biodiversity observation, detection and attribution of biological responses, thermal and physiological limits and vulnerability, phenological shifts and range dynamics, species distribution models and their extrapolation risks, evolutionary and plastic responses to rapid change, tipping points and regime shifts, scenario and assessment frameworks, and the science-policy interface.
+  - requires: biology/ecosystem-ecology-and-global-change, biology/theoretical-ecology-and-evolutionary-dynamics
+  - recommended after: biology/conservation-biology-and-restoration
+## mathematics
+
+- `mathematics/number-sense-and-arithmetic` — foundational: Reason with whole numbers, integers, fractions, decimals, ratio, percent, place value, and estimation, and justify why each operation applies.
+  - requires: none
+  - recommended after: none
+- `mathematics/elementary-algebra-and-functions` — foundational: Manipulate symbolic expressions, solve equations, inequalities, and systems, and model with linear, quadratic, polynomial, rational, exponential, and logarithmic functions and their graphs.
+  - requires: mathematics/number-sense-and-arithmetic
+  - recommended after: none
+- `mathematics/geometry-and-measurement` — foundational: Reason about congruence, similarity, transformations, circles, right-triangle trigonometry, coordinate geometry, area, volume, units, and short deductive geometric arguments.
+  - requires: mathematics/elementary-algebra-and-functions
+  - recommended after: none
+- `mathematics/mathematical-computing-and-experimentation` — foundational: Use a programming environment, symbolic and numeric tools, plotting, floating-point awareness, and reproducible notebooks to explore mathematical objects and test conjectures.
+  - requires: mathematics/elementary-algebra-and-functions
+  - recommended after: mathematics/geometry-and-measurement
+- `mathematics/precalculus-and-trigonometry` — foundational: Work fluently with circular trigonometric functions and identities, conic sections, polar and parametric descriptions, plane vectors, sequences, and limit-ready behavior of functions.
+  - requires: mathematics/geometry-and-measurement
+  - recommended after: none
+- `mathematics/mathematical-reasoning-and-proof` — undergraduate-core: Read, evaluate, and write correct proofs using logic, quantifiers, sets, relations, functions, induction, contradiction, contraposition, and elementary cardinality.
+  - requires: mathematics/elementary-algebra-and-functions
+  - recommended after: mathematics/geometry-and-measurement, mathematics/precalculus-and-trigonometry
+- `mathematics/single-variable-differential-calculus` — undergraduate-core: Use limits, continuity, and derivatives to model rates, approximate locally, and analyze extrema, concavity, and optimization in one variable.
+  - requires: mathematics/precalculus-and-trigonometry
+  - recommended after: none
+- `mathematics/linear-algebra` — undergraduate-core: Reason with vector spaces, linear maps, matrices, rank, determinants, eigenstructure, inner products, orthogonality, and matrix factorizations across algebraic, geometric, and computational views.
+  - requires: mathematics/elementary-algebra-and-functions
+  - recommended after: mathematics/mathematical-reasoning-and-proof, mathematics/single-variable-differential-calculus
+- `mathematics/single-variable-integral-calculus` — undergraduate-core: Use Riemann sums, the fundamental theorem, integration techniques, improper integrals, accumulation applications, and infinite series including Taylor expansions.
+  - requires: mathematics/single-variable-differential-calculus
+  - recommended after: none
+- `mathematics/discrete-mathematics-and-combinatorics` — undergraduate-core: Count with bijections, inclusion-exclusion, recurrences, and generating functions, and analyze graphs, trees, orders, and discrete structures with proof.
+  - requires: mathematics/mathematical-reasoning-and-proof
+  - recommended after: mathematics/linear-algebra
+- `mathematics/multivariable-and-vector-calculus` — undergraduate-core: Differentiate and integrate functions of several variables, use gradients and Jacobians, change coordinates, and apply the line, surface, Green, Stokes, and divergence theorems.
+  - requires: mathematics/single-variable-integral-calculus
+  - recommended after: mathematics/linear-algebra
+- `mathematics/probability` — undergraduate-core: Model uncertainty with sample spaces, conditioning, independence, discrete and continuous random variables, joint behavior, expectation, and limit laws.
+  - requires: mathematics/single-variable-integral-calculus
+  - recommended after: mathematics/discrete-mathematics-and-combinatorics
+- `mathematics/differential-equations` — undergraduate-core: Formulate, solve, and qualitatively analyze ordinary differential equations and linear systems using analytic methods, transforms, eigenstructure, phase planes, and numerical schemes.
+  - requires: mathematics/single-variable-integral-calculus, mathematics/linear-algebra
+  - recommended after: mathematics/multivariable-and-vector-calculus, mathematics/mathematical-computing-and-experimentation
+- `mathematics/statistical-inference-and-data-analysis` — undergraduate-core: Summarize data honestly, reason about sampling distributions, estimate with uncertainty, test hypotheses, fit and criticize regression models, and state the limits of an inference.
+  - requires: mathematics/probability
+  - recommended after: mathematics/mathematical-computing-and-experimentation, mathematics/linear-algebra
+- `mathematics/number-theory` — undergraduate-core: Prove and apply results about divisibility, primes, congruences, multiplicative functions, primitive roots, quadratic reciprocity, and Diophantine equations.
+  - requires: mathematics/mathematical-reasoning-and-proof
+  - recommended after: mathematics/discrete-mathematics-and-combinatorics
+- `mathematics/real-analysis` — undergraduate-advanced: Prove theorems about completeness, sequences, series, limits, continuity, differentiation, Riemann integration, and uniform convergence, and construct counterexamples.
+  - requires: mathematics/mathematical-reasoning-and-proof, mathematics/single-variable-integral-calculus
+  - recommended after: none
+- `mathematics/abstract-algebra` — undergraduate-advanced: Reason with groups, subgroups, cosets, homomorphisms, quotients, group actions, rings, ideals, polynomial rings, and first field extensions.
+  - requires: mathematics/mathematical-reasoning-and-proof
+  - recommended after: mathematics/linear-algebra, mathematics/number-theory
+- `mathematics/complex-analysis` — undergraduate-advanced: Use holomorphy, the Cauchy-Riemann equations, contour integration, Cauchy theory, power and Laurent series, residues, and conformal mapping.
+  - requires: mathematics/multivariable-and-vector-calculus, mathematics/mathematical-reasoning-and-proof
+  - recommended after: mathematics/real-analysis
+- `mathematics/general-topology` — undergraduate-advanced: Work with topological spaces, bases, continuity, homeomorphism, connectedness, compactness, separation axioms, product and quotient constructions, and metrization.
+  - requires: mathematics/real-analysis
+  - recommended after: none
+- `mathematics/differential-geometry-and-manifolds` — undergraduate-advanced: Analyze curves and surfaces with curvature and fundamental forms, then work on smooth manifolds with tangent spaces, vector fields, differential forms, Stokes' theorem, and first Riemannian metrics.
+  - requires: mathematics/multivariable-and-vector-calculus, mathematics/linear-algebra
+  - recommended after: mathematics/real-analysis, mathematics/general-topology
+- `mathematics/partial-differential-equations` — undergraduate-advanced: Classify and solve first-order, heat, wave, and Laplace equations using characteristics, separation of variables, Fourier methods, Green's functions, and maximum principles.
+  - requires: mathematics/differential-equations, mathematics/multivariable-and-vector-calculus
+  - recommended after: mathematics/real-analysis
+- `mathematics/numerical-analysis` — undergraduate-advanced: Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear systems, eigenvalues, and initial-value problems.
+  - requires: mathematics/linear-algebra, mathematics/single-variable-integral-calculus, mathematics/mathematical-computing-and-experimentation
+  - recommended after: mathematics/differential-equations, mathematics/real-analysis
+- `mathematics/optimization-and-operations-research` — undergraduate-advanced: Formulate and solve linear, convex, and constrained optimization problems using duality, optimality conditions, descent and Newton methods, network models, and integer formulations.
+  - requires: mathematics/multivariable-and-vector-calculus, mathematics/linear-algebra
+  - recommended after: mathematics/numerical-analysis, mathematics/mathematical-computing-and-experimentation
+- `mathematics/stochastic-processes` — undergraduate-advanced: Model systems evolving randomly in time with Markov chains, Poisson and renewal processes, queues, branching processes, elementary martingales, and Brownian motion.
+  - requires: mathematics/probability, mathematics/linear-algebra
+  - recommended after: mathematics/differential-equations, mathematics/mathematical-computing-and-experimentation
+- `mathematics/information-theory` — undergraduate-advanced: Quantify information with entropy, relative entropy, and mutual information, and derive source-coding, channel-capacity, and error-correcting limits.
+  - requires: mathematics/probability
+  - recommended after: mathematics/discrete-mathematics-and-combinatorics, mathematics/linear-algebra
+- `mathematics/mathematical-logic-and-set-theory` — undergraduate-advanced: Reason about formal languages, deduction, models, soundness, completeness, compactness, axiomatic set theory, ordinals and cardinals, computability, and incompleteness.
+  - requires: mathematics/mathematical-reasoning-and-proof
+  - recommended after: mathematics/discrete-mathematics-and-combinatorics, mathematics/abstract-algebra
+- `mathematics/theory-of-computation-and-complexity` — undergraduate-advanced: Analyze automata, formal languages, Turing machines, decidability, reductions, complexity classes, NP-completeness, and randomized computation.
+  - requires: mathematics/discrete-mathematics-and-combinatorics
+  - recommended after: mathematics/mathematical-computing-and-experimentation, mathematics/mathematical-logic-and-set-theory
+- `mathematics/mathematical-modeling-and-asymptotic-methods` — undergraduate-advanced: Build, nondimensionalize, approximate, and validate models using scaling, dimensional analysis, perturbation and asymptotic expansions, compartment and continuum formulations, and sensitivity checks.
+  - requires: mathematics/differential-equations, mathematics/mathematical-computing-and-experimentation
+  - recommended after: mathematics/partial-differential-equations, mathematics/multivariable-and-vector-calculus, physics/measurement-and-physical-reasoning
+- `mathematics/measure-theory-and-lebesgue-integration` — graduate: Build sigma-algebras, measures, measurable functions, and the Lebesgue integral, and use convergence theorems, L^p spaces, product measures, and differentiation of measures.
+  - requires: mathematics/real-analysis
+  - recommended after: none
+- `mathematics/advanced-algebra-and-galois-theory` — graduate: Use group actions and Sylow theory, modules over a PID with canonical forms, field extensions, and the Galois correspondence to settle solvability and constructibility questions.
+  - requires: mathematics/abstract-algebra, mathematics/linear-algebra
+  - recommended after: none
+- `mathematics/mathematical-research-practice` — graduate: Search and read the mathematical literature, write and typeset rigorous exposition, referee and present seminars, manage collaboration and attribution, and formulate tractable open questions.
+  - requires: mathematics/mathematical-reasoning-and-proof
+  - recommended after: mathematics/real-analysis, mathematics/abstract-algebra, mathematics/mathematical-computing-and-experimentation
+- `mathematics/functional-analysis` — graduate: Analyze normed, Banach, and Hilbert spaces, bounded and compact operators, the Hahn-Banach, open-mapping, closed-graph, and uniform-boundedness theorems, duality, weak topologies, and spectra.
+  - requires: mathematics/measure-theory-and-lebesgue-integration, mathematics/linear-algebra
+  - recommended after: mathematics/general-topology
+- `mathematics/measure-theoretic-probability` — graduate: Ground probability in measure theory: independence, modes of convergence, laws of large numbers, characteristic functions, central limit theorems, conditional expectation, and martingales.
+  - requires: mathematics/measure-theory-and-lebesgue-integration, mathematics/probability
+  - recommended after: none
+- `mathematics/algebraic-topology` — graduate: Compute and interpret fundamental groups, covering spaces, CW structures, simplicial and singular homology, exact sequences, cohomology, and duality.
+  - requires: mathematics/general-topology, mathematics/abstract-algebra
+  - recommended after: none
+- `mathematics/harmonic-and-fourier-analysis` — graduate: Analyze Fourier series and transforms on the circle and Euclidean space, convergence and summability, distributions, maximal functions, and singular integral operators.
+  - requires: mathematics/measure-theory-and-lebesgue-integration
+  - recommended after: mathematics/functional-analysis, mathematics/complex-analysis
+- `mathematics/category-theory-and-homological-algebra` — graduate: Use categories, functors, natural transformations, limits, adjunctions, abelian categories, chain complexes, derived functors, and first spectral sequences as working tools.
+  - requires: mathematics/advanced-algebra-and-galois-theory
+  - recommended after: mathematics/algebraic-topology
+- `mathematics/commutative-algebra` — graduate: Work with Noetherian rings, modules, localization, primary decomposition, integral extensions, Hilbert basis and Nullstellensatz results, and dimension theory.
+  - requires: mathematics/advanced-algebra-and-galois-theory
+  - recommended after: mathematics/number-theory
+- `mathematics/representation-theory-and-lie-theory` — graduate: Decompose representations of finite groups with characters and orthogonality, induce and restrict, and extend to Lie algebras, root systems, weights, and their classification.
+  - requires: mathematics/advanced-algebra-and-galois-theory
+  - recommended after: mathematics/general-topology, mathematics/differential-geometry-and-manifolds
+- `mathematics/algebraic-and-analytic-number-theory` — graduate: Study number fields, rings of integers, ideal factorization, class groups and units, and use Dirichlet series, zeta and L-functions to prove distribution results about primes.
+  - requires: mathematics/advanced-algebra-and-galois-theory, mathematics/complex-analysis, mathematics/number-theory
+  - recommended after: none
+- `mathematics/modern-pde-and-sobolev-theory` — graduate: Use distributions, Sobolev spaces, weak formulations, variational and energy methods, elliptic regularity, and semigroup techniques to establish existence, uniqueness, and regularity.
+  - requires: mathematics/functional-analysis, mathematics/partial-differential-equations
+  - recommended after: mathematics/harmonic-and-fourier-analysis
+- `mathematics/algebraic-geometry` — graduate: Relate ideals to affine and projective varieties, work with morphisms, sheaves, and first schemes, and analyze curves through divisors and Riemann-Roch.
+  - requires: mathematics/commutative-algebra
+  - recommended after: mathematics/complex-analysis, mathematics/category-theory-and-homological-algebra, mathematics/algebraic-topology
+- `mathematics/riemannian-geometry-and-geometric-analysis` — graduate: Use connections, curvature tensors, geodesics, Jacobi fields, and comparison theorems, and connect curvature to topology through Laplacians, heat flow, and minimal surfaces.
+  - requires: mathematics/differential-geometry-and-manifolds, mathematics/real-analysis
+  - recommended after: mathematics/general-topology, mathematics/functional-analysis
+- `mathematics/dynamical-systems-and-ergodic-theory` — graduate: Analyze flows and maps through invariant sets, stability, bifurcation, hyperbolicity, symbolic dynamics, invariant measures, ergodic theorems, mixing, and entropy.
+  - requires: mathematics/measure-theory-and-lebesgue-integration, mathematics/differential-equations
+  - recommended after: mathematics/mathematical-computing-and-experimentation, mathematics/functional-analysis
+- `mathematics/stochastic-analysis-and-sdes` — graduate: Construct the Ito integral, apply Ito's formula, solve and approximate stochastic differential equations, and connect diffusions to parabolic equations and changes of measure.
+  - requires: mathematics/measure-theoretic-probability
+  - recommended after: mathematics/stochastic-processes, mathematics/partial-differential-equations
+- `mathematics/advanced-combinatorics-and-graph-theory` — graduate: Prove extremal, Ramsey, and probabilistic-method results, analyze random graphs and thresholds, and use spectral and algebraic methods on combinatorial structures.
+  - requires: mathematics/discrete-mathematics-and-combinatorics, mathematics/probability, mathematics/linear-algebra
+  - recommended after: mathematics/theory-of-computation-and-complexity, mathematics/abstract-algebra
+- `mathematics/numerical-methods-for-differential-equations` — graduate: Design and analyze finite difference, finite element, and spectral discretizations with consistency, stability, convergence, conservation, and modern solver strategies.
+  - requires: mathematics/numerical-analysis, mathematics/partial-differential-equations
+  - recommended after: mathematics/functional-analysis, mathematics/optimization-and-operations-research
+- `mathematics/mathematics-of-machine-learning-and-data-science` — graduate: Establish learning guarantees with concentration, complexity measures, and empirical risk minimization, and analyze kernels, high-dimensional estimation, and optimization for modern learning models.
+  - requires: mathematics/statistical-inference-and-data-analysis, mathematics/optimization-and-operations-research, mathematics/measure-theoretic-probability
+  - recommended after: mathematics/numerical-analysis, mathematics/functional-analysis
+- `mathematics/arithmetic-geometry-and-modern-number-theory` — research-specialization: Read current work on elliptic curves, modular forms, Galois representations, rational points, L-functions, computational databases, and arithmetic statistics.
+  - requires: mathematics/algebraic-and-analytic-number-theory, mathematics/algebraic-geometry, mathematics/mathematical-research-practice
+  - recommended after: mathematics/representation-theory-and-lie-theory
+- `mathematics/low-dimensional-topology-and-geometric-topology` — research-specialization: Engage literature on knots and links, surfaces and mapping class groups, three- and four-manifolds, hyperbolic structures, geometrization, and quantum and gauge-theoretic invariants.
+  - requires: mathematics/algebraic-topology, mathematics/riemannian-geometry-and-geometric-analysis, mathematics/mathematical-research-practice
+  - recommended after: mathematics/representation-theory-and-lie-theory
+- `mathematics/topological-and-geometric-data-analysis` — research-specialization: Compute and interpret persistent homology and related invariants, justify stability and statistical guarantees, and critique applied topological and geometric inference in the literature.
+  - requires: mathematics/algebraic-topology, mathematics/statistical-inference-and-data-analysis, mathematics/mathematical-computing-and-experimentation, mathematics/mathematical-research-practice
+  - recommended after: mathematics/mathematics-of-machine-learning-and-data-science, mathematics/category-theory-and-homological-algebra
+- `mathematics/formalization-and-proof-assistants` — research-specialization: Formalize definitions, theorems, and proofs in a dependent-type proof assistant, navigate a mathematical library, and assess what machine-checked mathematics does and does not certify.
+  - requires: mathematics/mathematical-logic-and-set-theory, mathematics/mathematical-computing-and-experimentation, mathematics/mathematical-research-practice
+  - recommended after: mathematics/abstract-algebra, mathematics/real-analysis, mathematics/category-theory-and-homological-algebra
+- `mathematics/random-matrices-and-high-dimensional-probability` — research-specialization: Work with concentration of measure, empirical processes, spectral limits, universality, and free probability, and read current high-dimensional probability literature.
+  - requires: mathematics/measure-theoretic-probability, mathematics/mathematical-research-practice
+  - recommended after: mathematics/functional-analysis, mathematics/harmonic-and-fourier-analysis, mathematics/mathematics-of-machine-learning-and-data-science
+## physics
+
+- `physics/measurement-and-physical-reasoning` — foundational: Describe physical situations with operational quantities, SI units, scale, proportional reasoning, graphs, uncertainty, and explicit models.
+  - requires: mathematics/number-sense-and-arithmetic
+  - recommended after: none
+- `physics/motion-forces-and-energy` — foundational: Predict and explain the motion of everyday objects using kinematics, interactions and forces, momentum, energy, torque, and gravitation without calculus.
+  - requires: physics/measurement-and-physical-reasoning, mathematics/elementary-algebra-and-functions
+  - recommended after: none
+- `physics/matter-fluids-and-thermal-behavior` — foundational: Explain the macroscopic behavior of solids, liquids, and gases through density, pressure, buoyancy, flow, temperature, heat, phase change, and the kinetic-molecular model.
+  - requires: physics/motion-forces-and-energy
+  - recommended after: none
+- `physics/waves-sound-and-light` — foundational: Analyze oscillation, wave propagation, superposition, resonance, sound, reflection and refraction, image formation, and elementary interference and diffraction.
+  - requires: physics/motion-forces-and-energy, mathematics/precalculus-and-trigonometry
+  - recommended after: physics/matter-fluids-and-thermal-behavior
+- `physics/electricity-magnetism-and-circuits` — foundational: Reason about charge, electric and magnetic fields, potential, current, resistance, DC and AC circuits, induction, and electromagnetic waves at an algebra-based level.
+  - requires: physics/motion-forces-and-energy, mathematics/precalculus-and-trigonometry
+  - recommended after: physics/waves-sound-and-light
+- `physics/measurement-uncertainty-and-experimental-physics` — undergraduate-core: Design measurements, quantify and propagate uncertainty, separate random from systematic error, fit physical models to data, and report experimental claims honestly.
+  - requires: physics/measurement-and-physical-reasoning, mathematics/statistical-inference-and-data-analysis
+  - recommended after: physics/motion-forces-and-energy, physics/electricity-magnetism-and-circuits
+- `physics/computational-physics` — undergraduate-core: Translate a physical model into code, choose scales and algorithms, integrate equations of motion, sample stochastic systems, visualize results, and validate a simulation against limits and conservation laws.
+  - requires: physics/motion-forces-and-energy, mathematics/mathematical-computing-and-experimentation, mathematics/single-variable-integral-calculus
+  - recommended after: physics/measurement-uncertainty-and-experimental-physics
+- `physics/classical-mechanics` — undergraduate-core: Solve calculus-based dynamics: vector equations of motion, damped and driven oscillation, central forces and orbits, rigid-body rotation, non-inertial frames, and coupled normal modes.
+  - requires: physics/motion-forces-and-energy, mathematics/differential-equations, mathematics/multivariable-and-vector-calculus
+  - recommended after: physics/computational-physics
+- `physics/special-relativity` — undergraduate-core: Reason with relativity of simultaneity, Lorentz transformations, spacetime diagrams, the invariant interval, four-vectors, and relativistic energy and momentum.
+  - requires: physics/motion-forces-and-energy, mathematics/linear-algebra, mathematics/single-variable-differential-calculus
+  - recommended after: physics/classical-mechanics
+- `physics/quantum-phenomena-and-atomic-structure` — undergraduate-core: Interpret the experimental evidence for quantization: blackbody and photoelectric results, photons, matter waves, atomic spectra and energy-level diagrams, uncertainty, X-rays, radioactivity, and stimulated emission.
+  - requires: physics/waves-sound-and-light, physics/electricity-magnetism-and-circuits
+  - recommended after: physics/special-relativity, physics/classical-mechanics
+- `physics/thermodynamics-and-statistical-mechanics` — undergraduate-core: Connect macroscopic thermodynamic laws, entropy, and potentials to microscopic counting through ensembles, partition functions, equipartition, kinetic theory, and quantum statistics.
+  - requires: physics/matter-fluids-and-thermal-behavior, physics/quantum-phenomena-and-atomic-structure, mathematics/multivariable-and-vector-calculus, mathematics/probability
+  - recommended after: physics/classical-mechanics, physics/computational-physics
+- `physics/electronics-and-instrumentation` — undergraduate-core: Build and debug the measurement chain: network analysis, filters, diodes and transistors, operational amplifiers, digital logic, sampling, transducers, noise and shielding, and vacuum and cryogenic practice.
+  - requires: physics/electricity-magnetism-and-circuits, physics/measurement-uncertainty-and-experimental-physics
+  - recommended after: physics/computational-physics
+- `physics/mathematical-methods-for-physics` — undergraduate-advanced: Translate mathematical machinery into physics: index and tensor notation, curvilinear coordinates, Green functions, special functions and orthogonal expansions, distributions, contour methods, variational calculus, symmetry groups, and asymptotic approximation.
+  - requires: physics/classical-mechanics, mathematics/complex-analysis, mathematics/partial-differential-equations
+  - recommended after: physics/computational-physics, physics/special-relativity
+- `physics/electromagnetic-theory` — undergraduate-advanced: Work with Maxwell's equations as a field theory: boundary-value electrostatics, dielectric and magnetic media, induction, potentials and gauge, energy and momentum flux, wave propagation, and the covariant formulation.
+  - requires: physics/electricity-magnetism-and-circuits, physics/special-relativity, mathematics/partial-differential-equations
+  - recommended after: physics/classical-mechanics, physics/mathematical-methods-for-physics
+- `physics/quantum-mechanics` — undergraduate-advanced: Solve and interpret non-relativistic quantum mechanics: the Schrodinger equation, bound and scattering states in one dimension, operator formalism and Dirac notation, angular momentum, hydrogen, spin, identical particles, and perturbative and variational approximation.
+  - requires: physics/quantum-phenomena-and-atomic-structure, mathematics/partial-differential-equations
+  - recommended after: physics/classical-mechanics, physics/mathematical-methods-for-physics, physics/computational-physics
+- `physics/analytical-mechanics` — undergraduate-advanced: Reformulate mechanics through variational principles: Lagrangians and constraints, Noether symmetry and conservation, Hamiltonians, Poisson brackets, canonical transformations, Liouville flow, action-angle variables, and the onset of Hamiltonian chaos.
+  - requires: physics/classical-mechanics
+  - recommended after: physics/mathematical-methods-for-physics
+- `physics/optics-and-photonics` — undergraduate-advanced: Design and analyze optical systems using polarization, coherence, interference, Fourier diffraction theory, Gaussian beams, resonators, laser gain, detection, and introductory nonlinear optics.
+  - requires: physics/electromagnetic-theory
+  - recommended after: physics/quantum-mechanics, physics/electronics-and-instrumentation
+- `physics/continuum-mechanics-and-fluid-dynamics` — undergraduate-advanced: Treat matter as a continuum: stress and strain, elasticity, Euler and Navier-Stokes equations, vorticity, potential flow, dimensionless similarity, boundary layers, waves in fluids, instability, and the route to turbulence.
+  - requires: physics/classical-mechanics, mathematics/partial-differential-equations
+  - recommended after: physics/thermodynamics-and-statistical-mechanics, physics/computational-physics
+- `physics/condensed-matter-and-solid-state-physics` — undergraduate-advanced: Explain the properties of solids from structure: crystal and reciprocal lattices, diffraction, phonons and thermal behavior, free-electron and band theory, semiconductors, magnetism, superconductivity, and the role of defects and disorder.
+  - requires: physics/quantum-mechanics, physics/thermodynamics-and-statistical-mechanics
+  - recommended after: physics/mathematical-methods-for-physics
+- `physics/nuclear-and-particle-physics` — undergraduate-advanced: Survey subatomic matter: nuclear size and binding, liquid-drop and shell models, decay and reaction kinematics, cross sections, fission and fusion, detection, conservation laws and symmetries, quarks and leptons, and the Standard Model picture.
+  - requires: physics/quantum-mechanics, physics/special-relativity
+  - recommended after: physics/electronics-and-instrumentation, physics/mathematical-methods-for-physics
+- `physics/astrophysics-and-cosmology` — undergraduate-advanced: Infer astrophysical properties from light: magnitudes and spectra, radiative transfer, stellar structure and evolution, nucleosynthesis, compact objects, the interstellar medium, galaxies, cosmic expansion, and the standard cosmological model.
+  - requires: physics/quantum-mechanics, physics/thermodynamics-and-statistical-mechanics, physics/electromagnetic-theory
+  - recommended after: physics/measurement-uncertainty-and-experimental-physics, physics/computational-physics
+- `physics/advanced-electromagnetic-theory` — graduate: Solve graduate electrodynamics: Green-function boundary-value problems, multipole expansions, waveguides and cavities, dispersion in media, Lienard-Wiechert radiation, scattering and diffraction, radiation reaction, and the Lagrangian field formulation with its stress-energy tensor.
+  - requires: physics/electromagnetic-theory, physics/mathematical-methods-for-physics
+  - recommended after: physics/analytical-mechanics, physics/optics-and-photonics
+- `physics/advanced-quantum-mechanics` — graduate: Use the full quantum formalism: Hilbert-space structure and pictures, symmetry and SU(2) angular momentum, fine and hyperfine structure, gauge invariance and Aharonov-Bohm, Berry phase, density matrices and entanglement measures, second quantization, path integrals, and formal scattering theory.
+  - requires: physics/quantum-mechanics, physics/mathematical-methods-for-physics
+  - recommended after: physics/analytical-mechanics, physics/advanced-electromagnetic-theory
+- `physics/statistical-physics` — graduate: Analyze many-particle systems: quantum ideal gases and condensation, interacting models, phase transitions and critical exponents, mean-field theory and its failures, the renormalization group, fluctuation-dissipation and linear response, the Boltzmann equation, and stochastic and far-from-equilibrium dynamics.
+  - requires: physics/thermodynamics-and-statistical-mechanics, physics/quantum-mechanics, physics/mathematical-methods-for-physics
+  - recommended after: physics/advanced-quantum-mechanics, physics/computational-physics, mathematics/stochastic-processes
+- `physics/general-relativity` — graduate: Do gravitational physics geometrically: manifolds and tensor fields, the equivalence principle, covariant derivatives and geodesics, curvature, the Einstein field equations and their variational derivation, Schwarzschild and Kerr solutions, the classic tests, and linearized gravitational waves.
+  - requires: physics/electromagnetic-theory, physics/analytical-mechanics, physics/mathematical-methods-for-physics
+  - recommended after: physics/advanced-electromagnetic-theory, mathematics/differential-geometry-and-manifolds
+- `physics/quantum-field-theory` — graduate: Quantize fields and compute with them: classical field Lagrangians and Poincare symmetry, canonical quantization of scalar, spinor, and gauge fields, the path integral, Feynman rules and QED amplitudes, loop divergences and renormalization, running couplings, spontaneous symmetry breaking, and effective field theory.
+  - requires: physics/advanced-quantum-mechanics, physics/analytical-mechanics, physics/electromagnetic-theory
+  - recommended after: physics/advanced-electromagnetic-theory, physics/statistical-physics, mathematics/representation-theory-and-lie-theory
+- `physics/quantum-information-and-computation` — graduate: Treat quantum systems as information carriers: qubits, density matrices, channels and measurement, entanglement and Bell tests, circuits and universal gate sets, the core algorithms, error correction and fault tolerance, quantum entropy and channel capacity, decoherence and open-system dynamics, and the leading hardware platforms.
+  - requires: physics/quantum-mechanics
+  - recommended after: physics/advanced-quantum-mechanics, physics/computational-physics, mathematics/information-theory
+- `physics/condensed-matter-theory` — graduate: Analyze interacting electrons and emergent order: second-quantized many-body Hamiltonians, screening and Fermi-liquid theory, electron-phonon coupling and BCS superconductivity, magnetism and spin models, Green functions and response, broken symmetry and order parameters, Berry curvature and topological phases, and quantum Hall physics.
+  - requires: physics/condensed-matter-and-solid-state-physics, physics/advanced-quantum-mechanics, physics/statistical-physics
+  - recommended after: physics/quantum-field-theory, physics/computational-physics
+- `physics/atomic-molecular-and-optical-physics` — graduate: Control atoms and light coherently: atomic fine and hyperfine structure, semiclassical and quantized light-matter coupling, Rabi dynamics and optical Bloch equations, spontaneous emission and cavity QED, laser cooling and trapping, degenerate quantum gases, molecular structure, precision spectroscopy, frequency combs, and ultrafast dynamics.
+  - requires: physics/advanced-quantum-mechanics, physics/optics-and-photonics
+  - recommended after: physics/electronics-and-instrumentation, physics/quantum-information-and-computation
+- `physics/particle-physics-and-the-standard-model` — graduate: Derive and test the Standard Model: non-abelian gauge structure, QCD and asymptotic freedom, electroweak unification and the Higgs mechanism, flavor mixing and CP violation, neutrino mass and oscillation, hadron-collider cross sections and parton distributions, detector response, and the leading beyond-Standard-Model extensions.
+  - requires: physics/quantum-field-theory, physics/nuclear-and-particle-physics
+  - recommended after: physics/electronics-and-instrumentation, physics/statistical-physics
+- `physics/relativistic-astrophysics-and-cosmology` — graduate: Apply general relativity to the universe: black-hole spacetimes and horizon thermodynamics, gravitational-wave generation and compact binaries, relativistic accretion and jets, FLRW dynamics and thermal history, nucleosynthesis, CMB anisotropy and the Boltzmann hierarchy, inflation and primordial perturbations, and structure formation.
+  - requires: physics/general-relativity, physics/astrophysics-and-cosmology, physics/statistical-physics
+  - recommended after: physics/quantum-field-theory, physics/computational-physics
+- `physics/plasma-physics` — graduate: Model ionized matter across regimes: Debye shielding and plasma parameters, single-particle drifts and adiabatic invariants, the Vlasov and Fokker-Planck descriptions, two-fluid and MHD models, plasma waves and Landau damping, instabilities and reconnection, transport and collisions, and confinement in laboratory, space, and astrophysical settings.
+  - requires: physics/electromagnetic-theory, physics/continuum-mechanics-and-fluid-dynamics, physics/thermodynamics-and-statistical-mechanics
+  - recommended after: physics/statistical-physics, physics/computational-physics, physics/astrophysics-and-cosmology
+- `physics/soft-matter-and-complex-fluids` — graduate: Explain materials governed by thermal energy and entropy: Brownian motion and diffusion, entropic and depletion forces, polymer statistics and scaling, colloidal interactions and stability, amphiphilic self-assembly, liquid-crystal order, interfaces and wetting, viscoelasticity and rheology, and granular jamming and active matter.
+  - requires: physics/statistical-physics, physics/continuum-mechanics-and-fluid-dynamics
+  - recommended after: physics/computational-physics, physics/condensed-matter-and-solid-state-physics
+- `physics/biological-physics` — graduate: Apply physical reasoning to living systems: the scales and energy budget of the cell, diffusion and low-Reynolds-number transport, macromolecular conformation and folding energetics, molecular motors and free-energy transduction, membrane mechanics, stochastic gene expression, signaling and the physical limits of sensing, neural excitability, collective behavior, and evolutionary dynamics.
+  - requires: physics/statistical-physics
+  - recommended after: physics/soft-matter-and-complex-fluids, biology/cell-biology, mathematics/stochastic-processes
+- `physics/physics-research-practice` — graduate: Work the way researchers work: read and situate preprints and papers, design an investigation around a falsifiable claim, handle systematic uncertainty, blinding, and the look-elsewhere effect, build reproducible computational pipelines, apply the reproducibility and replicability distinction, and meet professional standards for authorship, peer review, conflict of interest, data retention, and safety.
+  - requires: physics/measurement-uncertainty-and-experimental-physics, physics/computational-physics
+  - recommended after: physics/electronics-and-instrumentation, physics/statistical-physics
+- `physics/quantum-matter-and-materials-research` — research-specialization: Enter the literature on correlated and topological materials: symmetry-indicated band topology, unconventional and high-temperature superconductivity, moire and two-dimensional systems, quantum magnetism and spin liquids, materials synthesis and characterization claims, and what spectroscopic and transport evidence can actually establish.
+  - requires: physics/condensed-matter-theory, physics/physics-research-practice
+  - recommended after: physics/quantum-information-and-computation, physics/soft-matter-and-complex-fluids
+- `physics/quantum-computing-and-simulation-research` — research-specialization: Read and critique quantum-computing research: benchmarking and randomized characterization, error budgets and threshold claims, surface and LDPC codes toward fault tolerance, analog and digital quantum simulation, classical-simulability arguments, and how to evaluate a quantum-advantage claim.
+  - requires: physics/quantum-information-and-computation, physics/physics-research-practice
+  - recommended after: physics/atomic-molecular-and-optical-physics, physics/condensed-matter-theory
+- `physics/precision-measurement-and-quantum-sensing` — research-specialization: Push measurement to its limits: the constant-based SI and its realization, optical clocks and comparisons, interferometric and atomic sensors, standard quantum limit and squeezing, noise budgets and systematic shifts, and searches for new physics through precision tests of fundamental constants and symmetries.
+  - requires: physics/atomic-molecular-and-optical-physics, physics/physics-research-practice
+  - recommended after: physics/quantum-information-and-computation, physics/electronics-and-instrumentation
+- `physics/gravitational-wave-and-multimessenger-astrophysics` — research-specialization: Work with transient and multimessenger evidence: interferometric detector response and noise, post-Newtonian and numerical-relativity waveform models, matched filtering and Bayesian parameter estimation, population inference and selection effects, electromagnetic and neutrino counterparts, and cosmological and nuclear inferences drawn from compact-binary events.
+  - requires: physics/relativistic-astrophysics-and-cosmology, physics/physics-research-practice
+  - recommended after: physics/precision-measurement-and-quantum-sensing, mathematics/mathematics-of-machine-learning-and-data-science
+- `physics/collider-and-precision-frontier-particle-physics` — research-specialization: Follow the experimental program of fundamental interactions: Higgs property measurements, precision electroweak and flavor tests, Monte Carlo simulation chains and detector unfolding, statistical discovery and exclusion practice, direct and indirect dark-matter searches, and the neutrino-mass and rare-process frontier.
+  - requires: physics/particle-physics-and-the-standard-model, physics/physics-research-practice
+  - recommended after: physics/electronics-and-instrumentation, physics/gravitational-wave-and-multimessenger-astrophysics
+- `physics/living-and-active-matter-research` — research-specialization: Enter the physics-of-life literature: active-matter hydrodynamics and collective motion, cytoskeletal and tissue mechanics, nonequilibrium thermodynamics of biological energy use, information and inference limits in cellular decision-making, quantitative imaging and single-molecule evidence, and the standards a physical model of a living system must meet.
+  - requires: physics/biological-physics, physics/physics-research-practice
+  - recommended after: physics/soft-matter-and-complex-fluids, biology/systems-and-quantitative-biology
+- `physics/fusion-and-high-energy-density-science` — research-specialization: Evaluate the fusion and high-energy-density literature: magnetic-confinement equilibrium, stability, and transport, tokamak and stellarator operating limits, inertial-confinement implosion physics and ignition criteria, equations of state and opacity at extreme conditions, diagnostics under extreme flux, and how energy-gain claims are defined and verified.
+  - requires: physics/plasma-physics, physics/physics-research-practice
+  - recommended after: mathematics/numerical-methods-for-differential-equations
