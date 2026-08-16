@@ -394,7 +394,7 @@ id = "biological-physics"
 order = 34
 tier = "specialization"
 level = "graduate"
-prerequisites = ["statistical-physics"]
+prerequisites = ["statistical-physics", "biology/biological-literacy-and-scientific-practice"]
 recommended_after = ["soft-matter-and-complex-fluids", "biology/cell-biology", "mathematics/stochastic-processes"]
 estimated_chapters = 11
 status = "proposed"
@@ -467,7 +467,7 @@ order = 40
 tier = "specialization"
 level = "research-specialization"
 prerequisites = ["particle-physics-and-the-standard-model", "physics-research-practice"]
-recommended_after = ["electronics-and-instrumentation", "gravitational-wave-and-multimessenger-astrophysics"]
+recommended_after = ["electronics-and-instrumentation"]
 estimated_chapters = 9
 status = "proposed"
 description = "Follow the experimental program of fundamental interactions: Higgs property measurements, precision electroweak and flavor tests, Monte Carlo simulation chains and detector unfolding, statistical discovery and exclusion practice, direct and indirect dark-matter searches, and the neutrino-mass and rare-process frontier."
@@ -477,8 +477,8 @@ id = "living-and-active-matter-research"
 order = 41
 tier = "specialization"
 level = "research-specialization"
-prerequisites = ["biological-physics", "physics-research-practice"]
-recommended_after = ["soft-matter-and-complex-fluids", "biology/systems-and-quantitative-biology"]
+prerequisites = ["biological-physics", "soft-matter-and-complex-fluids", "physics-research-practice"]
+recommended_after = ["biology/systems-and-quantitative-biology"]
 estimated_chapters = 8
 status = "proposed"
 description = "Enter the physics-of-life literature: active-matter hydrodynamics and collective motion, cytoskeletal and tissue mechanics, nonequilibrium thermodynamics of biological energy use, information and inference limits in cellular decision-making, quantitative imaging and single-molecule evidence, and the standards a physical model of a living system must meet."
@@ -535,7 +535,7 @@ rationale = "PhySH lists more second-level research areas under Fluid Dynamics t
 domain = "nonlinear-dynamics-and-chaos"
 disposition = "included"
 decks = ["analytical-mechanics", "continuum-mechanics-and-fluid-dynamics"]
-rationale = "The general theory of phase portraits, bifurcation, and chaos is supplied by mathematics/dynamical-systems-and-ergodic-theory and is referenced as recommended preparation; these decks own only the physical instances, namely Hamiltonian chaos and the transition to turbulence."
+rationale = "These decks own the physical instances of nonlinear dynamics, namely Hamiltonian chaos and the transition to turbulence; the broader mathematical theory remains an optional external extension rather than a hard prerequisite."
 
 [[coverage]]
 domain = "oscillations-and-waves"
@@ -757,7 +757,7 @@ rationale = "A genuinely new PhySH discipline that a pre-2020 taxonomy would mis
 domain = "chemical-physics-and-physical-chemistry"
 disposition = "deferred"
 decks = []
-rationale = "Molecular structure and spectroscopy are covered inside the AMO deck. Reaction dynamics, electronic-structure methods, and statistical thermodynamics of solutions are deferred; biology/chemistry-for-living-systems supplies chemical literacy where a learner needs it sooner."
+rationale = "Molecular structure and spectroscopy are covered inside the AMO deck. Reaction dynamics, electronic-structure methods, and statistical thermodynamics of solutions are deferred; biology/chemistry-of-life is the cataloged optional source of chemical literacy where a learner needs it sooner."
 
 [[coverage]]
 domain = "quantum-gravity-and-string-theory"
@@ -773,9 +773,9 @@ rationale = "Valuable for judging model status and superseded theories, and part
 
 [[coverage]]
 domain = "networks-and-complex-systems"
-disposition = "out-of-scope"
+disposition = "deferred"
 decks = []
-rationale = "A standalone PhySH discipline, but the general theory is already owned by mathematics/networks-and-complex-systems. Duplicating it here would recreate a broad external capability purely to make this roadmap look self-contained."
+rationale = "A standalone PhySH discipline and therefore a legitimate physics extension. The staged catalog contains no reusable general complex-systems deck, so a future physics-owned course must be designed rather than attributed to a nonexistent external capability."
 
 [[coverage]]
 domain = "physics-education-research"

@@ -65,7 +65,7 @@ scope. This matrix is generated from the `[[coverage]]` entries in
 | analytical-and-hamiltonian-mechanics | included | `analytical-mechanics` | Variational and Hamiltonian structure is the machinery that quantum field theory and general relativity actually reuse, so it is a separate deck rather than trailing chapters of classical mechanics. |
 | continuum-mechanics-and-elasticity | included | `continuum-mechanics-and-fluid-dynamics` | Stress, strain, and elasticity share a spine with fluid mechanics and are the prerequisite grammar for soft matter and geophysical applications. |
 | fluid-dynamics | included | `continuum-mechanics-and-fluid-dynamics` | PhySH lists more second-level research areas under Fluid Dynamics than under Nuclear and Particles and Fields combined, and fluids sits inside published graduate classical-mechanics core syllabi; a single passing chapter would misrepresent the field. |
-| nonlinear-dynamics-and-chaos | included | `analytical-mechanics`, `continuum-mechanics-and-fluid-dynamics` | The general theory of phase portraits, bifurcation, and chaos is developed later in mathematics/dynamical-systems-and-ergodic-theory; these decks own the physical instances, namely Hamiltonian chaos and the transition to turbulence. |
+| nonlinear-dynamics-and-chaos | included | `analytical-mechanics`, `continuum-mechanics-and-fluid-dynamics` | These decks own the physical instances of nonlinear dynamics, namely Hamiltonian chaos and the transition to turbulence; the broader mathematical theory remains an optional external extension rather than a hard prerequisite. |
 | oscillations-and-waves | included | `waves-sound-and-light`, `classical-mechanics` | Wave phenomena are named as a fundamental area by the IOP accreditation framework and are the shared representational grammar for optics, quantum mechanics, and field theory. |
 | acoustics | included | `waves-sound-and-light` | Sound is covered as the accessible instance of wave propagation. Research-level acoustics, an APS division in its own right, is deferred with the other applied branches. |
 | geometrical-and-physical-optics | included | `waves-sound-and-light`, `optics-and-photonics` | Ray and image reasoning belongs at the foundational level; coherence, Fourier diffraction, and polarization require the electromagnetic field description. |
@@ -102,10 +102,10 @@ scope. This matrix is generated from the `[[coverage]]` entries in
 | physics-of-climate-and-earth-systems | deferred | None | An APS topical group and the subject of the 2021 Nobel Prize. Its prerequisite closure is nearly complete once continuum mechanics, fluid dynamics, thermodynamics, and radiative transfer are in place, which makes it a high-value first extension. |
 | geophysics-space-and-atmospheric-physics | deferred | None | Well represented in the arXiv physics archive and in plasma space-weather research, but adding it now would broaden the route without strengthening any declared branch. Named extension point. |
 | energy-science-and-technology | deferred | None | A genuinely new PhySH discipline that a pre-2020 taxonomy would miss. Fusion energy is covered through the plasma branch; storage, photovoltaics, and grid-scale conversion are not. Named extension point. |
-| chemical-physics-and-physical-chemistry | deferred | None | Molecular structure and spectroscopy are covered inside the AMO deck. Reaction dynamics, electronic-structure methods, and statistical thermodynamics of solutions are deferred; biology/chemistry-for-living-systems supplies chemical literacy where a learner needs it sooner. |
+| chemical-physics-and-physical-chemistry | deferred | None | Molecular structure and spectroscopy are covered inside the AMO deck. Reaction dynamics, electronic-structure methods, and statistical thermodynamics of solutions are deferred; `biology/chemistry-of-life` is the cataloged optional source of chemical literacy where a learner needs it sooner. |
 | quantum-gravity-and-string-theory | deferred | None | Culturally prominent and named in EPP-2024 as a long-horizon driver, but it is roughly five percent of physics submissions and requires quantum field theory and general relativity together. A natural later extension once both exist. |
 | history-and-philosophy-of-physics | deferred | None | Valuable for judging model status and superseded theories, and partly carried inside decks that label the Bohr atom and other superseded models as such. A dedicated deck is deferred rather than excluded. |
-| networks-and-complex-systems | out-of-scope | None | A standalone PhySH discipline, but the general theory is already owned by mathematics/networks-and-complex-systems. Duplicating it here would recreate a broad external capability purely to make this roadmap look self-contained. |
+| networks-and-complex-systems | deferred | None | A standalone PhySH discipline and therefore a legitimate physics extension. The staged catalog contains no reusable general complex-systems deck, so a future physics-owned course must be designed rather than attributed to a nonexistent external capability. |
 | physics-education-research | out-of-scope | None | A PhySH discipline and an APS topical group, but it is education research about physics rather than physics content. Its findings inform how these decks are authored and are recorded in the subject brief instead. |
 
 ## Deck sequence
@@ -150,15 +150,74 @@ later records its inherited direct edges in its own `deck.toml`.
 | 31 | `relativistic-astrophysics-and-cosmology` | graduate | specialization | `general-relativity`, `astrophysics-and-cosmology`, `statistical-physics` | `quantum-field-theory`, `computational-physics` | 12 | Apply general relativity to the universe: black-hole spacetimes and horizon thermodynamics, gravitational-wave generation and compact binaries, relativistic accretion and jets, FLRW dynamics and thermal history, nucleosynthesis, CMB anisotropy and the Boltzmann hierarchy, inflation and primordial perturbations, and structure formation. | proposed |
 | 32 | `plasma-physics` | graduate | specialization | `electromagnetic-theory`, `continuum-mechanics-and-fluid-dynamics`, `thermodynamics-and-statistical-mechanics` | `statistical-physics`, `computational-physics`, `astrophysics-and-cosmology` | 11 | Model ionized matter across regimes: Debye shielding and plasma parameters, single-particle drifts and adiabatic invariants, the Vlasov and Fokker-Planck descriptions, two-fluid and MHD models, plasma waves and Landau damping, instabilities and reconnection, transport and collisions, and confinement in laboratory, space, and astrophysical settings. | proposed |
 | 33 | `soft-matter-and-complex-fluids` | graduate | specialization | `statistical-physics`, `continuum-mechanics-and-fluid-dynamics` | `computational-physics`, `condensed-matter-and-solid-state-physics` | 10 | Explain materials governed by thermal energy and entropy: Brownian motion and diffusion, entropic and depletion forces, polymer statistics and scaling, colloidal interactions and stability, amphiphilic self-assembly, liquid-crystal order, interfaces and wetting, viscoelasticity and rheology, and granular jamming and active matter. | proposed |
-| 34 | `biological-physics` | graduate | specialization | `statistical-physics` | `soft-matter-and-complex-fluids`, `biology/cell-biology`, `mathematics/stochastic-processes` | 11 | Apply physical reasoning to living systems: the scales and energy budget of the cell, diffusion and low-Reynolds-number transport, macromolecular conformation and folding energetics, molecular motors and free-energy transduction, membrane mechanics, stochastic gene expression, signaling and the physical limits of sensing, neural excitability, collective behavior, and evolutionary dynamics. | proposed |
+| 34 | `biological-physics` | graduate | specialization | `statistical-physics`, `biology/biological-literacy-and-scientific-practice` | `soft-matter-and-complex-fluids`, `biology/cell-biology`, `mathematics/stochastic-processes` | 11 | Apply physical reasoning to living systems: the scales and energy budget of the cell, diffusion and low-Reynolds-number transport, macromolecular conformation and folding energetics, molecular motors and free-energy transduction, membrane mechanics, stochastic gene expression, signaling and the physical limits of sensing, neural excitability, collective behavior, and evolutionary dynamics. | proposed |
 | 35 | `physics-research-practice` | graduate | core | `measurement-uncertainty-and-experimental-physics`, `computational-physics` | `electronics-and-instrumentation`, `statistical-physics` | 10 | Work the way researchers work: read and situate preprints and papers, design an investigation around a falsifiable claim, handle systematic uncertainty, blinding, and the look-elsewhere effect, build reproducible computational pipelines, apply the reproducibility and replicability distinction, and meet professional standards for authorship, peer review, conflict of interest, data retention, and safety. | proposed |
 | 36 | `quantum-matter-and-materials-research` | research-specialization | specialization | `condensed-matter-theory`, `physics-research-practice` | `quantum-information-and-computation`, `soft-matter-and-complex-fluids` | 9 | Enter the literature on correlated and topological materials: symmetry-indicated band topology, unconventional and high-temperature superconductivity, moire and two-dimensional systems, quantum magnetism and spin liquids, materials synthesis and characterization claims, and what spectroscopic and transport evidence can actually establish. | proposed |
 | 37 | `quantum-computing-and-simulation-research` | research-specialization | specialization | `quantum-information-and-computation`, `physics-research-practice` | `atomic-molecular-and-optical-physics`, `condensed-matter-theory` | 9 | Read and critique quantum-computing research: benchmarking and randomized characterization, error budgets and threshold claims, surface and LDPC codes toward fault tolerance, analog and digital quantum simulation, classical-simulability arguments, and how to evaluate a quantum-advantage claim. | proposed |
 | 38 | `precision-measurement-and-quantum-sensing` | research-specialization | specialization | `atomic-molecular-and-optical-physics`, `physics-research-practice` | `quantum-information-and-computation`, `electronics-and-instrumentation` | 8 | Push measurement to its limits: the constant-based SI and its realization, optical clocks and comparisons, interferometric and atomic sensors, standard quantum limit and squeezing, noise budgets and systematic shifts, and searches for new physics through precision tests of fundamental constants and symmetries. | proposed |
 | 39 | `gravitational-wave-and-multimessenger-astrophysics` | research-specialization | specialization | `relativistic-astrophysics-and-cosmology`, `physics-research-practice` | `precision-measurement-and-quantum-sensing`, `mathematics/mathematics-of-machine-learning-and-data-science` | 9 | Work with transient and multimessenger evidence: interferometric detector response and noise, post-Newtonian and numerical-relativity waveform models, matched filtering and Bayesian parameter estimation, population inference and selection effects, electromagnetic and neutrino counterparts, and cosmological and nuclear inferences drawn from compact-binary events. | proposed |
-| 40 | `collider-and-precision-frontier-particle-physics` | research-specialization | specialization | `particle-physics-and-the-standard-model`, `physics-research-practice` | `electronics-and-instrumentation`, `gravitational-wave-and-multimessenger-astrophysics` | 9 | Follow the experimental program of fundamental interactions: Higgs property measurements, precision electroweak and flavor tests, Monte Carlo simulation chains and detector unfolding, statistical discovery and exclusion practice, direct and indirect dark-matter searches, and the neutrino-mass and rare-process frontier. | proposed |
-| 41 | `living-and-active-matter-research` | research-specialization | specialization | `biological-physics`, `physics-research-practice` | `soft-matter-and-complex-fluids`, `biology/systems-and-quantitative-biology` | 8 | Enter the physics-of-life literature: active-matter hydrodynamics and collective motion, cytoskeletal and tissue mechanics, nonequilibrium thermodynamics of biological energy use, information and inference limits in cellular decision-making, quantitative imaging and single-molecule evidence, and the standards a physical model of a living system must meet. | proposed |
+| 40 | `collider-and-precision-frontier-particle-physics` | research-specialization | specialization | `particle-physics-and-the-standard-model`, `physics-research-practice` | `electronics-and-instrumentation` | 9 | Follow the experimental program of fundamental interactions: Higgs property measurements, precision electroweak and flavor tests, Monte Carlo simulation chains and detector unfolding, statistical discovery and exclusion practice, direct and indirect dark-matter searches, and the neutrino-mass and rare-process frontier. | proposed |
+| 41 | `living-and-active-matter-research` | research-specialization | specialization | `biological-physics`, `soft-matter-and-complex-fluids`, `physics-research-practice` | `biology/systems-and-quantitative-biology` | 8 | Enter the physics-of-life literature: active-matter hydrodynamics and collective motion, cytoskeletal and tissue mechanics, nonequilibrium thermodynamics of biological energy use, information and inference limits in cellular decision-making, quantitative imaging and single-molecule evidence, and the standards a physical model of a living system must meet. | proposed |
 | 42 | `fusion-and-high-energy-density-science` | research-specialization | specialization | `plasma-physics`, `physics-research-practice` | `mathematics/numerical-methods-for-differential-equations` | 9 | Evaluate the fusion and high-energy-density literature: magnetic-confinement equilibrium, stability, and transport, tokamak and stellarator operating limits, inertial-confinement implosion physics and ignition criteria, equations of state and opacity at extreme conditions, diagnostics under extreme flux, and how energy-gain claims are defined and verified. | proposed |
+
+## Independent baseline and coherence audit
+
+All 42 baseline deck IDs remain stable because their course-scale scopes are
+still coherent. The redesign changes only dependency and coverage errors: it
+adds first-contact biological literacy to `biological-physics`, promotes
+`soft-matter-and-complex-fluids` to a hard prerequisite for the living-matter
+research branch, removes an unrelated gravitational-wave sequencing suggestion
+from the collider branch, corrects two nonexistent catalog references, and
+changes networks and complex systems from out-of-scope to deferred.
+
+Every deck was checked against the 6–14 chapter envelope, a single conceptual
+spine and capstone performance, and the rule that a hard edge must be needed by
+the deck rather than merely conventional:
+
+| Deck | Coherent course-scale spine and edge verdict |
+|---|---|
+| `measurement-and-physical-reasoning` | Operational measurement and model literacy; arithmetic is used throughout, not for one isolated topic. Pass. |
+| `motion-forces-and-energy` | Algebraic mechanics organized around prediction and conservation; measurement and algebra are direct necessities. Pass. |
+| `matter-fluids-and-thermal-behavior` | Observable macroscopic matter linked by density, pressure, flow, and thermal behavior; prior interaction and energy language is reused throughout. Pass. |
+| `waves-sound-and-light` | One wave-representation grammar from oscillation through sound and elementary optics; mechanics and trigonometry are recurrent tools. Pass. |
+| `electricity-magnetism-and-circuits` | Algebraic charge-field-circuit reasoning culminating in induction and electromagnetic waves; mechanics and trigonometry are direct. Pass. |
+| `measurement-uncertainty-and-experimental-physics` | Experimental inference from design through uncertainty and reporting; measurement literacy and formal data analysis are both load-bearing. Pass. |
+| `computational-physics` | Translation of models into tested simulations; programming, calculus, and an established physical model are used across the course. Pass. |
+| `classical-mechanics` | Calculus-based dynamics from equations of motion to modes and rotation; ODE and vector-calculus capabilities are recurrent. Pass. |
+| `special-relativity` | One spacetime and four-vector grammar; mechanics, calculus, and linear transformations support the entire progression. Pass. |
+| `quantum-phenomena-and-atomic-structure` | Experimental evidence and representation change leading to quantization; wave and electromagnetic literacy are direct. Pass. |
+| `thermodynamics-and-statistical-mechanics` | Macroscopic state functions connected to microscopic counting; matter, discrete quantum states, probability, and multivariable calculus are all reused. Pass. |
+| `electronics-and-instrumentation` | The measurement chain from circuits through sensors, noise, and acquisition; circuits and experimental uncertainty are direct. Pass. |
+| `mathematical-methods-for-physics` | Contextual transfer of already-mastered complex and PDE methods into physical operators, sources, symmetries, and approximations; it does not replace the mathematics courses. Pass. |
+| `electromagnetic-theory` | Maxwell fields, boundaries, waves, and covariance as one field-theory capability; PDE and relativity are required by substantial portions. Pass. |
+| `quantum-mechanics` | Nonrelativistic wave and operator mechanics through approximation; the PDE closure also supplies its linear-algebra foundation. Pass. |
+| `analytical-mechanics` | Variational, Lagrangian, and Hamiltonian reformulation of established mechanics; no unrelated graduate mechanics edge is imposed. Pass. |
+| `optics-and-photonics` | Electromagnetic coherence, diffraction, beams, resonators, and lasers culminating in optical-system analysis. Pass. |
+| `continuum-mechanics-and-fluid-dynamics` | Stress, constitutive response, and conservation laws connect solids and fluids; classical mechanics and PDEs are direct. Pass. |
+| `condensed-matter-and-solid-state-physics` | Structure-to-property reasoning from lattices and phonons to bands, magnetism, and superconductivity; quantum and thermal physics are direct. Pass. |
+| `nuclear-and-particle-physics` | A deliberately survey-level subatomic course unified by scales, reactions, symmetries, and detection; quantum mechanics and relativity are direct. Pass. |
+| `astrophysics-and-cosmology` | Inference from radiation through stars, galaxies, and expansion; the advanced physical prerequisites support radiative transfer and stellar matter rather than isolated chapters. Pass. |
+| `advanced-electromagnetic-theory` | Graduate boundary, radiation, scattering, and field-action methods; undergraduate field theory plus the physics-methods bridge is sufficient. Pass. |
+| `advanced-quantum-mechanics` | Hilbert-space, symmetry, scattering, second-quantized, and path-integral formalism as one graduate quantum course. Pass. |
+| `statistical-physics` | Interacting and nonequilibrium many-particle theory from ensembles to response and criticality; all three hard edges are recurrent. Pass. |
+| `general-relativity` | Geometry and variational field dynamics culminating in exact and radiative solutions; the closure supplies covariance, action principles, tensors, and Green-function practice. Pass. |
+| `quantum-field-theory` | Relativistic field quantization through renormalization and effective theory; quantum, analytical, and classical field structures are direct. Pass. |
+| `quantum-information-and-computation` | Quantum states treated as information through circuits, channels, algorithms, and error correction; undergraduate quantum mechanics is sufficient and advanced quantum is only recommended. Pass. |
+| `condensed-matter-theory` | Many-body response and emergent order culminating in correlated and topological phases; survey, advanced quantum, and graduate statistical physics are direct. Pass. |
+| `atomic-molecular-and-optical-physics` | Coherent control of atoms, molecules, and light; advanced quantum and photonics form the minimal two-sided closure. Pass. |
+| `particle-physics-and-the-standard-model` | Gauge theory connected to collider observables and detector response; QFT and the subatomic survey are both used throughout. Pass. |
+| `relativistic-astrophysics-and-cosmology` | Relativistic compact objects and cosmological evolution joined by gravity, matter, and observation; GR, astrophysics, and statistical physics are direct. Pass. |
+| `plasma-physics` | Particle, kinetic, fluid, and MHD descriptions of ionized matter; fields, continuum mechanics, and thermal physics are all recurrent. Pass. |
+| `soft-matter-and-complex-fluids` | Fluctuation, entropy, interfaces, polymers, and rheology joined by statistical and continuum descriptions. Pass. |
+| `biological-physics` | General physical principles applied across living scales; graduate statistical physics and first-contact biological literacy are hard, while full cell biology remains helpful but too broad to gate entry. Pass after correction. |
+| `physics-research-practice` | Branch-neutral claim evaluation, reproducible workflow, conduct, and communication; experiment and computation are the minimal direct foundations. Pass. |
+| `quantum-matter-and-materials-research` | Literature-facing correlated and topological matter with evidence from synthesis, spectroscopy, and transport; branch theory plus research practice is sufficient. Pass. |
+| `quantum-computing-and-simulation-research` | Literature-facing benchmarking, error correction, simulation, and advantage claims; quantum-information theory plus research practice is sufficient. Pass. |
+| `precision-measurement-and-quantum-sensing` | Literature-facing clocks, sensors, quantum limits, and systematics; AMO plus the inherited experimental research closure is sufficient. Pass. |
+| `gravitational-wave-and-multimessenger-astrophysics` | Literature-facing detector, waveform, inference, and counterpart reasoning; relativistic astrophysics plus research practice is sufficient. Pass. |
+| `collider-and-precision-frontier-particle-physics` | Literature-facing simulation, unfolding, significance, and precision tests; Standard Model theory plus research practice is sufficient, and the unrelated gravitational-wave recommendation was removed. Pass after correction. |
+| `living-and-active-matter-research` | Literature-facing active hydrodynamics, tissues, biological inference, and imaging; biological physics, soft-matter theory, and research practice are all direct. Pass after correction. |
+| `fusion-and-high-energy-density-science` | Literature-facing confinement, transport, ignition, extreme matter, and diagnostics; plasma theory plus research practice is sufficient, with numerical PDE work recommended. Pass. |
 
 ## Why the decks are cut this way
 
@@ -219,11 +278,12 @@ only on the specific theory it needs. The graduate decks then re-enter the same
 domains at the level the research branches actually require.
 
 **`physics-research-practice` (35) is a required deck, not an afterthought.**
-Phys21 §D, the EP3 Guide, the APS Guidelines for Professional Conduct, and the
+Phys21 §D, the EP3 Guide, the current APS Guidelines on Ethics and Ethics
+Standards, and the
 NASEM reproducibility report all treat research conduct — data retention,
 authorship, peer review, conflict of interest, and the reproducibility/
-replicability distinction — as content to be taught, not absorbed. It is the
-second hard prerequisite of all seven research-specialization decks.
+replicability distinction — as content to be taught, not absorbed. It is a hard
+prerequisite of all seven research-specialization decks.
 
 **Seven terminal branches, one per decadal-scale community.** Quantum materials,
 quantum computing and simulation, precision measurement and quantum sensing,
@@ -239,10 +299,35 @@ Every mathematical capability is referenced from the `mathematics` subject as
 `subject/deck` rather than rebuilt here, from
 `mathematics/number-sense-and-arithmetic` at the very start through
 `mathematics/partial-differential-equations` and
-`mathematics/complex-analysis` at the advanced layer. `biology/cell-biology` and
-`mathematics/stochastic-processes` appear as `recommended_after` on
-`biological-physics`, because that deck teaches the physics of living matter and
-should not be gated behind a biology sequence.
+`mathematics/complex-analysis` at the advanced layer.
+`biology/biological-literacy-and-scientific-practice` is the one hard biology
+edge: it establishes living-system scale, cell and gene concepts, and causal
+evidence language without forcing a physicist through an unrelated molecular or
+organismal sequence. `biology/cell-biology` and
+`mathematics/stochastic-processes` remain `recommended_after` on
+`biological-physics`; the physics deck establishes the specific biological
+objects it uses, while those full external courses provide valuable breadth.
+
+The staged cross-subject catalog was checked directly, not reconstructed from
+memory. Every qualified identifier in executable metadata exists there, and its
+documented capability matches its role:
+
+| Catalog capability | Role in this route | Verification decision |
+|---|---|---|
+| `mathematics/number-sense-and-arithmetic`, `mathematics/elementary-algebra-and-functions`, `mathematics/precalculus-and-trigonometry` | Hard foundations for measurement, algebraic mechanics, waves, and introductory electromagnetism | Each entire capability is used repeatedly; none is an ancestor redundantly restated beside a stronger direct edge. |
+| `mathematics/single-variable-differential-calculus`, `mathematics/single-variable-integral-calculus`, `mathematics/linear-algebra`, `mathematics/differential-equations`, `mathematics/multivariable-and-vector-calculus` | Hard calculus and representation tools for computation, classical mechanics, and relativity | Direct consumers need distinct documented outcomes; transitive ancestors are omitted from their lists. |
+| `mathematics/probability`, `mathematics/statistical-inference-and-data-analysis`, `mathematics/mathematical-computing-and-experimentation` | Hard foundations for thermal/statistical, experimental, and computational physics | Physics decks teach domain transfer, not general probability, inference, or programming. |
+| `mathematics/complex-analysis`, `mathematics/partial-differential-equations` | Hard foundations for the physics-methods bridge and upper-level field/wave theories | Their general mathematics is assumed; `mathematical-methods-for-physics` teaches physical selection, notation, sources, boundaries, and validity rather than duplicating proofs. |
+| `mathematics/stochastic-processes`, `mathematics/differential-geometry-and-manifolds`, `mathematics/representation-theory-and-lie-theory`, `mathematics/information-theory` | Recommended advanced preparation | Each is useful but would be a false hard prerequisite because the target physics deck establishes only the subset it actually consumes. |
+| `mathematics/mathematics-of-machine-learning-and-data-science`, `mathematics/numerical-methods-for-differential-equations` | Recommended research tooling | Valuable for particular computational implementations, not logically required to read the branch literature. |
+| `biology/biological-literacy-and-scientific-practice` | Hard foundation for `biological-physics` | This smallest cataloged biology capability supplies the cell/gene and evidence grammar that a zero-knowledge learner cannot be assumed to know. |
+| `biology/cell-biology`, `biology/systems-and-quantitative-biology` | Recommended biological breadth | Their complete prerequisite closures are broader than the biological objects needed by the physics decks, so hard edges would be false. |
+
+`biology/chemistry-of-life` is named only as an optional future source of
+chemical literacy in the deferred chemical-physics coverage row; it is not an
+executable prerequisite. The catalog contains no general networks-and-complex-
+systems deck, so this roadmap defers that physics domain instead of inventing an
+external owner.
 
 `mathematical-methods-for-physics` (13) is the **single deliberate
 subject-specific bridge**, and it is kept for a reason the mathematics decks do
@@ -256,7 +341,8 @@ analysis used to guess a result before solving. A learner who has completed the
 mathematics decks knows the theorems and still cannot do these things.
 
 The cost of that deck is recorded openly: requiring `mathematics/complex-analysis`
-pulls `mathematics/real-analysis` and `mathematics/logic-sets-and-proof` into the
+pulls `mathematics/real-analysis` and
+`mathematics/mathematical-reasoning-and-proof` into the
 transitive closure. That is accepted because contour integration and analytic
 structure are unavoidable in the graduate electromagnetic, quantum, and
 statistical decks that depend on it, not because proof-based analysis is thought
@@ -289,22 +375,22 @@ closure that actually establish them.
 | `relativistic-astrophysics-and-cosmology` | Curved-spacetime dynamics, stellar structure and populations, observational pipelines, thermal history and equilibrium statistics | `general-relativity`, `astrophysics-and-cosmology`, `statistical-physics` | Sufficient |
 | `plasma-physics` | Fields with sources and boundary conditions, continuum and transport equations, kinetic distributions and collisions | `electromagnetic-theory`, `continuum-mechanics-and-fluid-dynamics`, `thermodynamics-and-statistical-mechanics` | Sufficient. No quantum edge, because the deck is classical and kinetic; degenerate-matter regimes are handled inside `fusion-and-high-energy-density-science`. |
 | `soft-matter-and-complex-fluids` | Free energy and phase behavior, fluctuations, viscous and viscoelastic flow, coarse-graining | `statistical-physics`, `continuum-mechanics-and-fluid-dynamics` | Sufficient |
-| `biological-physics` | Thermal energy scale, fluctuation and noise, entropy and free energy, stochastic dynamics, low-Reynolds-number reasoning | `statistical-physics` | Sufficient for the physics. Biological vocabulary is bridged inside the deck; `biology/cell-biology` and `mathematics/stochastic-processes` are `recommended_after` rather than hard edges so that a physicist is not gated behind a biology sequence. |
+| `biological-physics` | Thermal energy scale, fluctuation and noise, entropy and free energy, stochastic dynamics, living-system scale, cell and gene concepts, and causal evidence language | `statistical-physics`; `biology/biological-literacy-and-scientific-practice` | Sufficient. The small first-contact biology capability is now a hard edge; full cell biology and stochastic-process courses remain recommended because only selected concepts are used and are explicitly established in this deck. |
 | `physics-research-practice` | Uncertainty budgets, systematic error, experimental design, reproducible computational workflow | `measurement-uncertainty-and-experimental-physics`, `computational-physics` | Sufficient. Deliberately *not* gated on any graduate theory deck, so a learner in any branch can reach it. |
 | `quantum-matter-and-materials-research` | Many-body and topological language, correlated-electron phenomenology, plus literature reading, error analysis, and research conduct | `condensed-matter-theory`, `physics-research-practice` | Sufficient |
 | `quantum-computing-and-simulation-research` | Circuit and error-correction formalism, noise channels, plus literature and research conduct | `quantum-information-and-computation`, `physics-research-practice` | Sufficient |
 | `precision-measurement-and-quantum-sensing` | Atomic clocks, coherent control, cavity and laser systems, plus uncertainty budgets and research conduct | `atomic-molecular-and-optical-physics`, `physics-research-practice` | Sufficient |
 | `gravitational-wave-and-multimessenger-astrophysics` | Compact-object dynamics and radiation, cosmological observation, plus statistical inference and research conduct | `relativistic-astrophysics-and-cosmology`, `physics-research-practice` | Sufficient |
 | `collider-and-precision-frontier-particle-physics` | Standard Model phenomenology, cross sections, detector concepts, plus statistical method and research conduct | `particle-physics-and-the-standard-model`, `physics-research-practice` | Sufficient |
-| `living-and-active-matter-research` | Nonequilibrium statistical language, biological force and motility scales, plus data analysis and research conduct | `biological-physics`, `physics-research-practice` | Sufficient |
+| `living-and-active-matter-research` | Nonequilibrium statistical language, biological force and motility scales, continuum and viscoelastic response, active-matter hydrodynamics, plus data analysis and research conduct | `biological-physics`, `soft-matter-and-complex-fluids`, `physics-research-practice` | Sufficient. Promoting soft matter from recommended to hard closes the missing representational and theory layer before literature-facing active-matter work. |
 | `fusion-and-high-energy-density-science` | Magnetized and kinetic plasma behavior, confinement and transport, plus diagnostics and research conduct | `plasma-physics`, `physics-research-practice` | Sufficient |
 
 The governing rule behind this table: **no research-specialization deck may
-depend on an undergraduate survey alone.** Every one of the seven terminal
-branches has exactly two hard edges — its graduate branch theory and
-`physics-research-practice` — so no route runs from a survey directly into
-literature-facing work without an intervening advanced-theory layer and an
-explicit research-method layer.
+depend on an undergraduate survey alone.** Every terminal branch has its
+graduate branch theory and `physics-research-practice` as direct hard edges;
+the living-matter branch also needs graduate soft-matter theory. No route runs
+from a survey directly into literature-facing work without an advanced-theory
+layer and an explicit research-method layer.
 
 ## Cross-deck concepts
 
@@ -359,16 +445,16 @@ ethics.
 **Deferred** — visible future extensions, not judgments about the learner:
 accelerator and beam physics; medical physics; physics of climate and Earth
 systems; geophysics, space, and atmospheric physics; energy science and
-technology; chemical physics and physical chemistry; quantum gravity and string
-theory; and the history and philosophy of physics. Each has a natural attachment
+technology; chemical physics and physical chemistry; networks and complex
+systems; quantum gravity and string theory; and the history and philosophy of
+physics. Each has a natural attachment
 point already present in the graph — for example accelerator physics after
 `advanced-electromagnetic-theory`, and quantum gravity after
 `quantum-field-theory` and `general-relativity`.
 
-**Out of scope** — handled elsewhere: networks and complex systems belongs to
-`mathematics/networks-and-complex-systems` and is referenced rather than
-duplicated; physics education research is education research rather than physics
-content, and its findings are used to shape card design instead of being taught.
+**Out of scope** — physics education research is education research about
+physics rather than physics content; its findings shape card design instead of
+being taught. No absent cross-subject capability is claimed as its owner.
 
 ## Open decisions needing confirmation
 
