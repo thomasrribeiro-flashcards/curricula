@@ -145,7 +145,7 @@ prerequisites = ["electricity-magnetism-and-circuits", "measurement-uncertainty-
 recommended_after = ["computational-physics"]
 estimated_chapters = 10
 status = "proposed"
-description = "Build and debug the measurement chain: network analysis, filters, diodes and transistors, operational amplifiers, digital logic, sampling, transducers, noise and shielding, and vacuum and cryogenic practice."
+description = "Build and debug a measurement signal chain: network analysis, filters, diodes and transistors, operational amplifiers, digital logic, sampling and data acquisition, transducers and detectors, grounding, shielding, noise, calibration, and fault isolation."
 
 # ---------------------------------------------------------------------------
 # Undergraduate advanced: upper-division depth and the breadth surveys that
@@ -409,7 +409,7 @@ prerequisites = ["measurement-uncertainty-and-experimental-physics", "computatio
 recommended_after = ["electronics-and-instrumentation", "statistical-physics"]
 estimated_chapters = 10
 status = "proposed"
-description = "Work the way researchers work: read and situate preprints and papers, design an investigation around a falsifiable claim, handle systematic uncertainty, blinding, and the look-elsewhere effect, build reproducible computational pipelines, apply the reproducibility and replicability distinction, and meet professional standards for authorship, peer review, conflict of interest, data retention, and safety."
+description = "Work the way researchers work: read and situate papers, design an investigation around a falsifiable claim, handle systematic uncertainty, blinding, and the look-elsewhere effect, build reproducible computational and AI-assisted workflows while auditing provenance and outputs, distinguish reproducibility from replicability, and meet professional standards for authorship, peer review, conflicts, data retention, and safety."
 
 # ---------------------------------------------------------------------------
 # Research specialization: seven representative literature-facing branches.
@@ -467,7 +467,7 @@ order = 40
 tier = "specialization"
 level = "research-specialization"
 prerequisites = ["particle-physics-and-the-standard-model", "physics-research-practice"]
-recommended_after = ["electronics-and-instrumentation", "gravitational-wave-and-multimessenger-astrophysics"]
+recommended_after = ["electronics-and-instrumentation"]
 estimated_chapters = 9
 status = "proposed"
 description = "Follow the experimental program of fundamental interactions: Higgs property measurements, precision electroweak and flavor tests, Monte Carlo simulation chains and detector unfolding, statistical discovery and exclusion practice, direct and indirect dark-matter searches, and the neutrino-mass and rare-process frontier."
@@ -477,8 +477,8 @@ id = "living-and-active-matter-research"
 order = 41
 tier = "specialization"
 level = "research-specialization"
-prerequisites = ["biological-physics", "physics-research-practice"]
-recommended_after = ["soft-matter-and-complex-fluids", "biology/systems-and-quantitative-biology"]
+prerequisites = ["biological-physics", "soft-matter-and-complex-fluids", "physics-research-practice"]
+recommended_after = ["biology/systems-and-quantitative-biology"]
 estimated_chapters = 8
 status = "proposed"
 description = "Enter the physics-of-life literature: active-matter hydrodynamics and collective motion, cytoskeletal and tissue mechanics, nonequilibrium thermodynamics of biological energy use, information and inference limits in cellular decision-making, quantitative imaging and single-molecule evidence, and the standards a physical model of a living system must meet."
@@ -529,13 +529,13 @@ rationale = "Stress, strain, and elasticity share a spine with fluid mechanics a
 domain = "fluid-dynamics"
 disposition = "included"
 decks = ["continuum-mechanics-and-fluid-dynamics"]
-rationale = "PhySH lists more second-level research areas under Fluid Dynamics than under Nuclear and Particles and Fields combined, and fluids sits inside published graduate classical-mechanics core syllabi; a single passing chapter would misrepresent the field."
+rationale = "QAA names fluids as a major application area and APS maintains a dedicated fluid-dynamics community; the shared continuum balance-law spine warrants course-scale treatment rather than a passing chapter."
 
 [[coverage]]
 domain = "nonlinear-dynamics-and-chaos"
 disposition = "included"
 decks = ["analytical-mechanics", "continuum-mechanics-and-fluid-dynamics"]
-rationale = "The general theory of phase portraits, bifurcation, and chaos is supplied by mathematics/dynamical-systems-and-ergodic-theory and is referenced as recommended preparation; these decks own only the physical instances, namely Hamiltonian chaos and the transition to turbulence."
+rationale = "These decks own the physical instances—Hamiltonian chaos, instability, and transition to turbulence. The broader rigorous theory remains in mathematics/dynamical-systems-and-ergodic-theory and is not a hard prerequisite for learning those physical cases."
 
 [[coverage]]
 domain = "oscillations-and-waves"
@@ -559,7 +559,7 @@ rationale = "Ray and image reasoning belongs at the foundational level; coherenc
 domain = "photonics-lasers-and-laser-science"
 disposition = "included"
 decks = ["optics-and-photonics", "atomic-molecular-and-optical-physics"]
-rationale = "physics.optics is one of the largest arXiv subcategories and lasers underpin the AMO, metrology, and quantum-technology branches."
+rationale = "QAA names advanced and applied optics among the field's major application areas, while current NSF and APS structures place light-matter control across AMO, quantum information, metrology, and gravitational-wave instrumentation."
 
 [[coverage]]
 domain = "thermodynamics"
@@ -619,7 +619,7 @@ rationale = "The observational standard model is reachable at undergraduate leve
 domain = "astrophysics-and-astronomy"
 disposition = "included"
 decks = ["astrophysics-and-cosmology", "relativistic-astrophysics-and-cosmology", "gravitational-wave-and-multimessenger-astrophysics"]
-rationale = "astro-ph is one of the three largest physics archives and Astro2020 makes time-domain and multimessenger discovery a headline priority."
+rationale = "QAA treats astrophysical application as a major degree route, NSF maintains gravitational and particle-astrophysics programs, and Astro2020 makes time-domain and multimessenger discovery a headline priority."
 
 [[coverage]]
 domain = "quantum-foundations-and-quantum-mechanics"
@@ -649,13 +649,13 @@ rationale = "The 2020 AMO decadal survey frames the field around coherent contro
 domain = "condensed-matter-and-solid-state-physics"
 disposition = "included"
 decks = ["condensed-matter-and-solid-state-physics", "condensed-matter-theory"]
-rationale = "cond-mat is the largest physics archive by submission volume, yet traditional self-study sequences reach it last if at all."
+rationale = "QAA names hard and soft condensed matter and materials among major application areas, and PhySH and APS maintain distinct research structures for condensed matter, materials, polymers, and quantum materials."
 
 [[coverage]]
 domain = "quantum-materials-and-topological-phases"
 disposition = "included"
 decks = ["condensed-matter-theory", "quantum-matter-and-materials-research"]
-rationale = "PhySH places topological phases at the same level as magnetism and superconductivity, and cond-mat.mtrl-sci is the single largest subcategory despite having no current decadal survey."
+rationale = "PhySH treats topological phases alongside magnetism and superconductivity, and APS maintains dedicated communities for condensed matter, materials physics, and quantum-materials synthesis."
 
 [[coverage]]
 domain = "soft-matter-and-polymer-physics"
@@ -679,7 +679,7 @@ rationale = "Nuclear structure, decay, reactions, and astrophysical nucleosynthe
 domain = "particle-physics-and-fundamental-interactions"
 disposition = "included"
 decks = ["nuclear-and-particle-physics", "particle-physics-and-the-standard-model", "collider-and-precision-frontier-particle-physics"]
-rationale = "The P5 and EPP-2024 reports define the field's priorities, and the branch is retained despite hep archives being only about fourteen percent of physics submissions because it carries the discipline's deepest strategic planning."
+rationale = "The current NSF structure, the P5 report, and EPP-2024 all treat fundamental interactions as a major research program with a mature undergraduate-to-research progression."
 
 [[coverage]]
 domain = "plasma-physics-and-fusion"
@@ -703,7 +703,7 @@ rationale = "Covers the six AAPT laboratory outcomes to the extent that retrieva
 domain = "data-analysis-statistics-and-machine-learning-in-physics"
 disposition = "included"
 decks = ["measurement-uncertainty-and-experimental-physics", "computational-physics", "physics-research-practice"]
-rationale = "General statistical and machine-learning capability is imported from the mathematics subject; these decks own only the physics-specific transfer, such as systematic uncertainty, blinding, and the look-elsewhere effect."
+rationale = "General statistical and machine-learning capability is imported from mathematics; these decks own physics-specific transfer such as systematic uncertainty, blinding, the look-elsewhere effect, reproducible pipelines, and critical provenance-aware use of AI-assisted tools."
 
 [[coverage]]
 domain = "mathematical-methods-of-physics"
@@ -763,7 +763,7 @@ rationale = "Molecular structure and spectroscopy are covered inside the AMO dec
 domain = "quantum-gravity-and-string-theory"
 disposition = "deferred"
 decks = []
-rationale = "Culturally prominent and named in EPP-2024 as a long-horizon driver, but it is roughly five percent of physics submissions and requires quantum field theory and general relativity together. A natural later extension once both exist."
+rationale = "Named in EPP-2024 as a long-horizon driver, but it requires quantum field theory and general relativity together and is not needed by the representative branches selected here. It is a natural later extension once both foundations exist."
 
 [[coverage]]
 domain = "history-and-philosophy-of-physics"
