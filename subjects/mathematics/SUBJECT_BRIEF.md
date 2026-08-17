@@ -32,21 +32,24 @@ domain guide for this subject and is deliberately **not** copied here.
   current work. This is a coverage decision, not a claim about the learner's
   interests. **Needs confirmation.**
 - Deck granularity: course. Each deck is one coherent course-sized capability,
-  estimated at 6–14 chapters. The 52 proposed decks range from 8 to 13.
+  estimated at 6–14 chapters. The 55 proposed decks range from 8 to 13.
 - Durable capabilities: fluent symbolic and numerical computation; the function
   concept across representations; proof construction and evaluation; the
   analysis, algebra, geometry, and probability cores that every advanced route
   consumes; computational experimentation with honest error awareness;
   disciplined modeling with stated conditions of validity; and literature-facing
   competence in a chosen branch.
-- Deliberate exclusions: no deck is created for control theory, several complex
-  variables, K-theory, order and universal algebra, special functions,
-  non-Euclidean and projective geometry, mathematical physics, mathematical
-  biology, game theory and mathematical finance, history and philosophy of
-  mathematics, or mathematics education. These are recorded as `deferred` in the
-  coverage matrix with the graph position each would attach to. Physical-science
-  and earth-science application areas classified under mathematics are
-  `out-of-scope` because the collection's physics subject owns that content.
+- Deliberate exclusions: no deck is created for control and inverse problems,
+  several complex variables, operator algebras, geometric measure theory,
+  symplectic/contact or convex/discrete geometry, geometric group theory,
+  stochastic PDE and rough paths, K-theory, order and universal algebra,
+  special functions, cryptography, non-Euclidean and projective geometry,
+  mathematical physics, mathematical biology, game theory and mathematical
+  finance, history and philosophy of mathematics, or mathematics education.
+  These are recorded as `deferred` in the coverage matrix with the graph
+  position each would attach to. Physical-science and earth-science application
+  areas classified under mathematics are `out-of-scope` because the collection's
+  physics subject owns that content.
 
 Because the destination is whole-field rather than a named endpoint, the route
 starts at `number-sense-and-arithmetic`. Destination controls the current route,
@@ -85,67 +88,75 @@ not who may learn the subject and not the permanent ceiling of the roadmap.
 Do not infer domain knowledge from the target level. Anything not explicitly
 confirmed above is treated as unseen during cold-start review.
 
-## Evidence authorities
+## Evidence authorities and source register
 
-Consulted 2026-08-06. Curricular sources shaped the domain map and deck
-boundaries; they are not used to verify individual mathematical claims, which
-are verified against standard texts and primary literature at authoring time.
+Consulted 2026-08-17. Curricular sources shaped the domain map, deck boundaries,
+and maturity transitions; they are not claim-verification sources. Mathematical
+claims must still be verified against authoritative texts, direct derivation, or
+primary literature when a deck is authored. No source text or figure was copied.
 
-- Consensus or professional frameworks:
-  - **Mathematics Subject Classification 2020** (MSC2020), maintained jointly by
-    zbMATH Open and Mathematical Reviews — <https://msc2020.org/>,
-    <https://zbmath.org/classification/>. Authority: the two abstracting and
-    reviewing services of record. License: CC BY-NC-SA 4.0, so the scheme
-    informs the domain map but its text is not reproduced. Used as the primary
-    check that the coverage matrix names material domains rather than course
-    titles, including the newer machine-assisted and homotopical headings.
-  - **International Mathematical Union / ICM section structure** —
-    <https://www.mathunion.org/>, <https://icm2026.org/>. Authority: the
-    field's international body. Used to confirm which areas the research
-    community currently treats as top-level sections, which shaped the graduate
-    and research layers.
-  - **MAA Committee on the Undergraduate Program in Mathematics (CUPM)
-    Curriculum Guide** — <https://maa.org/> (CUPM guide and course-area study
-    group reports). Authority: the US professional society for collegiate
-    mathematics. Used for the undergraduate core, for the cognitive
-    recommendations (proof, communication, technology), and for Content
-    Recommendation 5 — experience mathematics from another discipline's
-    perspective — which motivates the single external `recommended_after` edge.
-  - **QAA Subject Benchmark Statement, Mathematics, Statistics and Operational
-    Research** — <https://www.qaa.ac.uk/quality-code/subject-benchmark-statements>.
-    Authority: the UK degree-standards body. Used as a non-US cross-check that
-    the undergraduate core is not a national artifact.
-  - **Common Core State Standards for Mathematics** —
-    <https://www.thecorestandards.org/Math/>. Authority: widely adopted US
-    school standards. Used only to sequence the foundational layer and its
-    practice standards.
-  - **CBMS survey of undergraduate mathematical sciences programs** —
-    <https://www.ams.org/cbms-survey>. Authority: AMS/CBMS statistical survey.
-    Used to check which courses are actually offered and required, as a guard
-    against designing an idealized curriculum.
-  - **SIAM guidance on computational science and data science education** —
-    <https://www.siam.org/>. Authority: the applied and computational
-    mathematics society. Used to justify treating computing, numerical analysis,
-    optimization, and the mathematics of learning as first-class decks.
-  - **Published PhD qualifying-exam syllabi from research mathematics
-    departments.** Authority: primary statements of what graduate programs
-    require. Used to fix the graduate core as measure theory, functional
-    analysis, complex analysis, algebra, topology, and probability, and to size
-    those decks.
-- Preferred primary sources or public agencies: peer-reviewed research
-  literature and preprint servers for research-layer claims (arXiv,
-  <https://arxiv.org/>, primarily as a discovery surface — the published version
-  is cited when one exists); NIST Digital Library of Mathematical Functions,
-  <https://dlmf.nist.gov/>, for special-function identities and conventions;
-  the L-functions and Modular Forms Database, <https://www.lmfdb.org/>, for
-  arithmetic-geometry data; and IEEE 754 for floating-point behavior.
-- Open educational sources and license constraints: openly licensed texts and
-  lecture notes may be consulted for pedagogical sequencing, and a source is
-  used only when its license permits the intended use. Freely viewable is not
-  the same as reusable, and no source is ingested or reproduced merely because
-  it is publicly readable. Each deck records the URL, authority, license or
-  terms, and access date of every source it relies on in its own README, and
-  distinguishes curricular sources from claim-verifying sources.
+- **Mathematics Subject Classification 2020** — <https://msc2020.org/>.
+  Authority: maintained jointly by Mathematical Reviews and zbMATH Open, the
+  reviewing services that use the classification. Source role: primary taxonomy
+  check for material domains and interdisciplinary boundaries. License:
+  CC BY-NC-SA 4.0; used for classification only and not reproduced.
+- **IMU 2023 ICM Structure Committee report for ICM 2026** —
+  <https://www.mathunion.org/fileadmin/IMU/Publications/CircularLetters/2023/IMU%20AO%20CL%208_2023_StructureCommitteeReport2023.pdf>
+  and the current <https://www.mathunion.org/icm/icm-2026> page. Authority: the
+  International Mathematical Union committee charged with defining the ICM's
+  scientific sections. Source role: current research-field structure, including
+  distinct sections for number theory, geometry, topology, Lie theory, analysis,
+  dynamics, PDE, probability, numerical analysis, optimization/control, and
+  statistics/machine learning. Terms: © IMU; consulted for synthesis only.
+- **MAA CUPM 2015 Curriculum Guide to Majors in the Mathematical Sciences** —
+  <https://maa.org/resource/cupm-guide/> and
+  <https://maa.org/wp-content/uploads/2024/06/2015-CUPM-Curriculum-Guide.pdf>.
+  Authority: the Mathematical Association of America's undergraduate-program
+  committee. Source role: undergraduate common capabilities—calculus, linear
+  algebra, progressive proof, data analysis, computing, modeling, breadth, depth,
+  and substantial projects—and course-area boundary cross-checks. Terms: MAA
+  copyright; publicly accessible for consultation, with no reuse of prose.
+- **QAA Subject Benchmark Statement: Mathematics, Statistics and Operational
+  Research (March 2023)** —
+  <https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/subject-benchmark-statement-mathematics-statistics-and-operational-research>
+  and the linked statement PDF. Authority: UK sector-owned degree benchmark.
+  Source role: non-US confirmation of calculus, linear algebra,
+  probability/statistics, proof, programming, modeling, communication, advanced
+  projects, and the undergraduate-to-master's maturity transition. Terms: QAA
+  copyright; used as a reference point, not reproduced.
+- **Common Core State Standards for Mathematics** —
+  <https://www.thecorestandards.org/Math/> and
+  <https://www.thecorestandards.org/Math/Practice/>. Authority: the CCSS
+  Initiative standards maintained by NGA Center and CCSSO. Source role:
+  foundational content sequencing and the practices of reasoning, modeling,
+  representation, strategic tool use, and precision. Terms: public standards
+  site; consulted for mapping only.
+- **2021 CBMS Survey of Undergraduate Programs in the Mathematical Sciences** —
+  <https://www.ams.org/cbms/cbms2021-Report.pdf>. Authority: the Conference Board
+  of the Mathematical Sciences, hosted by the AMS. Source role: empirical check
+  against an idealized course map and current departmental offerings. Terms: AMS
+  copyright; aggregate findings consulted only.
+- **UC Berkeley Mathematics preliminary examination and syllabus** —
+  <https://math.berkeley.edu/graduate/phd-program/preliminary-exam>.
+  Authority: a current departmental statement of entry-level PhD expectations.
+  Source role: maturity audit for the analysis, complex analysis, linear algebra,
+  and abstract algebra bridge into graduate work. Terms: university web content;
+  consulted for curricular comparison only.
+- **SIAM Education Subcommittee report on undergraduate applied mathematics** —
+  <https://epubs.siam.org/doi/10.1137/15M1008002>. Authority: the Society for
+  Industrial and Applied Mathematics education committee. Source role: applied
+  mathematics, modeling, computation, optimization, and scientific-computing
+  balance. Terms: SIAM publication terms; abstract and report metadata used for
+  curricular synthesis only.
+- **Claim-verification authorities for later deck builds.** Peer-reviewed
+  publications and primary sources take priority. arXiv
+  (<https://arxiv.org/>) is a discovery surface, with a published version cited
+  when available; NIST DLMF (<https://dlmf.nist.gov/>) is preferred for
+  special-function identities and conventions; LMFDB
+  (<https://www.lmfdb.org/>) for arithmetic data; and IEEE 754 for floating-point
+  behavior. Each future deck must record URL, authority, license or terms, access
+  date, and whether a source sets scope or verifies a claim. Freely viewable is
+  not permission to ingest, modify, or redistribute.
 
 ## Authentic practice outside SRS
 
@@ -198,7 +209,7 @@ treated as settled.
 2. **Pure versus applied emphasis.** The graph is balanced. If the learner
    leans pure or applied, tiers should shift — for example promoting
    `optimization-and-operations-research` and `stochastic-processes`, or
-   `mathematical-logic-and-set-theory` and
+   `mathematical-logic-and-computability` and
    `category-theory-and-homological-algebra`, from `recommended` to `core`.
 3. **Which research branches matter.** Five representative branches are
    proposed. A learner with a real target may want one of them replaced by a
@@ -211,7 +222,7 @@ treated as settled.
    assume and test.
 5. **Notation conventions.** If the learner has a house style or a target
    textbook tradition, fixing it now avoids per-deck drift.
-6. **Time budget and pace.** Fifty-two course-sized decks is a multi-year
+6. **Time budget and pace.** Fifty-five course-sized decks is a multi-year
    commitment. If the horizon is shorter, the coverage matrix should be
    narrowed deliberately rather than each deck thinned.
 7. **Accessibility and device constraints.** Confirm any screen reader, screen
