@@ -1867,7 +1867,7 @@
       "tier": "core",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Use holomorphy, the Cauchy-Riemann equations, contour integration, Cauchy theory, power and Laurent series, residues, and conformal mapping.",
+      "description": "Use holomorphy, the Cauchy-Riemann equations, contour integration, Cauchy theory, power and Laurent series, analytic continuation, residues, and conformal mapping.",
       "prerequisites": [
         "mathematics/multivariable-and-vector-calculus",
         "mathematics/mathematical-reasoning-and-proof"
@@ -1915,7 +1915,8 @@
       "description": "Analyze curves and surfaces with curvature and fundamental forms, then work on smooth manifolds with tangent spaces, vector fields, differential forms, Stokes' theorem, and first Riemannian metrics.",
       "prerequisites": [
         "mathematics/multivariable-and-vector-calculus",
-        "mathematics/linear-algebra"
+        "mathematics/linear-algebra",
+        "mathematics/mathematical-reasoning-and-proof"
       ],
       "recommended_after": [
         "mathematics/real-analysis",
@@ -2054,14 +2055,14 @@
       "generation_command": "flashcards curriculum materialize mathematics/information-theory"
     },
     {
-      "id": "mathematics/mathematical-logic-and-set-theory",
+      "id": "mathematics/mathematical-logic-and-computability",
       "subject": "mathematics",
-      "deck": "mathematical-logic-and-set-theory",
+      "deck": "mathematical-logic-and-computability",
       "order": 26,
       "tier": "recommended",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Reason about formal languages, deduction, models, soundness, completeness, compactness, axiomatic set theory, ordinals and cardinals, computability, and incompleteness.",
+      "description": "Reason about formal languages, deduction, models, soundness, completeness, compactness, computability, recursive functions, decidability, and incompleteness.",
       "prerequisites": [
         "mathematics/mathematical-reasoning-and-proof"
       ],
@@ -2071,11 +2072,11 @@
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-logic-and-set-theory",
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-logic-and-computability",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/mathematical-logic-and-set-theory"
+      "generation_command": "flashcards curriculum materialize mathematics/mathematical-logic-and-computability"
     },
     {
       "id": "mathematics/theory-of-computation-and-complexity",
@@ -2091,7 +2092,7 @@
       ],
       "recommended_after": [
         "mathematics/mathematical-computing-and-experimentation",
-        "mathematics/mathematical-logic-and-set-theory"
+        "mathematics/mathematical-logic-and-computability"
       ],
       "materialized": false,
       "repository": {
@@ -2203,7 +2204,7 @@
       "tier": "core",
       "level": "graduate",
       "status": "proposed",
-      "description": "Analyze normed, Banach, and Hilbert spaces, bounded and compact operators, the Hahn-Banach, open-mapping, closed-graph, and uniform-boundedness theorems, duality, weak topologies, and spectra.",
+      "description": "Analyze normed, Banach, and Hilbert spaces, bounded and compact operators, the Hahn-Banach, open-mapping, closed-graph, uniform-boundedness, Riesz representation, and Lax-Milgram theorems, duality, weak topologies, and spectra.",
       "prerequisites": [
         "mathematics/measure-theory-and-lebesgue-integration",
         "mathematics/linear-algebra"
@@ -2227,7 +2228,7 @@
       "tier": "core",
       "level": "graduate",
       "status": "proposed",
-      "description": "Ground probability in measure theory: independence, modes of convergence, laws of large numbers, characteristic functions, central limit theorems, conditional expectation, and martingales.",
+      "description": "Ground probability in measure theory: independence, modes of convergence, laws of large numbers, characteristic functions, central limit theorems, conditional expectation, martingales, and concentration inequalities.",
       "prerequisites": [
         "mathematics/measure-theory-and-lebesgue-integration",
         "mathematics/probability"
@@ -2358,33 +2359,107 @@
       "generation_command": "flashcards curriculum materialize mathematics/representation-theory-and-lie-theory"
     },
     {
-      "id": "mathematics/algebraic-and-analytic-number-theory",
+      "id": "mathematics/algebraic-number-theory",
       "subject": "mathematics",
-      "deck": "algebraic-and-analytic-number-theory",
+      "deck": "algebraic-number-theory",
       "order": 39,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Study number fields, rings of integers, ideal factorization, class groups and units, and use Dirichlet series, zeta and L-functions to prove distribution results about primes.",
+      "description": "Study number fields, rings of integers, valuations, ideal factorization, class groups, units, local fields, ramification, and first class-field phenomena.",
       "prerequisites": [
         "mathematics/advanced-algebra-and-galois-theory",
-        "mathematics/complex-analysis",
         "mathematics/number-theory"
       ],
-      "recommended_after": [],
+      "recommended_after": [
+        "mathematics/commutative-algebra"
+      ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/algebraic-and-analytic-number-theory",
+        "url": "https://github.com/thomasrribeiro-flashcards/algebraic-number-theory",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/algebraic-and-analytic-number-theory"
+      "generation_command": "flashcards curriculum materialize mathematics/algebraic-number-theory"
+    },
+    {
+      "id": "mathematics/analytic-number-theory",
+      "subject": "mathematics",
+      "deck": "analytic-number-theory",
+      "order": 40,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Use arithmetic functions, summation methods, Dirichlet series, zeta and L-functions, sieve ideas, and exponential sums to analyze the distribution of primes and other arithmetic sequences.",
+      "prerequisites": [
+        "mathematics/complex-analysis",
+        "mathematics/number-theory"
+      ],
+      "recommended_after": [
+        "mathematics/real-analysis",
+        "mathematics/harmonic-and-fourier-analysis"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/analytic-number-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/analytic-number-theory"
+    },
+    {
+      "id": "mathematics/mathematical-statistics-and-asymptotic-inference",
+      "subject": "mathematics",
+      "deck": "mathematical-statistics-and-asymptotic-inference",
+      "order": 41,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Derive and compare likelihood, sufficiency, exponential-family, decision-theoretic, Bayesian, and asymptotic methods, and prove when estimators and tests achieve their guarantees.",
+      "prerequisites": [
+        "mathematics/measure-theoretic-probability",
+        "mathematics/statistical-inference-and-data-analysis"
+      ],
+      "recommended_after": [
+        "mathematics/mathematical-computing-and-experimentation"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-statistics-and-asymptotic-inference",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/mathematical-statistics-and-asymptotic-inference"
+    },
+    {
+      "id": "mathematics/axiomatic-set-theory",
+      "subject": "mathematics",
+      "deck": "axiomatic-set-theory",
+      "order": 42,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Work in ZFC with ordinals, cardinals, transfinite recursion, choice principles, combinatorial set theory, constructibility, forcing, and independence arguments.",
+      "prerequisites": [
+        "mathematics/mathematical-logic-and-computability"
+      ],
+      "recommended_after": [
+        "mathematics/general-topology",
+        "mathematics/abstract-algebra"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/axiomatic-set-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/axiomatic-set-theory"
     },
     {
       "id": "mathematics/modern-pde-and-sobolev-theory",
       "subject": "mathematics",
       "deck": "modern-pde-and-sobolev-theory",
-      "order": 40,
+      "order": 43,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2408,7 +2483,7 @@
       "id": "mathematics/algebraic-geometry",
       "subject": "mathematics",
       "deck": "algebraic-geometry",
-      "order": 41,
+      "order": 44,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2433,7 +2508,7 @@
       "id": "mathematics/riemannian-geometry-and-geometric-analysis",
       "subject": "mathematics",
       "deck": "riemannian-geometry-and-geometric-analysis",
-      "order": 42,
+      "order": 45,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2458,7 +2533,7 @@
       "id": "mathematics/dynamical-systems-and-ergodic-theory",
       "subject": "mathematics",
       "deck": "dynamical-systems-and-ergodic-theory",
-      "order": 43,
+      "order": 46,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2483,7 +2558,7 @@
       "id": "mathematics/stochastic-analysis-and-sdes",
       "subject": "mathematics",
       "deck": "stochastic-analysis-and-sdes",
-      "order": 44,
+      "order": 47,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2507,7 +2582,7 @@
       "id": "mathematics/advanced-combinatorics-and-graph-theory",
       "subject": "mathematics",
       "deck": "advanced-combinatorics-and-graph-theory",
-      "order": 45,
+      "order": 48,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2533,7 +2608,7 @@
       "id": "mathematics/numerical-methods-for-differential-equations",
       "subject": "mathematics",
       "deck": "numerical-methods-for-differential-equations",
-      "order": 46,
+      "order": 49,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2558,7 +2633,7 @@
       "id": "mathematics/mathematics-of-machine-learning-and-data-science",
       "subject": "mathematics",
       "deck": "mathematics-of-machine-learning-and-data-science",
-      "order": 47,
+      "order": 50,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
@@ -2570,7 +2645,8 @@
       ],
       "recommended_after": [
         "mathematics/numerical-analysis",
-        "mathematics/functional-analysis"
+        "mathematics/functional-analysis",
+        "mathematics/mathematical-statistics-and-asymptotic-inference"
       ],
       "materialized": false,
       "repository": {
@@ -2584,13 +2660,14 @@
       "id": "mathematics/arithmetic-geometry-and-modern-number-theory",
       "subject": "mathematics",
       "deck": "arithmetic-geometry-and-modern-number-theory",
-      "order": 48,
+      "order": 51,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
       "description": "Read current work on elliptic curves, modular forms, Galois representations, rational points, L-functions, computational databases, and arithmetic statistics.",
       "prerequisites": [
-        "mathematics/algebraic-and-analytic-number-theory",
+        "mathematics/algebraic-number-theory",
+        "mathematics/analytic-number-theory",
         "mathematics/algebraic-geometry",
         "mathematics/mathematical-research-practice"
       ],
@@ -2609,11 +2686,11 @@
       "id": "mathematics/low-dimensional-topology-and-geometric-topology",
       "subject": "mathematics",
       "deck": "low-dimensional-topology-and-geometric-topology",
-      "order": 49,
+      "order": 52,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
-      "description": "Engage literature on knots and links, surfaces and mapping class groups, three- and four-manifolds, hyperbolic structures, geometrization, and quantum and gauge-theoretic invariants.",
+      "description": "Engage literature on knots and links, surfaces and mapping class groups, three-manifolds, hyperbolic structures, geometrization, and geometric invariants, while identifying where four-dimensional and gauge-theoretic work needs further analysis.",
       "prerequisites": [
         "mathematics/algebraic-topology",
         "mathematics/riemannian-geometry-and-geometric-analysis",
@@ -2634,7 +2711,7 @@
       "id": "mathematics/topological-and-geometric-data-analysis",
       "subject": "mathematics",
       "deck": "topological-and-geometric-data-analysis",
-      "order": 50,
+      "order": 53,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
@@ -2647,6 +2724,7 @@
       ],
       "recommended_after": [
         "mathematics/mathematics-of-machine-learning-and-data-science",
+        "mathematics/mathematical-statistics-and-asymptotic-inference",
         "mathematics/category-theory-and-homological-algebra"
       ],
       "materialized": false,
@@ -2661,13 +2739,13 @@
       "id": "mathematics/formalization-and-proof-assistants",
       "subject": "mathematics",
       "deck": "formalization-and-proof-assistants",
-      "order": 51,
+      "order": 54,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
       "description": "Formalize definitions, theorems, and proofs in a dependent-type proof assistant, navigate a mathematical library, and assess what machine-checked mathematics does and does not certify.",
       "prerequisites": [
-        "mathematics/mathematical-logic-and-set-theory",
+        "mathematics/mathematical-logic-and-computability",
         "mathematics/mathematical-computing-and-experimentation",
         "mathematics/mathematical-research-practice"
       ],
@@ -2688,18 +2766,20 @@
       "id": "mathematics/random-matrices-and-high-dimensional-probability",
       "subject": "mathematics",
       "deck": "random-matrices-and-high-dimensional-probability",
-      "order": 52,
+      "order": 55,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
-      "description": "Work with concentration of measure, empirical processes, spectral limits, universality, and free probability, and read current high-dimensional probability literature.",
+      "description": "Work with concentration of measure, empirical processes, nonasymptotic random-matrix bounds, spectral limits, and universality, and read current high-dimensional probability literature.",
       "prerequisites": [
         "mathematics/measure-theoretic-probability",
+        "mathematics/linear-algebra",
         "mathematics/mathematical-research-practice"
       ],
       "recommended_after": [
         "mathematics/functional-analysis",
         "mathematics/harmonic-and-fourier-analysis",
+        "mathematics/mathematical-statistics-and-asymptotic-inference",
         "mathematics/mathematics-of-machine-learning-and-data-science"
       ],
       "materialized": false,
