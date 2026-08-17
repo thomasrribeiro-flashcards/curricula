@@ -3305,7 +3305,7 @@
       "tier": "core",
       "level": "undergraduate-core",
       "status": "proposed",
-      "description": "Build and debug the measurement chain: network analysis, filters, diodes and transistors, operational amplifiers, digital logic, sampling, transducers, noise and shielding, and vacuum and cryogenic practice.",
+      "description": "Build and debug a measurement signal chain: network analysis, filters, diodes and transistors, operational amplifiers, digital logic, sampling and data acquisition, transducers and detectors, grounding, shielding, noise, calibration, and fault isolation.",
       "prerequisites": [
         "physics/electricity-magnetism-and-circuits",
         "physics/measurement-uncertainty-and-experimental-physics"
@@ -3888,7 +3888,7 @@
       "tier": "core",
       "level": "graduate",
       "status": "proposed",
-      "description": "Work the way researchers work: read and situate preprints and papers, design an investigation around a falsifiable claim, handle systematic uncertainty, blinding, and the look-elsewhere effect, build reproducible computational pipelines, apply the reproducibility and replicability distinction, and meet professional standards for authorship, peer review, conflict of interest, data retention, and safety.",
+      "description": "Work the way researchers work: read and situate papers, design an investigation around a falsifiable claim, handle systematic uncertainty, blinding, and the look-elsewhere effect, build reproducible computational and AI-assisted workflows while auditing provenance and outputs, distinguish reproducibility from replicability, and meet professional standards for authorship, peer review, conflicts, data retention, and safety.",
       "prerequisites": [
         "physics/measurement-uncertainty-and-experimental-physics",
         "physics/computational-physics"
@@ -4019,8 +4019,7 @@
         "physics/physics-research-practice"
       ],
       "recommended_after": [
-        "physics/electronics-and-instrumentation",
-        "physics/gravitational-wave-and-multimessenger-astrophysics"
+        "physics/electronics-and-instrumentation"
       ],
       "materialized": false,
       "repository": {
@@ -4041,10 +4040,10 @@
       "description": "Enter the physics-of-life literature: active-matter hydrodynamics and collective motion, cytoskeletal and tissue mechanics, nonequilibrium thermodynamics of biological energy use, information and inference limits in cellular decision-making, quantitative imaging and single-molecule evidence, and the standards a physical model of a living system must meet.",
       "prerequisites": [
         "physics/biological-physics",
+        "physics/soft-matter-and-complex-fluids",
         "physics/physics-research-practice"
       ],
       "recommended_after": [
-        "physics/soft-matter-and-complex-fluids",
         "biology/systems-and-quantitative-biology"
       ],
       "materialized": false,
