@@ -1,0 +1,615 @@
+schema_version = 3
+subject = "chemistry"
+destination = "whole-field"
+deck_granularity = "course"
+focus = []
+
+[[decks]]
+id = "chemistry-literacy-and-safe-practice"
+order = 1
+tier = "core"
+level = "foundational"
+prerequisites = ["mathematics/number-sense-and-arithmetic"]
+recommended_after = []
+estimated_chapters = 10
+status = "proposed"
+description = "Interpret everyday chemical claims, quantities, particles, reactions, hazards, and sustainability choices with safe evidence-based reasoning."
+
+[[decks]]
+id = "quantitative-general-chemistry"
+order = 2
+tier = "core"
+level = "foundational"
+prerequisites = ["chemistry-literacy-and-safe-practice", "mathematics/elementary-algebra-and-functions"]
+recommended_after = ["physics/measurement-and-physical-reasoning"]
+estimated_chapters = 14
+status = "proposed"
+description = "Relate composition, structure, energy, rates, and equilibrium through quantitative molecular and macroscopic models."
+
+[[decks]]
+id = "laboratory-methods-safety-and-data"
+order = 3
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["quantitative-general-chemistry"]
+recommended_after = ["physics/measurement-and-physical-reasoning"]
+estimated_chapters = 12
+status = "proposed"
+description = "Plan and document safe chemical work, select core manipulations, evaluate uncertainty, and connect observations to defensible claims."
+
+[[decks]]
+id = "analytical-chemistry-and-chemical-measurement"
+order = 4
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["laboratory-methods-safety-and-data"]
+recommended_after = ["mathematics/statistical-inference-and-data-analysis"]
+estimated_chapters = 12
+status = "proposed"
+description = "Design quantitative analyses from sampling and calibration through separations, electroanalysis, validation, and reported uncertainty."
+
+[[decks]]
+id = "organic-chemistry-structure-and-mechanism"
+order = 5
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["quantitative-general-chemistry"]
+recommended_after = []
+estimated_chapters = 12
+status = "proposed"
+description = "Predict organic structure, stereochemistry, acidity, conformation, and elementary reactivity using electron-flow mechanisms."
+
+[[decks]]
+id = "organic-chemistry-synthesis-and-analysis"
+order = 6
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["organic-chemistry-structure-and-mechanism"]
+recommended_after = ["laboratory-methods-safety-and-data"]
+estimated_chapters = 12
+status = "proposed"
+description = "Design and critique multistep organic syntheses using mechanism, selectivity, functional-group strategy, purification, and evidence."
+
+[[decks]]
+id = "inorganic-chemistry"
+order = 7
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["quantitative-general-chemistry"]
+recommended_after = ["laboratory-methods-safety-and-data"]
+estimated_chapters = 12
+status = "proposed"
+description = "Explain main-group, transition-metal, coordination, and solid-state structure and reactivity through periodic and bonding models."
+
+[[decks]]
+id = "thermodynamics-and-chemical-kinetics"
+order = 8
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["quantitative-general-chemistry", "mathematics/multivariable-and-vector-calculus"]
+recommended_after = ["physics/matter-fluids-and-thermal-behavior", "mathematics/differential-equations"]
+estimated_chapters = 12
+status = "proposed"
+description = "Use thermodynamic potentials, phase and chemical equilibria, transport ideas, and rate laws to predict chemical change."
+
+[[decks]]
+id = "quantum-chemistry-and-molecular-spectroscopy"
+order = 9
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["quantitative-general-chemistry", "mathematics/differential-equations", "mathematics/multivariable-and-vector-calculus"]
+recommended_after = ["physics/quantum-phenomena-and-atomic-structure"]
+estimated_chapters = 12
+status = "proposed"
+description = "Use wavefunctions, operators, approximation, molecular orbitals, and selection rules to connect quantum models with spectra."
+
+[[decks]]
+id = "biochemistry"
+order = 10
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["organic-chemistry-structure-and-mechanism"]
+recommended_after = ["thermodynamics-and-chemical-kinetics", "biology/cell-biology"]
+estimated_chapters = 12
+status = "proposed"
+description = "Explain biomolecular structure, binding, catalysis, metabolism, and information chemistry using chemical mechanism and energetics."
+
+[[decks]]
+id = "chemical-data-computation-and-information"
+order = 11
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["quantitative-general-chemistry", "mathematics/mathematical-computing-and-experimentation"]
+recommended_after = ["analytical-chemistry-and-chemical-measurement", "mathematics/statistical-inference-and-data-analysis"]
+estimated_chapters = 10
+status = "proposed"
+description = "Find, represent, clean, visualize, and reproducibly analyze chemical structures and data while preserving provenance."
+
+[[decks]]
+id = "spectroscopy-and-structure-determination"
+order = 12
+tier = "core"
+level = "undergraduate-advanced"
+prerequisites = ["analytical-chemistry-and-chemical-measurement", "organic-chemistry-structure-and-mechanism", "quantum-chemistry-and-molecular-spectroscopy"]
+recommended_after = ["organic-chemistry-synthesis-and-analysis", "inorganic-chemistry", "physics/waves-sound-and-light"]
+estimated_chapters = 10
+status = "proposed"
+description = "Infer molecular and material structure by integrating spectra, diffraction, mass data, uncertainty, and competing hypotheses."
+
+[[decks]]
+id = "organometallic-chemistry-and-catalysis"
+order = 13
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["organic-chemistry-synthesis-and-analysis", "inorganic-chemistry"]
+recommended_after = ["thermodynamics-and-chemical-kinetics", "spectroscopy-and-structure-determination"]
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze metal-ligand bonding, organometallic elementary steps, catalytic cycles, selectivity, and catalyst failure."
+
+[[decks]]
+id = "materials-and-solid-state-chemistry"
+order = 14
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["inorganic-chemistry", "thermodynamics-and-chemical-kinetics", "quantum-chemistry-and-molecular-spectroscopy"]
+recommended_after = ["spectroscopy-and-structure-determination", "physics/condensed-matter-and-solid-state-physics"]
+estimated_chapters = 12
+status = "proposed"
+description = "Relate crystal, defect, band, phase, and nanoscale structure to synthesis, characterization, and material properties."
+
+[[decks]]
+id = "polymer-and-supramolecular-chemistry"
+order = 15
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["organic-chemistry-structure-and-mechanism", "thermodynamics-and-chemical-kinetics"]
+recommended_after = ["materials-and-solid-state-chemistry"]
+estimated_chapters = 10
+status = "proposed"
+description = "Predict polymerization, molecular-weight distributions, assembly, recognition, morphology, and bulk behavior across scales."
+
+[[decks]]
+id = "electrochemistry-and-energy-storage"
+order = 16
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["analytical-chemistry-and-chemical-measurement", "thermodynamics-and-chemical-kinetics"]
+recommended_after = ["materials-and-solid-state-chemistry"]
+estimated_chapters = 10
+status = "proposed"
+description = "Connect interfacial charge transfer, transport, potentials, voltammetry, batteries, fuel cells, and degradation mechanisms."
+
+[[decks]]
+id = "surface-colloid-and-interface-chemistry"
+order = 17
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["thermodynamics-and-chemical-kinetics"]
+recommended_after = ["materials-and-solid-state-chemistry", "polymer-and-supramolecular-chemistry"]
+estimated_chapters = 10
+status = "proposed"
+description = "Reason about adsorption, wetting, colloidal stability, self-assembly, interfacial transport, and surface-sensitive evidence."
+
+[[decks]]
+id = "environmental-and-atmospheric-chemistry"
+order = 18
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["analytical-chemistry-and-chemical-measurement", "thermodynamics-and-chemical-kinetics"]
+recommended_after = ["organic-chemistry-structure-and-mechanism", "biology/ecosystem-ecology-and-global-change"]
+estimated_chapters = 10
+status = "proposed"
+description = "Model chemical fate, transport, speciation, transformation, exposure, and measurement in air, water, soil, and climate systems."
+
+[[decks]]
+id = "green-and-sustainable-chemistry"
+order = 19
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["organic-chemistry-synthesis-and-analysis", "thermodynamics-and-chemical-kinetics"]
+recommended_after = ["organometallic-chemistry-and-catalysis", "environmental-and-atmospheric-chemistry"]
+estimated_chapters = 10
+status = "proposed"
+description = "Compare chemical products and routes using hazard, atom and mass efficiency, energy, feedstocks, life cycle, and systems tradeoffs."
+
+[[decks]]
+id = "chemical-biology"
+order = 20
+tier = "recommended"
+level = "undergraduate-advanced"
+prerequisites = ["organic-chemistry-synthesis-and-analysis", "biochemistry"]
+recommended_after = ["biology/molecular-biology-of-the-gene", "biology/protein-structure-function-and-enzymology"]
+estimated_chapters = 12
+status = "proposed"
+description = "Use probes, perturbations, biomolecular recognition, and mechanistic assays to ask chemical questions in living systems."
+
+[[decks]]
+id = "medicinal-chemistry-and-drug-discovery"
+order = 21
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["organic-chemistry-synthesis-and-analysis", "biochemistry"]
+recommended_after = ["chemical-biology", "biology/cell-biology", "mathematics/statistical-inference-and-data-analysis"]
+estimated_chapters = 10
+status = "proposed"
+description = "Relate target evidence, structure-activity relationships, physicochemical properties, ADME, safety, and study design in drug discovery."
+
+[[decks]]
+id = "nuclear-and-radiochemistry"
+order = 22
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["inorganic-chemistry", "quantum-chemistry-and-molecular-spectroscopy"]
+recommended_after = ["analytical-chemistry-and-chemical-measurement", "physics/nuclear-and-particle-physics"]
+estimated_chapters = 8
+status = "proposed"
+description = "Interpret nuclear stability, decay, reactions, isotope production, radiochemical measurement, applications, and radiation risk."
+
+[[decks]]
+id = "computational-chemistry-and-cheminformatics"
+order = 23
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["quantum-chemistry-and-molecular-spectroscopy", "chemical-data-computation-and-information"]
+recommended_after = ["mathematics/numerical-analysis"]
+estimated_chapters = 12
+status = "proposed"
+description = "Choose and validate electronic-structure, molecular-mechanics, simulation, structure-search, and molecular-data workflows."
+
+[[decks]]
+id = "industrial-chemistry-and-scale-up"
+order = 24
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["laboratory-methods-safety-and-data", "organic-chemistry-synthesis-and-analysis", "thermodynamics-and-chemical-kinetics"]
+recommended_after = ["organometallic-chemistry-and-catalysis", "green-and-sustainable-chemistry"]
+estimated_chapters = 10
+status = "proposed"
+description = "Evaluate route selection, scale-dependent hazards, separations, quality, process evidence, and life-cycle constraints from a chemist's perspective."
+
+[[decks]]
+id = "chemistry-research-methods-and-literature"
+order = 25
+tier = "core"
+level = "graduate"
+prerequisites = ["chemical-data-computation-and-information", "spectroscopy-and-structure-determination", "mathematics/statistical-inference-and-data-analysis"]
+recommended_after = ["organic-chemistry-synthesis-and-analysis", "inorganic-chemistry", "biochemistry", "materials-and-solid-state-chemistry"]
+estimated_chapters = 10
+status = "proposed"
+description = "Interrogate chemical literature, designs, controls, uncertainty, records, data, authorship, peer review, and reproducibility."
+
+[[decks]]
+id = "advanced-chemical-thermodynamics-and-statistical-mechanics"
+order = 26
+tier = "recommended"
+level = "graduate"
+prerequisites = ["thermodynamics-and-chemical-kinetics", "mathematics/probability"]
+recommended_after = ["physics/thermodynamics-and-statistical-mechanics", "chemistry-research-methods-and-literature"]
+estimated_chapters = 10
+status = "proposed"
+description = "Derive molecular ensembles, partition functions, nonideal equilibria, fluctuations, phase behavior, and nonequilibrium response."
+
+[[decks]]
+id = "advanced-quantum-chemistry-and-spectroscopy"
+order = 27
+tier = "recommended"
+level = "graduate"
+prerequisites = ["quantum-chemistry-and-molecular-spectroscopy", "mathematics/partial-differential-equations"]
+recommended_after = ["advanced-chemical-thermodynamics-and-statistical-mechanics", "physics/quantum-mechanics", "chemistry-research-methods-and-literature"]
+estimated_chapters = 12
+status = "proposed"
+description = "Apply angular momentum, symmetry, many-electron theory, approximation, light-matter interaction, and high-resolution spectroscopy."
+
+[[decks]]
+id = "reaction-dynamics-and-kinetic-modeling"
+order = 28
+tier = "recommended"
+level = "graduate"
+prerequisites = ["thermodynamics-and-chemical-kinetics", "quantum-chemistry-and-molecular-spectroscopy"]
+recommended_after = ["computational-chemistry-and-cheminformatics", "advanced-chemical-thermodynamics-and-statistical-mechanics", "advanced-quantum-chemistry-and-spectroscopy"]
+estimated_chapters = 10
+status = "proposed"
+description = "Infer mechanisms using coupled kinetics, transition-state and dynamical models, isotope effects, transport, and time-resolved evidence."
+
+[[decks]]
+id = "advanced-synthesis-and-mechanistic-analysis"
+order = 29
+tier = "recommended"
+level = "graduate"
+prerequisites = ["organic-chemistry-synthesis-and-analysis", "spectroscopy-and-structure-determination"]
+recommended_after = ["organometallic-chemistry-and-catalysis", "computational-chemistry-and-cheminformatics", "chemistry-research-methods-and-literature"]
+estimated_chapters = 12
+status = "proposed"
+description = "Plan complex synthesis and distinguish mechanisms using selectivity models, physical-organic experiments, and converging structural evidence."
+
+[[decks]]
+id = "advanced-inorganic-organometallic-and-catalysis"
+order = 30
+tier = "recommended"
+level = "graduate"
+prerequisites = ["spectroscopy-and-structure-determination", "organometallic-chemistry-and-catalysis"]
+recommended_after = ["advanced-chemical-thermodynamics-and-statistical-mechanics", "advanced-synthesis-and-mechanistic-analysis", "chemistry-research-methods-and-literature"]
+estimated_chapters = 12
+status = "proposed"
+description = "Analyze electronic structure, reactivity, catalytic networks, bioinorganic function, and mechanistic evidence across inorganic systems."
+
+[[decks]]
+id = "advanced-chemical-measurement-and-chemometrics"
+order = 31
+tier = "recommended"
+level = "graduate"
+prerequisites = ["chemistry-research-methods-and-literature"]
+recommended_after = ["computational-chemistry-and-cheminformatics"]
+estimated_chapters = 12
+status = "proposed"
+description = "Develop and validate measurements using signal models, instrument response, chemometrics, traceability, imaging, and inverse problems."
+
+[[decks]]
+id = "molecular-simulation-and-computational-chemistry"
+order = 32
+tier = "specialization"
+level = "graduate"
+prerequisites = ["computational-chemistry-and-cheminformatics", "advanced-quantum-chemistry-and-spectroscopy"]
+recommended_after = ["mathematics/numerical-analysis", "physics/computational-physics", "chemistry-research-methods-and-literature"]
+estimated_chapters = 12
+status = "proposed"
+description = "Build, sample, benchmark, and interpret quantum and molecular simulations with explicit error, uncertainty, and reproducibility checks."
+
+[[decks]]
+id = "advanced-materials-chemistry-and-characterization"
+order = 33
+tier = "specialization"
+level = "graduate"
+prerequisites = ["spectroscopy-and-structure-determination", "materials-and-solid-state-chemistry", "advanced-chemical-thermodynamics-and-statistical-mechanics"]
+recommended_after = ["surface-colloid-and-interface-chemistry", "advanced-chemical-measurement-and-chemometrics", "physics/condensed-matter-and-solid-state-physics", "chemistry-research-methods-and-literature"]
+estimated_chapters = 12
+status = "proposed"
+description = "Connect synthesis and processing to defects, microstructure, operando characterization, emergent properties, and structure-property claims."
+
+[[decks]]
+id = "advanced-macromolecular-and-soft-matter-chemistry"
+order = 34
+tier = "specialization"
+level = "graduate"
+prerequisites = ["polymer-and-supramolecular-chemistry", "advanced-chemical-thermodynamics-and-statistical-mechanics"]
+recommended_after = ["surface-colloid-and-interface-chemistry", "advanced-materials-chemistry-and-characterization", "physics/soft-matter-and-complex-fluids", "chemistry-research-methods-and-literature"]
+estimated_chapters = 10
+status = "proposed"
+description = "Use statistical, kinetic, and rheological models to explain polymer architecture, assembly, responsive matter, and multiscale behavior."
+
+[[decks]]
+id = "advanced-electrochemistry-and-interfacial-energy"
+order = 35
+tier = "specialization"
+level = "graduate"
+prerequisites = ["electrochemistry-and-energy-storage", "surface-colloid-and-interface-chemistry", "chemistry-research-methods-and-literature", "advanced-chemical-thermodynamics-and-statistical-mechanics"]
+recommended_after = ["advanced-inorganic-organometallic-and-catalysis", "advanced-materials-chemistry-and-characterization"]
+estimated_chapters = 10
+status = "proposed"
+description = "Model electrified interfaces, coupled charge and mass transfer, porous electrodes, electrocatalysis, operando evidence, and degradation."
+
+[[decks]]
+id = "advanced-chemical-biology-and-biomolecular-design"
+order = 36
+tier = "specialization"
+level = "graduate"
+prerequisites = ["chemical-biology", "chemistry-research-methods-and-literature", "advanced-synthesis-and-mechanistic-analysis"]
+recommended_after = ["advanced-chemical-measurement-and-chemometrics", "biology/macromolecular-structure-and-mechanism"]
+estimated_chapters = 12
+status = "proposed"
+description = "Design biomolecular probes, covalent and noncovalent modulators, engineered catalysts, and causal experiments in complex biological systems."
+
+[[decks]]
+id = "advanced-environmental-chemistry-and-exposure-science"
+order = 37
+tier = "specialization"
+level = "graduate"
+prerequisites = ["environmental-and-atmospheric-chemistry", "advanced-chemical-measurement-and-chemometrics"]
+recommended_after = ["green-and-sustainable-chemistry", "biology/ecosystem-ecology-and-global-change"]
+estimated_chapters = 10
+status = "proposed"
+description = "Resolve coupled environmental reaction networks, trace analysis, exposure, source attribution, model uncertainty, and intervention evidence."
+
+[[decks]]
+id = "catalysis-and-sustainable-synthesis-research"
+order = 38
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["chemistry-research-methods-and-literature", "reaction-dynamics-and-kinetic-modeling", "advanced-synthesis-and-mechanistic-analysis", "advanced-inorganic-organometallic-and-catalysis"]
+recommended_after = ["computational-chemistry-and-cheminformatics", "advanced-chemical-thermodynamics-and-statistical-mechanics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Critique frontier catalytic and synthetic claims using mechanism, selectivity, reaction networks, sustainability metrics, and reproducible evidence."
+
+[[decks]]
+id = "molecular-measurement-imaging-and-sensing-research"
+order = 39
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["advanced-chemical-measurement-and-chemometrics"]
+recommended_after = ["molecular-simulation-and-computational-chemistry"]
+estimated_chapters = 9
+status = "proposed"
+description = "Evaluate emerging spectroscopic, microscopic, separation, sensing, and single-entity measurements from instrument physics to inference."
+
+[[decks]]
+id = "theory-simulation-and-data-driven-chemistry-research"
+order = 40
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["chemistry-research-methods-and-literature", "molecular-simulation-and-computational-chemistry"]
+recommended_after = ["mathematics/mathematics-of-machine-learning-and-data-science"]
+estimated_chapters = 10
+status = "proposed"
+description = "Judge frontier theoretical, simulation, and machine-learning chemistry through model assumptions, benchmarks, uncertainty, and data leakage controls."
+
+[[decks]]
+id = "functional-materials-and-interfaces-research"
+order = 41
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["chemistry-research-methods-and-literature", "advanced-materials-chemistry-and-characterization"]
+recommended_after = ["advanced-macromolecular-and-soft-matter-chemistry", "advanced-electrochemistry-and-interfacial-energy", "physics/quantum-matter-and-materials-research"]
+estimated_chapters = 10
+status = "proposed"
+description = "Interrogate functional, quantum, porous, nanoscale, and energy materials by linking synthesis history, interfaces, operando data, and performance."
+
+[[decks]]
+id = "macromolecular-supramolecular-and-soft-matter-research"
+order = 42
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["chemistry-research-methods-and-literature", "advanced-macromolecular-and-soft-matter-chemistry"]
+recommended_after = ["advanced-materials-chemistry-and-characterization", "physics/soft-matter-and-complex-fluids"]
+estimated_chapters = 9
+status = "proposed"
+description = "Read frontier polymer, supramolecular, adaptive, and soft-material research through multiscale synthesis, dynamics, rheology, and function."
+
+[[decks]]
+id = "chemical-biology-and-molecular-therapeutics-research"
+order = 43
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["advanced-chemical-biology-and-biomolecular-design"]
+recommended_after = ["medicinal-chemistry-and-drug-discovery", "biology/macromolecular-structure-and-mechanism"]
+estimated_chapters = 10
+status = "proposed"
+description = "Assess research on chemical control of biology and therapeutics using target validation, probe quality, mechanism, translation, and causal evidence."
+
+[[decks]]
+id = "environmental-atmospheric-and-sustainable-chemistry-research"
+order = 44
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["green-and-sustainable-chemistry", "advanced-environmental-chemistry-and-exposure-science"]
+recommended_after = ["advanced-electrochemistry-and-interfacial-energy", "biology/global-change-biology-and-biodiversity-science"]
+estimated_chapters = 10
+status = "proposed"
+description = "Evaluate molecular evidence for atmospheric, water, soil, climate, circularity, and remediation claims across coupled human-natural systems."
+
+[[coverage]]
+domain = "chemical-literacy-quantities-and-safe-practice"
+disposition = "included"
+decks = ["chemistry-literacy-and-safe-practice", "quantitative-general-chemistry", "laboratory-methods-safety-and-data"]
+rationale = "Cold-start reasoning, quantitative foundations, hazard recognition, and safe practice precede specialist chemistry."
+
+[[coverage]]
+domain = "atomic-molecular-structure-bonding-and-reactivity"
+disposition = "included"
+decks = ["quantitative-general-chemistry", "organic-chemistry-structure-and-mechanism", "inorganic-chemistry", "quantum-chemistry-and-molecular-spectroscopy"]
+rationale = "Structure and reactivity recur across general, organic, inorganic, and quantum representations."
+
+[[coverage]]
+domain = "experimental-chemistry-laboratory-design-and-professional-practice"
+disposition = "included"
+decks = ["laboratory-methods-safety-and-data", "chemistry-research-methods-and-literature"]
+rationale = "A staged practice layer covers safe manipulation, records, design, research integrity, and literature-facing work."
+
+[[coverage]]
+domain = "analytical-measurement-spectroscopy-imaging-and-metrology"
+disposition = "included"
+decks = ["analytical-chemistry-and-chemical-measurement", "spectroscopy-and-structure-determination", "advanced-chemical-measurement-and-chemometrics", "molecular-measurement-imaging-and-sensing-research"]
+rationale = "Measurement progresses from sampling and calibration to integrated structure evidence and frontier instrument inference."
+
+[[coverage]]
+domain = "organic-chemistry-synthesis-and-mechanism"
+disposition = "included"
+decks = ["organic-chemistry-structure-and-mechanism", "organic-chemistry-synthesis-and-analysis", "advanced-synthesis-and-mechanistic-analysis", "catalysis-and-sustainable-synthesis-research"]
+rationale = "Separate course-scale layers prevent basic mechanism, synthesis planning, and research-level inference from being compressed together."
+
+[[coverage]]
+domain = "inorganic-organometallic-bioinorganic-and-catalysis"
+disposition = "included"
+decks = ["inorganic-chemistry", "organometallic-chemistry-and-catalysis", "advanced-inorganic-organometallic-and-catalysis", "catalysis-and-sustainable-synthesis-research"]
+rationale = "Periodic and coordination foundations lead to organometallic cycles, advanced electronic structure, and catalytic research."
+
+[[coverage]]
+domain = "physical-theoretical-and-dynamical-chemistry"
+disposition = "included"
+decks = ["thermodynamics-and-chemical-kinetics", "quantum-chemistry-and-molecular-spectroscopy", "advanced-chemical-thermodynamics-and-statistical-mechanics", "advanced-quantum-chemistry-and-spectroscopy", "reaction-dynamics-and-kinetic-modeling"]
+rationale = "Thermodynamic, quantum, spectroscopic, and dynamical formalisms receive distinct prerequisites and graduate maturation."
+
+[[coverage]]
+domain = "biochemistry-chemical-biology-and-biomolecular-design"
+disposition = "included"
+decks = ["biochemistry", "chemical-biology", "advanced-chemical-biology-and-biomolecular-design", "chemical-biology-and-molecular-therapeutics-research"]
+rationale = "Chemistry owns the chemical-mechanism and probe-design transfer while recommending broader biology where helpful."
+
+[[coverage]]
+domain = "chemical-data-computation-informatics-and-simulation"
+disposition = "included"
+decks = ["chemical-data-computation-and-information", "computational-chemistry-and-cheminformatics", "molecular-simulation-and-computational-chemistry", "theory-simulation-and-data-driven-chemistry-research"]
+rationale = "Generic computing is imported from mathematics; chemistry decks teach structures, models, provenance, simulation, and validation."
+
+[[coverage]]
+domain = "materials-solid-state-nano-and-functional-chemistry"
+disposition = "included"
+decks = ["materials-and-solid-state-chemistry", "advanced-materials-chemistry-and-characterization", "functional-materials-and-interfaces-research"]
+rationale = "The route connects synthesis and multiscale structure to characterization, properties, interfaces, and research claims."
+
+[[coverage]]
+domain = "polymer-supramolecular-colloid-and-soft-matter-chemistry"
+disposition = "included"
+decks = ["polymer-and-supramolecular-chemistry", "surface-colloid-and-interface-chemistry", "advanced-macromolecular-and-soft-matter-chemistry", "macromolecular-supramolecular-and-soft-matter-research"]
+rationale = "Macromolecules, assembly, interfaces, and rheology share a multiscale spine but retain coherent course and research layers."
+
+[[coverage]]
+domain = "electrochemistry-interfaces-and-energy-conversion"
+disposition = "included"
+decks = ["electrochemistry-and-energy-storage", "surface-colloid-and-interface-chemistry", "advanced-electrochemistry-and-interfacial-energy", "functional-materials-and-interfaces-research"]
+rationale = "Foundational electrochemistry and interface science mature before operando energy and functional-material research."
+
+[[coverage]]
+domain = "environmental-atmospheric-earth-and-exposure-chemistry"
+disposition = "included"
+decks = ["environmental-and-atmospheric-chemistry", "advanced-environmental-chemistry-and-exposure-science", "environmental-atmospheric-and-sustainable-chemistry-research"]
+rationale = "Fate and speciation lead to trace measurement, exposure inference, coupled models, and environmental research."
+
+[[coverage]]
+domain = "green-sustainable-and-circular-chemistry"
+disposition = "included"
+decks = ["green-and-sustainable-chemistry", "catalysis-and-sustainable-synthesis-research", "environmental-atmospheric-and-sustainable-chemistry-research"]
+rationale = "Sustainability is a design and evidence discipline spanning synthesis and environmental systems, not a slogan appendix."
+
+[[coverage]]
+domain = "medicinal-pharmaceutical-and-human-health-chemistry"
+disposition = "included"
+decks = ["medicinal-chemistry-and-drug-discovery", "chemical-biology-and-molecular-therapeutics-research"]
+rationale = "A chemistry-centered drug-discovery course supports a focused molecular-therapeutics research route."
+
+[[coverage]]
+domain = "nuclear-isotope-and-radiochemistry"
+disposition = "included"
+decks = ["nuclear-and-radiochemistry"]
+rationale = "A coherent upper-division course covers core nuclear transformations, isotopes, measurement, applications, and safety."
+
+[[coverage]]
+domain = "industrial-process-and-scale-up-chemistry"
+disposition = "included"
+decks = ["industrial-chemistry-and-scale-up"]
+rationale = "Chemist-facing route, hazard, separation, quality, and scale reasoning are included without duplicating chemical engineering."
+
+[[coverage]]
+domain = "chemistry-education-history-policy-and-public-communication"
+disposition = "deferred"
+decks = []
+rationale = "Important professional branches remain visible future extensions; communication and ethics needed for research are already embedded."
+
+[[coverage]]
+domain = "forensic-clinical-cosmetic-food-and-agrochemical-specialties"
+disposition = "deferred"
+decks = []
+rationale = "These application sectors can later branch from analytical, organic, biochemical, and regulatory foundations without distorting the initial map."
+
+[[coverage]]
+domain = "astrochemistry-extreme-conditions-and-frontier-radiochemistry"
+disposition = "deferred"
+decks = []
+rationale = "Representative whole-field coverage retains extension points for specialist environments that require additional physics or astronomy."
+
+[[coverage]]
+domain = "full-chemical-engineering-design-and-clinical-practice"
+disposition = "out-of-scope"
+decks = []
+rationale = "Transport, reactor and plant design, and licensed clinical decision-making belong to adjacent professional subjects, although chemistry interfaces are taught."
