@@ -2575,6 +2575,17 @@
           ]
         }
       ],
+      "chapter_curriculum_generation": {
+        "request_id": 12,
+        "provider_id": "openai",
+        "model_id": "gpt-5.6-sol",
+        "reasoning_effort": "high",
+        "workflow_version": "deck-plan-v2",
+        "workflow_commit": "b266ae33b01c3899f148b71caa5482750ffbe344",
+        "registry_base_commit": "28033a24111eab2a9967dcc0925a8cf4514ffea7",
+        "catalog_hash": "sha256:2e2ce5f8011b2b46f7be2bb3b0380e2075b0cdf24fd1d0abee3c731d3c892815",
+        "context_hash": "sha256:6b01eefecba36766a4243dd2290fe5a0554eeb735ed9c058175444ad210ffd1c"
+      },
       "generation_command": "flashcards curriculum materialize mathematics/number-sense-and-arithmetic"
     },
     {
