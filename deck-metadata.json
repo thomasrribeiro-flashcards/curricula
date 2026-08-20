@@ -1861,7 +1861,8 @@
         "workflow_commit": "4fc129e6b83d5bcbb64d1eb9a25ed47bd83ffd53",
         "registry_base_commit": "a4ebd63b99008756b511deecb27a8dab4cfae4c4",
         "catalog_hash": "sha256:6c103132932d07364343436cb3dd0c99e2c2462da072899bbf2b4fd42e3badfb",
-        "context_hash": "sha256:cd6d36f7574b394e6838d85e5a4c9737ac8e4e93d4976e4a6992a357dcdc35be",
+        "context_hash": "sha256:aec13b0370eea4dc5f2fc7eb99dd5450cf043d02128dd6e253840d0b4954c4e1",
+        "publication_context_hash": "sha256:cd6d36f7574b394e6838d85e5a4c9737ac8e4e93d4976e4a6992a357dcdc35be",
         "publication_note": "Backfilled from the validated local result produced before registry publication was implemented."
       }
     },
@@ -2135,7 +2136,8 @@
         "workflow_commit": "4fc129e6b83d5bcbb64d1eb9a25ed47bd83ffd53",
         "registry_base_commit": "a4ebd63b99008756b511deecb27a8dab4cfae4c4",
         "catalog_hash": "sha256:6c103132932d07364343436cb3dd0c99e2c2462da072899bbf2b4fd42e3badfb",
-        "context_hash": "sha256:a4757a91aaa0ed809beea2361375a27e298b98e4c52662820052de6013689aef",
+        "context_hash": "sha256:7829de2f632235fa26d6abe0e28a11b4dd39beebdc93c128f662021e8d8ea931",
+        "publication_context_hash": "sha256:a4757a91aaa0ed809beea2361375a27e298b98e4c52662820052de6013689aef",
         "publication_note": "Backfilled from the validated local result produced before registry publication was implemented."
       }
     },
