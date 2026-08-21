@@ -2992,7 +2992,7 @@
       "order": 3,
       "tier": "core",
       "level": "foundational",
-      "status": "chapter-planned",
+      "status": "pilot-approved",
       "description": "Reason about congruence, similarity, transformations, circles, right-triangle trigonometry, coordinate geometry, area, volume, units, and short deductive geometric arguments.",
       "prerequisites": [
         "mathematics/elementary-algebra-and-functions"
@@ -3001,7 +3001,7 @@
       "materialized": true,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/geometry-and-measurement",
-        "configured": false
+        "configured": true
       },
       "chapters": [
         {
@@ -3009,7 +3009,7 @@
           "order": 1,
           "title": "Geometric language and measurement",
           "file": "flashcards/01_geometric_language_and_measurement.md",
-          "card_count": 0,
+          "card_count": 34,
           "prerequisites": [],
           "provides": [
             "geometric-object-and-notation",
@@ -3257,6 +3257,19 @@
         "context_hash": "sha256:7829de2f632235fa26d6abe0e28a11b4dd39beebdc93c128f662021e8d8ea931",
         "publication_context_hash": "sha256:a4757a91aaa0ed809beea2361375a27e298b98e4c52662820052de6013689aef",
         "publication_note": "Backfilled from the validated local result produced before registry publication was implemented."
+      },
+      "chapter_content_generation": {
+        "request_id": 15,
+        "chapter_id": "01_geometric_language_and_measurement",
+        "provider_id": "openai",
+        "model_id": "gpt-5.6-sol",
+        "reasoning_effort": "high",
+        "workflow_version": "chapter-content-v1",
+        "workflow_commit": "b3d93511e0e97651f9dbe9ccac380061021cc51c",
+        "registry_base_commit": "d3597480e8b141f9b6595c84630017f171abe06c",
+        "catalog_hash": "sha256:5624d1b35085acb6bc76d6052a140f954e4f82fa763cb957b466400d045cfac3",
+        "context_hash": "sha256:637c9b3d293931e8e3532e1a46b7a504498bcaadaa45ebb4d3bd33223926a7c2",
+        "generation_mode": "generate"
       },
       "generation_command": "flashcards curriculum materialize mathematics/geometry-and-measurement"
     },
