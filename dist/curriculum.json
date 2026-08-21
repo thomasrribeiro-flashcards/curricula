@@ -2595,7 +2595,7 @@
       "order": 2,
       "tier": "core",
       "level": "foundational",
-      "status": "pilot-built",
+      "status": "chapter-planned",
       "description": "Manipulate symbolic expressions, solve equations, inequalities, and systems, and model with linear, quadratic, polynomial, rational, exponential, and logarithmic functions and their graphs.",
       "prerequisites": [
         "mathematics/number-sense-and-arithmetic"
@@ -2612,7 +2612,7 @@
           "order": 1,
           "title": "Variables and expressions",
           "file": "flashcards/01_variables_and_expressions.md",
-          "card_count": 18,
+          "card_count": 0,
           "prerequisites": [],
           "provides": [
             "variable",
