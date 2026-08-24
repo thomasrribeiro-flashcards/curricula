@@ -20,6 +20,12 @@
       "deck_granularity": "course"
     },
     {
+      "id": "computer-science",
+      "destination": "whole-field",
+      "focus": [],
+      "deck_granularity": "course"
+    },
+    {
       "id": "mathematics",
       "destination": "whole-field",
       "focus": [],
@@ -2320,6 +2326,1067 @@
       },
       "chapters": [],
       "generation_command": "flashcards curriculum materialize chemistry/environmental-atmospheric-and-sustainable-chemistry-research"
+    },
+    {
+      "id": "computer-science/programming-and-software-development-foundations",
+      "subject": "computer-science",
+      "deck": "programming-and-software-development-foundations",
+      "order": 1,
+      "tier": "core",
+      "level": "foundational",
+      "status": "proposed",
+      "description": "Build, trace, test, debug, document, and version small programs while explaining variables, control, functions, data, state, decomposition, and abstraction.",
+      "prerequisites": [],
+      "recommended_after": [
+        "mathematics/elementary-algebra-and-functions"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/programming-and-software-development-foundations",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/programming-and-software-development-foundations"
+    },
+    {
+      "id": "computer-science/data-structures-and-program-design",
+      "subject": "computer-science",
+      "deck": "data-structures-and-program-design",
+      "order": 2,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Choose, implement, test, and trace core data structures while maintaining representation invariants and designing modular programs around abstract interfaces.",
+      "prerequisites": [
+        "computer-science/programming-and-software-development-foundations"
+      ],
+      "recommended_after": [
+        "mathematics/discrete-mathematics-and-combinatorics"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/data-structures-and-program-design",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/data-structures-and-program-design"
+    },
+    {
+      "id": "computer-science/computer-systems-foundations",
+      "subject": "computer-science",
+      "deck": "computer-systems-foundations",
+      "order": 3,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Translate among bits, data representations, logic, instructions, memory, processes, storage, and communication to explain how programs execute on layered machines.",
+      "prerequisites": [
+        "computer-science/programming-and-software-development-foundations"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/computer-systems-foundations",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/computer-systems-foundations"
+    },
+    {
+      "id": "computer-science/software-engineering",
+      "subject": "computer-science",
+      "deck": "software-engineering",
+      "order": 4,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Elicit requirements and collaboratively design, test, review, evolve, release, and maintain reliable software with explicit quality and process tradeoffs.",
+      "prerequisites": [
+        "computer-science/programming-and-software-development-foundations"
+      ],
+      "recommended_after": [
+        "computer-science/data-structures-and-program-design"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/software-engineering",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/software-engineering"
+    },
+    {
+      "id": "computer-science/algorithm-design-and-analysis",
+      "subject": "computer-science",
+      "deck": "algorithm-design-and-analysis",
+      "order": 5,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Design and justify algorithms with invariants, recurrences, graph models, paradigms, reductions, and precise worst-case, expected, and amortized analyses.",
+      "prerequisites": [
+        "computer-science/data-structures-and-program-design",
+        "mathematics/discrete-mathematics-and-combinatorics"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/algorithm-design-and-analysis",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/algorithm-design-and-analysis"
+    },
+    {
+      "id": "computer-science/computer-architecture-and-organization",
+      "subject": "computer-science",
+      "deck": "computer-architecture-and-organization",
+      "order": 6,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Analyze instruction sets, datapaths, pipelining, memory hierarchies, I/O, and multicore organization to predict correctness and performance from programs to hardware.",
+      "prerequisites": [
+        "computer-science/computer-systems-foundations"
+      ],
+      "recommended_after": [
+        "computer-science/data-structures-and-program-design"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/computer-architecture-and-organization",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/computer-architecture-and-organization"
+    },
+    {
+      "id": "computer-science/operating-systems",
+      "subject": "computer-science",
+      "deck": "operating-systems",
+      "order": 7,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Reason about processes, threads, scheduling, synchronization, virtual memory, files, I/O, protection, virtualization, recovery, and competing resource policies.",
+      "prerequisites": [
+        "computer-science/computer-systems-foundations"
+      ],
+      "recommended_after": [
+        "computer-science/computer-architecture-and-organization"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/operating-systems",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/operating-systems"
+    },
+    {
+      "id": "computer-science/networks-and-communication",
+      "subject": "computer-science",
+      "deck": "networks-and-communication",
+      "order": 8,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Trace layered protocols and packet paths while reasoning about naming, routing, transport, congestion, wireless links, measurement, failures, and end-to-end tradeoffs.",
+      "prerequisites": [
+        "computer-science/computer-systems-foundations"
+      ],
+      "recommended_after": [
+        "computer-science/operating-systems"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/networks-and-communication",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/networks-and-communication"
+    },
+    {
+      "id": "computer-science/data-management-and-databases",
+      "subject": "computer-science",
+      "deck": "data-management-and-databases",
+      "order": 9,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Model, query, index, transact over, recover, govern, and evaluate structured and semi-structured data with explicit integrity and performance guarantees.",
+      "prerequisites": [
+        "computer-science/data-structures-and-program-design"
+      ],
+      "recommended_after": [
+        "computer-science/software-engineering"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/data-management-and-databases",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/data-management-and-databases"
+    },
+    {
+      "id": "computer-science/programming-language-concepts",
+      "subject": "computer-science",
+      "deck": "programming-language-concepts",
+      "order": 10,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Compare syntax, semantics, scope, types, evaluation, state, abstraction, modularity, and functional, object-oriented, and logic paradigms through small interpreters and traces.",
+      "prerequisites": [
+        "computer-science/data-structures-and-program-design"
+      ],
+      "recommended_after": [
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/programming-language-concepts",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/programming-language-concepts"
+    },
+    {
+      "id": "computer-science/human-computer-interaction",
+      "subject": "computer-science",
+      "deck": "human-computer-interaction",
+      "order": 11,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Investigate people and contexts, prototype accessible interfaces, run ethical evaluations, and connect interaction evidence to defensible design decisions.",
+      "prerequisites": [
+        "computer-science/programming-and-software-development-foundations"
+      ],
+      "recommended_after": [
+        "computer-science/software-engineering"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/human-computer-interaction",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/human-computer-interaction"
+    },
+    {
+      "id": "computer-science/security-and-privacy-foundations",
+      "subject": "computer-science",
+      "deck": "security-and-privacy-foundations",
+      "order": 12,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Model assets, adversaries, trust boundaries, vulnerabilities, cryptographic goals, authentication, authorization, privacy, risk, and layered defensive limits.",
+      "prerequisites": [
+        "computer-science/computer-systems-foundations"
+      ],
+      "recommended_after": [
+        "computer-science/software-engineering",
+        "computer-science/networks-and-communication"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/security-and-privacy-foundations",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/security-and-privacy-foundations"
+    },
+    {
+      "id": "computer-science/society-ethics-and-professional-practice",
+      "subject": "computer-science",
+      "deck": "society-ethics-and-professional-practice",
+      "order": 13,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Analyze stakeholders, power, access, privacy, safety, bias, sustainability, law, evidence, professional duties, and sociotechnical consequences throughout a system life cycle.",
+      "prerequisites": [
+        "computer-science/programming-and-software-development-foundations"
+      ],
+      "recommended_after": [
+        "computer-science/software-engineering",
+        "computer-science/human-computer-interaction",
+        "computer-science/security-and-privacy-foundations"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/society-ethics-and-professional-practice",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/society-ethics-and-professional-practice"
+    },
+    {
+      "id": "computer-science/artificial-intelligence-foundations",
+      "subject": "computer-science",
+      "deck": "artificial-intelligence-foundations",
+      "order": 14,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Formulate and evaluate intelligent-agent problems using search, constraint satisfaction, logic, probabilistic reasoning, planning, learning foundations, and responsible evaluation.",
+      "prerequisites": [
+        "computer-science/data-structures-and-program-design"
+      ],
+      "recommended_after": [
+        "computer-science/algorithm-design-and-analysis",
+        "mathematics/probability",
+        "mathematics/linear-algebra",
+        "computer-science/society-ethics-and-professional-practice"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/artificial-intelligence-foundations",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/artificial-intelligence-foundations"
+    },
+    {
+      "id": "computer-science/parallel-and-distributed-computing",
+      "subject": "computer-science",
+      "deck": "parallel-and-distributed-computing",
+      "order": 15,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Design and analyze concurrent, parallel, and distributed programs under explicit memory, ordering, communication, synchronization, consistency, and failure models.",
+      "prerequisites": [
+        "computer-science/algorithm-design-and-analysis",
+        "computer-science/operating-systems",
+        "computer-science/networks-and-communication"
+      ],
+      "recommended_after": [
+        "computer-science/computer-architecture-and-organization"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/parallel-and-distributed-computing",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/parallel-and-distributed-computing"
+    },
+    {
+      "id": "computer-science/graphics-and-interactive-techniques",
+      "subject": "computer-science",
+      "deck": "graphics-and-interactive-techniques",
+      "order": 16,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Build and critique geometric, rendering, animation, visualization, and interaction pipelines while translating among scene, image, transformation, and perceptual representations.",
+      "prerequisites": [
+        "computer-science/data-structures-and-program-design",
+        "mathematics/linear-algebra"
+      ],
+      "recommended_after": [
+        "computer-science/algorithm-design-and-analysis",
+        "computer-science/human-computer-interaction"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/graphics-and-interactive-techniques",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/graphics-and-interactive-techniques"
+    },
+    {
+      "id": "computer-science/compiler-construction-and-language-implementation",
+      "subject": "computer-science",
+      "deck": "compiler-construction-and-language-implementation",
+      "order": 17,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Implement and test a language processor across lexing, parsing, semantic analysis, intermediate forms, optimization, code generation, runtime support, and diagnostics.",
+      "prerequisites": [
+        "computer-science/computer-systems-foundations",
+        "computer-science/programming-language-concepts"
+      ],
+      "recommended_after": [
+        "computer-science/computer-architecture-and-organization"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/compiler-construction-and-language-implementation",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/compiler-construction-and-language-implementation"
+    },
+    {
+      "id": "computer-science/web-and-cloud-application-engineering",
+      "subject": "computer-science",
+      "deck": "web-and-cloud-application-engineering",
+      "order": 18,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Engineer observable, secure, accessible web and cloud applications across client, service, data, deployment, scaling, failure, and operations boundaries.",
+      "prerequisites": [
+        "computer-science/software-engineering",
+        "computer-science/networks-and-communication",
+        "computer-science/data-management-and-databases"
+      ],
+      "recommended_after": [
+        "computer-science/security-and-privacy-foundations"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/web-and-cloud-application-engineering",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/web-and-cloud-application-engineering"
+    },
+    {
+      "id": "computer-science/embedded-and-real-time-systems",
+      "subject": "computer-science",
+      "deck": "embedded-and-real-time-systems",
+      "order": 19,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Design resource-constrained hardware-software systems with interrupts, peripherals, timing, real-time scheduling, concurrency, sensing, actuation, safety, and validation.",
+      "prerequisites": [
+        "computer-science/computer-architecture-and-organization",
+        "computer-science/operating-systems"
+      ],
+      "recommended_after": [
+        "computer-science/networks-and-communication",
+        "physics/electronics-and-instrumentation"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/embedded-and-real-time-systems",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/embedded-and-real-time-systems"
+    },
+    {
+      "id": "computer-science/machine-learning-and-data-science",
+      "subject": "computer-science",
+      "deck": "machine-learning-and-data-science",
+      "order": 20,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Acquire, clean, explore, model, validate, communicate, and govern data while diagnosing leakage, confounding, uncertainty, distribution shift, and social consequences.",
+      "prerequisites": [
+        "computer-science/algorithm-design-and-analysis",
+        "mathematics/linear-algebra",
+        "mathematics/statistical-inference-and-data-analysis"
+      ],
+      "recommended_after": [
+        "computer-science/artificial-intelligence-foundations",
+        "mathematics/optimization-and-operations-research"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/machine-learning-and-data-science",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/machine-learning-and-data-science"
+    },
+    {
+      "id": "computer-science/cybersecurity-engineering",
+      "subject": "computer-science",
+      "deck": "cybersecurity-engineering",
+      "order": 21,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Threat-model, test, harden, monitor, and recover software, hosts, networks, and services while evaluating cryptographic, human, organizational, and risk controls.",
+      "prerequisites": [
+        "computer-science/operating-systems",
+        "computer-science/networks-and-communication",
+        "computer-science/security-and-privacy-foundations"
+      ],
+      "recommended_after": [
+        "computer-science/society-ethics-and-professional-practice"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/cybersecurity-engineering",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/cybersecurity-engineering"
+    },
+    {
+      "id": "computer-science/robotics-and-autonomous-systems",
+      "subject": "computer-science",
+      "deck": "robotics-and-autonomous-systems",
+      "order": 22,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Integrate sensing, estimation, kinematics, control, planning, uncertainty, and safety to predict and evaluate autonomous behavior in physical environments.",
+      "prerequisites": [
+        "computer-science/computer-systems-foundations",
+        "computer-science/artificial-intelligence-foundations",
+        "mathematics/probability",
+        "mathematics/differential-equations"
+      ],
+      "recommended_after": [
+        "computer-science/embedded-and-real-time-systems",
+        "computer-science/machine-learning-and-data-science"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/robotics-and-autonomous-systems",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/robotics-and-autonomous-systems"
+    },
+    {
+      "id": "computer-science/information-retrieval-and-language-technologies",
+      "subject": "computer-science",
+      "deck": "information-retrieval-and-language-technologies",
+      "order": 23,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Represent, retrieve, rank, classify, and generate text and language data while evaluating relevance, meaning, bias, uncertainty, and human consequences.",
+      "prerequisites": [
+        "computer-science/machine-learning-and-data-science"
+      ],
+      "recommended_after": [
+        "computer-science/data-management-and-databases",
+        "computer-science/artificial-intelligence-foundations"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/information-retrieval-and-language-technologies",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/information-retrieval-and-language-technologies"
+    },
+    {
+      "id": "computer-science/computer-vision-and-visual-computing",
+      "subject": "computer-science",
+      "deck": "computer-vision-and-visual-computing",
+      "order": 24,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Form and test image and video representations for geometry, recognition, motion, and generation while tracing dataset, metric, robustness, and deployment limits.",
+      "prerequisites": [
+        "computer-science/machine-learning-and-data-science"
+      ],
+      "recommended_after": [
+        "computer-science/artificial-intelligence-foundations",
+        "computer-science/graphics-and-interactive-techniques"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/computer-vision-and-visual-computing",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/computer-vision-and-visual-computing"
+    },
+    {
+      "id": "computer-science/high-performance-and-scientific-computing",
+      "subject": "computer-science",
+      "deck": "high-performance-and-scientific-computing",
+      "order": 25,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Translate scientific models into validated numerical programs and reason about floating-point error, parallel decomposition, locality, scaling, performance, and reproducibility.",
+      "prerequisites": [
+        "computer-science/parallel-and-distributed-computing",
+        "mathematics/numerical-analysis"
+      ],
+      "recommended_after": [
+        "computer-science/computer-architecture-and-organization"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/high-performance-and-scientific-computing",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/high-performance-and-scientific-computing"
+    },
+    {
+      "id": "computer-science/computer-science-research-methods",
+      "subject": "computer-science",
+      "deck": "computer-science-research-methods",
+      "order": 26,
+      "tier": "core",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Search, read, reproduce, design, measure, review, write, and present computer-science research while matching claims to proof, empirical, systems, human-subjects, reproducibility, and ethical standards.",
+      "prerequisites": [
+        "computer-science/society-ethics-and-professional-practice"
+      ],
+      "recommended_after": [
+        "computer-science/software-engineering",
+        "computer-science/algorithm-design-and-analysis",
+        "mathematics/statistical-inference-and-data-analysis"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/computer-science-research-methods",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/computer-science-research-methods"
+    },
+    {
+      "id": "computer-science/advanced-algorithms-and-complexity",
+      "subject": "computer-science",
+      "deck": "advanced-algorithms-and-complexity",
+      "order": 27,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Develop advanced exact, approximation, online, randomized, algebraic, and parameterized algorithms and connect reductions and lower bounds to complexity assumptions.",
+      "prerequisites": [
+        "computer-science/algorithm-design-and-analysis",
+        "mathematics/probability",
+        "mathematics/theory-of-computation-and-complexity"
+      ],
+      "recommended_after": [
+        "computer-science/computer-science-research-methods",
+        "mathematics/optimization-and-operations-research"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-algorithms-and-complexity",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/advanced-algorithms-and-complexity"
+    },
+    {
+      "id": "computer-science/advanced-programming-languages-and-formal-methods",
+      "subject": "computer-science",
+      "deck": "advanced-programming-languages-and-formal-methods",
+      "order": 28,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Use operational and denotational semantics, type systems, logics, model checking, theorem proving, and verified transformations to specify and reason about programs.",
+      "prerequisites": [
+        "computer-science/programming-language-concepts",
+        "mathematics/mathematical-logic-and-computability"
+      ],
+      "recommended_after": [
+        "computer-science/compiler-construction-and-language-implementation",
+        "computer-science/computer-science-research-methods"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-programming-languages-and-formal-methods",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/advanced-programming-languages-and-formal-methods"
+    },
+    {
+      "id": "computer-science/advanced-systems-and-distributed-computing",
+      "subject": "computer-science",
+      "deck": "advanced-systems-and-distributed-computing",
+      "order": 29,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Analyze advanced operating, storage, networked, and distributed systems through concurrency, fault tolerance, consensus, consistency, virtualization, measurement, and scale.",
+      "prerequisites": [
+        "computer-science/parallel-and-distributed-computing"
+      ],
+      "recommended_after": [
+        "computer-science/data-management-and-databases",
+        "computer-science/cybersecurity-engineering",
+        "computer-science/computer-science-research-methods"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-systems-and-distributed-computing",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/advanced-systems-and-distributed-computing"
+    },
+    {
+      "id": "computer-science/advanced-ai-and-machine-learning",
+      "subject": "computer-science",
+      "deck": "advanced-ai-and-machine-learning",
+      "order": 30,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Derive, implement, and critique modern probabilistic, representation-learning, generative, sequential-decision, and foundation-model methods under rigorous evaluation.",
+      "prerequisites": [
+        "computer-science/artificial-intelligence-foundations",
+        "computer-science/machine-learning-and-data-science",
+        "mathematics/optimization-and-operations-research"
+      ],
+      "recommended_after": [
+        "computer-science/computer-science-research-methods"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-ai-and-machine-learning",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/advanced-ai-and-machine-learning"
+    },
+    {
+      "id": "computer-science/human-centered-computing-research-methods",
+      "subject": "computer-science",
+      "deck": "human-centered-computing-research-methods",
+      "order": 31,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Design and critique qualitative, quantitative, mixed-method, participatory, accessibility, and field research on people interacting with computing systems.",
+      "prerequisites": [
+        "computer-science/human-computer-interaction",
+        "computer-science/computer-science-research-methods",
+        "mathematics/statistical-inference-and-data-analysis"
+      ],
+      "recommended_after": [
+        "computer-science/machine-learning-and-data-science"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/human-centered-computing-research-methods",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/human-centered-computing-research-methods"
+    },
+    {
+      "id": "computer-science/advanced-security-and-privacy",
+      "subject": "computer-science",
+      "deck": "advanced-security-and-privacy",
+      "order": 32,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Analyze modern cryptography, systems and network security, privacy technologies, side channels, usable security, formal assurance, and adversarial evaluation.",
+      "prerequisites": [
+        "computer-science/cybersecurity-engineering",
+        "computer-science/computer-science-research-methods"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-security-and-privacy",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/advanced-security-and-privacy"
+    },
+    {
+      "id": "computer-science/advanced-data-systems-and-information-retrieval",
+      "subject": "computer-science",
+      "deck": "advanced-data-systems-and-information-retrieval",
+      "order": 33,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Study scalable data engines, learned and distributed data systems, retrieval and recommendation, provenance, governance, and evaluation across changing workloads.",
+      "prerequisites": [
+        "computer-science/data-management-and-databases",
+        "computer-science/information-retrieval-and-language-technologies",
+        "computer-science/computer-science-research-methods"
+      ],
+      "recommended_after": [
+        "computer-science/advanced-systems-and-distributed-computing"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-data-systems-and-information-retrieval",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/advanced-data-systems-and-information-retrieval"
+    },
+    {
+      "id": "computer-science/advanced-robotics-and-perception",
+      "subject": "computer-science",
+      "deck": "advanced-robotics-and-perception",
+      "order": 34,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Integrate probabilistic perception, mapping, planning, learning, control, embodiment, human interaction, safety, and experimental validation in autonomous systems.",
+      "prerequisites": [
+        "computer-science/robotics-and-autonomous-systems",
+        "computer-science/computer-vision-and-visual-computing",
+        "computer-science/advanced-ai-and-machine-learning",
+        "computer-science/computer-science-research-methods"
+      ],
+      "recommended_after": [
+        "computer-science/embedded-and-real-time-systems"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-robotics-and-perception",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/advanced-robotics-and-perception"
+    },
+    {
+      "id": "computer-science/advanced-parallel-and-high-performance-computing",
+      "subject": "computer-science",
+      "deck": "advanced-parallel-and-high-performance-computing",
+      "order": 35,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Design and evaluate advanced multicore, accelerator, cluster, and heterogeneous computations using performance models, numerical fidelity, communication, scheduling, and reproducibility.",
+      "prerequisites": [
+        "computer-science/high-performance-and-scientific-computing",
+        "computer-science/advanced-systems-and-distributed-computing",
+        "computer-science/computer-science-research-methods"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-parallel-and-high-performance-computing",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/advanced-parallel-and-high-performance-computing"
+    },
+    {
+      "id": "computer-science/algorithms-and-complexity-research",
+      "subject": "computer-science",
+      "deck": "algorithms-and-complexity-research",
+      "order": 36,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Read and critique frontier algorithms and complexity research by reconstructing models, proof ideas, reductions, bounds, assumptions, and open-problem structure.",
+      "prerequisites": [
+        "computer-science/computer-science-research-methods",
+        "computer-science/advanced-algorithms-and-complexity"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/algorithms-and-complexity-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/algorithms-and-complexity-research"
+    },
+    {
+      "id": "computer-science/programming-languages-and-software-research",
+      "subject": "computer-science",
+      "deck": "programming-languages-and-software-research",
+      "order": 37,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Evaluate frontier language, verification, program-analysis, synthesis, and software-engineering claims using formal guarantees, artifacts, benchmarks, and human evidence.",
+      "prerequisites": [
+        "computer-science/computer-science-research-methods",
+        "computer-science/advanced-programming-languages-and-formal-methods"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/programming-languages-and-software-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/programming-languages-and-software-research"
+    },
+    {
+      "id": "computer-science/scalable-systems-and-networking-research",
+      "subject": "computer-science",
+      "deck": "scalable-systems-and-networking-research",
+      "order": 38,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Interrogate research on operating, networked, storage, cloud, edge, and distributed systems through models, prototypes, workloads, fault injection, and reproducible measurement.",
+      "prerequisites": [
+        "computer-science/computer-science-research-methods",
+        "computer-science/advanced-systems-and-distributed-computing"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/scalable-systems-and-networking-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/scalable-systems-and-networking-research"
+    },
+    {
+      "id": "computer-science/trustworthy-ai-and-learning-systems-research",
+      "subject": "computer-science",
+      "deck": "trustworthy-ai-and-learning-systems-research",
+      "order": 39,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Critique frontier AI and learning systems through data provenance, scaling, evaluation validity, robustness, interpretability, privacy, safety, governance, and social impact.",
+      "prerequisites": [
+        "computer-science/computer-science-research-methods",
+        "computer-science/advanced-ai-and-machine-learning"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/trustworthy-ai-and-learning-systems-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/trustworthy-ai-and-learning-systems-research"
+    },
+    {
+      "id": "computer-science/human-ai-interaction-and-accessible-computing-research",
+      "subject": "computer-science",
+      "deck": "human-ai-interaction-and-accessible-computing-research",
+      "order": 40,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Investigate human-AI collaboration, agency, explanation, accessibility, participation, deployment, and longitudinal effects with defensible technical and human evidence.",
+      "prerequisites": [
+        "computer-science/advanced-ai-and-machine-learning",
+        "computer-science/human-centered-computing-research-methods"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/human-ai-interaction-and-accessible-computing-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/human-ai-interaction-and-accessible-computing-research"
+    },
+    {
+      "id": "computer-science/security-and-privacy-research",
+      "subject": "computer-science",
+      "deck": "security-and-privacy-research",
+      "order": 41,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Assess frontier security and privacy research by matching attacker, asset, trust, proof, experiment, disclosure, and deployment claims to the evidence provided.",
+      "prerequisites": [
+        "computer-science/advanced-security-and-privacy"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/security-and-privacy-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/security-and-privacy-research"
+    },
+    {
+      "id": "computer-science/data-management-and-information-retrieval-research",
+      "subject": "computer-science",
+      "deck": "data-management-and-information-retrieval-research",
+      "order": 42,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Read research on data systems, retrieval, recommendation, and information quality through workload assumptions, system design, relevance evidence, governance, and reproducibility.",
+      "prerequisites": [
+        "computer-science/advanced-data-systems-and-information-retrieval"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/data-management-and-information-retrieval-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/data-management-and-information-retrieval-research"
+    },
+    {
+      "id": "computer-science/embodied-ai-and-robotics-research",
+      "subject": "computer-science",
+      "deck": "embodied-ai-and-robotics-research",
+      "order": 43,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Critique embodied-AI and robotics research across perception-action loops, simulation and reality, benchmarks, safety cases, human contexts, hardware limits, and field evidence.",
+      "prerequisites": [
+        "computer-science/advanced-robotics-and-perception"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/embodied-ai-and-robotics-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/embodied-ai-and-robotics-research"
+    },
+    {
+      "id": "computer-science/high-performance-and-scientific-computing-research",
+      "subject": "computer-science",
+      "deck": "high-performance-and-scientific-computing-research",
+      "order": 44,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Evaluate frontier architectures, programming systems, simulations, and scientific workflows through performance portability, numerical trust, scaling evidence, energy, and reproducibility.",
+      "prerequisites": [
+        "computer-science/advanced-parallel-and-high-performance-computing"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/high-performance-and-scientific-computing-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/high-performance-and-scientific-computing-research"
+    },
+    {
+      "id": "computer-science/quantum-algorithms-and-computing-research",
+      "subject": "computer-science",
+      "deck": "quantum-algorithms-and-computing-research",
+      "order": 45,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Analyze quantum algorithms, complexity, programming, compilation, error correction, resources, and advantage claims using both computational and physical models.",
+      "prerequisites": [
+        "computer-science/computer-science-research-methods",
+        "computer-science/advanced-algorithms-and-complexity",
+        "physics/quantum-information-and-computation"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/quantum-algorithms-and-computing-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize computer-science/quantum-algorithms-and-computing-research"
     },
     {
       "id": "mathematics/number-sense-and-arithmetic",

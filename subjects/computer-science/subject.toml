@@ -1,0 +1,674 @@
+schema_version = 3
+subject = "computer-science"
+destination = "whole-field"
+deck_granularity = "course"
+focus = []
+
+[[decks]]
+id = "programming-and-software-development-foundations"
+order = 1
+tier = "core"
+level = "foundational"
+prerequisites = []
+recommended_after = ["mathematics/elementary-algebra-and-functions"]
+estimated_chapters = 14
+status = "proposed"
+description = "Build, trace, test, debug, document, and version small programs while explaining variables, control, functions, data, state, decomposition, and abstraction."
+
+[[decks]]
+id = "data-structures-and-program-design"
+order = 2
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["programming-and-software-development-foundations"]
+recommended_after = ["mathematics/discrete-mathematics-and-combinatorics"]
+estimated_chapters = 10
+status = "proposed"
+description = "Choose, implement, test, and trace core data structures while maintaining representation invariants and designing modular programs around abstract interfaces."
+
+[[decks]]
+id = "computer-systems-foundations"
+order = 3
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["programming-and-software-development-foundations"]
+recommended_after = []
+estimated_chapters = 10
+status = "proposed"
+description = "Translate among bits, data representations, logic, instructions, memory, processes, storage, and communication to explain how programs execute on layered machines."
+
+[[decks]]
+id = "software-engineering"
+order = 4
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["programming-and-software-development-foundations"]
+recommended_after = ["data-structures-and-program-design"]
+estimated_chapters = 10
+status = "proposed"
+description = "Elicit requirements and collaboratively design, test, review, evolve, release, and maintain reliable software with explicit quality and process tradeoffs."
+
+[[decks]]
+id = "algorithm-design-and-analysis"
+order = 5
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["data-structures-and-program-design", "mathematics/discrete-mathematics-and-combinatorics"]
+recommended_after = []
+estimated_chapters = 12
+status = "proposed"
+description = "Design and justify algorithms with invariants, recurrences, graph models, paradigms, reductions, and precise worst-case, expected, and amortized analyses."
+
+[[decks]]
+id = "computer-architecture-and-organization"
+order = 6
+tier = "recommended"
+level = "undergraduate-core"
+prerequisites = ["computer-systems-foundations"]
+recommended_after = ["data-structures-and-program-design"]
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze instruction sets, datapaths, pipelining, memory hierarchies, I/O, and multicore organization to predict correctness and performance from programs to hardware."
+
+[[decks]]
+id = "operating-systems"
+order = 7
+tier = "recommended"
+level = "undergraduate-core"
+prerequisites = ["computer-systems-foundations"]
+recommended_after = ["computer-architecture-and-organization"]
+estimated_chapters = 12
+status = "proposed"
+description = "Reason about processes, threads, scheduling, synchronization, virtual memory, files, I/O, protection, virtualization, recovery, and competing resource policies."
+
+[[decks]]
+id = "networks-and-communication"
+order = 8
+tier = "recommended"
+level = "undergraduate-core"
+prerequisites = ["computer-systems-foundations"]
+recommended_after = ["operating-systems"]
+estimated_chapters = 10
+status = "proposed"
+description = "Trace layered protocols and packet paths while reasoning about naming, routing, transport, congestion, wireless links, measurement, failures, and end-to-end tradeoffs."
+
+[[decks]]
+id = "data-management-and-databases"
+order = 9
+tier = "recommended"
+level = "undergraduate-core"
+prerequisites = ["data-structures-and-program-design"]
+recommended_after = ["software-engineering"]
+estimated_chapters = 10
+status = "proposed"
+description = "Model, query, index, transact over, recover, govern, and evaluate structured and semi-structured data with explicit integrity and performance guarantees."
+
+[[decks]]
+id = "programming-language-concepts"
+order = 10
+tier = "recommended"
+level = "undergraduate-core"
+prerequisites = ["data-structures-and-program-design"]
+recommended_after = ["mathematics/mathematical-reasoning-and-proof"]
+estimated_chapters = 10
+status = "proposed"
+description = "Compare syntax, semantics, scope, types, evaluation, state, abstraction, modularity, and functional, object-oriented, and logic paradigms through small interpreters and traces."
+
+[[decks]]
+id = "human-computer-interaction"
+order = 11
+tier = "recommended"
+level = "undergraduate-core"
+prerequisites = ["programming-and-software-development-foundations"]
+recommended_after = ["software-engineering"]
+estimated_chapters = 10
+status = "proposed"
+description = "Investigate people and contexts, prototype accessible interfaces, run ethical evaluations, and connect interaction evidence to defensible design decisions."
+
+[[decks]]
+id = "security-and-privacy-foundations"
+order = 12
+tier = "recommended"
+level = "undergraduate-core"
+prerequisites = ["computer-systems-foundations"]
+recommended_after = ["software-engineering", "networks-and-communication"]
+estimated_chapters = 10
+status = "proposed"
+description = "Model assets, adversaries, trust boundaries, vulnerabilities, cryptographic goals, authentication, authorization, privacy, risk, and layered defensive limits."
+
+[[decks]]
+id = "society-ethics-and-professional-practice"
+order = 13
+tier = "core"
+level = "undergraduate-core"
+prerequisites = ["programming-and-software-development-foundations"]
+recommended_after = ["software-engineering", "human-computer-interaction", "security-and-privacy-foundations"]
+estimated_chapters = 8
+status = "proposed"
+description = "Analyze stakeholders, power, access, privacy, safety, bias, sustainability, law, evidence, professional duties, and sociotechnical consequences throughout a system life cycle."
+
+[[decks]]
+id = "artificial-intelligence-foundations"
+order = 14
+tier = "recommended"
+level = "undergraduate-core"
+prerequisites = ["data-structures-and-program-design"]
+recommended_after = ["algorithm-design-and-analysis", "mathematics/probability", "mathematics/linear-algebra", "society-ethics-and-professional-practice"]
+estimated_chapters = 12
+status = "proposed"
+description = "Formulate and evaluate intelligent-agent problems using search, constraint satisfaction, logic, probabilistic reasoning, planning, learning foundations, and responsible evaluation."
+
+[[decks]]
+id = "parallel-and-distributed-computing"
+order = 15
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["algorithm-design-and-analysis", "operating-systems", "networks-and-communication"]
+recommended_after = ["computer-architecture-and-organization"]
+estimated_chapters = 12
+status = "proposed"
+description = "Design and analyze concurrent, parallel, and distributed programs under explicit memory, ordering, communication, synchronization, consistency, and failure models."
+
+[[decks]]
+id = "graphics-and-interactive-techniques"
+order = 16
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["data-structures-and-program-design", "mathematics/linear-algebra"]
+recommended_after = ["algorithm-design-and-analysis", "human-computer-interaction"]
+estimated_chapters = 10
+status = "proposed"
+description = "Build and critique geometric, rendering, animation, visualization, and interaction pipelines while translating among scene, image, transformation, and perceptual representations."
+
+[[decks]]
+id = "compiler-construction-and-language-implementation"
+order = 17
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["computer-systems-foundations", "programming-language-concepts"]
+recommended_after = ["computer-architecture-and-organization"]
+estimated_chapters = 10
+status = "proposed"
+description = "Implement and test a language processor across lexing, parsing, semantic analysis, intermediate forms, optimization, code generation, runtime support, and diagnostics."
+
+[[decks]]
+id = "web-and-cloud-application-engineering"
+order = 18
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["software-engineering", "networks-and-communication", "data-management-and-databases"]
+recommended_after = ["security-and-privacy-foundations"]
+estimated_chapters = 10
+status = "proposed"
+description = "Engineer observable, secure, accessible web and cloud applications across client, service, data, deployment, scaling, failure, and operations boundaries."
+
+[[decks]]
+id = "embedded-and-real-time-systems"
+order = 19
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["computer-architecture-and-organization", "operating-systems"]
+recommended_after = ["networks-and-communication", "physics/electronics-and-instrumentation"]
+estimated_chapters = 10
+status = "proposed"
+description = "Design resource-constrained hardware-software systems with interrupts, peripherals, timing, real-time scheduling, concurrency, sensing, actuation, safety, and validation."
+
+[[decks]]
+id = "machine-learning-and-data-science"
+order = 20
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["algorithm-design-and-analysis", "mathematics/linear-algebra", "mathematics/statistical-inference-and-data-analysis"]
+recommended_after = ["artificial-intelligence-foundations", "mathematics/optimization-and-operations-research"]
+estimated_chapters = 12
+status = "proposed"
+description = "Acquire, clean, explore, model, validate, communicate, and govern data while diagnosing leakage, confounding, uncertainty, distribution shift, and social consequences."
+
+[[decks]]
+id = "cybersecurity-engineering"
+order = 21
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["operating-systems", "networks-and-communication", "security-and-privacy-foundations"]
+recommended_after = ["society-ethics-and-professional-practice"]
+estimated_chapters = 12
+status = "proposed"
+description = "Threat-model, test, harden, monitor, and recover software, hosts, networks, and services while evaluating cryptographic, human, organizational, and risk controls."
+
+[[decks]]
+id = "robotics-and-autonomous-systems"
+order = 22
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["computer-systems-foundations", "artificial-intelligence-foundations", "mathematics/probability", "mathematics/differential-equations"]
+recommended_after = ["embedded-and-real-time-systems", "machine-learning-and-data-science"]
+estimated_chapters = 10
+status = "proposed"
+description = "Integrate sensing, estimation, kinematics, control, planning, uncertainty, and safety to predict and evaluate autonomous behavior in physical environments."
+
+[[decks]]
+id = "information-retrieval-and-language-technologies"
+order = 23
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["machine-learning-and-data-science"]
+recommended_after = ["data-management-and-databases", "artificial-intelligence-foundations"]
+estimated_chapters = 10
+status = "proposed"
+description = "Represent, retrieve, rank, classify, and generate text and language data while evaluating relevance, meaning, bias, uncertainty, and human consequences."
+
+[[decks]]
+id = "computer-vision-and-visual-computing"
+order = 24
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["machine-learning-and-data-science"]
+recommended_after = ["artificial-intelligence-foundations", "graphics-and-interactive-techniques"]
+estimated_chapters = 10
+status = "proposed"
+description = "Form and test image and video representations for geometry, recognition, motion, and generation while tracing dataset, metric, robustness, and deployment limits."
+
+[[decks]]
+id = "high-performance-and-scientific-computing"
+order = 25
+tier = "specialization"
+level = "undergraduate-advanced"
+prerequisites = ["parallel-and-distributed-computing", "mathematics/numerical-analysis"]
+recommended_after = ["computer-architecture-and-organization"]
+estimated_chapters = 10
+status = "proposed"
+description = "Translate scientific models into validated numerical programs and reason about floating-point error, parallel decomposition, locality, scaling, performance, and reproducibility."
+
+[[decks]]
+id = "computer-science-research-methods"
+order = 26
+tier = "core"
+level = "graduate"
+prerequisites = ["society-ethics-and-professional-practice"]
+recommended_after = ["software-engineering", "algorithm-design-and-analysis", "mathematics/statistical-inference-and-data-analysis"]
+estimated_chapters = 10
+status = "proposed"
+description = "Search, read, reproduce, design, measure, review, write, and present computer-science research while matching claims to proof, empirical, systems, human-subjects, reproducibility, and ethical standards."
+
+[[decks]]
+id = "advanced-algorithms-and-complexity"
+order = 27
+tier = "specialization"
+level = "graduate"
+prerequisites = ["algorithm-design-and-analysis", "mathematics/probability", "mathematics/theory-of-computation-and-complexity"]
+recommended_after = ["computer-science-research-methods", "mathematics/optimization-and-operations-research"]
+estimated_chapters = 10
+status = "proposed"
+description = "Develop advanced exact, approximation, online, randomized, algebraic, and parameterized algorithms and connect reductions and lower bounds to complexity assumptions."
+
+[[decks]]
+id = "advanced-programming-languages-and-formal-methods"
+order = 28
+tier = "specialization"
+level = "graduate"
+prerequisites = ["programming-language-concepts", "mathematics/mathematical-logic-and-computability"]
+recommended_after = ["compiler-construction-and-language-implementation", "computer-science-research-methods"]
+estimated_chapters = 10
+status = "proposed"
+description = "Use operational and denotational semantics, type systems, logics, model checking, theorem proving, and verified transformations to specify and reason about programs."
+
+[[decks]]
+id = "advanced-systems-and-distributed-computing"
+order = 29
+tier = "specialization"
+level = "graduate"
+prerequisites = ["parallel-and-distributed-computing"]
+recommended_after = ["data-management-and-databases", "cybersecurity-engineering", "computer-science-research-methods"]
+estimated_chapters = 12
+status = "proposed"
+description = "Analyze advanced operating, storage, networked, and distributed systems through concurrency, fault tolerance, consensus, consistency, virtualization, measurement, and scale."
+
+[[decks]]
+id = "advanced-ai-and-machine-learning"
+order = 30
+tier = "specialization"
+level = "graduate"
+prerequisites = ["artificial-intelligence-foundations", "machine-learning-and-data-science", "mathematics/optimization-and-operations-research"]
+recommended_after = ["computer-science-research-methods"]
+estimated_chapters = 12
+status = "proposed"
+description = "Derive, implement, and critique modern probabilistic, representation-learning, generative, sequential-decision, and foundation-model methods under rigorous evaluation."
+
+[[decks]]
+id = "human-centered-computing-research-methods"
+order = 31
+tier = "specialization"
+level = "graduate"
+prerequisites = ["human-computer-interaction", "computer-science-research-methods", "mathematics/statistical-inference-and-data-analysis"]
+recommended_after = ["machine-learning-and-data-science"]
+estimated_chapters = 10
+status = "proposed"
+description = "Design and critique qualitative, quantitative, mixed-method, participatory, accessibility, and field research on people interacting with computing systems."
+
+[[decks]]
+id = "advanced-security-and-privacy"
+order = 32
+tier = "specialization"
+level = "graduate"
+prerequisites = ["cybersecurity-engineering", "computer-science-research-methods"]
+recommended_after = []
+estimated_chapters = 10
+status = "proposed"
+description = "Analyze modern cryptography, systems and network security, privacy technologies, side channels, usable security, formal assurance, and adversarial evaluation."
+
+[[decks]]
+id = "advanced-data-systems-and-information-retrieval"
+order = 33
+tier = "specialization"
+level = "graduate"
+prerequisites = ["data-management-and-databases", "information-retrieval-and-language-technologies", "computer-science-research-methods"]
+recommended_after = ["advanced-systems-and-distributed-computing"]
+estimated_chapters = 10
+status = "proposed"
+description = "Study scalable data engines, learned and distributed data systems, retrieval and recommendation, provenance, governance, and evaluation across changing workloads."
+
+[[decks]]
+id = "advanced-robotics-and-perception"
+order = 34
+tier = "specialization"
+level = "graduate"
+prerequisites = ["robotics-and-autonomous-systems", "computer-vision-and-visual-computing", "advanced-ai-and-machine-learning", "computer-science-research-methods"]
+recommended_after = ["embedded-and-real-time-systems"]
+estimated_chapters = 10
+status = "proposed"
+description = "Integrate probabilistic perception, mapping, planning, learning, control, embodiment, human interaction, safety, and experimental validation in autonomous systems."
+
+[[decks]]
+id = "advanced-parallel-and-high-performance-computing"
+order = 35
+tier = "specialization"
+level = "graduate"
+prerequisites = ["high-performance-and-scientific-computing", "advanced-systems-and-distributed-computing", "computer-science-research-methods"]
+recommended_after = []
+estimated_chapters = 10
+status = "proposed"
+description = "Design and evaluate advanced multicore, accelerator, cluster, and heterogeneous computations using performance models, numerical fidelity, communication, scheduling, and reproducibility."
+
+[[decks]]
+id = "algorithms-and-complexity-research"
+order = 36
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["computer-science-research-methods", "advanced-algorithms-and-complexity"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Read and critique frontier algorithms and complexity research by reconstructing models, proof ideas, reductions, bounds, assumptions, and open-problem structure."
+
+[[decks]]
+id = "programming-languages-and-software-research"
+order = 37
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["computer-science-research-methods", "advanced-programming-languages-and-formal-methods"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Evaluate frontier language, verification, program-analysis, synthesis, and software-engineering claims using formal guarantees, artifacts, benchmarks, and human evidence."
+
+[[decks]]
+id = "scalable-systems-and-networking-research"
+order = 38
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["computer-science-research-methods", "advanced-systems-and-distributed-computing"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Interrogate research on operating, networked, storage, cloud, edge, and distributed systems through models, prototypes, workloads, fault injection, and reproducible measurement."
+
+[[decks]]
+id = "trustworthy-ai-and-learning-systems-research"
+order = 39
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["computer-science-research-methods", "advanced-ai-and-machine-learning"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Critique frontier AI and learning systems through data provenance, scaling, evaluation validity, robustness, interpretability, privacy, safety, governance, and social impact."
+
+[[decks]]
+id = "human-ai-interaction-and-accessible-computing-research"
+order = 40
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["advanced-ai-and-machine-learning", "human-centered-computing-research-methods"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Investigate human-AI collaboration, agency, explanation, accessibility, participation, deployment, and longitudinal effects with defensible technical and human evidence."
+
+[[decks]]
+id = "security-and-privacy-research"
+order = 41
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["advanced-security-and-privacy"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Assess frontier security and privacy research by matching attacker, asset, trust, proof, experiment, disclosure, and deployment claims to the evidence provided."
+
+[[decks]]
+id = "data-management-and-information-retrieval-research"
+order = 42
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["advanced-data-systems-and-information-retrieval"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Read research on data systems, retrieval, recommendation, and information quality through workload assumptions, system design, relevance evidence, governance, and reproducibility."
+
+[[decks]]
+id = "embodied-ai-and-robotics-research"
+order = 43
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["advanced-robotics-and-perception"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Critique embodied-AI and robotics research across perception-action loops, simulation and reality, benchmarks, safety cases, human contexts, hardware limits, and field evidence."
+
+[[decks]]
+id = "high-performance-and-scientific-computing-research"
+order = 44
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["advanced-parallel-and-high-performance-computing"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Evaluate frontier architectures, programming systems, simulations, and scientific workflows through performance portability, numerical trust, scaling evidence, energy, and reproducibility."
+
+[[decks]]
+id = "quantum-algorithms-and-computing-research"
+order = 45
+tier = "specialization"
+level = "research-specialization"
+prerequisites = ["computer-science-research-methods", "advanced-algorithms-and-complexity", "physics/quantum-information-and-computation"]
+recommended_after = []
+estimated_chapters = 8
+status = "proposed"
+description = "Analyze quantum algorithms, complexity, programming, compilation, error correction, resources, and advantage claims using both computational and physical models."
+
+[[coverage]]
+domain = "software-development-fundamentals"
+disposition = "included"
+decks = ["programming-and-software-development-foundations", "data-structures-and-program-design"]
+rationale = "A cold-start programming course establishes executable mental models and tools; a second course develops abstract interfaces, invariants, and larger program structure."
+
+[[coverage]]
+domain = "algorithmic-foundations"
+disposition = "included"
+decks = ["data-structures-and-program-design", "algorithm-design-and-analysis", "advanced-algorithms-and-complexity", "algorithms-and-complexity-research"]
+rationale = "The route progresses from representations and invariants to proof-based design, graduate methods, and research claims without merging independent application branches."
+
+[[coverage]]
+domain = "architecture-and-organization"
+disposition = "included"
+decks = ["computer-systems-foundations", "computer-architecture-and-organization", "embedded-and-real-time-systems"]
+rationale = "A shared machine bridge precedes a coherent architecture course and an optional constrained-platform application."
+
+[[coverage]]
+domain = "systems-fundamentals"
+disposition = "included"
+decks = ["computer-systems-foundations", "computer-architecture-and-organization", "operating-systems", "parallel-and-distributed-computing"]
+rationale = "Representation, execution, resource, and concurrency models recur with increasing depth across the systems spine."
+
+[[coverage]]
+domain = "operating-systems"
+disposition = "included"
+decks = ["operating-systems", "parallel-and-distributed-computing", "advanced-systems-and-distributed-computing", "scalable-systems-and-networking-research"]
+rationale = "A course-scale OS capability supports concurrency and later systems research while avoiding an all-systems monolith."
+
+[[coverage]]
+domain = "networking-and-communication"
+disposition = "included"
+decks = ["networks-and-communication", "parallel-and-distributed-computing", "web-and-cloud-application-engineering", "advanced-systems-and-distributed-computing", "scalable-systems-and-networking-research"]
+rationale = "Protocol reasoning is independently learnable, then reused in distributed, application, and research settings."
+
+[[coverage]]
+domain = "parallel-and-distributed-computing"
+disposition = "included"
+decks = ["parallel-and-distributed-computing", "advanced-systems-and-distributed-computing", "high-performance-and-scientific-computing", "advanced-parallel-and-high-performance-computing", "scalable-systems-and-networking-research", "high-performance-and-scientific-computing-research"]
+rationale = "The shared concurrency/distribution course branches into service systems and numerical high-performance work with distinct practices and capstones."
+
+[[coverage]]
+domain = "data-management"
+disposition = "included"
+decks = ["data-management-and-databases", "machine-learning-and-data-science", "information-retrieval-and-language-technologies", "advanced-data-systems-and-information-retrieval", "data-management-and-information-retrieval-research"]
+rationale = "Database guarantees, analytical data practice, and information access remain separate but reconnect in an advanced data-systems route."
+
+[[coverage]]
+domain = "foundations-of-programming-languages"
+disposition = "included"
+decks = ["programming-language-concepts", "compiler-construction-and-language-implementation", "advanced-programming-languages-and-formal-methods", "programming-languages-and-software-research"]
+rationale = "Language meaning is taught before implementation and formal research, preventing a compiler project from serving as the learner's first semantics course."
+
+[[coverage]]
+domain = "software-engineering"
+disposition = "included"
+decks = ["programming-and-software-development-foundations", "software-engineering", "compiler-construction-and-language-implementation", "web-and-cloud-application-engineering", "programming-languages-and-software-research"]
+rationale = "Foundational tools lead to team-scale lifecycle competence and later platform or research applications."
+
+[[coverage]]
+domain = "human-computer-interaction"
+disposition = "included"
+decks = ["human-computer-interaction", "human-centered-computing-research-methods", "human-ai-interaction-and-accessible-computing-research"]
+rationale = "Design and evaluation precede graduate human-subjects methods and a focused contemporary human-AI/accessibility route."
+
+[[coverage]]
+domain = "graphics-and-interactive-techniques"
+disposition = "included"
+decks = ["graphics-and-interactive-techniques", "computer-vision-and-visual-computing"]
+rationale = "Graphics owns synthesis and interaction pipelines; vision owns inference from images, with optional two-way preparation rather than a false hard edge."
+
+[[coverage]]
+domain = "artificial-intelligence"
+disposition = "included"
+decks = ["artificial-intelligence-foundations", "machine-learning-and-data-science", "robotics-and-autonomous-systems", "information-retrieval-and-language-technologies", "computer-vision-and-visual-computing", "advanced-ai-and-machine-learning", "advanced-robotics-and-perception", "trustworthy-ai-and-learning-systems-research", "human-ai-interaction-and-accessible-computing-research", "embodied-ai-and-robotics-research"]
+rationale = "A broad AI foundation branches into statistically mature learning, language, vision, and embodied systems before graduate and research specialization."
+
+[[coverage]]
+domain = "security"
+disposition = "included"
+decks = ["security-and-privacy-foundations", "cybersecurity-engineering", "advanced-security-and-privacy", "security-and-privacy-research"]
+rationale = "Threat and protection concepts precede operating/network practice, advanced assurance, and research evaluation."
+
+[[coverage]]
+domain = "society-ethics-and-the-profession"
+disposition = "included"
+decks = ["society-ethics-and-professional-practice", "software-engineering", "human-computer-interaction", "cybersecurity-engineering", "computer-science-research-methods", "trustworthy-ai-and-learning-systems-research"]
+rationale = "One coherent professional-judgment course anchors obligations, while technical decks must contextualize those obligations rather than outsourcing them."
+
+[[coverage]]
+domain = "mathematical-and-statistical-foundations"
+disposition = "included"
+decks = ["algorithm-design-and-analysis", "artificial-intelligence-foundations", "machine-learning-and-data-science", "advanced-algorithms-and-complexity", "advanced-ai-and-machine-learning"]
+rationale = "Canonical mathematics decks supply broad proof, discrete, probability, linear-algebra, statistics, and optimization capabilities; CS-owned decks teach their computational transfer instead of duplicating them."
+
+[[coverage]]
+domain = "specialized-platform-development"
+disposition = "included"
+decks = ["web-and-cloud-application-engineering", "embedded-and-real-time-systems", "robotics-and-autonomous-systems"]
+rationale = "Independent web/cloud, embedded/real-time, and embodied platforms remain separate courses because their constraints, representations, and capstones differ."
+
+[[coverage]]
+domain = "data-science-and-machine-learning"
+disposition = "included"
+decks = ["machine-learning-and-data-science", "advanced-ai-and-machine-learning", "trustworthy-ai-and-learning-systems-research"]
+rationale = "The route separates empirical data competence from broad AI, then reconnects them for advanced learning systems and trustworthy research."
+
+[[coverage]]
+domain = "robotics-and-intelligent-physical-systems"
+disposition = "included"
+decks = ["robotics-and-autonomous-systems", "advanced-robotics-and-perception", "embodied-ai-and-robotics-research"]
+rationale = "A physical sensing-planning-control spine receives its own laboratory and representation grammar rather than being hidden inside general AI."
+
+[[coverage]]
+domain = "computational-science-and-high-performance-computing"
+disposition = "included"
+decks = ["high-performance-and-scientific-computing", "advanced-parallel-and-high-performance-computing", "high-performance-and-scientific-computing-research"]
+rationale = "Numerical validity, scientific modeling, and performance scaling form a coherent route distinct from service-oriented distributed systems."
+
+[[coverage]]
+domain = "research-methods-and-reproducibility"
+disposition = "included"
+decks = ["computer-science-research-methods", "human-centered-computing-research-methods"]
+rationale = "A branch-neutral research-practice layer precedes literature-facing work, with an additional human-subjects layer where representational and ethical transfer requires it."
+
+[[coverage]]
+domain = "quantum-computing"
+disposition = "included"
+decks = ["quantum-algorithms-and-computing-research"]
+rationale = "The established physics quantum-information deck supplies the physical and information-theoretic base; CS owns the later algorithms, complexity, language, and systems research transfer."
+
+[[coverage]]
+domain = "mobile-ubiquitous-and-immersive-platforms"
+disposition = "deferred"
+decks = []
+rationale = "Valuable specialized-platform extensions, but web/cloud and embedded/real-time provide representative initial routes without forcing several independent platform courses into the first whole-field map."
+
+[[coverage]]
+domain = "computing-education-research"
+disposition = "deferred"
+decks = []
+rationale = "A legitimate human-centered research branch requiring learning-science and education-method transfer; deferred until an owning education capability and learner interest are confirmed."
+
+[[coverage]]
+domain = "bioinformatics-health-and-domain-computing"
+disposition = "deferred"
+decks = []
+rationale = "Application domains require substantial owning-domain knowledge; future routes should reuse established biology, health, science, or humanities decks rather than teach them superficially inside CS."
+
+[[coverage]]
+domain = "additional-applied-computing-microfields"
+disposition = "deferred"
+decks = []
+rationale = "Computational social science, digital humanities, fintech, games, geospatial computing, and other applications are future extensions selected by learner goals, not one incoherent survey deck."
+
+[[coverage]]
+domain = "computer-engineering-and-device-fabrication"
+disposition = "out-of-scope"
+decks = []
+rationale = "Logic-to-architecture interfaces are included, but circuits, electronics, semiconductor devices, and fabrication belong to computer engineering and physics."
+
+[[coverage]]
+domain = "enterprise-information-systems-and-it-operations"
+disposition = "out-of-scope"
+decks = []
+rationale = "Databases, networks, cloud systems, security, and operations concepts are included where they serve CS; organization-specific IS/IT administration is a neighboring professional discipline under CC2020 boundaries."
+
+[[coverage]]
+domain = "vendor-certification-and-product-training"
+disposition = "out-of-scope"
+decks = []
+rationale = "The durable curriculum targets transferable models and decisions, not certification objectives or volatile product menus."
