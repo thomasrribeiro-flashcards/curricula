@@ -1524,7 +1524,7 @@
           "order": 2,
           "title": "Equivalent expressions",
           "file": "flashcards/02_equivalent_expressions.md",
-          "card_count": 0,
+          "card_count": 22,
           "prerequisites": [
             "chapter:01_variables_and_expressions"
           ],
@@ -1877,16 +1877,16 @@
         "publication_note": "Backfilled from the validated local result produced before registry publication was implemented."
       },
       "chapter_content_generation": {
-        "request_id": 21,
-        "chapter_id": "01_variables_and_expressions",
+        "request_id": 22,
+        "chapter_id": "02_equivalent_expressions",
         "provider_id": "openai",
         "model_id": "gpt-5.6-sol",
         "reasoning_effort": "high",
         "workflow_version": "chapter-content-v1",
-        "workflow_commit": "d1c7820450d07ed7e93b0a0baafdbf0f80f2b65b",
-        "registry_base_commit": "6fe5a519a3aeb465a736511b36f056c6519b20c7",
-        "catalog_hash": "sha256:2405816dddc67e9fa8df33131da10ed1078cd7c9f21e7bcbeec88920ece18adb",
-        "context_hash": "sha256:940db36509d6fae8587f9a5f0a908076b508aefc8810bb86b0671c9c76a2c687",
+        "workflow_commit": "5187b96316fd5b52c1af80ad087ab68bcdb0a007",
+        "registry_base_commit": "20f749c2281b3f9fb55a52d41dbf282bd1ca055c",
+        "catalog_hash": "sha256:1daf2b7db5d28a6cd466049e712de88ae874f3c7d4222964aed2ab5140f412e0",
+        "context_hash": "sha256:2f046edea5b341575fc9230325ff6983f882e4bb1779e88ae5a142ed5aa6d383",
         "generation_mode": "generate"
       }
     },
