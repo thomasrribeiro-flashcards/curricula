@@ -1487,7 +1487,7 @@
       "order": 2,
       "tier": "core",
       "level": "foundational",
-      "status": "chapter-planned",
+      "status": "pilot-approved",
       "description": "Manipulate symbolic expressions, solve equations, inequalities, and systems, and model with linear, quadratic, polynomial, rational, exponential, and logarithmic functions and their graphs.",
       "prerequisites": [
         "mathematics/number-sense-and-arithmetic"
@@ -1504,7 +1504,7 @@
           "order": 1,
           "title": "Variables and expressions",
           "file": "flashcards/01_variables_and_expressions.md",
-          "card_count": 0,
+          "card_count": 20,
           "prerequisites": [],
           "provides": [
             "variable",
@@ -1875,6 +1875,19 @@
         "context_hash": "sha256:aec13b0370eea4dc5f2fc7eb99dd5450cf043d02128dd6e253840d0b4954c4e1",
         "publication_context_hash": "sha256:cd6d36f7574b394e6838d85e5a4c9737ac8e4e93d4976e4a6992a357dcdc35be",
         "publication_note": "Backfilled from the validated local result produced before registry publication was implemented."
+      },
+      "chapter_content_generation": {
+        "request_id": 21,
+        "chapter_id": "01_variables_and_expressions",
+        "provider_id": "openai",
+        "model_id": "gpt-5.6-sol",
+        "reasoning_effort": "high",
+        "workflow_version": "chapter-content-v1",
+        "workflow_commit": "d1c7820450d07ed7e93b0a0baafdbf0f80f2b65b",
+        "registry_base_commit": "6fe5a519a3aeb465a736511b36f056c6519b20c7",
+        "catalog_hash": "sha256:2405816dddc67e9fa8df33131da10ed1078cd7c9f21e7bcbeec88920ece18adb",
+        "context_hash": "sha256:940db36509d6fae8587f9a5f0a908076b508aefc8810bb86b0671c9c76a2c687",
+        "generation_mode": "generate"
       }
     },
     {
