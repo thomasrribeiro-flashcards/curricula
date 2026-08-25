@@ -1469,7 +1469,12 @@
       ],
       "generation_command": "flashcards curriculum materialize mathematics/number-sense-and-arithmetic",
       "chapter_curriculum_generation": {
+        "run_id": "request-12",
         "request_id": 12,
+        "operation": "chapter-curriculum",
+        "artifacts": [
+          "chapter-curriculum"
+        ],
         "provider_id": "openai",
         "model_id": "gpt-5.6-sol",
         "reasoning_effort": "high",
@@ -1477,8 +1482,28 @@
         "workflow_commit": "b266ae33b01c3899f148b71caa5482750ffbe344",
         "registry_base_commit": "28033a24111eab2a9967dcc0925a8cf4514ffea7",
         "catalog_hash": "sha256:2e2ce5f8011b2b46f7be2bb3b0380e2075b0cdf24fd1d0abee3c731d3c892815",
-        "context_hash": "sha256:6b01eefecba36766a4243dd2290fe5a0554eeb735ed9c058175444ad210ffd1c"
-      }
+        "context_hash": "sha256:6b01eefecba36766a4243dd2290fe5a0554eeb735ed9c058175444ad210ffd1c",
+        "generated_at": "2026-08-20T16:55:21-07:00"
+      },
+      "generation_runs": [
+        {
+          "run_id": "request-12",
+          "request_id": 12,
+          "operation": "chapter-curriculum",
+          "artifacts": [
+            "chapter-curriculum"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "deck-plan-v2",
+          "workflow_commit": "b266ae33b01c3899f148b71caa5482750ffbe344",
+          "registry_base_commit": "28033a24111eab2a9967dcc0925a8cf4514ffea7",
+          "catalog_hash": "sha256:2e2ce5f8011b2b46f7be2bb3b0380e2075b0cdf24fd1d0abee3c731d3c892815",
+          "context_hash": "sha256:6b01eefecba36766a4243dd2290fe5a0554eeb735ed9c058175444ad210ffd1c",
+          "generated_at": "2026-08-20T16:55:21-07:00"
+        }
+      ]
     },
     {
       "id": "mathematics/elementary-algebra-and-functions",
@@ -1864,7 +1889,12 @@
       ],
       "generation_command": "flashcards curriculum materialize mathematics/elementary-algebra-and-functions",
       "chapter_curriculum_generation": {
+        "run_id": "request-11",
         "request_id": 11,
+        "operation": "chapter-curriculum",
+        "artifacts": [
+          "chapter-curriculum"
+        ],
         "provider_id": "openai",
         "model_id": "gpt-5.6-sol",
         "reasoning_effort": "high",
@@ -1874,11 +1904,17 @@
         "catalog_hash": "sha256:6c103132932d07364343436cb3dd0c99e2c2462da072899bbf2b4fd42e3badfb",
         "context_hash": "sha256:aec13b0370eea4dc5f2fc7eb99dd5450cf043d02128dd6e253840d0b4954c4e1",
         "publication_context_hash": "sha256:cd6d36f7574b394e6838d85e5a4c9737ac8e4e93d4976e4a6992a357dcdc35be",
-        "publication_note": "Backfilled from the validated local result produced before registry publication was implemented."
+        "publication_note": "Backfilled from the validated local result produced before registry publication was implemented.",
+        "generated_at": "2026-08-20T11:12:36-07:00"
       },
       "chapter_content_generation": {
+        "run_id": "request-22",
         "request_id": 22,
         "chapter_id": "02_equivalent_expressions",
+        "operation": "chapter-content",
+        "artifacts": [
+          "flashcards/02_equivalent_expressions.md"
+        ],
         "provider_id": "openai",
         "model_id": "gpt-5.6-sol",
         "reasoning_effort": "high",
@@ -1887,8 +1923,71 @@
         "registry_base_commit": "20f749c2281b3f9fb55a52d41dbf282bd1ca055c",
         "catalog_hash": "sha256:1daf2b7db5d28a6cd466049e712de88ae874f3c7d4222964aed2ab5140f412e0",
         "context_hash": "sha256:2f046edea5b341575fc9230325ff6983f882e4bb1779e88ae5a142ed5aa6d383",
-        "generation_mode": "generate"
-      }
+        "generation_mode": "generate",
+        "base_commit": "a9b8aa44468d044f4af27a91c5ecda93bf2a5cf7",
+        "generated_at": "2026-08-24T14:40:46-07:00"
+      },
+      "generation_runs": [
+        {
+          "run_id": "request-11",
+          "request_id": 11,
+          "operation": "chapter-curriculum",
+          "artifacts": [
+            "chapter-curriculum"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "deck-plan-v1",
+          "workflow_commit": "4fc129e6b83d5bcbb64d1eb9a25ed47bd83ffd53",
+          "registry_base_commit": "a4ebd63b99008756b511deecb27a8dab4cfae4c4",
+          "catalog_hash": "sha256:6c103132932d07364343436cb3dd0c99e2c2462da072899bbf2b4fd42e3badfb",
+          "context_hash": "sha256:aec13b0370eea4dc5f2fc7eb99dd5450cf043d02128dd6e253840d0b4954c4e1",
+          "publication_context_hash": "sha256:cd6d36f7574b394e6838d85e5a4c9737ac8e4e93d4976e4a6992a357dcdc35be",
+          "publication_note": "Backfilled from the validated local result produced before registry publication was implemented.",
+          "generated_at": "2026-08-20T11:12:36-07:00"
+        },
+        {
+          "run_id": "request-21",
+          "request_id": 21,
+          "chapter_id": "01_variables_and_expressions",
+          "operation": "chapter-content",
+          "artifacts": [
+            "flashcards/01_variables_and_expressions.md"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "chapter-content-v1",
+          "workflow_commit": "d1c7820450d07ed7e93b0a0baafdbf0f80f2b65b",
+          "registry_base_commit": "6fe5a519a3aeb465a736511b36f056c6519b20c7",
+          "catalog_hash": "sha256:2405816dddc67e9fa8df33131da10ed1078cd7c9f21e7bcbeec88920ece18adb",
+          "context_hash": "sha256:940db36509d6fae8587f9a5f0a908076b508aefc8810bb86b0671c9c76a2c687",
+          "generation_mode": "generate",
+          "base_commit": "19e6d10132e4c930cfd814222ca037e7488640cf",
+          "generated_at": "2026-08-24T14:07:55-07:00"
+        },
+        {
+          "run_id": "request-22",
+          "request_id": 22,
+          "chapter_id": "02_equivalent_expressions",
+          "operation": "chapter-content",
+          "artifacts": [
+            "flashcards/02_equivalent_expressions.md"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "chapter-content-v1",
+          "workflow_commit": "5187b96316fd5b52c1af80ad087ab68bcdb0a007",
+          "registry_base_commit": "20f749c2281b3f9fb55a52d41dbf282bd1ca055c",
+          "catalog_hash": "sha256:1daf2b7db5d28a6cd466049e712de88ae874f3c7d4222964aed2ab5140f412e0",
+          "context_hash": "sha256:2f046edea5b341575fc9230325ff6983f882e4bb1779e88ae5a142ed5aa6d383",
+          "generation_mode": "generate",
+          "base_commit": "a9b8aa44468d044f4af27a91c5ecda93bf2a5cf7",
+          "generated_at": "2026-08-24T14:40:46-07:00"
+        }
+      ]
     },
     {
       "id": "mathematics/geometry-and-measurement",
@@ -2152,7 +2251,12 @@
       ],
       "generation_command": "flashcards curriculum materialize mathematics/geometry-and-measurement",
       "chapter_curriculum_generation": {
+        "run_id": "request-10",
         "request_id": 10,
+        "operation": "chapter-curriculum",
+        "artifacts": [
+          "chapter-curriculum"
+        ],
         "provider_id": "openai",
         "model_id": "gpt-5.6-sol",
         "reasoning_effort": "high",
@@ -2162,11 +2266,17 @@
         "catalog_hash": "sha256:6c103132932d07364343436cb3dd0c99e2c2462da072899bbf2b4fd42e3badfb",
         "context_hash": "sha256:7829de2f632235fa26d6abe0e28a11b4dd39beebdc93c128f662021e8d8ea931",
         "publication_context_hash": "sha256:a4757a91aaa0ed809beea2361375a27e298b98e4c52662820052de6013689aef",
-        "publication_note": "Backfilled from the validated local result produced before registry publication was implemented."
+        "publication_note": "Backfilled from the validated local result produced before registry publication was implemented.",
+        "generated_at": "2026-08-19T13:52:35-07:00"
       },
       "chapter_content_generation": {
+        "run_id": "request-23",
         "request_id": 23,
         "chapter_id": "02_angle_relationships_and_parallel_lines",
+        "operation": "chapter-content",
+        "artifacts": [
+          "flashcards/02_angle_relationships_and_parallel_lines.md"
+        ],
         "provider_id": "openai",
         "model_id": "gpt-5.6-sol",
         "reasoning_effort": "high",
@@ -2175,8 +2285,71 @@
         "registry_base_commit": "4ea6ec675dd0a6411e2687e1bf51a4a112397c3d",
         "catalog_hash": "sha256:591e04cb19fdb28abb7c740c162d5f814f77ad67e8d41acc1c970fd70f107558",
         "context_hash": "sha256:30352b5e860633c0693c83bc04d1c21be2948a45316493915d92d790dde7e902",
-        "generation_mode": "generate"
-      }
+        "generation_mode": "generate",
+        "base_commit": "4d34ea42ad8da720929831e87973424f76fde2c0",
+        "generated_at": "2026-08-24T17:19:12-07:00"
+      },
+      "generation_runs": [
+        {
+          "run_id": "request-10",
+          "request_id": 10,
+          "operation": "chapter-curriculum",
+          "artifacts": [
+            "chapter-curriculum"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "deck-plan-v1",
+          "workflow_commit": "4fc129e6b83d5bcbb64d1eb9a25ed47bd83ffd53",
+          "registry_base_commit": "a4ebd63b99008756b511deecb27a8dab4cfae4c4",
+          "catalog_hash": "sha256:6c103132932d07364343436cb3dd0c99e2c2462da072899bbf2b4fd42e3badfb",
+          "context_hash": "sha256:7829de2f632235fa26d6abe0e28a11b4dd39beebdc93c128f662021e8d8ea931",
+          "publication_context_hash": "sha256:a4757a91aaa0ed809beea2361375a27e298b98e4c52662820052de6013689aef",
+          "publication_note": "Backfilled from the validated local result produced before registry publication was implemented.",
+          "generated_at": "2026-08-19T13:52:35-07:00"
+        },
+        {
+          "run_id": "request-15",
+          "request_id": 15,
+          "chapter_id": "01_geometric_language_and_measurement",
+          "operation": "chapter-content",
+          "artifacts": [
+            "flashcards/01_geometric_language_and_measurement.md"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "chapter-content-v1",
+          "workflow_commit": "b3d93511e0e97651f9dbe9ccac380061021cc51c",
+          "registry_base_commit": "d3597480e8b141f9b6595c84630017f171abe06c",
+          "catalog_hash": "sha256:5624d1b35085acb6bc76d6052a140f954e4f82fa763cb957b466400d045cfac3",
+          "context_hash": "sha256:637c9b3d293931e8e3532e1a46b7a504498bcaadaa45ebb4d3bd33223926a7c2",
+          "generation_mode": "generate",
+          "base_commit": "ea7e3f3f58ebed2901b4283e24fde0e51fe6fa13",
+          "generated_at": "2026-08-20T19:40:13-07:00"
+        },
+        {
+          "run_id": "request-23",
+          "request_id": 23,
+          "chapter_id": "02_angle_relationships_and_parallel_lines",
+          "operation": "chapter-content",
+          "artifacts": [
+            "flashcards/02_angle_relationships_and_parallel_lines.md"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "chapter-content-v1",
+          "workflow_commit": "9422ffdf4786baa86edc7ebdecf181d002a2b7e4",
+          "registry_base_commit": "4ea6ec675dd0a6411e2687e1bf51a4a112397c3d",
+          "catalog_hash": "sha256:591e04cb19fdb28abb7c740c162d5f814f77ad67e8d41acc1c970fd70f107558",
+          "context_hash": "sha256:30352b5e860633c0693c83bc04d1c21be2948a45316493915d92d790dde7e902",
+          "generation_mode": "generate",
+          "base_commit": "4d34ea42ad8da720929831e87973424f76fde2c0",
+          "generated_at": "2026-08-24T17:19:12-07:00"
+        }
+      ]
     },
     {
       "id": "mathematics/mathematical-computing-and-experimentation",

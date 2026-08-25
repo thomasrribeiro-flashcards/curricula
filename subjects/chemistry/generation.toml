@@ -1,0 +1,13 @@
+schema_version = 1
+
+[[runs]]
+run_id = "request-4"
+request_id = "4"
+operation = "create"
+artifacts = ["ROADMAP.md", "SUBJECT_BRIEF.md", "subject.toml"]
+provider_id = "openai"
+model_id = "gpt-5.6-sol"
+reasoning_effort = "high"
+generated_at = "2026-08-15T14:19:38-07:00"
+workflow_version = "subject-design-v1"
+provenance_source = "website-request"

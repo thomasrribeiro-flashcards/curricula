@@ -1,12 +1,16 @@
 schema_version = 1
 
 [[runs]]
+run_id = "request-19"
 request_id = "19"
 operation = "create"
+artifacts = ["ROADMAP.md", "SUBJECT_BRIEF.md", "subject.toml"]
 provider_id = "openai"
 model_id = "gpt-5.6-sol"
 reasoning_effort = "high"
+generated_at = "2026-08-22T17:46:57-07:00"
 workflow_version = "subject-design-v1"
 workflow_commit = "6f05294618f9b8531607409104f9f83b4cbfd53a"
 registry_base_commit = "6fe5a519a3aeb465a736511b36f056c6519b20c7"
 catalog_hash = "sha256:2405816dddc67e9fa8df33131da10ed1078cd7c9f21e7bcbeec88920ece18adb"
+provenance_source = "website-request"
