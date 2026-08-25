@@ -1,12 +1,26 @@
 schema_version = 1
 
 [[runs]]
+run_id = "git-14252d0f3464"
+operation = "create"
+artifacts = ["ROADMAP.md", "SUBJECT_BRIEF.md", "subject.toml"]
+provider_id = "anthropic"
+model_id = "claude-opus-5"
+reasoning_effort = "high"
+generated_at = "2026-08-06T17:22:57-07:00"
+provenance_source = "legacy-git-commit"
+
+[[runs]]
+run_id = "request-8"
 request_id = "8"
 operation = "audit"
+artifacts = ["ROADMAP.md", "SUBJECT_BRIEF.md", "subject.toml"]
 provider_id = "openai"
 model_id = "gpt-5.6-sol"
 reasoning_effort = "high"
+generated_at = "2026-08-17T15:20:29-07:00"
 workflow_version = "subject-design-v1"
 workflow_commit = "a03fb182af8328b8f3367845ddbf052ce39fbd26"
 registry_base_commit = "14252d0f3464aa761c1230ceaf38bc5fd86e2fb2"
 catalog_hash = "sha256:9fd2a23a1d247b711feb7525da1ee68d5f1b7b8e606a814feb7d4d3a208847fd"
+provenance_source = "website-request"

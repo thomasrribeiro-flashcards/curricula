@@ -1,0 +1,11 @@
+schema_version = 1
+
+[[runs]]
+run_id = "git-14252d0f3464"
+operation = "create"
+artifacts = ["ROADMAP.md", "SUBJECT_BRIEF.md", "subject.toml"]
+provider_id = "anthropic"
+model_id = "claude-opus-5"
+reasoning_effort = "high"
+generated_at = "2026-08-06T17:22:57-07:00"
+provenance_source = "legacy-git-commit"
