@@ -1573,7 +1573,7 @@
           "order": 3,
           "title": "Equations and equality",
           "file": "flashcards/03_equations_and_equality.md",
-          "card_count": 0,
+          "card_count": 18,
           "prerequisites": [
             "chapter:01_variables_and_expressions"
           ],
@@ -1908,24 +1908,24 @@
         "generated_at": "2026-08-20T11:12:36-07:00"
       },
       "chapter_content_generation": {
-        "run_id": "request-22",
-        "request_id": 22,
-        "chapter_id": "02_equivalent_expressions",
+        "run_id": "request-24",
+        "request_id": 24,
+        "chapter_id": "03_equations_and_equality",
         "operation": "chapter-content",
         "artifacts": [
-          "flashcards/02_equivalent_expressions.md"
+          "flashcards/03_equations_and_equality.md"
         ],
         "provider_id": "openai",
         "model_id": "gpt-5.6-sol",
         "reasoning_effort": "high",
         "workflow_version": "chapter-content-v1",
-        "workflow_commit": "5187b96316fd5b52c1af80ad087ab68bcdb0a007",
-        "registry_base_commit": "20f749c2281b3f9fb55a52d41dbf282bd1ca055c",
-        "catalog_hash": "sha256:1daf2b7db5d28a6cd466049e712de88ae874f3c7d4222964aed2ab5140f412e0",
-        "context_hash": "sha256:2f046edea5b341575fc9230325ff6983f882e4bb1779e88ae5a142ed5aa6d383",
+        "workflow_commit": "7dd462cfb06c1a3ffcc05a89cad8df46792f38f4",
+        "registry_base_commit": "4caffa2b91b75d2699d9a0900a05ea64ffb046dc",
+        "catalog_hash": "sha256:cbd5f1022c897af200560a0391df845062474e635c9f0881333bfb3ab89bf802",
+        "context_hash": "sha256:a938a946ce6e81a96b07ee86cab02ae836661b7ddf8d8faaebb5986275e2966f",
         "generation_mode": "generate",
-        "base_commit": "a9b8aa44468d044f4af27a91c5ecda93bf2a5cf7",
-        "generated_at": "2026-08-24T14:40:46-07:00"
+        "base_commit": "ed4fb30be59a6b3e2617d896f9cc66c1c3748b72",
+        "generated_at": "2026-08-27T05:02:38.732Z"
       },
       "generation_runs": [
         {
@@ -1986,6 +1986,26 @@
           "generation_mode": "generate",
           "base_commit": "a9b8aa44468d044f4af27a91c5ecda93bf2a5cf7",
           "generated_at": "2026-08-24T14:40:46-07:00"
+        },
+        {
+          "run_id": "request-24",
+          "request_id": 24,
+          "chapter_id": "03_equations_and_equality",
+          "operation": "chapter-content",
+          "artifacts": [
+            "flashcards/03_equations_and_equality.md"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "chapter-content-v1",
+          "workflow_commit": "7dd462cfb06c1a3ffcc05a89cad8df46792f38f4",
+          "registry_base_commit": "4caffa2b91b75d2699d9a0900a05ea64ffb046dc",
+          "catalog_hash": "sha256:cbd5f1022c897af200560a0391df845062474e635c9f0881333bfb3ab89bf802",
+          "context_hash": "sha256:a938a946ce6e81a96b07ee86cab02ae836661b7ddf8d8faaebb5986275e2966f",
+          "generation_mode": "generate",
+          "base_commit": "ed4fb30be59a6b3e2617d896f9cc66c1c3748b72",
+          "generated_at": "2026-08-27T05:02:38.732Z"
         }
       ]
     },
