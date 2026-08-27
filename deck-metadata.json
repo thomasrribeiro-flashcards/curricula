@@ -2028,7 +2028,7 @@
           "order": 2,
           "title": "Angle relationships and parallel lines",
           "file": "flashcards/02_angle_relationships_and_parallel_lines.md",
-          "card_count": 0,
+          "card_count": 30,
           "prerequisites": [
             "chapter:01_geometric_language_and_measurement"
           ],
@@ -2270,24 +2270,24 @@
         "generated_at": "2026-08-19T13:52:35-07:00"
       },
       "chapter_content_generation": {
-        "run_id": "request-15",
-        "request_id": 15,
-        "chapter_id": "01_geometric_language_and_measurement",
+        "run_id": "request-23",
+        "request_id": 23,
+        "chapter_id": "02_angle_relationships_and_parallel_lines",
         "operation": "chapter-content",
         "artifacts": [
-          "flashcards/01_geometric_language_and_measurement.md"
+          "flashcards/02_angle_relationships_and_parallel_lines.md"
         ],
         "provider_id": "openai",
         "model_id": "gpt-5.6-sol",
         "reasoning_effort": "high",
         "workflow_version": "chapter-content-v1",
-        "workflow_commit": "b3d93511e0e97651f9dbe9ccac380061021cc51c",
-        "registry_base_commit": "d3597480e8b141f9b6595c84630017f171abe06c",
-        "catalog_hash": "sha256:5624d1b35085acb6bc76d6052a140f954e4f82fa763cb957b466400d045cfac3",
-        "context_hash": "sha256:637c9b3d293931e8e3532e1a46b7a504498bcaadaa45ebb4d3bd33223926a7c2",
+        "workflow_commit": "9422ffdf4786baa86edc7ebdecf181d002a2b7e4",
+        "registry_base_commit": "4ea6ec675dd0a6411e2687e1bf51a4a112397c3d",
+        "catalog_hash": "sha256:591e04cb19fdb28abb7c740c162d5f814f77ad67e8d41acc1c970fd70f107558",
+        "context_hash": "sha256:30352b5e860633c0693c83bc04d1c21be2948a45316493915d92d790dde7e902",
         "generation_mode": "generate",
-        "base_commit": "ea7e3f3f58ebed2901b4283e24fde0e51fe6fa13",
-        "generated_at": "2026-08-20T19:40:13-07:00"
+        "base_commit": "4d34ea42ad8da720929831e87973424f76fde2c0",
+        "generated_at": "2026-08-24T17:19:12-07:00"
       },
       "generation_runs": [
         {
@@ -2328,6 +2328,26 @@
           "generation_mode": "generate",
           "base_commit": "ea7e3f3f58ebed2901b4283e24fde0e51fe6fa13",
           "generated_at": "2026-08-20T19:40:13-07:00"
+        },
+        {
+          "run_id": "request-23",
+          "request_id": 23,
+          "chapter_id": "02_angle_relationships_and_parallel_lines",
+          "operation": "chapter-content",
+          "artifacts": [
+            "flashcards/02_angle_relationships_and_parallel_lines.md"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "chapter-content-v1",
+          "workflow_commit": "9422ffdf4786baa86edc7ebdecf181d002a2b7e4",
+          "registry_base_commit": "4ea6ec675dd0a6411e2687e1bf51a4a112397c3d",
+          "catalog_hash": "sha256:591e04cb19fdb28abb7c740c162d5f814f77ad67e8d41acc1c970fd70f107558",
+          "context_hash": "sha256:30352b5e860633c0693c83bc04d1c21be2948a45316493915d92d790dde7e902",
+          "generation_mode": "generate",
+          "base_commit": "4d34ea42ad8da720929831e87973424f76fde2c0",
+          "generated_at": "2026-08-24T17:19:12-07:00"
         }
       ]
     },
