@@ -2467,7 +2467,7 @@
       "order": 8,
       "tier": "core",
       "level": "undergraduate-core",
-      "status": "chapter-planned",
+      "status": "pilot-approved",
       "description": "Reason with vector spaces, linear maps, matrices, rank, determinants, eigenstructure, inner products, orthogonality, and matrix factorizations across algebraic, geometric, and computational views.",
       "prerequisites": [
         "mathematics/elementary-algebra-and-functions"
@@ -2479,7 +2479,7 @@
       "materialized": true,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/linear-algebra",
-        "configured": false
+        "configured": true
       },
       "chapters": [
         {
@@ -2487,7 +2487,7 @@
           "order": 1,
           "title": "Linear systems and elimination",
           "file": "flashcards/01_linear_systems_and_elimination.md",
-          "card_count": 0,
+          "card_count": 27,
           "prerequisites": [],
           "provides": [
             "simultaneous-linear-equations",
@@ -2829,6 +2829,26 @@
           "catalog_hash": "sha256:ea384e89700f16aa67742f05cbd5cf24ffe90510245750ecf34b4a4816c1f8dc",
           "context_hash": "sha256:63f6783c29df25f3e733ac4a87d5fe9e775492dcb71318fd7622bc043c86b8ae",
           "generated_at": "2026-08-31T00:26:14.163Z"
+        },
+        {
+          "run_id": "request-26",
+          "request_id": 26,
+          "chapter_id": "01_linear_systems_and_elimination",
+          "operation": "chapter-content",
+          "artifacts": [
+            "flashcards/01_linear_systems_and_elimination.md"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "chapter-content-v1",
+          "workflow_commit": "fc6451db2967e2fea268329e8973ec13f96ddfbc",
+          "registry_base_commit": "175d9fd2c62889748000fd36c8c47d0a11fa903f",
+          "catalog_hash": "sha256:9fa323b871b88331a0020e5a7cbf18230cfe14287aa25dac405f402380df5930",
+          "context_hash": "sha256:66250170bb2822700ef4be184554751fde48b9b42e37fcb9d80083c134c6e9db",
+          "generation_mode": "generate",
+          "base_commit": "a7e16117b06ce792b6dc98f77d588df6c85e4bc1",
+          "generated_at": "2026-08-31T01:08:56.785Z"
         }
       ],
       "chapter_curriculum_generation": {
@@ -2847,6 +2867,26 @@
         "catalog_hash": "sha256:ea384e89700f16aa67742f05cbd5cf24ffe90510245750ecf34b4a4816c1f8dc",
         "context_hash": "sha256:63f6783c29df25f3e733ac4a87d5fe9e775492dcb71318fd7622bc043c86b8ae",
         "generated_at": "2026-08-31T00:26:14.163Z"
+      },
+      "chapter_content_generation": {
+        "run_id": "request-26",
+        "request_id": 26,
+        "chapter_id": "01_linear_systems_and_elimination",
+        "operation": "chapter-content",
+        "artifacts": [
+          "flashcards/01_linear_systems_and_elimination.md"
+        ],
+        "provider_id": "openai",
+        "model_id": "gpt-5.6-sol",
+        "reasoning_effort": "high",
+        "workflow_version": "chapter-content-v1",
+        "workflow_commit": "fc6451db2967e2fea268329e8973ec13f96ddfbc",
+        "registry_base_commit": "175d9fd2c62889748000fd36c8c47d0a11fa903f",
+        "catalog_hash": "sha256:9fa323b871b88331a0020e5a7cbf18230cfe14287aa25dac405f402380df5930",
+        "context_hash": "sha256:66250170bb2822700ef4be184554751fde48b9b42e37fcb9d80083c134c6e9db",
+        "generation_mode": "generate",
+        "base_commit": "a7e16117b06ce792b6dc98f77d588df6c85e4bc1",
+        "generated_at": "2026-08-31T01:08:56.785Z"
       }
     },
     {
