@@ -4642,7 +4642,7 @@
       "order": 8,
       "tier": "core",
       "level": "undergraduate-core",
-      "status": "proposed",
+      "status": "chapter-planned",
       "description": "Reason with vector spaces, linear maps, matrices, rank, determinants, eigenstructure, inner products, orthogonality, and matrix factorizations across algebraic, geometric, and computational views.",
       "prerequisites": [
         "mathematics/elementary-algebra-and-functions"
@@ -4651,12 +4651,377 @@
         "mathematics/mathematical-reasoning-and-proof",
         "mathematics/single-variable-differential-calculus"
       ],
-      "materialized": false,
+      "materialized": true,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/linear-algebra",
         "configured": false
       },
-      "chapters": [],
+      "chapters": [
+        {
+          "id": "01_linear_systems_and_elimination",
+          "order": 1,
+          "title": "Linear systems and elimination",
+          "file": "flashcards/01_linear_systems_and_elimination.md",
+          "card_count": 0,
+          "prerequisites": [],
+          "provides": [
+            "simultaneous-linear-equations",
+            "linear-system",
+            "linear-system-solution-tuple",
+            "augmented-matrix",
+            "elementary-row-operation",
+            "row-equivalence",
+            "echelon-form",
+            "reduced-row-echelon-form",
+            "pivot-and-free-variable",
+            "linear-system-consistency",
+            "linear-system-parametrization",
+            "gaussian-elimination"
+          ],
+          "resolved_dependencies": []
+        },
+        {
+          "id": "02_vectors_linear_combinations_and_span",
+          "order": 2,
+          "title": "Vectors, linear combinations, and span",
+          "file": "flashcards/02_vectors_linear_combinations_and_span.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:01_linear_systems_and_elimination"
+          ],
+          "provides": [
+            "coordinate-vector",
+            "column-vector-convention",
+            "vector-addition",
+            "scalar-multiplication",
+            "zero-vector",
+            "linear-combination",
+            "vector-equation",
+            "span",
+            "span-membership",
+            "homogeneous-linear-system"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:01_linear_systems_and_elimination",
+              "kind": "chapter",
+              "resolved": "01_linear_systems_and_elimination"
+            }
+          ]
+        },
+        {
+          "id": "03_matrices_and_coordinate_transformations",
+          "order": 3,
+          "title": "Matrices and coordinate transformations",
+          "file": "flashcards/03_matrices_and_coordinate_transformations.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:02_vectors_linear_combinations_and_span"
+          ],
+          "provides": [
+            "matrix",
+            "matrix-shape-and-entry",
+            "matrix-vector-product",
+            "matrix-addition",
+            "scalar-matrix-multiplication",
+            "identity-matrix",
+            "transpose",
+            "matrix-product",
+            "coordinate-linear-transformation",
+            "matrix-composition"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:02_vectors_linear_combinations_and_span",
+              "kind": "chapter",
+              "resolved": "02_vectors_linear_combinations_and_span"
+            }
+          ]
+        },
+        {
+          "id": "04_subspaces_and_fundamental_spaces",
+          "order": 4,
+          "title": "Subspaces and fundamental spaces",
+          "file": "flashcards/04_subspaces_and_fundamental_spaces.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:03_matrices_and_coordinate_transformations"
+          ],
+          "provides": [
+            "vector-space",
+            "subspace",
+            "subspace-test",
+            "null-space",
+            "column-space",
+            "row-space",
+            "left-null-space",
+            "image-of-linear-transformation",
+            "kernel-of-linear-transformation",
+            "matrix-rank",
+            "fundamental-subspaces"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:03_matrices_and_coordinate_transformations",
+              "kind": "chapter",
+              "resolved": "03_matrices_and_coordinate_transformations"
+            }
+          ]
+        },
+        {
+          "id": "05_independence_basis_and_dimension",
+          "order": 5,
+          "title": "Independence, basis, and dimension",
+          "file": "flashcards/05_independence_basis_and_dimension.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:04_subspaces_and_fundamental_spaces"
+          ],
+          "provides": [
+            "linear-independence",
+            "linear-dependence",
+            "dependence-relation",
+            "basis",
+            "basis-construction",
+            "coordinates-relative-to-basis",
+            "dimension",
+            "basis-extension-and-reduction",
+            "rank-nullity-theorem"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:04_subspaces_and_fundamental_spaces",
+              "kind": "chapter",
+              "resolved": "04_subspaces_and_fundamental_spaces"
+            }
+          ]
+        },
+        {
+          "id": "06_invertibility_factorization_and_change_of_basis",
+          "order": 6,
+          "title": "Invertibility, factorization, and change of basis",
+          "file": "flashcards/06_invertibility_factorization_and_change_of_basis.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:05_independence_basis_and_dimension"
+          ],
+          "provides": [
+            "invertible-matrix",
+            "inverse-linear-transformation",
+            "elementary-matrix",
+            "invertible-matrix-theorem",
+            "triangular-matrix",
+            "lu-factorization",
+            "coordinate-isomorphism",
+            "change-of-basis-matrix"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:05_independence_basis_and_dimension",
+              "kind": "chapter",
+              "resolved": "05_independence_basis_and_dimension"
+            }
+          ]
+        },
+        {
+          "id": "07_determinants_and_volume",
+          "order": 7,
+          "title": "Determinants and volume",
+          "file": "flashcards/07_determinants_and_volume.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:06_invertibility_factorization_and_change_of_basis"
+          ],
+          "provides": [
+            "determinant",
+            "determinant-row-operation-effects",
+            "determinant-multiplicativity",
+            "determinant-column-multilinearity",
+            "determinant-alternation",
+            "cofactor-expansion",
+            "oriented-area-and-volume-scaling",
+            "orientation-reversal",
+            "determinant-invertibility-criterion"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:06_invertibility_factorization_and_change_of_basis",
+              "kind": "chapter",
+              "resolved": "06_invertibility_factorization_and_change_of_basis"
+            }
+          ]
+        },
+        {
+          "id": "08_eigenvalues_invariant_subspaces_and_diagonalization",
+          "order": 8,
+          "title": "Eigenvalues, invariant subspaces, and diagonalization",
+          "file": "flashcards/08_eigenvalues_invariant_subspaces_and_diagonalization.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:07_determinants_and_volume"
+          ],
+          "provides": [
+            "eigenvalue",
+            "eigenvector",
+            "eigenspace",
+            "characteristic-polynomial",
+            "characteristic-equation",
+            "algebraic-and-geometric-multiplicity",
+            "invariant-subspace",
+            "matrix-similarity",
+            "diagonalization",
+            "matrix-powers-by-diagonalization"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:07_determinants_and_volume",
+              "kind": "chapter",
+              "resolved": "07_determinants_and_volume"
+            }
+          ]
+        },
+        {
+          "id": "09_inner_products_orthogonality_and_least_squares",
+          "order": 9,
+          "title": "Inner products, orthogonality, and least squares",
+          "file": "flashcards/09_inner_products_orthogonality_and_least_squares.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:05_independence_basis_and_dimension"
+          ],
+          "provides": [
+            "dot-product",
+            "real-inner-product",
+            "vector-norm",
+            "vector-distance-and-angle",
+            "orthogonality",
+            "orthogonal-complement",
+            "orthogonal-projection",
+            "least-squares-solution",
+            "normal-equations",
+            "orthonormal-basis",
+            "gram-schmidt-process",
+            "qr-factorization"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:05_independence_basis_and_dimension",
+              "kind": "chapter",
+              "resolved": "05_independence_basis_and_dimension"
+            }
+          ]
+        },
+        {
+          "id": "10_duality_bilinear_forms_and_tensors",
+          "order": 10,
+          "title": "Duality, bilinear forms, and tensors",
+          "file": "flashcards/10_duality_bilinear_forms_and_tensors.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:07_determinants_and_volume",
+            "chapter:09_inner_products_orthogonality_and_least_squares"
+          ],
+          "provides": [
+            "linear-functional",
+            "dual-space",
+            "dual-basis",
+            "bilinear-form",
+            "quadratic-form",
+            "multilinear-map",
+            "tensor-product",
+            "elementary-tensor",
+            "tensor-coordinate-transformation",
+            "alternating-multilinear-form",
+            "determinant-as-alternating-form"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:07_determinants_and_volume",
+              "kind": "chapter",
+              "resolved": "07_determinants_and_volume"
+            },
+            {
+              "reference": "chapter:09_inner_products_orthogonality_and_least_squares",
+              "kind": "chapter",
+              "resolved": "09_inner_products_orthogonality_and_least_squares"
+            }
+          ]
+        },
+        {
+          "id": "11_spectral_structure_and_singular_value_decomposition",
+          "order": 11,
+          "title": "Spectral structure and singular value decomposition",
+          "file": "flashcards/11_spectral_structure_and_singular_value_decomposition.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:08_eigenvalues_invariant_subspaces_and_diagonalization",
+            "chapter:10_duality_bilinear_forms_and_tensors"
+          ],
+          "provides": [
+            "complex-vector-space-bridge",
+            "conjugate-transpose",
+            "hermitian-inner-product",
+            "symmetric-and-hermitian-operator",
+            "positive-definite-form",
+            "finite-dimensional-spectral-theorem",
+            "singular-value",
+            "left-and-right-singular-vectors",
+            "singular-value-decomposition",
+            "moore-penrose-pseudoinverse",
+            "matrix-two-norm",
+            "low-rank-approximation",
+            "matrix-factorization-selection"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:08_eigenvalues_invariant_subspaces_and_diagonalization",
+              "kind": "chapter",
+              "resolved": "08_eigenvalues_invariant_subspaces_and_diagonalization"
+            },
+            {
+              "reference": "chapter:10_duality_bilinear_forms_and_tensors",
+              "kind": "chapter",
+              "resolved": "10_duality_bilinear_forms_and_tensors"
+            }
+          ]
+        }
+      ],
+      "generation_runs": [
+        {
+          "run_id": "request-25",
+          "request_id": 25,
+          "operation": "chapter-curriculum",
+          "artifacts": [
+            "chapter-curriculum"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "deck-plan-v2",
+          "workflow_commit": "7dd462cfb06c1a3ffcc05a89cad8df46792f38f4",
+          "registry_base_commit": "256d16dcd620fc244a49fc82e3ed6d2d154aa671",
+          "catalog_hash": "sha256:ea384e89700f16aa67742f05cbd5cf24ffe90510245750ecf34b4a4816c1f8dc",
+          "context_hash": "sha256:63f6783c29df25f3e733ac4a87d5fe9e775492dcb71318fd7622bc043c86b8ae",
+          "generated_at": "2026-08-31T00:26:14.163Z"
+        }
+      ],
+      "chapter_curriculum_generation": {
+        "run_id": "request-25",
+        "request_id": 25,
+        "operation": "chapter-curriculum",
+        "artifacts": [
+          "chapter-curriculum"
+        ],
+        "provider_id": "openai",
+        "model_id": "gpt-5.6-sol",
+        "reasoning_effort": "high",
+        "workflow_version": "deck-plan-v2",
+        "workflow_commit": "7dd462cfb06c1a3ffcc05a89cad8df46792f38f4",
+        "registry_base_commit": "256d16dcd620fc244a49fc82e3ed6d2d154aa671",
+        "catalog_hash": "sha256:ea384e89700f16aa67742f05cbd5cf24ffe90510245750ecf34b4a4816c1f8dc",
+        "context_hash": "sha256:63f6783c29df25f3e733ac4a87d5fe9e775492dcb71318fd7622bc043c86b8ae",
+        "generated_at": "2026-08-31T00:26:14.163Z"
+      },
       "generation_command": "flashcards curriculum materialize mathematics/linear-algebra"
     },
     {
