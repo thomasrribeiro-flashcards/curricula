@@ -4685,7 +4685,7 @@
           "order": 2,
           "title": "Vectors, linear combinations, and span",
           "file": "flashcards/02_vectors_linear_combinations_and_span.md",
-          "card_count": 0,
+          "card_count": 23,
           "prerequisites": [
             "chapter:01_linear_systems_and_elimination"
           ],
@@ -5023,6 +5023,26 @@
           "generation_mode": "generate",
           "base_commit": "a7e16117b06ce792b6dc98f77d588df6c85e4bc1",
           "generated_at": "2026-08-31T01:08:56.785Z"
+        },
+        {
+          "run_id": "request-27",
+          "request_id": 27,
+          "chapter_id": "02_vectors_linear_combinations_and_span",
+          "operation": "chapter-content",
+          "artifacts": [
+            "flashcards/02_vectors_linear_combinations_and_span.md"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "chapter-content-v1",
+          "workflow_commit": "32484c5c908fff93b8dbcc448d23b39d61fa14eb",
+          "registry_base_commit": "36ff52667b191499a49a5dfc94c3c59fdaed60a0",
+          "catalog_hash": "sha256:fd8c0b120737e816e66aac905c62fedb3831c1a811a8b2c0e2a05e383dd11832",
+          "context_hash": "sha256:1d5fb0f72bd29bd5355334e9fcd265ed7ded0871c29c6dd6b11f83ecd75caa42",
+          "generation_mode": "generate",
+          "base_commit": "eb8e335cab25e86a06e854ee44f1ab91442e74ce",
+          "generated_at": "2026-08-31T19:41:34.499Z"
         }
       ],
       "chapter_curriculum_generation": {
@@ -5043,24 +5063,24 @@
         "generated_at": "2026-08-31T00:26:14.163Z"
       },
       "chapter_content_generation": {
-        "run_id": "request-26",
-        "request_id": 26,
-        "chapter_id": "01_linear_systems_and_elimination",
+        "run_id": "request-27",
+        "request_id": 27,
+        "chapter_id": "02_vectors_linear_combinations_and_span",
         "operation": "chapter-content",
         "artifacts": [
-          "flashcards/01_linear_systems_and_elimination.md"
+          "flashcards/02_vectors_linear_combinations_and_span.md"
         ],
         "provider_id": "openai",
         "model_id": "gpt-5.6-sol",
         "reasoning_effort": "high",
         "workflow_version": "chapter-content-v1",
-        "workflow_commit": "fc6451db2967e2fea268329e8973ec13f96ddfbc",
-        "registry_base_commit": "175d9fd2c62889748000fd36c8c47d0a11fa903f",
-        "catalog_hash": "sha256:9fa323b871b88331a0020e5a7cbf18230cfe14287aa25dac405f402380df5930",
-        "context_hash": "sha256:66250170bb2822700ef4be184554751fde48b9b42e37fcb9d80083c134c6e9db",
+        "workflow_commit": "32484c5c908fff93b8dbcc448d23b39d61fa14eb",
+        "registry_base_commit": "36ff52667b191499a49a5dfc94c3c59fdaed60a0",
+        "catalog_hash": "sha256:fd8c0b120737e816e66aac905c62fedb3831c1a811a8b2c0e2a05e383dd11832",
+        "context_hash": "sha256:1d5fb0f72bd29bd5355334e9fcd265ed7ded0871c29c6dd6b11f83ecd75caa42",
         "generation_mode": "generate",
-        "base_commit": "a7e16117b06ce792b6dc98f77d588df6c85e4bc1",
-        "generated_at": "2026-08-31T01:08:56.785Z"
+        "base_commit": "eb8e335cab25e86a06e854ee44f1ab91442e74ce",
+        "generated_at": "2026-08-31T19:41:34.499Z"
       },
       "generation_command": "flashcards curriculum materialize mathematics/linear-algebra"
     },
