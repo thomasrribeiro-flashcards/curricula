@@ -4576,18 +4576,286 @@
       "order": 5,
       "tier": "core",
       "level": "foundational",
-      "status": "proposed",
+      "status": "chapter-planned",
       "description": "Work fluently with circular trigonometric functions and identities, conic sections, polar and parametric descriptions, plane vectors, sequences, and limit-ready behavior of functions.",
       "prerequisites": [
         "mathematics/geometry-and-measurement"
       ],
       "recommended_after": [],
-      "materialized": false,
+      "materialized": true,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/precalculus-and-trigonometry",
         "configured": false
       },
-      "chapters": [],
+      "chapters": [
+        {
+          "id": "01_radian_measure_and_the_unit_circle",
+          "order": 1,
+          "title": "Radian measure and the unit circle",
+          "file": "flashcards/01_radian_measure_and_the_unit_circle.md",
+          "card_count": 0,
+          "prerequisites": [],
+          "provides": [
+            "directed-angle-and-coterminal-angle",
+            "radian-angle-measure",
+            "reference-angle-and-quadrant",
+            "unit-circle-coordinate"
+          ],
+          "resolved_dependencies": []
+        },
+        {
+          "id": "02_circular_trigonometric_functions",
+          "order": 2,
+          "title": "Circular trigonometric functions",
+          "file": "flashcards/02_circular_trigonometric_functions.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:01_radian_measure_and_the_unit_circle"
+          ],
+          "provides": [
+            "circular-trigonometric-function",
+            "exact-special-angle-value",
+            "trigonometric-domain-and-range",
+            "trigonometric-symmetry-and-periodicity"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:01_radian_measure_and_the_unit_circle",
+              "kind": "chapter",
+              "resolved": "01_radian_measure_and_the_unit_circle"
+            }
+          ]
+        },
+        {
+          "id": "03_trigonometric_graphs_and_periodic_models",
+          "order": 3,
+          "title": "Trigonometric graphs and periodic models",
+          "file": "flashcards/03_trigonometric_graphs_and_periodic_models.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:02_circular_trigonometric_functions"
+          ],
+          "provides": [
+            "trigonometric-graph",
+            "amplitude-period-midline-and-phase-shift",
+            "sinusoidal-transformation",
+            "periodic-model"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:02_circular_trigonometric_functions",
+              "kind": "chapter",
+              "resolved": "02_circular_trigonometric_functions"
+            }
+          ]
+        },
+        {
+          "id": "04_identities_inverses_and_trigonometric_equations",
+          "order": 4,
+          "title": "Identities, inverses, and trigonometric equations",
+          "file": "flashcards/04_identities_inverses_and_trigonometric_equations.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:02_circular_trigonometric_functions",
+            "chapter:03_trigonometric_graphs_and_periodic_models"
+          ],
+          "provides": [
+            "trigonometric-identity-and-formula",
+            "identity-verification",
+            "inverse-trigonometric-function",
+            "trigonometric-equation-and-periodic-solution"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:02_circular_trigonometric_functions",
+              "kind": "chapter",
+              "resolved": "02_circular_trigonometric_functions"
+            },
+            {
+              "reference": "chapter:03_trigonometric_graphs_and_periodic_models",
+              "kind": "chapter",
+              "resolved": "03_trigonometric_graphs_and_periodic_models"
+            }
+          ]
+        },
+        {
+          "id": "05_non_right_triangles_and_applications",
+          "order": 5,
+          "title": "Non-right triangles and applications",
+          "file": "flashcards/05_non_right_triangles_and_applications.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:04_identities_inverses_and_trigonometric_equations"
+          ],
+          "provides": [
+            "law-of-sines",
+            "ambiguous-ssa-case",
+            "law-of-cosines",
+            "non-right-triangle-area-and-modeling"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:04_identities_inverses_and_trigonometric_equations",
+              "kind": "chapter",
+              "resolved": "04_identities_inverses_and_trigonometric_equations"
+            }
+          ]
+        },
+        {
+          "id": "06_conic_sections",
+          "order": 6,
+          "title": "Conic sections",
+          "file": "flashcards/06_conic_sections.md",
+          "card_count": 0,
+          "prerequisites": [],
+          "provides": [
+            "parabola-focus-directrix-form",
+            "ellipse-focal-form",
+            "hyperbola-focal-and-asymptotic-form",
+            "axis-aligned-conic-classification"
+          ],
+          "resolved_dependencies": []
+        },
+        {
+          "id": "07_polar_coordinates_and_graphs",
+          "order": 7,
+          "title": "Polar coordinates and graphs",
+          "file": "flashcards/07_polar_coordinates_and_graphs.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:01_radian_measure_and_the_unit_circle",
+            "chapter:02_circular_trigonometric_functions",
+            "chapter:06_conic_sections"
+          ],
+          "provides": [
+            "polar-coordinate-and-nonuniqueness",
+            "polar-cartesian-translation",
+            "polar-equation-and-curve",
+            "polar-graph-symmetry-and-analysis",
+            "polar-conic-form"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:01_radian_measure_and_the_unit_circle",
+              "kind": "chapter",
+              "resolved": "01_radian_measure_and_the_unit_circle"
+            },
+            {
+              "reference": "chapter:02_circular_trigonometric_functions",
+              "kind": "chapter",
+              "resolved": "02_circular_trigonometric_functions"
+            },
+            {
+              "reference": "chapter:06_conic_sections",
+              "kind": "chapter",
+              "resolved": "06_conic_sections"
+            }
+          ]
+        },
+        {
+          "id": "08_parametric_equations_and_plane_vectors",
+          "order": 8,
+          "title": "Parametric equations and plane vectors",
+          "file": "flashcards/08_parametric_equations_and_plane_vectors.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:02_circular_trigonometric_functions"
+          ],
+          "provides": [
+            "parametric-curve-and-orientation",
+            "parameter-elimination-with-domain",
+            "plane-vector-components-and-operations",
+            "dot-product-and-vector-valued-description"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:02_circular_trigonometric_functions",
+              "kind": "chapter",
+              "resolved": "02_circular_trigonometric_functions"
+            }
+          ]
+        },
+        {
+          "id": "09_sequences_and_finite_series",
+          "order": 9,
+          "title": "Sequences and finite series",
+          "file": "flashcards/09_sequences_and_finite_series.md",
+          "card_count": 0,
+          "prerequisites": [],
+          "provides": [
+            "explicit-and-recursive-sequence",
+            "arithmetic-sequence-and-finite-series",
+            "geometric-sequence-and-finite-series",
+            "sigma-notation-and-discrete-model"
+          ],
+          "resolved_dependencies": []
+        },
+        {
+          "id": "10_limit_ready_function_behavior",
+          "order": 10,
+          "title": "Limit-ready function behavior",
+          "file": "flashcards/10_limit_ready_function_behavior.md",
+          "card_count": 0,
+          "prerequisites": [
+            "chapter:04_identities_inverses_and_trigonometric_equations",
+            "chapter:09_sequences_and_finite_series"
+          ],
+          "provides": [
+            "function-composition-and-inverse-synthesis",
+            "average-rate-of-change-and-difference-quotient",
+            "local-and-end-function-behavior",
+            "informal-limit-and-continuity-readiness"
+          ],
+          "resolved_dependencies": [
+            {
+              "reference": "chapter:04_identities_inverses_and_trigonometric_equations",
+              "kind": "chapter",
+              "resolved": "04_identities_inverses_and_trigonometric_equations"
+            },
+            {
+              "reference": "chapter:09_sequences_and_finite_series",
+              "kind": "chapter",
+              "resolved": "09_sequences_and_finite_series"
+            }
+          ]
+        }
+      ],
+      "generation_runs": [
+        {
+          "run_id": "request-29",
+          "request_id": 29,
+          "operation": "chapter-curriculum",
+          "artifacts": [
+            "chapter-curriculum"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "workflow_version": "deck-plan-v3",
+          "workflow_commit": "bb855b303160b7ad8ffce87ac0c815a8e4869cda",
+          "registry_base_commit": "4e218e44dc09aaa6a57664168b3a1c8e4634ac37",
+          "catalog_hash": "sha256:74ff671cda53f05cda973bf8aaf503b05314e79d087778a5b39e20a12aae5ad5",
+          "context_hash": "sha256:9e35187d698ddbb3e5a8c4fa38a3aff063d6f1af6d55fb4fbcbd1ceab2239f9e",
+          "generated_at": "2026-09-03T17:52:35.630Z"
+        }
+      ],
+      "chapter_curriculum_generation": {
+        "run_id": "request-29",
+        "request_id": 29,
+        "operation": "chapter-curriculum",
+        "artifacts": [
+          "chapter-curriculum"
+        ],
+        "provider_id": "openai",
+        "model_id": "gpt-5.6-sol",
+        "reasoning_effort": "high",
+        "workflow_version": "deck-plan-v3",
+        "workflow_commit": "bb855b303160b7ad8ffce87ac0c815a8e4869cda",
+        "registry_base_commit": "4e218e44dc09aaa6a57664168b3a1c8e4634ac37",
+        "catalog_hash": "sha256:74ff671cda53f05cda973bf8aaf503b05314e79d087778a5b39e20a12aae5ad5",
+        "context_hash": "sha256:9e35187d698ddbb3e5a8c4fa38a3aff063d6f1af6d55fb4fbcbd1ceab2239f9e",
+        "generated_at": "2026-09-03T17:52:35.630Z"
+      },
       "generation_command": "flashcards curriculum materialize mathematics/precalculus-and-trigonometry"
     },
     {
