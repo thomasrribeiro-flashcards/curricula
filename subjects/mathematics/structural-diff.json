@@ -1,0 +1,3059 @@
+{
+  "baselineCommit": "95d65dee8bd22ab00ef95832e9826a4217d116c1",
+  "baseline": {
+    "decks": 55,
+    "hardEdges": 92,
+    "recommendedEdges": 79,
+    "estimatedChapters": 568,
+    "levels": {
+      "foundational": 5,
+      "undergraduate-core": 10,
+      "undergraduate-advanced": 13,
+      "graduate": 22,
+      "research-specialization": 5
+    },
+    "tiers": {
+      "core": 26,
+      "recommended": 11,
+      "specialization": 18
+    },
+    "coverage": {
+      "included": 36,
+      "deferred": 18,
+      "out-of-scope": 2
+    },
+    "errors": [],
+    "warnings": [],
+    "roadmapErrors": []
+  },
+  "candidate": {
+    "decks": 86,
+    "hardEdges": 150,
+    "recommendedEdges": 60,
+    "estimatedChapters": 818,
+    "levels": {
+      "foundational": 6,
+      "undergraduate-core": 14,
+      "undergraduate-advanced": 30,
+      "graduate": 28,
+      "research-specialization": 8
+    },
+    "tiers": {
+      "core": 18,
+      "recommended": 21,
+      "specialization": 47
+    },
+    "coverage": {
+      "included": 27,
+      "deferred": 10,
+      "out-of-scope": 2
+    },
+    "errors": [],
+    "warnings": [],
+    "roadmapErrors": []
+  },
+  "added": [
+    {
+      "id": "data-and-chance",
+      "order": 6,
+      "tier": "recommended",
+      "level": "foundational",
+      "prerequisites": [
+        "elementary-algebra-and-functions"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Read data displays and reason about variability, sampling, association, and elementary chance without calculus."
+    },
+    {
+      "id": "elementary-number-theory",
+      "order": 11,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "prerequisites": [
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Prove divisibility and congruence results and solve elementary integer equations."
+    },
+    {
+      "id": "group-theory",
+      "order": 12,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "prerequisites": [
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "elementary-number-theory"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Use group actions, homomorphisms, quotients, and structure theorems to analyze symmetry."
+    },
+    {
+      "id": "rings-and-polynomials",
+      "order": 13,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "prerequisites": [
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "elementary-number-theory"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Reason with rings, ideals, quotient constructions, polynomial arithmetic, divisibility, and fields as coefficient systems."
+    },
+    {
+      "id": "mathematical-modeling",
+      "order": 20,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "prerequisites": [
+        "differential-equations",
+        "mathematical-computing-and-experimentation"
+      ],
+      "recommendedAfter": [
+        "statistical-inference-and-data-analysis"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Build, scale, analyze, validate, and communicate deterministic models with explicit assumptions and failure tests."
+    },
+    {
+      "id": "advanced-linear-algebra",
+      "order": 21,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "linear-algebra",
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Prove finite-dimensional structure results using duality, canonical forms, bilinear forms, and tensor constructions."
+    },
+    {
+      "id": "metric-and-general-topology",
+      "order": 22,
+      "tier": "core",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "real-analysis"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Prove continuity, compactness, connectedness, separation, and product or quotient properties using topological definitions."
+    },
+    {
+      "id": "graph-theory",
+      "order": 24,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "discrete-mathematics-and-combinatorics"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Prove structural graph results and use connectivity, matching, coloring, and extremal methods."
+    },
+    {
+      "id": "fields-and-galois-theory",
+      "order": 25,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "rings-and-polynomials",
+        "group-theory",
+        "linear-algebra"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Relate field extensions and polynomial solvability to automorphism groups and Galois correspondence."
+    },
+    {
+      "id": "modules-and-linear-structures",
+      "order": 26,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "rings-and-polynomials",
+        "linear-algebra"
+      ],
+      "recommendedAfter": [
+        "advanced-linear-algebra"
+      ],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Analyze modules and module maps through quotients, generators, exact sequences, tensor products, and PID structure."
+    },
+    {
+      "id": "category-theory",
+      "order": 27,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "rings-and-polynomials",
+        "metric-and-general-topology"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Recognize universal properties and reason with categories, functors, natural transformations, limits, and adjunctions."
+    },
+    {
+      "id": "euclidean-and-non-euclidean-geometry",
+      "order": 31,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "geometry-and-measurement",
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "linear-algebra"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Compare axiomatic, synthetic, and model-based geometry through incidence, congruence, parallelism, and invariants."
+    },
+    {
+      "id": "measure-and-integration",
+      "order": 32,
+      "tier": "core",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "real-analysis"
+      ],
+      "recommendedAfter": [
+        "metric-and-general-topology"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Construct measures and Lebesgue integrals and justify convergence, product integration, differentiation of measures, and Lp estimates."
+    },
+    {
+      "id": "fourier-analysis-and-transforms",
+      "order": 33,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "single-variable-integral-calculus",
+        "linear-algebra",
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "complex-analysis"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Translate functions and signals into orthogonal expansions, Fourier transforms, convolution, and sampling with bounded convergence claims."
+    },
+    {
+      "id": "nonlinear-dynamics",
+      "order": 35,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "differential-equations"
+      ],
+      "recommendedAfter": [
+        "real-analysis",
+        "mathematical-computing-and-experimentation"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Analyze deterministic maps and flows using stability, phase portraits, bifurcations, and controlled chaos examples."
+    },
+    {
+      "id": "regression-and-statistical-models",
+      "order": 38,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "statistical-inference-and-data-analysis",
+        "linear-algebra"
+      ],
+      "recommendedAfter": [
+        "mathematical-computing-and-experimentation"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Fit and diagnose linear and generalized linear models and communicate model uncertainty and limitations."
+    },
+    {
+      "id": "mathematical-statistics",
+      "order": 39,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "probability",
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "statistical-inference-and-data-analysis"
+      ],
+      "estimatedChapters": 11,
+      "status": "proposed",
+      "description": "Derive properties of estimators and tests using likelihood, sufficiency, information, decision criteria, and asymptotic arguments."
+    },
+    {
+      "id": "experimental-design-and-causal-inference",
+      "order": 40,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "statistical-inference-and-data-analysis"
+      ],
+      "recommendedAfter": [
+        "regression-and-statistical-models"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Distinguish causal identification from estimation and design randomized or observational comparisons with explicit assumptions."
+    },
+    {
+      "id": "algebraic-coding-theory",
+      "order": 43,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "rings-and-polynomials",
+        "linear-algebra"
+      ],
+      "recommendedAfter": [
+        "information-theory"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Construct and decode finite-field error-correcting codes and prove distance and correction guarantees."
+    },
+    {
+      "id": "mathematical-cryptography",
+      "order": 44,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "elementary-number-theory",
+        "theory-of-computation-and-complexity",
+        "probability"
+      ],
+      "recommendedAfter": [
+        "algebraic-coding-theory"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Distinguish mathematical cryptographic guarantees from assumptions using adversarial games, reductions, modular constructions, and probability bounds."
+    },
+    {
+      "id": "mathematical-writing-and-research-practice",
+      "order": 47,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Find mathematical sources, reconstruct arguments, manage notation and citations, and produce a checked expository investigation."
+    },
+    {
+      "id": "game-theory-and-mathematical-economics",
+      "order": 48,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "probability",
+        "optimization-and-operations-research"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Analyze strategic interaction and economic allocation with equilibria, convexity, incentives, and welfare assumptions."
+    },
+    {
+      "id": "financial-and-actuarial-mathematics",
+      "order": 49,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "probability",
+        "linear-algebra"
+      ],
+      "recommendedAfter": [
+        "stochastic-processes"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Value deterministic and discrete stochastic cash flows and reason about survival, loss, reserves, and no-arbitrage pricing."
+    },
+    {
+      "id": "mathematical-biology-models",
+      "order": 50,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "mathematical-modeling",
+        "probability"
+      ],
+      "recommendedAfter": [
+        "biology/population-and-community-ecology"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Derive and test population and epidemic models using demographic, interaction, stochastic, and identifiability reasoning."
+    },
+    {
+      "id": "homological-algebra",
+      "order": 51,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "modules-and-linear-structures"
+      ],
+      "recommendedAfter": [
+        "category-theory"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Compute homological invariants with chain complexes, projective and injective resolutions, and derived functors."
+    },
+    {
+      "id": "algebraic-geometry-of-varieties",
+      "order": 55,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "commutative-algebra",
+        "metric-and-general-topology"
+      ],
+      "recommendedAfter": [
+        "category-theory"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Translate polynomial equations into affine and projective varieties, morphisms, dimension, and local geometric structure."
+    },
+    {
+      "id": "schemes-and-sheaves",
+      "order": 56,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "algebraic-geometry-of-varieties",
+        "category-theory"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Construct schemes by gluing locally ringed spaces and use sheaves, morphisms, divisors, and cohomology in controlled examples."
+    },
+    {
+      "id": "harmonic-analysis",
+      "order": 59,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "functional-analysis",
+        "fourier-analysis-and-transforms"
+      ],
+      "recommendedAfter": [
+        "complex-analysis"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Prove Fourier and convolution estimates and use maximal functions, interpolation, and singular-integral methods."
+    },
+    {
+      "id": "weak-solutions-and-sobolev-spaces",
+      "order": 60,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "partial-differential-equations",
+        "functional-analysis"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Formulate PDEs distributionally and prove weak existence, uniqueness, and basic regularity using Sobolev and energy methods."
+    },
+    {
+      "id": "nonlinear-pde-and-variational-methods",
+      "order": 61,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "weak-solutions-and-sobolev-spaces"
+      ],
+      "recommendedAfter": [
+        "harmonic-analysis"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Use direct methods, compactness, monotonicity, and regularity estimates to analyze nonlinear variational PDEs."
+    },
+    {
+      "id": "stochastic-calculus",
+      "order": 63,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "measure-theoretic-probability"
+      ],
+      "recommendedAfter": [
+        "stochastic-processes",
+        "differential-equations"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Construct and use Brownian stochastic integration, Ito calculus, stochastic differential equations, and measure change."
+    },
+    {
+      "id": "riemannian-geometry",
+      "order": 65,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "differential-geometry-and-manifolds",
+        "differential-equations"
+      ],
+      "recommendedAfter": [
+        "algebraic-topology"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Compute and reason about metrics, connections, geodesics, curvature, completeness, and comparison on Riemannian manifolds."
+    },
+    {
+      "id": "advanced-algebraic-topology",
+      "order": 66,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "algebraic-topology",
+        "homological-algebra"
+      ],
+      "recommendedAfter": [
+        "category-theory"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Compute cohomological and homotopical invariants using products, duality, bundles, and spectral-sequence methods."
+    },
+    {
+      "id": "convex-and-nonlinear-optimization",
+      "order": 68,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "optimization-and-operations-research",
+        "real-analysis"
+      ],
+      "recommendedAfter": [
+        "numerical-analysis"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Prove convergence and duality results for convex and constrained nonlinear optimization under explicit regularity conditions."
+    },
+    {
+      "id": "control-theory",
+      "order": 69,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "differential-equations",
+        "optimization-and-operations-research",
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "nonlinear-dynamics"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Analyze controllability, observability, feedback stability, estimation, and deterministic optimal control."
+    },
+    {
+      "id": "inverse-problems-and-regularization",
+      "order": 70,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "functional-analysis",
+        "numerical-analysis"
+      ],
+      "recommendedAfter": [
+        "convex-and-nonlinear-optimization"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Analyze identifiability and ill-posedness and construct stable regularized solutions with quantitative error diagnostics."
+    },
+    {
+      "id": "asymptotic-statistical-theory",
+      "order": 71,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "mathematical-statistics",
+        "measure-theoretic-probability",
+        "linear-algebra"
+      ],
+      "recommendedAfter": [
+        "regression-and-statistical-models"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Establish consistency, asymptotic distributions, efficiency, and resampling validity under explicit model and convergence conditions."
+    },
+    {
+      "id": "bayesian-inference-and-computation",
+      "order": 72,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "mathematical-statistics",
+        "mathematical-computing-and-experimentation"
+      ],
+      "recommendedAfter": [
+        "stochastic-processes"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Build Bayesian models and audit posterior computation using conjugacy, hierarchical models, simulation, and predictive checks."
+    },
+    {
+      "id": "time-series-analysis",
+      "order": 73,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "stochastic-processes",
+        "regression-and-statistical-models"
+      ],
+      "recommendedAfter": [
+        "fourier-analysis-and-transforms"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Model dependent observations using stationarity, autoregression, moving averages, spectra, and forecasting diagnostics."
+    },
+    {
+      "id": "probabilistic-and-extremal-combinatorics",
+      "order": 75,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "graph-theory",
+        "probability"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Prove existence and extremal bounds with probabilistic, concentration, dependent-event, and structural methods."
+    },
+    {
+      "id": "model-theory",
+      "order": 76,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "mathematical-logic-and-computability"
+      ],
+      "recommendedAfter": [
+        "axiomatic-set-theory",
+        "fields-and-galois-theory"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Analyze structures and theories using elementary maps, types, quantifier elimination, and saturation."
+    },
+    {
+      "id": "type-theory-and-formal-proof",
+      "order": 77,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "mathematical-logic-and-computability",
+        "computer-science/programming-and-software-development-foundations"
+      ],
+      "recommendedAfter": [
+        "category-theory"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Translate mathematical proofs into typed terms and checked formal developments while distinguishing kernel guarantees and axioms."
+    },
+    {
+      "id": "continuum-modeling-and-asymptotics",
+      "order": 78,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "partial-differential-equations",
+        "mathematical-modeling"
+      ],
+      "recommendedAfter": [
+        "physics/continuum-mechanics-and-fluid-dynamics"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Derive continuum balance models and analyze scale separation, perturbations, boundary layers, and reduced equations."
+    },
+    {
+      "id": "algebraic-geometry-research",
+      "order": 79,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "schemes-and-sheaves",
+        "mathematical-writing-and-research-practice"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Read and reconstruct focused research arguments on curves and their deformations using scheme and sheaf methods."
+    },
+    {
+      "id": "geometric-topology-research",
+      "order": 80,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "advanced-algebraic-topology",
+        "mathematical-writing-and-research-practice"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Evaluate focused research on topological invariants by reconstructing constructions, computations, and obstruction arguments."
+    },
+    {
+      "id": "nonlinear-analysis-research",
+      "order": 81,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "nonlinear-pde-and-variational-methods",
+        "mathematical-writing-and-research-practice"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Reconstruct and critique research proofs for nonlinear elliptic variational problems using compactness and regularity estimates."
+    },
+    {
+      "id": "stochastic-analysis-research",
+      "order": 82,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "stochastic-calculus",
+        "mathematical-writing-and-research-practice"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Read and verify focused diffusion research through stochastic representations, stopping, measure change, and pathwise assumptions."
+    },
+    {
+      "id": "scientific-computing-research",
+      "order": 83,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "numerical-methods-for-differential-equations",
+        "weak-solutions-and-sobolev-spaces",
+        "mathematical-writing-and-research-practice"
+      ],
+      "recommendedAfter": [
+        "computer-science/high-performance-and-scientific-computing"
+      ],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Evaluate research on elliptic PDE discretization by connecting weak formulations, error arguments, and reproducible refinement studies."
+    },
+    {
+      "id": "statistical-learning-research",
+      "order": 84,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "mathematics-of-machine-learning-and-data-science",
+        "asymptotic-statistical-theory",
+        "mathematical-writing-and-research-practice"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Critique focused statistical-learning research by reconstructing risk bounds, asymptotic arguments, and assumption-sensitive counterexamples."
+    },
+    {
+      "id": "combinatorics-research",
+      "order": 85,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "probabilistic-and-extremal-combinatorics",
+        "mathematical-writing-and-research-practice"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Read and reconstruct finite extremal and probabilistic graph research through constructions, inequalities, and sharpness tests."
+    },
+    {
+      "id": "formal-mathematics-research",
+      "order": 86,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "type-theory-and-formal-proof",
+        "mathematical-writing-and-research-practice"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Evaluate formal-mathematics research by auditing specifications, proof artifacts, trusted assumptions, and reproducible verification."
+    }
+  ],
+  "removed": [
+    {
+      "id": "number-theory",
+      "order": 15,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "prerequisites": [
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "discrete-mathematics-and-combinatorics"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Prove and apply results about divisibility, primes, congruences, multiplicative functions, primitive roots, quadratic reciprocity, and Diophantine equations."
+    },
+    {
+      "id": "abstract-algebra",
+      "order": 17,
+      "tier": "core",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "linear-algebra",
+        "number-theory"
+      ],
+      "estimatedChapters": 12,
+      "status": "proposed",
+      "description": "Reason with groups, subgroups, cosets, homomorphisms, quotients, group actions, rings, ideals, polynomial rings, and first field extensions."
+    },
+    {
+      "id": "general-topology",
+      "order": 19,
+      "tier": "core",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "real-analysis"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Work with topological spaces, bases, continuity, homeomorphism, connectedness, compactness, separation axioms, product and quotient constructions, and metrization."
+    },
+    {
+      "id": "mathematical-modeling-and-asymptotic-methods",
+      "order": 28,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "prerequisites": [
+        "differential-equations",
+        "mathematical-computing-and-experimentation"
+      ],
+      "recommendedAfter": [
+        "partial-differential-equations",
+        "multivariable-and-vector-calculus",
+        "physics/measurement-and-physical-reasoning"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Build, nondimensionalize, approximate, and validate models using scaling, dimensional analysis, perturbation and asymptotic expansions, compartment and continuum formulations, and sensitivity checks."
+    },
+    {
+      "id": "measure-theory-and-lebesgue-integration",
+      "order": 29,
+      "tier": "core",
+      "level": "graduate",
+      "prerequisites": [
+        "real-analysis"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Build sigma-algebras, measures, measurable functions, and the Lebesgue integral, and use convergence theorems, L^p spaces, product measures, and differentiation of measures."
+    },
+    {
+      "id": "advanced-algebra-and-galois-theory",
+      "order": 30,
+      "tier": "core",
+      "level": "graduate",
+      "prerequisites": [
+        "abstract-algebra",
+        "linear-algebra"
+      ],
+      "recommendedAfter": [],
+      "estimatedChapters": 12,
+      "status": "proposed",
+      "description": "Use group actions and Sylow theory, modules over a PID with canonical forms, field extensions, and the Galois correspondence to settle solvability and constructibility questions."
+    },
+    {
+      "id": "mathematical-research-practice",
+      "order": 31,
+      "tier": "core",
+      "level": "graduate",
+      "prerequisites": [
+        "mathematical-reasoning-and-proof"
+      ],
+      "recommendedAfter": [
+        "real-analysis",
+        "abstract-algebra",
+        "mathematical-computing-and-experimentation"
+      ],
+      "estimatedChapters": 8,
+      "status": "proposed",
+      "description": "Search and read the mathematical literature, write and typeset rigorous exposition, referee and present seminars, manage collaboration and attribution, and formulate tractable open questions."
+    },
+    {
+      "id": "harmonic-and-fourier-analysis",
+      "order": 35,
+      "tier": "recommended",
+      "level": "graduate",
+      "prerequisites": [
+        "measure-theory-and-lebesgue-integration"
+      ],
+      "recommendedAfter": [
+        "functional-analysis",
+        "complex-analysis"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Analyze Fourier series and transforms on the circle and Euclidean space, convergence and summability, distributions, maximal functions, and singular integral operators."
+    },
+    {
+      "id": "category-theory-and-homological-algebra",
+      "order": 36,
+      "tier": "recommended",
+      "level": "graduate",
+      "prerequisites": [
+        "advanced-algebra-and-galois-theory"
+      ],
+      "recommendedAfter": [
+        "algebraic-topology"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Use categories, functors, natural transformations, limits, adjunctions, abelian categories, chain complexes, derived functors, and first spectral sequences as working tools."
+    },
+    {
+      "id": "mathematical-statistics-and-asymptotic-inference",
+      "order": 41,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "measure-theoretic-probability",
+        "statistical-inference-and-data-analysis"
+      ],
+      "recommendedAfter": [
+        "mathematical-computing-and-experimentation"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Derive and compare likelihood, sufficiency, exponential-family, decision-theoretic, Bayesian, and asymptotic methods, and prove when estimators and tests achieve their guarantees."
+    },
+    {
+      "id": "modern-pde-and-sobolev-theory",
+      "order": 43,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "functional-analysis",
+        "partial-differential-equations"
+      ],
+      "recommendedAfter": [
+        "harmonic-and-fourier-analysis"
+      ],
+      "estimatedChapters": 11,
+      "status": "proposed",
+      "description": "Use distributions, Sobolev spaces, weak formulations, variational and energy methods, elliptic regularity, and semigroup techniques to establish existence, uniqueness, and regularity."
+    },
+    {
+      "id": "algebraic-geometry",
+      "order": 44,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "commutative-algebra"
+      ],
+      "recommendedAfter": [
+        "complex-analysis",
+        "category-theory-and-homological-algebra",
+        "algebraic-topology"
+      ],
+      "estimatedChapters": 11,
+      "status": "proposed",
+      "description": "Relate ideals to affine and projective varieties, work with morphisms, sheaves, and first schemes, and analyze curves through divisors and Riemann-Roch."
+    },
+    {
+      "id": "riemannian-geometry-and-geometric-analysis",
+      "order": 45,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "differential-geometry-and-manifolds",
+        "real-analysis"
+      ],
+      "recommendedAfter": [
+        "general-topology",
+        "functional-analysis"
+      ],
+      "estimatedChapters": 11,
+      "status": "proposed",
+      "description": "Use connections, curvature tensors, geodesics, Jacobi fields, and comparison theorems, and connect curvature to topology through Laplacians, heat flow, and minimal surfaces."
+    },
+    {
+      "id": "stochastic-analysis-and-sdes",
+      "order": 47,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "measure-theoretic-probability"
+      ],
+      "recommendedAfter": [
+        "stochastic-processes",
+        "partial-differential-equations"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Construct the Ito integral, apply Ito's formula, solve and approximate stochastic differential equations, and connect diffusions to parabolic equations and changes of measure."
+    },
+    {
+      "id": "advanced-combinatorics-and-graph-theory",
+      "order": 48,
+      "tier": "specialization",
+      "level": "graduate",
+      "prerequisites": [
+        "discrete-mathematics-and-combinatorics",
+        "probability",
+        "linear-algebra"
+      ],
+      "recommendedAfter": [
+        "theory-of-computation-and-complexity",
+        "abstract-algebra"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Prove extremal, Ramsey, and probabilistic-method results, analyze random graphs and thresholds, and use spectral and algebraic methods on combinatorial structures."
+    },
+    {
+      "id": "arithmetic-geometry-and-modern-number-theory",
+      "order": 51,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "algebraic-number-theory",
+        "analytic-number-theory",
+        "algebraic-geometry",
+        "mathematical-research-practice"
+      ],
+      "recommendedAfter": [
+        "representation-theory-and-lie-theory"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Read current work on elliptic curves, modular forms, Galois representations, rational points, L-functions, computational databases, and arithmetic statistics."
+    },
+    {
+      "id": "low-dimensional-topology-and-geometric-topology",
+      "order": 52,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "algebraic-topology",
+        "riemannian-geometry-and-geometric-analysis",
+        "mathematical-research-practice"
+      ],
+      "recommendedAfter": [
+        "representation-theory-and-lie-theory"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Engage literature on knots and links, surfaces and mapping class groups, three-manifolds, hyperbolic structures, geometrization, and geometric invariants, while identifying where four-dimensional and gauge-theoretic work needs further analysis."
+    },
+    {
+      "id": "topological-and-geometric-data-analysis",
+      "order": 53,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "algebraic-topology",
+        "statistical-inference-and-data-analysis",
+        "mathematical-computing-and-experimentation",
+        "mathematical-research-practice"
+      ],
+      "recommendedAfter": [
+        "mathematics-of-machine-learning-and-data-science",
+        "mathematical-statistics-and-asymptotic-inference",
+        "category-theory-and-homological-algebra"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Compute and interpret persistent homology and related invariants, justify stability and statistical guarantees, and critique applied topological and geometric inference in the literature."
+    },
+    {
+      "id": "formalization-and-proof-assistants",
+      "order": 54,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "mathematical-logic-and-computability",
+        "mathematical-computing-and-experimentation",
+        "mathematical-research-practice"
+      ],
+      "recommendedAfter": [
+        "abstract-algebra",
+        "real-analysis",
+        "category-theory-and-homological-algebra"
+      ],
+      "estimatedChapters": 9,
+      "status": "proposed",
+      "description": "Formalize definitions, theorems, and proofs in a dependent-type proof assistant, navigate a mathematical library, and assess what machine-checked mathematics does and does not certify."
+    },
+    {
+      "id": "random-matrices-and-high-dimensional-probability",
+      "order": 55,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "prerequisites": [
+        "measure-theoretic-probability",
+        "linear-algebra",
+        "mathematical-research-practice"
+      ],
+      "recommendedAfter": [
+        "functional-analysis",
+        "harmonic-and-fourier-analysis",
+        "mathematical-statistics-and-asymptotic-inference",
+        "mathematics-of-machine-learning-and-data-science"
+      ],
+      "estimatedChapters": 10,
+      "status": "proposed",
+      "description": "Work with concentration of measure, empirical processes, nonasymptotic random-matrix bounds, spectral limits, and universality, and read current high-dimensional probability literature."
+    }
+  ],
+  "sharedIds": 35,
+  "changed": [
+    {
+      "id": "number-sense-and-arithmetic",
+      "changes": {
+        "estimatedChapters": {
+          "before": 9,
+          "after": 10
+        },
+        "description": {
+          "before": "Reason with whole numbers, integers, fractions, decimals, ratio, percent, place value, and estimation, and justify why each operation applies.",
+          "after": "Reason and calculate with integers, fractions, decimals, ratios, percentages, units, and estimates."
+        }
+      }
+    },
+    {
+      "id": "elementary-algebra-and-functions",
+      "changes": {
+        "estimatedChapters": {
+          "before": 12,
+          "after": 11
+        },
+        "description": {
+          "before": "Manipulate symbolic expressions, solve equations, inequalities, and systems, and model with linear, quadratic, polynomial, rational, exponential, and logarithmic functions and their graphs.",
+          "after": "Use algebraic laws, expressions, equations, inequalities, graphs, and elementary functions to represent and solve constraints."
+        }
+      }
+    },
+    {
+      "id": "geometry-and-measurement",
+      "changes": {
+        "tier": {
+          "before": "core",
+          "after": "recommended"
+        },
+        "estimatedChapters": {
+          "before": 10,
+          "after": 9
+        },
+        "description": {
+          "before": "Reason about congruence, similarity, transformations, circles, right-triangle trigonometry, coordinate geometry, area, volume, units, and short deductive geometric arguments.",
+          "after": "Reason about shape, congruence, similarity, coordinates, area, and volume with defensible diagrams."
+        },
+        "prerequisites": {
+          "removed": [
+            "elementary-algebra-and-functions"
+          ],
+          "added": [
+            "number-sense-and-arithmetic"
+          ],
+          "before": [
+            "elementary-algebra-and-functions"
+          ],
+          "after": [
+            "number-sense-and-arithmetic"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [],
+          "added": [
+            "elementary-algebra-and-functions"
+          ],
+          "before": [],
+          "after": [
+            "elementary-algebra-and-functions"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mathematical-computing-and-experimentation",
+      "changes": {
+        "order": {
+          "before": 4,
+          "after": 18
+        },
+        "level": {
+          "before": "foundational",
+          "after": "undergraduate-core"
+        },
+        "description": {
+          "before": "Use a programming environment, symbolic and numeric tools, plotting, floating-point awareness, and reproducible notebooks to explore mathematical objects and test conjectures.",
+          "after": "Translate mathematical objects into tested symbolic and numerical computations, plots, simulations, and reproducible data workflows."
+        },
+        "prerequisites": {
+          "removed": [],
+          "added": [
+            "computer-science/programming-and-software-development-foundations"
+          ],
+          "before": [
+            "elementary-algebra-and-functions"
+          ],
+          "after": [
+            "elementary-algebra-and-functions",
+            "computer-science/programming-and-software-development-foundations"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "geometry-and-measurement"
+          ],
+          "added": [],
+          "before": [
+            "geometry-and-measurement"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "id": "precalculus-and-trigonometry",
+      "changes": {
+        "order": {
+          "before": 5,
+          "after": 4
+        },
+        "estimatedChapters": {
+          "before": 10,
+          "after": 11
+        },
+        "description": {
+          "before": "Work fluently with circular trigonometric functions and identities, conic sections, polar and parametric descriptions, plane vectors, sequences, and limit-ready behavior of functions.",
+          "after": "Translate exponential, logarithmic, trigonometric, complex-number, and parametric representations for calculus and wave models."
+        },
+        "prerequisites": {
+          "removed": [
+            "geometry-and-measurement"
+          ],
+          "added": [
+            "elementary-algebra-and-functions"
+          ],
+          "before": [
+            "geometry-and-measurement"
+          ],
+          "after": [
+            "elementary-algebra-and-functions"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [],
+          "added": [
+            "geometry-and-measurement"
+          ],
+          "before": [],
+          "after": [
+            "geometry-and-measurement"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mathematical-reasoning-and-proof",
+      "changes": {
+        "order": {
+          "before": 6,
+          "after": 5
+        },
+        "level": {
+          "before": "undergraduate-core",
+          "after": "foundational"
+        },
+        "description": {
+          "before": "Read, evaluate, and write correct proofs using logic, quantifiers, sets, relations, functions, induction, contradiction, contraposition, and elementary cardinality.",
+          "after": "Read and construct quantified arguments using sets, functions, relations, induction, contradiction, and counterexamples."
+        },
+        "prerequisites": {
+          "removed": [
+            "elementary-algebra-and-functions"
+          ],
+          "added": [
+            "number-sense-and-arithmetic"
+          ],
+          "before": [
+            "elementary-algebra-and-functions"
+          ],
+          "after": [
+            "number-sense-and-arithmetic"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "geometry-and-measurement",
+            "precalculus-and-trigonometry"
+          ],
+          "added": [
+            "elementary-algebra-and-functions"
+          ],
+          "before": [
+            "geometry-and-measurement",
+            "precalculus-and-trigonometry"
+          ],
+          "after": [
+            "elementary-algebra-and-functions"
+          ]
+        }
+      }
+    },
+    {
+      "id": "single-variable-differential-calculus",
+      "changes": {
+        "description": {
+          "before": "Use limits, continuity, and derivatives to model rates, approximate locally, and analyze extrema, concavity, and optimization in one variable.",
+          "after": "Use limits and derivatives to explain local change, approximation, shape, and constrained single-variable optimization."
+        },
+        "recommendedAfter": {
+          "removed": [],
+          "added": [
+            "mathematical-reasoning-and-proof"
+          ],
+          "before": [],
+          "after": [
+            "mathematical-reasoning-and-proof"
+          ]
+        }
+      }
+    },
+    {
+      "id": "linear-algebra",
+      "changes": {
+        "order": {
+          "before": 8,
+          "after": 9
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 12
+        },
+        "description": {
+          "before": "Reason with vector spaces, linear maps, matrices, rank, determinants, eigenstructure, inner products, orthogonality, and matrix factorizations across algebraic, geometric, and computational views.",
+          "after": "Solve linear systems and reason with vector spaces, linear maps, bases, eigenstructure, orthogonality, least squares, and singular values."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "single-variable-differential-calculus"
+          ],
+          "added": [],
+          "before": [
+            "mathematical-reasoning-and-proof",
+            "single-variable-differential-calculus"
+          ],
+          "after": [
+            "mathematical-reasoning-and-proof"
+          ]
+        }
+      }
+    },
+    {
+      "id": "single-variable-integral-calculus",
+      "changes": {
+        "order": {
+          "before": 9,
+          "after": 8
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 10
+        },
+        "description": {
+          "before": "Use Riemann sums, the fundamental theorem, integration techniques, improper integrals, accumulation applications, and infinite series including Taylor expansions.",
+          "after": "Connect accumulation and antiderivatives, evaluate integrals, and control infinite series and Taylor approximations."
+        }
+      }
+    },
+    {
+      "id": "discrete-mathematics-and-combinatorics",
+      "changes": {
+        "description": {
+          "before": "Count with bijections, inclusion-exclusion, recurrences, and generating functions, and analyze graphs, trees, orders, and discrete structures with proof.",
+          "after": "Model finite structures and justify counting, recurrences, graph arguments, invariants, and elementary asymptotic bounds."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "linear-algebra"
+          ],
+          "added": [],
+          "before": [
+            "linear-algebra"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "id": "multivariable-and-vector-calculus",
+      "changes": {
+        "order": {
+          "before": 11,
+          "after": 14
+        },
+        "description": {
+          "before": "Differentiate and integrate functions of several variables, use gradients and Jacobians, change coordinates, and apply the line, surface, Green, Stokes, and divergence theorems.",
+          "after": "Use multivariable derivatives, multiple integrals, coordinate changes, vector fields, and integral theorems."
+        },
+        "prerequisites": {
+          "removed": [],
+          "added": [
+            "linear-algebra"
+          ],
+          "before": [
+            "single-variable-integral-calculus"
+          ],
+          "after": [
+            "single-variable-integral-calculus",
+            "linear-algebra"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "linear-algebra"
+          ],
+          "added": [],
+          "before": [
+            "linear-algebra"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "id": "probability",
+      "changes": {
+        "order": {
+          "before": 12,
+          "after": 16
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 12
+        },
+        "description": {
+          "before": "Model uncertainty with sample spaces, conditioning, independence, discrete and continuous random variables, joint behavior, expectation, and limit laws.",
+          "after": "Model discrete and continuous uncertainty using conditioning, random variables, expectations, joint laws, inequalities, and limit approximations."
+        }
+      }
+    },
+    {
+      "id": "differential-equations",
+      "changes": {
+        "order": {
+          "before": 13,
+          "after": 15
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 10
+        },
+        "description": {
+          "before": "Formulate, solve, and qualitatively analyze ordinary differential equations and linear systems using analytic methods, transforms, eigenstructure, phase planes, and numerical schemes.",
+          "after": "Formulate and solve ordinary differential equations and linear systems, and interpret existence, forcing, and local stability."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "multivariable-and-vector-calculus",
+            "mathematical-computing-and-experimentation"
+          ],
+          "added": [],
+          "before": [
+            "multivariable-and-vector-calculus",
+            "mathematical-computing-and-experimentation"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "id": "statistical-inference-and-data-analysis",
+      "changes": {
+        "order": {
+          "before": 14,
+          "after": 17
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 12
+        },
+        "description": {
+          "before": "Summarize data honestly, reason about sampling distributions, estimate with uncertainty, test hypotheses, fit and criticize regression models, and state the limits of an inference.",
+          "after": "Design and critique studies and perform estimation, testing, simple regression, resampling, and uncertainty communication."
+        },
+        "prerequisites": {
+          "removed": [
+            "probability"
+          ],
+          "added": [
+            "elementary-algebra-and-functions"
+          ],
+          "before": [
+            "probability"
+          ],
+          "after": [
+            "elementary-algebra-and-functions"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "mathematical-computing-and-experimentation",
+            "linear-algebra"
+          ],
+          "added": [
+            "data-and-chance"
+          ],
+          "before": [
+            "mathematical-computing-and-experimentation",
+            "linear-algebra"
+          ],
+          "after": [
+            "data-and-chance"
+          ]
+        }
+      }
+    },
+    {
+      "id": "real-analysis",
+      "changes": {
+        "order": {
+          "before": 16,
+          "after": 19
+        },
+        "level": {
+          "before": "undergraduate-advanced",
+          "after": "undergraduate-core"
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 10
+        },
+        "description": {
+          "before": "Prove theorems about completeness, sequences, series, limits, continuity, differentiation, Riemann integration, and uniform convergence, and construct counterexamples.",
+          "after": "Prove results about completeness, convergence, continuity, differentiation, integration, and sequences of real functions."
+        }
+      }
+    },
+    {
+      "id": "complex-analysis",
+      "changes": {
+        "order": {
+          "before": 18,
+          "after": 23
+        },
+        "tier": {
+          "before": "core",
+          "after": "recommended"
+        },
+        "description": {
+          "before": "Use holomorphy, the Cauchy-Riemann equations, contour integration, Cauchy theory, power and Laurent series, analytic continuation, residues, and conformal mapping.",
+          "after": "Analyze holomorphic functions using contour integrals, Cauchy theory, series, residues, and conformal maps."
+        },
+        "prerequisites": {
+          "removed": [
+            "multivariable-and-vector-calculus"
+          ],
+          "added": [
+            "single-variable-integral-calculus"
+          ],
+          "before": [
+            "multivariable-and-vector-calculus",
+            "mathematical-reasoning-and-proof"
+          ],
+          "after": [
+            "single-variable-integral-calculus",
+            "mathematical-reasoning-and-proof"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [],
+          "added": [
+            "multivariable-and-vector-calculus"
+          ],
+          "before": [
+            "real-analysis"
+          ],
+          "after": [
+            "real-analysis",
+            "multivariable-and-vector-calculus"
+          ]
+        }
+      }
+    },
+    {
+      "id": "differential-geometry-and-manifolds",
+      "changes": {
+        "order": {
+          "before": 20,
+          "after": 45
+        },
+        "tier": {
+          "before": "recommended",
+          "after": "specialization"
+        },
+        "estimatedChapters": {
+          "before": 13,
+          "after": 11
+        },
+        "description": {
+          "before": "Analyze curves and surfaces with curvature and fundamental forms, then work on smooth manifolds with tangent spaces, vector fields, differential forms, Stokes' theorem, and first Riemannian metrics.",
+          "after": "Use charts, tangent and cotangent spaces, tensors, differential forms, and integration to reason intrinsically on smooth manifolds."
+        },
+        "prerequisites": {
+          "removed": [
+            "linear-algebra",
+            "mathematical-reasoning-and-proof"
+          ],
+          "added": [
+            "real-analysis",
+            "metric-and-general-topology"
+          ],
+          "before": [
+            "multivariable-and-vector-calculus",
+            "linear-algebra",
+            "mathematical-reasoning-and-proof"
+          ],
+          "after": [
+            "multivariable-and-vector-calculus",
+            "real-analysis",
+            "metric-and-general-topology"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "real-analysis",
+            "general-topology"
+          ],
+          "added": [
+            "euclidean-and-non-euclidean-geometry"
+          ],
+          "before": [
+            "real-analysis",
+            "general-topology"
+          ],
+          "after": [
+            "euclidean-and-non-euclidean-geometry"
+          ]
+        }
+      }
+    },
+    {
+      "id": "partial-differential-equations",
+      "changes": {
+        "order": {
+          "before": 21,
+          "after": 34
+        },
+        "tier": {
+          "before": "core",
+          "after": "recommended"
+        },
+        "description": {
+          "before": "Classify and solve first-order, heat, wave, and Laplace equations using characteristics, separation of variables, Fourier methods, Green's functions, and maximum principles.",
+          "after": "Formulate and solve classical PDE initial and boundary problems using characteristics, eigenfunction expansions, and Green functions."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "real-analysis"
+          ],
+          "added": [
+            "fourier-analysis-and-transforms"
+          ],
+          "before": [
+            "real-analysis"
+          ],
+          "after": [
+            "fourier-analysis-and-transforms"
+          ]
+        }
+      }
+    },
+    {
+      "id": "numerical-analysis",
+      "changes": {
+        "order": {
+          "before": 22,
+          "after": 36
+        },
+        "tier": {
+          "before": "core",
+          "after": "recommended"
+        },
+        "description": {
+          "before": "Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear systems, eigenvalues, and initial-value problems.",
+          "after": "Choose and validate finite-dimensional numerical methods using conditioning, stability, approximation, and error estimates."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "differential-equations"
+          ],
+          "added": [],
+          "before": [
+            "differential-equations",
+            "real-analysis"
+          ],
+          "after": [
+            "real-analysis"
+          ]
+        }
+      }
+    },
+    {
+      "id": "optimization-and-operations-research",
+      "changes": {
+        "order": {
+          "before": 23,
+          "after": 37
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 12
+        },
+        "description": {
+          "before": "Formulate and solve linear, convex, and constrained optimization problems using duality, optimality conditions, descent and Newton methods, network models, and integer formulations.",
+          "after": "Formulate finite-dimensional decision problems and use linear programming, duality, convexity, and optimality certificates."
+        },
+        "prerequisites": {
+          "removed": [
+            "multivariable-and-vector-calculus"
+          ],
+          "added": [
+            "single-variable-differential-calculus"
+          ],
+          "before": [
+            "multivariable-and-vector-calculus",
+            "linear-algebra"
+          ],
+          "after": [
+            "linear-algebra",
+            "single-variable-differential-calculus"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "numerical-analysis",
+            "mathematical-computing-and-experimentation"
+          ],
+          "added": [],
+          "before": [
+            "numerical-analysis",
+            "mathematical-computing-and-experimentation"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "id": "stochastic-processes",
+      "changes": {
+        "order": {
+          "before": 24,
+          "after": 41
+        },
+        "description": {
+          "before": "Model systems evolving randomly in time with Markov chains, Poisson and renewal processes, queues, branching processes, elementary martingales, and Brownian motion.",
+          "after": "Analyze finite or countable-state Markov processes, renewal, branching, and queue models with correct time and conditioning conventions."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "mathematical-computing-and-experimentation"
+          ],
+          "added": [],
+          "before": [
+            "differential-equations",
+            "mathematical-computing-and-experimentation"
+          ],
+          "after": [
+            "differential-equations"
+          ]
+        }
+      }
+    },
+    {
+      "id": "information-theory",
+      "changes": {
+        "order": {
+          "before": 25,
+          "after": 42
+        },
+        "tier": {
+          "before": "recommended",
+          "after": "specialization"
+        },
+        "estimatedChapters": {
+          "before": 10,
+          "after": 9
+        },
+        "description": {
+          "before": "Quantify information with entropy, relative entropy, and mutual information, and derive source-coding, channel-capacity, and error-correcting limits.",
+          "after": "Quantify discrete information and derive source coding, channel coding, mutual information, and rate-distortion bounds."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "discrete-mathematics-and-combinatorics",
+            "linear-algebra"
+          ],
+          "added": [],
+          "before": [
+            "discrete-mathematics-and-combinatorics",
+            "linear-algebra"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "id": "mathematical-logic-and-computability",
+      "changes": {
+        "order": {
+          "before": 26,
+          "after": 29
+        },
+        "tier": {
+          "before": "recommended",
+          "after": "specialization"
+        },
+        "description": {
+          "before": "Reason about formal languages, deduction, models, soundness, completeness, compactness, computability, recursive functions, decidability, and incompleteness.",
+          "after": "Distinguish formal syntax, semantics, provability, and computability through completeness, compactness, and arithmetic limitations."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "discrete-mathematics-and-combinatorics",
+            "abstract-algebra"
+          ],
+          "added": [
+            "theory-of-computation-and-complexity"
+          ],
+          "before": [
+            "discrete-mathematics-and-combinatorics",
+            "abstract-algebra"
+          ],
+          "after": [
+            "theory-of-computation-and-complexity"
+          ]
+        }
+      }
+    },
+    {
+      "id": "theory-of-computation-and-complexity",
+      "changes": {
+        "order": {
+          "before": 27,
+          "after": 28
+        },
+        "tier": {
+          "before": "recommended",
+          "after": "specialization"
+        },
+        "description": {
+          "before": "Analyze automata, formal languages, Turing machines, decidability, reductions, complexity classes, NP-completeness, and randomized computation.",
+          "after": "Analyze formal languages, machine models, undecidability, reductions, and time or space complexity."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "mathematical-computing-and-experimentation",
+            "mathematical-logic-and-computability"
+          ],
+          "added": [],
+          "before": [
+            "mathematical-computing-and-experimentation",
+            "mathematical-logic-and-computability"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "id": "functional-analysis",
+      "changes": {
+        "order": {
+          "before": 32,
+          "after": 58
+        },
+        "tier": {
+          "before": "core",
+          "after": "recommended"
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 10
+        },
+        "description": {
+          "before": "Analyze normed, Banach, and Hilbert spaces, bounded and compact operators, the Hahn-Banach, open-mapping, closed-graph, uniform-boundedness, Riesz representation, and Lax-Milgram theorems, duality, weak topologies, and spectra.",
+          "after": "Prove operator and function-space results using Banach and Hilbert structure, duality, weak convergence, and compactness."
+        },
+        "prerequisites": {
+          "removed": [
+            "measure-theory-and-lebesgue-integration"
+          ],
+          "added": [
+            "measure-and-integration"
+          ],
+          "before": [
+            "measure-theory-and-lebesgue-integration",
+            "linear-algebra"
+          ],
+          "after": [
+            "measure-and-integration",
+            "linear-algebra"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "general-topology"
+          ],
+          "added": [
+            "metric-and-general-topology"
+          ],
+          "before": [
+            "general-topology"
+          ],
+          "after": [
+            "metric-and-general-topology"
+          ]
+        }
+      }
+    },
+    {
+      "id": "measure-theoretic-probability",
+      "changes": {
+        "order": {
+          "before": 33,
+          "after": 62
+        },
+        "tier": {
+          "before": "core",
+          "after": "recommended"
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 10
+        },
+        "description": {
+          "before": "Ground probability in measure theory: independence, modes of convergence, laws of large numbers, characteristic functions, central limit theorems, conditional expectation, martingales, and concentration inequalities.",
+          "after": "Prove probabilistic limit and conditioning results using measure spaces, independence, conditional expectation, and martingales."
+        },
+        "prerequisites": {
+          "removed": [
+            "measure-theory-and-lebesgue-integration"
+          ],
+          "added": [
+            "measure-and-integration"
+          ],
+          "before": [
+            "measure-theory-and-lebesgue-integration",
+            "probability"
+          ],
+          "after": [
+            "measure-and-integration",
+            "probability"
+          ]
+        }
+      }
+    },
+    {
+      "id": "algebraic-topology",
+      "changes": {
+        "order": {
+          "before": 34,
+          "after": 46
+        },
+        "level": {
+          "before": "graduate",
+          "after": "undergraduate-advanced"
+        },
+        "tier": {
+          "before": "core",
+          "after": "specialization"
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 10
+        },
+        "description": {
+          "before": "Compute and interpret fundamental groups, covering spaces, CW structures, simplicial and singular homology, exact sequences, cohomology, and duality.",
+          "after": "Compute fundamental groups and homology and use functorial invariants to distinguish spaces."
+        },
+        "prerequisites": {
+          "removed": [
+            "general-topology",
+            "abstract-algebra"
+          ],
+          "added": [
+            "metric-and-general-topology",
+            "group-theory"
+          ],
+          "before": [
+            "general-topology",
+            "abstract-algebra"
+          ],
+          "after": [
+            "metric-and-general-topology",
+            "group-theory"
+          ]
+        }
+      }
+    },
+    {
+      "id": "commutative-algebra",
+      "changes": {
+        "order": {
+          "before": 37,
+          "after": 52
+        },
+        "tier": {
+          "before": "recommended",
+          "after": "specialization"
+        },
+        "estimatedChapters": {
+          "before": 10,
+          "after": 9
+        },
+        "description": {
+          "before": "Work with Noetherian rings, modules, localization, primary decomposition, integral extensions, Hilbert basis and Nullstellensatz results, and dimension theory.",
+          "after": "Analyze commutative rings and modules using localization, finiteness, integral dependence, dimension, and local structure."
+        },
+        "prerequisites": {
+          "removed": [
+            "advanced-algebra-and-galois-theory"
+          ],
+          "added": [
+            "modules-and-linear-structures"
+          ],
+          "before": [
+            "advanced-algebra-and-galois-theory"
+          ],
+          "after": [
+            "modules-and-linear-structures"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "number-theory"
+          ],
+          "added": [
+            "fields-and-galois-theory"
+          ],
+          "before": [
+            "number-theory"
+          ],
+          "after": [
+            "fields-and-galois-theory"
+          ]
+        }
+      }
+    },
+    {
+      "id": "representation-theory-and-lie-theory",
+      "changes": {
+        "order": {
+          "before": 38,
+          "after": 57
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 10
+        },
+        "description": {
+          "before": "Decompose representations of finite groups with characters and orthogonality, induce and restrict, and extend to Lie algebras, root systems, weights, and their classification.",
+          "after": "Analyze linear representations through characters and matrix Lie groups, Lie algebras, and elementary highest-weight examples."
+        },
+        "prerequisites": {
+          "removed": [
+            "advanced-algebra-and-galois-theory"
+          ],
+          "added": [
+            "group-theory",
+            "advanced-linear-algebra"
+          ],
+          "before": [
+            "advanced-algebra-and-galois-theory"
+          ],
+          "after": [
+            "group-theory",
+            "advanced-linear-algebra"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "general-topology"
+          ],
+          "added": [],
+          "before": [
+            "general-topology",
+            "differential-geometry-and-manifolds"
+          ],
+          "after": [
+            "differential-geometry-and-manifolds"
+          ]
+        }
+      }
+    },
+    {
+      "id": "algebraic-number-theory",
+      "changes": {
+        "order": {
+          "before": 39,
+          "after": 53
+        },
+        "description": {
+          "before": "Study number fields, rings of integers, valuations, ideal factorization, class groups, units, local fields, ramification, and first class-field phenomena.",
+          "after": "Use number fields, integer rings, ideals, ramification, valuations, and local completions to solve arithmetic structure problems."
+        },
+        "prerequisites": {
+          "removed": [
+            "advanced-algebra-and-galois-theory",
+            "number-theory"
+          ],
+          "added": [
+            "fields-and-galois-theory",
+            "elementary-number-theory"
+          ],
+          "before": [
+            "advanced-algebra-and-galois-theory",
+            "number-theory"
+          ],
+          "after": [
+            "fields-and-galois-theory",
+            "elementary-number-theory"
+          ]
+        }
+      }
+    },
+    {
+      "id": "analytic-number-theory",
+      "changes": {
+        "order": {
+          "before": 40,
+          "after": 54
+        },
+        "estimatedChapters": {
+          "before": 10,
+          "after": 9
+        },
+        "description": {
+          "before": "Use arithmetic functions, summation methods, Dirichlet series, zeta and L-functions, sieve ideas, and exponential sums to analyze the distribution of primes and other arithmetic sequences.",
+          "after": "Use asymptotic sums, Dirichlet series, complex methods, and elementary sieve estimates to study primes and arithmetic functions."
+        },
+        "prerequisites": {
+          "removed": [
+            "number-theory"
+          ],
+          "added": [
+            "elementary-number-theory",
+            "real-analysis"
+          ],
+          "before": [
+            "complex-analysis",
+            "number-theory"
+          ],
+          "after": [
+            "elementary-number-theory",
+            "complex-analysis",
+            "real-analysis"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "real-analysis",
+            "harmonic-and-fourier-analysis"
+          ],
+          "added": [],
+          "before": [
+            "real-analysis",
+            "harmonic-and-fourier-analysis"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "id": "axiomatic-set-theory",
+      "changes": {
+        "order": {
+          "before": 42,
+          "after": 30
+        },
+        "level": {
+          "before": "graduate",
+          "after": "undergraduate-advanced"
+        },
+        "description": {
+          "before": "Work in ZFC with ordinals, cardinals, transfinite recursion, choice principles, combinatorial set theory, constructibility, forcing, and independence arguments.",
+          "after": "Reason with axiomatic sets, ordinals, cardinals, choice, and transfinite constructions."
+        },
+        "prerequisites": {
+          "removed": [
+            "mathematical-logic-and-computability"
+          ],
+          "added": [
+            "mathematical-reasoning-and-proof"
+          ],
+          "before": [
+            "mathematical-logic-and-computability"
+          ],
+          "after": [
+            "mathematical-reasoning-and-proof"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "general-topology",
+            "abstract-algebra"
+          ],
+          "added": [
+            "mathematical-logic-and-computability"
+          ],
+          "before": [
+            "general-topology",
+            "abstract-algebra"
+          ],
+          "after": [
+            "mathematical-logic-and-computability"
+          ]
+        }
+      }
+    },
+    {
+      "id": "dynamical-systems-and-ergodic-theory",
+      "changes": {
+        "order": {
+          "before": 46,
+          "after": 64
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 9
+        },
+        "description": {
+          "before": "Analyze flows and maps through invariant sets, stability, bifurcation, hyperbolicity, symbolic dynamics, invariant measures, ergodic theorems, mixing, and entropy.",
+          "after": "Connect deterministic dynamics to invariant measures, recurrence, ergodic averages, mixing, and entropy."
+        },
+        "prerequisites": {
+          "removed": [
+            "measure-theory-and-lebesgue-integration",
+            "differential-equations"
+          ],
+          "added": [
+            "nonlinear-dynamics",
+            "measure-theoretic-probability"
+          ],
+          "before": [
+            "measure-theory-and-lebesgue-integration",
+            "differential-equations"
+          ],
+          "after": [
+            "nonlinear-dynamics",
+            "measure-theoretic-probability"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "mathematical-computing-and-experimentation"
+          ],
+          "added": [],
+          "before": [
+            "mathematical-computing-and-experimentation",
+            "functional-analysis"
+          ],
+          "after": [
+            "functional-analysis"
+          ]
+        }
+      }
+    },
+    {
+      "id": "numerical-methods-for-differential-equations",
+      "changes": {
+        "order": {
+          "before": 49,
+          "after": 67
+        },
+        "description": {
+          "before": "Design and analyze finite difference, finite element, and spectral discretizations with consistency, stability, convergence, conservation, and modern solver strategies.",
+          "after": "Design and verify time-stepping and spatial discretizations with consistency, stability, convergence, and conservation checks."
+        },
+        "recommendedAfter": {
+          "removed": [
+            "functional-analysis",
+            "optimization-and-operations-research"
+          ],
+          "added": [
+            "weak-solutions-and-sobolev-spaces"
+          ],
+          "before": [
+            "functional-analysis",
+            "optimization-and-operations-research"
+          ],
+          "after": [
+            "weak-solutions-and-sobolev-spaces"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mathematics-of-machine-learning-and-data-science",
+      "changes": {
+        "order": {
+          "before": 50,
+          "after": 74
+        },
+        "estimatedChapters": {
+          "before": 11,
+          "after": 10
+        },
+        "description": {
+          "before": "Establish learning guarantees with concentration, complexity measures, and empirical risk minimization, and analyze kernels, high-dimensional estimation, and optimization for modern learning models.",
+          "after": "Derive statistical learning objectives, generalization bounds, regularization, kernels, low-rank methods, and optimization tradeoffs."
+        },
+        "prerequisites": {
+          "removed": [
+            "statistical-inference-and-data-analysis",
+            "optimization-and-operations-research",
+            "measure-theoretic-probability"
+          ],
+          "added": [
+            "convex-and-nonlinear-optimization",
+            "mathematical-statistics"
+          ],
+          "before": [
+            "statistical-inference-and-data-analysis",
+            "optimization-and-operations-research",
+            "measure-theoretic-probability"
+          ],
+          "after": [
+            "convex-and-nonlinear-optimization",
+            "mathematical-statistics"
+          ]
+        },
+        "recommendedAfter": {
+          "removed": [
+            "numerical-analysis",
+            "functional-analysis",
+            "mathematical-statistics-and-asymptotic-inference"
+          ],
+          "added": [
+            "computer-science/machine-learning-and-data-science"
+          ],
+          "before": [
+            "numerical-analysis",
+            "functional-analysis",
+            "mathematical-statistics-and-asymptotic-inference"
+          ],
+          "after": [
+            "computer-science/machine-learning-and-data-science"
+          ]
+        }
+      }
+    }
+  ],
+  "ancestorCounts": [
+    {
+      "id": "number-sense-and-arithmetic",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "id": "elementary-algebra-and-functions",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "id": "geometry-and-measurement",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "mathematical-computing-and-experimentation",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "precalculus-and-trigonometry",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "mathematical-reasoning-and-proof",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "id": "single-variable-differential-calculus",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "id": "linear-algebra",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "id": "single-variable-integral-calculus",
+      "before": 5,
+      "after": 4
+    },
+    {
+      "id": "discrete-mathematics-and-combinatorics",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "multivariable-and-vector-calculus",
+      "before": 6,
+      "after": 6
+    },
+    {
+      "id": "probability",
+      "before": 6,
+      "after": 5
+    },
+    {
+      "id": "differential-equations",
+      "before": 7,
+      "after": 6
+    },
+    {
+      "id": "statistical-inference-and-data-analysis",
+      "before": 7,
+      "after": 2
+    },
+    {
+      "id": "real-analysis",
+      "before": 7,
+      "after": 6
+    },
+    {
+      "id": "complex-analysis",
+      "before": 8,
+      "after": 6
+    },
+    {
+      "id": "differential-geometry-and-manifolds",
+      "before": 9,
+      "after": 10
+    },
+    {
+      "id": "partial-differential-equations",
+      "before": 9,
+      "after": 8
+    },
+    {
+      "id": "numerical-analysis",
+      "before": 8,
+      "after": 8
+    },
+    {
+      "id": "optimization-and-operations-research",
+      "before": 8,
+      "after": 5
+    },
+    {
+      "id": "stochastic-processes",
+      "before": 8,
+      "after": 7
+    },
+    {
+      "id": "information-theory",
+      "before": 7,
+      "after": 6
+    },
+    {
+      "id": "mathematical-logic-and-computability",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "id": "theory-of-computation-and-complexity",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "id": "functional-analysis",
+      "before": 10,
+      "after": 9
+    },
+    {
+      "id": "measure-theoretic-probability",
+      "before": 10,
+      "after": 9
+    },
+    {
+      "id": "algebraic-topology",
+      "before": 10,
+      "after": 4
+    },
+    {
+      "id": "commutative-algebra",
+      "before": 6,
+      "after": 6
+    },
+    {
+      "id": "representation-theory-and-lie-theory",
+      "before": 6,
+      "after": 6
+    },
+    {
+      "id": "algebraic-number-theory",
+      "before": 7,
+      "after": 8
+    },
+    {
+      "id": "analytic-number-theory",
+      "before": 10,
+      "after": 9
+    },
+    {
+      "id": "axiomatic-set-theory",
+      "before": 4,
+      "after": 2
+    },
+    {
+      "id": "dynamical-systems-and-ergodic-theory",
+      "before": 11,
+      "after": 13
+    },
+    {
+      "id": "numerical-methods-for-differential-equations",
+      "before": 12,
+      "after": 12
+    },
+    {
+      "id": "mathematics-of-machine-learning-and-data-science",
+      "before": 15,
+      "after": 12
+    }
+  ],
+  "externalConsumers": [
+    {
+      "consumer": "physics/measurement-and-physical-reasoning",
+      "kind": "prerequisites",
+      "requires": "mathematics/number-sense-and-arithmetic",
+      "missing": false
+    },
+    {
+      "consumer": "physics/motion-forces-and-energy",
+      "kind": "prerequisites",
+      "requires": "mathematics/elementary-algebra-and-functions",
+      "missing": false
+    },
+    {
+      "consumer": "physics/waves-sound-and-light",
+      "kind": "prerequisites",
+      "requires": "mathematics/precalculus-and-trigonometry",
+      "missing": false
+    },
+    {
+      "consumer": "physics/electricity-magnetism-and-circuits",
+      "kind": "prerequisites",
+      "requires": "mathematics/precalculus-and-trigonometry",
+      "missing": false
+    },
+    {
+      "consumer": "physics/measurement-uncertainty-and-experimental-physics",
+      "kind": "prerequisites",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "physics/computational-physics",
+      "kind": "prerequisites",
+      "requires": "mathematics/mathematical-computing-and-experimentation",
+      "missing": false
+    },
+    {
+      "consumer": "physics/computational-physics",
+      "kind": "prerequisites",
+      "requires": "mathematics/single-variable-integral-calculus",
+      "missing": false
+    },
+    {
+      "consumer": "physics/classical-mechanics",
+      "kind": "prerequisites",
+      "requires": "mathematics/differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "physics/classical-mechanics",
+      "kind": "prerequisites",
+      "requires": "mathematics/multivariable-and-vector-calculus",
+      "missing": false
+    },
+    {
+      "consumer": "physics/special-relativity",
+      "kind": "prerequisites",
+      "requires": "mathematics/linear-algebra",
+      "missing": false
+    },
+    {
+      "consumer": "physics/special-relativity",
+      "kind": "prerequisites",
+      "requires": "mathematics/single-variable-differential-calculus",
+      "missing": false
+    },
+    {
+      "consumer": "physics/thermodynamics-and-statistical-mechanics",
+      "kind": "prerequisites",
+      "requires": "mathematics/multivariable-and-vector-calculus",
+      "missing": false
+    },
+    {
+      "consumer": "physics/thermodynamics-and-statistical-mechanics",
+      "kind": "prerequisites",
+      "requires": "mathematics/probability",
+      "missing": false
+    },
+    {
+      "consumer": "physics/mathematical-methods-for-physics",
+      "kind": "prerequisites",
+      "requires": "mathematics/complex-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "physics/mathematical-methods-for-physics",
+      "kind": "prerequisites",
+      "requires": "mathematics/partial-differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "physics/electromagnetic-theory",
+      "kind": "prerequisites",
+      "requires": "mathematics/partial-differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "physics/quantum-mechanics",
+      "kind": "prerequisites",
+      "requires": "mathematics/partial-differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "physics/continuum-mechanics-and-fluid-dynamics",
+      "kind": "prerequisites",
+      "requires": "mathematics/partial-differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "physics/statistical-physics",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/stochastic-processes",
+      "missing": false
+    },
+    {
+      "consumer": "physics/general-relativity",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/differential-geometry-and-manifolds",
+      "missing": false
+    },
+    {
+      "consumer": "physics/quantum-field-theory",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/representation-theory-and-lie-theory",
+      "missing": false
+    },
+    {
+      "consumer": "physics/quantum-information-and-computation",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/information-theory",
+      "missing": false
+    },
+    {
+      "consumer": "physics/biological-physics",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/stochastic-processes",
+      "missing": false
+    },
+    {
+      "consumer": "physics/gravitational-wave-and-multimessenger-astrophysics",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/mathematics-of-machine-learning-and-data-science",
+      "missing": false
+    },
+    {
+      "consumer": "physics/fusion-and-high-energy-density-science",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/numerical-methods-for-differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/chemistry-literacy-and-safe-practice",
+      "kind": "prerequisites",
+      "requires": "mathematics/number-sense-and-arithmetic",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/quantitative-general-chemistry",
+      "kind": "prerequisites",
+      "requires": "mathematics/elementary-algebra-and-functions",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/analytical-chemistry-and-chemical-measurement",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/thermodynamics-and-chemical-kinetics",
+      "kind": "prerequisites",
+      "requires": "mathematics/multivariable-and-vector-calculus",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/thermodynamics-and-chemical-kinetics",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/quantum-chemistry-and-molecular-spectroscopy",
+      "kind": "prerequisites",
+      "requires": "mathematics/differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/quantum-chemistry-and-molecular-spectroscopy",
+      "kind": "prerequisites",
+      "requires": "mathematics/multivariable-and-vector-calculus",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/chemical-data-computation-and-information",
+      "kind": "prerequisites",
+      "requires": "mathematics/mathematical-computing-and-experimentation",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/chemical-data-computation-and-information",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/medicinal-chemistry-and-drug-discovery",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/computational-chemistry-and-cheminformatics",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/numerical-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/chemistry-research-methods-and-literature",
+      "kind": "prerequisites",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/advanced-chemical-thermodynamics-and-statistical-mechanics",
+      "kind": "prerequisites",
+      "requires": "mathematics/probability",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/advanced-quantum-chemistry-and-spectroscopy",
+      "kind": "prerequisites",
+      "requires": "mathematics/partial-differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/molecular-simulation-and-computational-chemistry",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/numerical-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "chemistry/theory-simulation-and-data-driven-chemistry-research",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/mathematics-of-machine-learning-and-data-science",
+      "missing": false
+    },
+    {
+      "consumer": "biology/biological-literacy-and-scientific-practice",
+      "kind": "prerequisites",
+      "requires": "mathematics/number-sense-and-arithmetic",
+      "missing": false
+    },
+    {
+      "consumer": "biology/chemistry-of-life",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/elementary-algebra-and-functions",
+      "missing": false
+    },
+    {
+      "consumer": "biology/experimental-design-and-data-analysis-in-biology",
+      "kind": "prerequisites",
+      "requires": "mathematics/elementary-algebra-and-functions",
+      "missing": false
+    },
+    {
+      "consumer": "biology/experimental-design-and-data-analysis-in-biology",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "biology/population-and-community-ecology",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "biology/population-and-quantitative-genetics",
+      "kind": "prerequisites",
+      "requires": "mathematics/probability",
+      "missing": false
+    },
+    {
+      "consumer": "biology/population-and-quantitative-genetics",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "biology/genomics-and-bioinformatics",
+      "kind": "prerequisites",
+      "requires": "mathematics/mathematical-computing-and-experimentation",
+      "missing": false
+    },
+    {
+      "consumer": "biology/statistical-phylogenetics-and-comparative-methods",
+      "kind": "prerequisites",
+      "requires": "mathematics/probability",
+      "missing": false
+    },
+    {
+      "consumer": "biology/statistical-phylogenetics-and-comparative-methods",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "biology/infectious-disease-and-epidemiology",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "biology/methods-and-logic-of-biological-research",
+      "kind": "prerequisites",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "biology/systems-and-quantitative-biology",
+      "kind": "prerequisites",
+      "requires": "mathematics/differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "biology/systems-and-quantitative-biology",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/dynamical-systems-and-ergodic-theory",
+      "missing": false
+    },
+    {
+      "consumer": "biology/theoretical-ecology-and-evolutionary-dynamics",
+      "kind": "prerequisites",
+      "requires": "mathematics/differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "biology/theoretical-ecology-and-evolutionary-dynamics",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/dynamical-systems-and-ergodic-theory",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/programming-and-software-development-foundations",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/elementary-algebra-and-functions",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/data-structures-and-program-design",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/discrete-mathematics-and-combinatorics",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/algorithm-design-and-analysis",
+      "kind": "prerequisites",
+      "requires": "mathematics/discrete-mathematics-and-combinatorics",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/programming-language-concepts",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/mathematical-reasoning-and-proof",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/artificial-intelligence-foundations",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/probability",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/artificial-intelligence-foundations",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/linear-algebra",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/graphics-and-interactive-techniques",
+      "kind": "prerequisites",
+      "requires": "mathematics/linear-algebra",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/machine-learning-and-data-science",
+      "kind": "prerequisites",
+      "requires": "mathematics/linear-algebra",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/machine-learning-and-data-science",
+      "kind": "prerequisites",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/machine-learning-and-data-science",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/optimization-and-operations-research",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/robotics-and-autonomous-systems",
+      "kind": "prerequisites",
+      "requires": "mathematics/probability",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/robotics-and-autonomous-systems",
+      "kind": "prerequisites",
+      "requires": "mathematics/differential-equations",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/high-performance-and-scientific-computing",
+      "kind": "prerequisites",
+      "requires": "mathematics/numerical-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/computer-science-research-methods",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/advanced-algorithms-and-complexity",
+      "kind": "prerequisites",
+      "requires": "mathematics/probability",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/advanced-algorithms-and-complexity",
+      "kind": "prerequisites",
+      "requires": "mathematics/theory-of-computation-and-complexity",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/advanced-algorithms-and-complexity",
+      "kind": "recommendedAfter",
+      "requires": "mathematics/optimization-and-operations-research",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/advanced-programming-languages-and-formal-methods",
+      "kind": "prerequisites",
+      "requires": "mathematics/mathematical-logic-and-computability",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/advanced-ai-and-machine-learning",
+      "kind": "prerequisites",
+      "requires": "mathematics/optimization-and-operations-research",
+      "missing": false
+    },
+    {
+      "consumer": "computer-science/human-centered-computing-research-methods",
+      "kind": "prerequisites",
+      "requires": "mathematics/statistical-inference-and-data-analysis",
+      "missing": false
+    }
+  ],
+  "globalValidation": {
+    "baseline": [],
+    "candidate": []
+  }
+}
