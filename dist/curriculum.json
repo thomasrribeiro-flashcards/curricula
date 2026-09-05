@@ -3396,7 +3396,7 @@
       "tier": "core",
       "level": "foundational",
       "status": "pilot-approved",
-      "description": "Reason with whole numbers, integers, fractions, decimals, ratio, percent, place value, and estimation, and justify why each operation applies.",
+      "description": "Reason and calculate with integers, fractions, decimals, ratios, percentages, units, and estimates.",
       "prerequisites": [],
       "recommended_after": [],
       "materialized": true,
@@ -3688,7 +3688,7 @@
       "tier": "core",
       "level": "foundational",
       "status": "pilot-approved",
-      "description": "Manipulate symbolic expressions, solve equations, inequalities, and systems, and model with linear, quadratic, polynomial, rational, exponential, and logarithmic functions and their graphs.",
+      "description": "Use algebraic laws, expressions, equations, inequalities, graphs, and elementary functions to represent and solve constraints.",
       "prerequisites": [
         "mathematics/number-sense-and-arithmetic"
       ],
@@ -4189,14 +4189,16 @@
       "subject": "mathematics",
       "deck": "geometry-and-measurement",
       "order": 3,
-      "tier": "core",
+      "tier": "recommended",
       "level": "foundational",
       "status": "pilot-approved",
-      "description": "Reason about congruence, similarity, transformations, circles, right-triangle trigonometry, coordinate geometry, area, volume, units, and short deductive geometric arguments.",
+      "description": "Reason about shape, congruence, similarity, coordinates, area, and volume with defensible diagrams.",
       "prerequisites": [
+        "mathematics/number-sense-and-arithmetic"
+      ],
+      "recommended_after": [
         "mathematics/elementary-algebra-and-functions"
       ],
-      "recommended_after": [],
       "materialized": true,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/geometry-and-measurement",
@@ -4547,41 +4549,20 @@
       "generation_command": "flashcards curriculum materialize mathematics/geometry-and-measurement"
     },
     {
-      "id": "mathematics/mathematical-computing-and-experimentation",
+      "id": "mathematics/precalculus-and-trigonometry",
       "subject": "mathematics",
-      "deck": "mathematical-computing-and-experimentation",
+      "deck": "precalculus-and-trigonometry",
       "order": 4,
       "tier": "core",
       "level": "foundational",
       "status": "proposed",
-      "description": "Use a programming environment, symbolic and numeric tools, plotting, floating-point awareness, and reproducible notebooks to explore mathematical objects and test conjectures.",
+      "description": "Translate exponential, logarithmic, trigonometric, complex-number, and parametric representations for calculus and wave models.",
       "prerequisites": [
         "mathematics/elementary-algebra-and-functions"
       ],
       "recommended_after": [
         "mathematics/geometry-and-measurement"
       ],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-computing-and-experimentation",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/mathematical-computing-and-experimentation"
-    },
-    {
-      "id": "mathematics/precalculus-and-trigonometry",
-      "subject": "mathematics",
-      "deck": "precalculus-and-trigonometry",
-      "order": 5,
-      "tier": "core",
-      "level": "foundational",
-      "status": "proposed",
-      "description": "Work fluently with circular trigonometric functions and identities, conic sections, polar and parametric descriptions, plane vectors, sequences, and limit-ready behavior of functions.",
-      "prerequisites": [
-        "mathematics/geometry-and-measurement"
-      ],
-      "recommended_after": [],
       "materialized": false,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/precalculus-and-trigonometry",
@@ -4594,17 +4575,16 @@
       "id": "mathematics/mathematical-reasoning-and-proof",
       "subject": "mathematics",
       "deck": "mathematical-reasoning-and-proof",
-      "order": 6,
+      "order": 5,
       "tier": "core",
-      "level": "undergraduate-core",
+      "level": "foundational",
       "status": "proposed",
-      "description": "Read, evaluate, and write correct proofs using logic, quantifiers, sets, relations, functions, induction, contradiction, contraposition, and elementary cardinality.",
+      "description": "Read and construct quantified arguments using sets, functions, relations, induction, contradiction, and counterexamples.",
       "prerequisites": [
-        "mathematics/elementary-algebra-and-functions"
+        "mathematics/number-sense-and-arithmetic"
       ],
       "recommended_after": [
-        "mathematics/geometry-and-measurement",
-        "mathematics/precalculus-and-trigonometry"
+        "mathematics/elementary-algebra-and-functions"
       ],
       "materialized": false,
       "repository": {
@@ -4615,6 +4595,27 @@
       "generation_command": "flashcards curriculum materialize mathematics/mathematical-reasoning-and-proof"
     },
     {
+      "id": "mathematics/data-and-chance",
+      "subject": "mathematics",
+      "deck": "data-and-chance",
+      "order": 6,
+      "tier": "recommended",
+      "level": "foundational",
+      "status": "proposed",
+      "description": "Read data displays and reason about variability, sampling, association, and elementary chance without calculus.",
+      "prerequisites": [
+        "mathematics/elementary-algebra-and-functions"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/data-and-chance",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/data-and-chance"
+    },
+    {
       "id": "mathematics/single-variable-differential-calculus",
       "subject": "mathematics",
       "deck": "single-variable-differential-calculus",
@@ -4622,11 +4623,13 @@
       "tier": "core",
       "level": "undergraduate-core",
       "status": "proposed",
-      "description": "Use limits, continuity, and derivatives to model rates, approximate locally, and analyze extrema, concavity, and optimization in one variable.",
+      "description": "Use limits and derivatives to explain local change, approximation, shape, and constrained single-variable optimization.",
       "prerequisites": [
         "mathematics/precalculus-and-trigonometry"
       ],
-      "recommended_after": [],
+      "recommended_after": [
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
       "materialized": false,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/single-variable-differential-calculus",
@@ -4636,20 +4639,40 @@
       "generation_command": "flashcards curriculum materialize mathematics/single-variable-differential-calculus"
     },
     {
-      "id": "mathematics/linear-algebra",
+      "id": "mathematics/single-variable-integral-calculus",
       "subject": "mathematics",
-      "deck": "linear-algebra",
+      "deck": "single-variable-integral-calculus",
       "order": 8,
       "tier": "core",
       "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Connect accumulation and antiderivatives, evaluate integrals, and control infinite series and Taylor approximations.",
+      "prerequisites": [
+        "mathematics/single-variable-differential-calculus"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/single-variable-integral-calculus",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/single-variable-integral-calculus"
+    },
+    {
+      "id": "mathematics/linear-algebra",
+      "subject": "mathematics",
+      "deck": "linear-algebra",
+      "order": 9,
+      "tier": "core",
+      "level": "undergraduate-core",
       "status": "pilot-approved",
-      "description": "Reason with vector spaces, linear maps, matrices, rank, determinants, eigenstructure, inner products, orthogonality, and matrix factorizations across algebraic, geometric, and computational views.",
+      "description": "Solve linear systems and reason with vector spaces, linear maps, bases, eigenstructure, orthogonality, least squares, and singular values.",
       "prerequisites": [
         "mathematics/elementary-algebra-and-functions"
       ],
       "recommended_after": [
-        "mathematics/mathematical-reasoning-and-proof",
-        "mathematics/single-variable-differential-calculus"
+        "mathematics/mathematical-reasoning-and-proof"
       ],
       "materialized": true,
       "repository": {
@@ -5141,27 +5164,6 @@
       "generation_command": "flashcards curriculum materialize mathematics/linear-algebra"
     },
     {
-      "id": "mathematics/single-variable-integral-calculus",
-      "subject": "mathematics",
-      "deck": "single-variable-integral-calculus",
-      "order": 9,
-      "tier": "core",
-      "level": "undergraduate-core",
-      "status": "proposed",
-      "description": "Use Riemann sums, the fundamental theorem, integration techniques, improper integrals, accumulation applications, and infinite series including Taylor expansions.",
-      "prerequisites": [
-        "mathematics/single-variable-differential-calculus"
-      ],
-      "recommended_after": [],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/single-variable-integral-calculus",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/single-variable-integral-calculus"
-    },
-    {
       "id": "mathematics/discrete-mathematics-and-combinatorics",
       "subject": "mathematics",
       "deck": "discrete-mathematics-and-combinatorics",
@@ -5169,13 +5171,11 @@
       "tier": "core",
       "level": "undergraduate-core",
       "status": "proposed",
-      "description": "Count with bijections, inclusion-exclusion, recurrences, and generating functions, and analyze graphs, trees, orders, and discrete structures with proof.",
+      "description": "Model finite structures and justify counting, recurrences, graph arguments, invariants, and elementary asymptotic bounds.",
       "prerequisites": [
         "mathematics/mathematical-reasoning-and-proof"
       ],
-      "recommended_after": [
-        "mathematics/linear-algebra"
-      ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/discrete-mathematics-and-combinatorics",
@@ -5185,20 +5185,86 @@
       "generation_command": "flashcards curriculum materialize mathematics/discrete-mathematics-and-combinatorics"
     },
     {
-      "id": "mathematics/multivariable-and-vector-calculus",
+      "id": "mathematics/elementary-number-theory",
       "subject": "mathematics",
-      "deck": "multivariable-and-vector-calculus",
+      "deck": "elementary-number-theory",
       "order": 11,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Prove divisibility and congruence results and solve elementary integer equations.",
+      "prerequisites": [
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/elementary-number-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/elementary-number-theory"
+    },
+    {
+      "id": "mathematics/group-theory",
+      "subject": "mathematics",
+      "deck": "group-theory",
+      "order": 12,
       "tier": "core",
       "level": "undergraduate-core",
       "status": "proposed",
-      "description": "Differentiate and integrate functions of several variables, use gradients and Jacobians, change coordinates, and apply the line, surface, Green, Stokes, and divergence theorems.",
+      "description": "Use group actions, homomorphisms, quotients, and structure theorems to analyze symmetry.",
       "prerequisites": [
-        "mathematics/single-variable-integral-calculus"
+        "mathematics/mathematical-reasoning-and-proof"
       ],
       "recommended_after": [
+        "mathematics/elementary-number-theory"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/group-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/group-theory"
+    },
+    {
+      "id": "mathematics/rings-and-polynomials",
+      "subject": "mathematics",
+      "deck": "rings-and-polynomials",
+      "order": 13,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Reason with rings, ideals, quotient constructions, polynomial arithmetic, divisibility, and fields as coefficient systems.",
+      "prerequisites": [
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "recommended_after": [
+        "mathematics/elementary-number-theory"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/rings-and-polynomials",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/rings-and-polynomials"
+    },
+    {
+      "id": "mathematics/multivariable-and-vector-calculus",
+      "subject": "mathematics",
+      "deck": "multivariable-and-vector-calculus",
+      "order": 14,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Use multivariable derivatives, multiple integrals, coordinate changes, vector fields, and integral theorems.",
+      "prerequisites": [
+        "mathematics/single-variable-integral-calculus",
         "mathematics/linear-algebra"
       ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/multivariable-and-vector-calculus",
@@ -5208,14 +5274,36 @@
       "generation_command": "flashcards curriculum materialize mathematics/multivariable-and-vector-calculus"
     },
     {
-      "id": "mathematics/probability",
+      "id": "mathematics/differential-equations",
       "subject": "mathematics",
-      "deck": "probability",
-      "order": 12,
+      "deck": "differential-equations",
+      "order": 15,
       "tier": "core",
       "level": "undergraduate-core",
       "status": "proposed",
-      "description": "Model uncertainty with sample spaces, conditioning, independence, discrete and continuous random variables, joint behavior, expectation, and limit laws.",
+      "description": "Formulate and solve ordinary differential equations and linear systems, and interpret existence, forcing, and local stability.",
+      "prerequisites": [
+        "mathematics/single-variable-integral-calculus",
+        "mathematics/linear-algebra"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/differential-equations",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/differential-equations"
+    },
+    {
+      "id": "mathematics/probability",
+      "subject": "mathematics",
+      "deck": "probability",
+      "order": 16,
+      "tier": "core",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Model discrete and continuous uncertainty using conditioning, random variables, expectations, joint laws, inequalities, and limit approximations.",
       "prerequisites": [
         "mathematics/single-variable-integral-calculus"
       ],
@@ -5231,45 +5319,19 @@
       "generation_command": "flashcards curriculum materialize mathematics/probability"
     },
     {
-      "id": "mathematics/differential-equations",
-      "subject": "mathematics",
-      "deck": "differential-equations",
-      "order": 13,
-      "tier": "core",
-      "level": "undergraduate-core",
-      "status": "proposed",
-      "description": "Formulate, solve, and qualitatively analyze ordinary differential equations and linear systems using analytic methods, transforms, eigenstructure, phase planes, and numerical schemes.",
-      "prerequisites": [
-        "mathematics/single-variable-integral-calculus",
-        "mathematics/linear-algebra"
-      ],
-      "recommended_after": [
-        "mathematics/multivariable-and-vector-calculus",
-        "mathematics/mathematical-computing-and-experimentation"
-      ],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/differential-equations",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/differential-equations"
-    },
-    {
       "id": "mathematics/statistical-inference-and-data-analysis",
       "subject": "mathematics",
       "deck": "statistical-inference-and-data-analysis",
-      "order": 14,
+      "order": 17,
       "tier": "core",
       "level": "undergraduate-core",
       "status": "proposed",
-      "description": "Summarize data honestly, reason about sampling distributions, estimate with uncertainty, test hypotheses, fit and criticize regression models, and state the limits of an inference.",
+      "description": "Design and critique studies and perform estimation, testing, simple regression, resampling, and uncertainty communication.",
       "prerequisites": [
-        "mathematics/probability"
+        "mathematics/elementary-algebra-and-functions"
       ],
       "recommended_after": [
-        "mathematics/mathematical-computing-and-experimentation",
-        "mathematics/linear-algebra"
+        "mathematics/data-and-chance"
       ],
       "materialized": false,
       "repository": {
@@ -5280,40 +5342,39 @@
       "generation_command": "flashcards curriculum materialize mathematics/statistical-inference-and-data-analysis"
     },
     {
-      "id": "mathematics/number-theory",
+      "id": "mathematics/mathematical-computing-and-experimentation",
       "subject": "mathematics",
-      "deck": "number-theory",
-      "order": 15,
-      "tier": "recommended",
+      "deck": "mathematical-computing-and-experimentation",
+      "order": 18,
+      "tier": "core",
       "level": "undergraduate-core",
       "status": "proposed",
-      "description": "Prove and apply results about divisibility, primes, congruences, multiplicative functions, primitive roots, quadratic reciprocity, and Diophantine equations.",
+      "description": "Translate mathematical objects into tested symbolic and numerical computations, plots, simulations, and reproducible data workflows.",
       "prerequisites": [
-        "mathematics/mathematical-reasoning-and-proof"
+        "mathematics/elementary-algebra-and-functions",
+        "computer-science/programming-and-software-development-foundations"
       ],
-      "recommended_after": [
-        "mathematics/discrete-mathematics-and-combinatorics"
-      ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/number-theory",
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-computing-and-experimentation",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/number-theory"
+      "generation_command": "flashcards curriculum materialize mathematics/mathematical-computing-and-experimentation"
     },
     {
       "id": "mathematics/real-analysis",
       "subject": "mathematics",
       "deck": "real-analysis",
-      "order": 16,
+      "order": 19,
       "tier": "core",
-      "level": "undergraduate-advanced",
+      "level": "undergraduate-core",
       "status": "proposed",
-      "description": "Prove theorems about completeness, sequences, series, limits, continuity, differentiation, Riemann integration, and uniform convergence, and construct counterexamples.",
+      "description": "Prove results about completeness, convergence, continuity, differentiation, integration, and sequences of real functions.",
       "prerequisites": [
-        "mathematics/mathematical-reasoning-and-proof",
-        "mathematics/single-variable-integral-calculus"
+        "mathematics/single-variable-integral-calculus",
+        "mathematics/mathematical-reasoning-and-proof"
       ],
       "recommended_after": [],
       "materialized": false,
@@ -5325,44 +5386,90 @@
       "generation_command": "flashcards curriculum materialize mathematics/real-analysis"
     },
     {
-      "id": "mathematics/abstract-algebra",
+      "id": "mathematics/mathematical-modeling",
       "subject": "mathematics",
-      "deck": "abstract-algebra",
-      "order": 17,
+      "deck": "mathematical-modeling",
+      "order": 20,
+      "tier": "recommended",
+      "level": "undergraduate-core",
+      "status": "proposed",
+      "description": "Build, scale, analyze, validate, and communicate deterministic models with explicit assumptions and failure tests.",
+      "prerequisites": [
+        "mathematics/differential-equations",
+        "mathematics/mathematical-computing-and-experimentation"
+      ],
+      "recommended_after": [
+        "mathematics/statistical-inference-and-data-analysis"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-modeling",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/mathematical-modeling"
+    },
+    {
+      "id": "mathematics/advanced-linear-algebra",
+      "subject": "mathematics",
+      "deck": "advanced-linear-algebra",
+      "order": 21,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Prove finite-dimensional structure results using duality, canonical forms, bilinear forms, and tensor constructions.",
+      "prerequisites": [
+        "mathematics/linear-algebra",
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-linear-algebra",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/advanced-linear-algebra"
+    },
+    {
+      "id": "mathematics/metric-and-general-topology",
+      "subject": "mathematics",
+      "deck": "metric-and-general-topology",
+      "order": 22,
       "tier": "core",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Reason with groups, subgroups, cosets, homomorphisms, quotients, group actions, rings, ideals, polynomial rings, and first field extensions.",
+      "description": "Prove continuity, compactness, connectedness, separation, and product or quotient properties using topological definitions.",
       "prerequisites": [
         "mathematics/mathematical-reasoning-and-proof"
       ],
       "recommended_after": [
-        "mathematics/linear-algebra",
-        "mathematics/number-theory"
+        "mathematics/real-analysis"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/abstract-algebra",
+        "url": "https://github.com/thomasrribeiro-flashcards/metric-and-general-topology",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/abstract-algebra"
+      "generation_command": "flashcards curriculum materialize mathematics/metric-and-general-topology"
     },
     {
       "id": "mathematics/complex-analysis",
       "subject": "mathematics",
       "deck": "complex-analysis",
-      "order": 18,
-      "tier": "core",
+      "order": 23,
+      "tier": "recommended",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Use holomorphy, the Cauchy-Riemann equations, contour integration, Cauchy theory, power and Laurent series, analytic continuation, residues, and conformal mapping.",
+      "description": "Analyze holomorphic functions using contour integrals, Cauchy theory, series, residues, and conformal maps.",
       "prerequisites": [
-        "mathematics/multivariable-and-vector-calculus",
+        "mathematics/single-variable-integral-calculus",
         "mathematics/mathematical-reasoning-and-proof"
       ],
       "recommended_after": [
-        "mathematics/real-analysis"
+        "mathematics/real-analysis",
+        "mathematics/multivariable-and-vector-calculus"
       ],
       "materialized": false,
       "repository": {
@@ -5373,67 +5480,251 @@
       "generation_command": "flashcards curriculum materialize mathematics/complex-analysis"
     },
     {
-      "id": "mathematics/general-topology",
+      "id": "mathematics/graph-theory",
       "subject": "mathematics",
-      "deck": "general-topology",
-      "order": 19,
-      "tier": "core",
+      "deck": "graph-theory",
+      "order": 24,
+      "tier": "recommended",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Work with topological spaces, bases, continuity, homeomorphism, connectedness, compactness, separation axioms, product and quotient constructions, and metrization.",
+      "description": "Prove structural graph results and use connectivity, matching, coloring, and extremal methods.",
       "prerequisites": [
-        "mathematics/real-analysis"
+        "mathematics/discrete-mathematics-and-combinatorics"
       ],
       "recommended_after": [],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/general-topology",
+        "url": "https://github.com/thomasrribeiro-flashcards/graph-theory",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/general-topology"
+      "generation_command": "flashcards curriculum materialize mathematics/graph-theory"
     },
     {
-      "id": "mathematics/differential-geometry-and-manifolds",
+      "id": "mathematics/fields-and-galois-theory",
       "subject": "mathematics",
-      "deck": "differential-geometry-and-manifolds",
-      "order": 20,
+      "deck": "fields-and-galois-theory",
+      "order": 25,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Relate field extensions and polynomial solvability to automorphism groups and Galois correspondence.",
+      "prerequisites": [
+        "mathematics/rings-and-polynomials",
+        "mathematics/group-theory",
+        "mathematics/linear-algebra"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/fields-and-galois-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/fields-and-galois-theory"
+    },
+    {
+      "id": "mathematics/modules-and-linear-structures",
+      "subject": "mathematics",
+      "deck": "modules-and-linear-structures",
+      "order": 26,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Analyze modules and module maps through quotients, generators, exact sequences, tensor products, and PID structure.",
+      "prerequisites": [
+        "mathematics/rings-and-polynomials",
+        "mathematics/linear-algebra"
+      ],
+      "recommended_after": [
+        "mathematics/advanced-linear-algebra"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/modules-and-linear-structures",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/modules-and-linear-structures"
+    },
+    {
+      "id": "mathematics/category-theory",
+      "subject": "mathematics",
+      "deck": "category-theory",
+      "order": 27,
       "tier": "recommended",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Analyze curves and surfaces with curvature and fundamental forms, then work on smooth manifolds with tangent spaces, vector fields, differential forms, Stokes' theorem, and first Riemannian metrics.",
+      "description": "Recognize universal properties and reason with categories, functors, natural transformations, limits, and adjunctions.",
       "prerequisites": [
-        "mathematics/multivariable-and-vector-calculus",
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "recommended_after": [
+        "mathematics/rings-and-polynomials",
+        "mathematics/metric-and-general-topology"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/category-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/category-theory"
+    },
+    {
+      "id": "mathematics/theory-of-computation-and-complexity",
+      "subject": "mathematics",
+      "deck": "theory-of-computation-and-complexity",
+      "order": 28,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Analyze formal languages, machine models, undecidability, reductions, and time or space complexity.",
+      "prerequisites": [
+        "mathematics/discrete-mathematics-and-combinatorics"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/theory-of-computation-and-complexity",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/theory-of-computation-and-complexity"
+    },
+    {
+      "id": "mathematics/mathematical-logic-and-computability",
+      "subject": "mathematics",
+      "deck": "mathematical-logic-and-computability",
+      "order": 29,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Distinguish formal syntax, semantics, provability, and computability through completeness, compactness, and arithmetic limitations.",
+      "prerequisites": [
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "recommended_after": [
+        "mathematics/theory-of-computation-and-complexity"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-logic-and-computability",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/mathematical-logic-and-computability"
+    },
+    {
+      "id": "mathematics/axiomatic-set-theory",
+      "subject": "mathematics",
+      "deck": "axiomatic-set-theory",
+      "order": 30,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Reason with axiomatic sets, ordinals, cardinals, choice, and transfinite constructions.",
+      "prerequisites": [
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "recommended_after": [
+        "mathematics/mathematical-logic-and-computability"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/axiomatic-set-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/axiomatic-set-theory"
+    },
+    {
+      "id": "mathematics/euclidean-and-non-euclidean-geometry",
+      "subject": "mathematics",
+      "deck": "euclidean-and-non-euclidean-geometry",
+      "order": 31,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Compare axiomatic, synthetic, and model-based geometry through incidence, congruence, parallelism, and invariants.",
+      "prerequisites": [
+        "mathematics/geometry-and-measurement",
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "recommended_after": [
+        "mathematics/linear-algebra"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/euclidean-and-non-euclidean-geometry",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/euclidean-and-non-euclidean-geometry"
+    },
+    {
+      "id": "mathematics/measure-and-integration",
+      "subject": "mathematics",
+      "deck": "measure-and-integration",
+      "order": 32,
+      "tier": "core",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Construct measures and Lebesgue integrals and justify convergence, product integration, differentiation of measures, and Lp estimates.",
+      "prerequisites": [
+        "mathematics/real-analysis"
+      ],
+      "recommended_after": [
+        "mathematics/metric-and-general-topology"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/measure-and-integration",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/measure-and-integration"
+    },
+    {
+      "id": "mathematics/fourier-analysis-and-transforms",
+      "subject": "mathematics",
+      "deck": "fourier-analysis-and-transforms",
+      "order": 33,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Translate functions and signals into orthogonal expansions, Fourier transforms, convolution, and sampling with bounded convergence claims.",
+      "prerequisites": [
+        "mathematics/single-variable-integral-calculus",
         "mathematics/linear-algebra",
         "mathematics/mathematical-reasoning-and-proof"
       ],
       "recommended_after": [
-        "mathematics/real-analysis",
-        "mathematics/general-topology"
+        "mathematics/complex-analysis"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/differential-geometry-and-manifolds",
+        "url": "https://github.com/thomasrribeiro-flashcards/fourier-analysis-and-transforms",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/differential-geometry-and-manifolds"
+      "generation_command": "flashcards curriculum materialize mathematics/fourier-analysis-and-transforms"
     },
     {
       "id": "mathematics/partial-differential-equations",
       "subject": "mathematics",
       "deck": "partial-differential-equations",
-      "order": 21,
-      "tier": "core",
+      "order": 34,
+      "tier": "recommended",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Classify and solve first-order, heat, wave, and Laplace equations using characteristics, separation of variables, Fourier methods, Green's functions, and maximum principles.",
+      "description": "Formulate and solve classical PDE initial and boundary problems using characteristics, eigenfunction expansions, and Green functions.",
       "prerequisites": [
         "mathematics/differential-equations",
         "mathematics/multivariable-and-vector-calculus"
       ],
       "recommended_after": [
-        "mathematics/real-analysis"
+        "mathematics/fourier-analysis-and-transforms"
       ],
       "materialized": false,
       "repository": {
@@ -5444,21 +5735,44 @@
       "generation_command": "flashcards curriculum materialize mathematics/partial-differential-equations"
     },
     {
+      "id": "mathematics/nonlinear-dynamics",
+      "subject": "mathematics",
+      "deck": "nonlinear-dynamics",
+      "order": 35,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Analyze deterministic maps and flows using stability, phase portraits, bifurcations, and controlled chaos examples.",
+      "prerequisites": [
+        "mathematics/differential-equations"
+      ],
+      "recommended_after": [
+        "mathematics/real-analysis",
+        "mathematics/mathematical-computing-and-experimentation"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/nonlinear-dynamics",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/nonlinear-dynamics"
+    },
+    {
       "id": "mathematics/numerical-analysis",
       "subject": "mathematics",
       "deck": "numerical-analysis",
-      "order": 22,
-      "tier": "core",
+      "order": 36,
+      "tier": "recommended",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Analyze floating-point error, conditioning, and stability while designing and assessing algorithms for roots, interpolation, quadrature, linear systems, eigenvalues, and initial-value problems.",
+      "description": "Choose and validate finite-dimensional numerical methods using conditioning, stability, approximation, and error estimates.",
       "prerequisites": [
-        "mathematics/linear-algebra",
         "mathematics/single-variable-integral-calculus",
+        "mathematics/linear-algebra",
         "mathematics/mathematical-computing-and-experimentation"
       ],
       "recommended_after": [
-        "mathematics/differential-equations",
         "mathematics/real-analysis"
       ],
       "materialized": false,
@@ -5473,19 +5787,16 @@
       "id": "mathematics/optimization-and-operations-research",
       "subject": "mathematics",
       "deck": "optimization-and-operations-research",
-      "order": 23,
+      "order": 37,
       "tier": "recommended",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Formulate and solve linear, convex, and constrained optimization problems using duality, optimality conditions, descent and Newton methods, network models, and integer formulations.",
+      "description": "Formulate finite-dimensional decision problems and use linear programming, duality, convexity, and optimality certificates.",
       "prerequisites": [
-        "mathematics/multivariable-and-vector-calculus",
-        "mathematics/linear-algebra"
+        "mathematics/linear-algebra",
+        "mathematics/single-variable-differential-calculus"
       ],
-      "recommended_after": [
-        "mathematics/numerical-analysis",
-        "mathematics/mathematical-computing-and-experimentation"
-      ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/optimization-and-operations-research",
@@ -5495,21 +5806,91 @@
       "generation_command": "flashcards curriculum materialize mathematics/optimization-and-operations-research"
     },
     {
-      "id": "mathematics/stochastic-processes",
+      "id": "mathematics/regression-and-statistical-models",
       "subject": "mathematics",
-      "deck": "stochastic-processes",
-      "order": 24,
+      "deck": "regression-and-statistical-models",
+      "order": 38,
       "tier": "recommended",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Model systems evolving randomly in time with Markov chains, Poisson and renewal processes, queues, branching processes, elementary martingales, and Brownian motion.",
+      "description": "Fit and diagnose linear and generalized linear models and communicate model uncertainty and limitations.",
+      "prerequisites": [
+        "mathematics/statistical-inference-and-data-analysis",
+        "mathematics/linear-algebra"
+      ],
+      "recommended_after": [
+        "mathematics/mathematical-computing-and-experimentation"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/regression-and-statistical-models",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/regression-and-statistical-models"
+    },
+    {
+      "id": "mathematics/mathematical-statistics",
+      "subject": "mathematics",
+      "deck": "mathematical-statistics",
+      "order": 39,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Derive properties of estimators and tests using likelihood, sufficiency, information, decision criteria, and asymptotic arguments.",
+      "prerequisites": [
+        "mathematics/probability",
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "recommended_after": [
+        "mathematics/statistical-inference-and-data-analysis"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-statistics",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/mathematical-statistics"
+    },
+    {
+      "id": "mathematics/experimental-design-and-causal-inference",
+      "subject": "mathematics",
+      "deck": "experimental-design-and-causal-inference",
+      "order": 40,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Distinguish causal identification from estimation and design randomized or observational comparisons with explicit assumptions.",
+      "prerequisites": [
+        "mathematics/statistical-inference-and-data-analysis"
+      ],
+      "recommended_after": [
+        "mathematics/regression-and-statistical-models"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/experimental-design-and-causal-inference",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/experimental-design-and-causal-inference"
+    },
+    {
+      "id": "mathematics/stochastic-processes",
+      "subject": "mathematics",
+      "deck": "stochastic-processes",
+      "order": 41,
+      "tier": "recommended",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Analyze finite or countable-state Markov processes, renewal, branching, and queue models with correct time and conditioning conventions.",
       "prerequisites": [
         "mathematics/probability",
         "mathematics/linear-algebra"
       ],
       "recommended_after": [
-        "mathematics/differential-equations",
-        "mathematics/mathematical-computing-and-experimentation"
+        "mathematics/differential-equations"
       ],
       "materialized": false,
       "repository": {
@@ -5523,18 +5904,15 @@
       "id": "mathematics/information-theory",
       "subject": "mathematics",
       "deck": "information-theory",
-      "order": 25,
-      "tier": "recommended",
+      "order": 42,
+      "tier": "specialization",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Quantify information with entropy, relative entropy, and mutual information, and derive source-coding, channel-capacity, and error-correcting limits.",
+      "description": "Quantify discrete information and derive source coding, channel coding, mutual information, and rate-distortion bounds.",
       "prerequisites": [
         "mathematics/probability"
       ],
-      "recommended_after": [
-        "mathematics/discrete-mathematics-and-combinatorics",
-        "mathematics/linear-algebra"
-      ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/information-theory",
@@ -5544,205 +5922,91 @@
       "generation_command": "flashcards curriculum materialize mathematics/information-theory"
     },
     {
-      "id": "mathematics/mathematical-logic-and-computability",
+      "id": "mathematics/algebraic-coding-theory",
       "subject": "mathematics",
-      "deck": "mathematical-logic-and-computability",
-      "order": 26,
-      "tier": "recommended",
+      "deck": "algebraic-coding-theory",
+      "order": 43,
+      "tier": "specialization",
       "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Reason about formal languages, deduction, models, soundness, completeness, compactness, computability, recursive functions, decidability, and incompleteness.",
+      "description": "Construct and decode finite-field error-correcting codes and prove distance and correction guarantees.",
       "prerequisites": [
-        "mathematics/mathematical-reasoning-and-proof"
-      ],
-      "recommended_after": [
-        "mathematics/discrete-mathematics-and-combinatorics",
-        "mathematics/abstract-algebra"
-      ],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-logic-and-computability",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/mathematical-logic-and-computability"
-    },
-    {
-      "id": "mathematics/theory-of-computation-and-complexity",
-      "subject": "mathematics",
-      "deck": "theory-of-computation-and-complexity",
-      "order": 27,
-      "tier": "recommended",
-      "level": "undergraduate-advanced",
-      "status": "proposed",
-      "description": "Analyze automata, formal languages, Turing machines, decidability, reductions, complexity classes, NP-completeness, and randomized computation.",
-      "prerequisites": [
-        "mathematics/discrete-mathematics-and-combinatorics"
-      ],
-      "recommended_after": [
-        "mathematics/mathematical-computing-and-experimentation",
-        "mathematics/mathematical-logic-and-computability"
-      ],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/theory-of-computation-and-complexity",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/theory-of-computation-and-complexity"
-    },
-    {
-      "id": "mathematics/mathematical-modeling-and-asymptotic-methods",
-      "subject": "mathematics",
-      "deck": "mathematical-modeling-and-asymptotic-methods",
-      "order": 28,
-      "tier": "recommended",
-      "level": "undergraduate-advanced",
-      "status": "proposed",
-      "description": "Build, nondimensionalize, approximate, and validate models using scaling, dimensional analysis, perturbation and asymptotic expansions, compartment and continuum formulations, and sensitivity checks.",
-      "prerequisites": [
-        "mathematics/differential-equations",
-        "mathematics/mathematical-computing-and-experimentation"
-      ],
-      "recommended_after": [
-        "mathematics/partial-differential-equations",
-        "mathematics/multivariable-and-vector-calculus",
-        "physics/measurement-and-physical-reasoning"
-      ],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-modeling-and-asymptotic-methods",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/mathematical-modeling-and-asymptotic-methods"
-    },
-    {
-      "id": "mathematics/measure-theory-and-lebesgue-integration",
-      "subject": "mathematics",
-      "deck": "measure-theory-and-lebesgue-integration",
-      "order": 29,
-      "tier": "core",
-      "level": "graduate",
-      "status": "proposed",
-      "description": "Build sigma-algebras, measures, measurable functions, and the Lebesgue integral, and use convergence theorems, L^p spaces, product measures, and differentiation of measures.",
-      "prerequisites": [
-        "mathematics/real-analysis"
-      ],
-      "recommended_after": [],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/measure-theory-and-lebesgue-integration",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/measure-theory-and-lebesgue-integration"
-    },
-    {
-      "id": "mathematics/advanced-algebra-and-galois-theory",
-      "subject": "mathematics",
-      "deck": "advanced-algebra-and-galois-theory",
-      "order": 30,
-      "tier": "core",
-      "level": "graduate",
-      "status": "proposed",
-      "description": "Use group actions and Sylow theory, modules over a PID with canonical forms, field extensions, and the Galois correspondence to settle solvability and constructibility questions.",
-      "prerequisites": [
-        "mathematics/abstract-algebra",
-        "mathematics/linear-algebra"
-      ],
-      "recommended_after": [],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/advanced-algebra-and-galois-theory",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/advanced-algebra-and-galois-theory"
-    },
-    {
-      "id": "mathematics/mathematical-research-practice",
-      "subject": "mathematics",
-      "deck": "mathematical-research-practice",
-      "order": 31,
-      "tier": "core",
-      "level": "graduate",
-      "status": "proposed",
-      "description": "Search and read the mathematical literature, write and typeset rigorous exposition, referee and present seminars, manage collaboration and attribution, and formulate tractable open questions.",
-      "prerequisites": [
-        "mathematics/mathematical-reasoning-and-proof"
-      ],
-      "recommended_after": [
-        "mathematics/real-analysis",
-        "mathematics/abstract-algebra",
-        "mathematics/mathematical-computing-and-experimentation"
-      ],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-research-practice",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/mathematical-research-practice"
-    },
-    {
-      "id": "mathematics/functional-analysis",
-      "subject": "mathematics",
-      "deck": "functional-analysis",
-      "order": 32,
-      "tier": "core",
-      "level": "graduate",
-      "status": "proposed",
-      "description": "Analyze normed, Banach, and Hilbert spaces, bounded and compact operators, the Hahn-Banach, open-mapping, closed-graph, uniform-boundedness, Riesz representation, and Lax-Milgram theorems, duality, weak topologies, and spectra.",
-      "prerequisites": [
-        "mathematics/measure-theory-and-lebesgue-integration",
+        "mathematics/rings-and-polynomials",
         "mathematics/linear-algebra"
       ],
       "recommended_after": [
-        "mathematics/general-topology"
+        "mathematics/information-theory"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/functional-analysis",
+        "url": "https://github.com/thomasrribeiro-flashcards/algebraic-coding-theory",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/functional-analysis"
+      "generation_command": "flashcards curriculum materialize mathematics/algebraic-coding-theory"
     },
     {
-      "id": "mathematics/measure-theoretic-probability",
+      "id": "mathematics/mathematical-cryptography",
       "subject": "mathematics",
-      "deck": "measure-theoretic-probability",
-      "order": 33,
-      "tier": "core",
-      "level": "graduate",
+      "deck": "mathematical-cryptography",
+      "order": 44,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Ground probability in measure theory: independence, modes of convergence, laws of large numbers, characteristic functions, central limit theorems, conditional expectation, martingales, and concentration inequalities.",
+      "description": "Distinguish mathematical cryptographic guarantees from assumptions using adversarial games, reductions, modular constructions, and probability bounds.",
       "prerequisites": [
-        "mathematics/measure-theory-and-lebesgue-integration",
+        "mathematics/elementary-number-theory",
+        "mathematics/theory-of-computation-and-complexity",
         "mathematics/probability"
       ],
-      "recommended_after": [],
+      "recommended_after": [
+        "mathematics/algebraic-coding-theory"
+      ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/measure-theoretic-probability",
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-cryptography",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/measure-theoretic-probability"
+      "generation_command": "flashcards curriculum materialize mathematics/mathematical-cryptography"
+    },
+    {
+      "id": "mathematics/differential-geometry-and-manifolds",
+      "subject": "mathematics",
+      "deck": "differential-geometry-and-manifolds",
+      "order": 45,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Use charts, tangent and cotangent spaces, tensors, differential forms, and integration to reason intrinsically on smooth manifolds.",
+      "prerequisites": [
+        "mathematics/multivariable-and-vector-calculus",
+        "mathematics/real-analysis",
+        "mathematics/metric-and-general-topology"
+      ],
+      "recommended_after": [
+        "mathematics/euclidean-and-non-euclidean-geometry"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/differential-geometry-and-manifolds",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/differential-geometry-and-manifolds"
     },
     {
       "id": "mathematics/algebraic-topology",
       "subject": "mathematics",
       "deck": "algebraic-topology",
-      "order": 34,
-      "tier": "core",
-      "level": "graduate",
+      "order": 46,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Compute and interpret fundamental groups, covering spaces, CW structures, simplicial and singular homology, exact sequences, cohomology, and duality.",
+      "description": "Compute fundamental groups and homology and use functorial invariants to distinguish spaces.",
       "prerequisites": [
-        "mathematics/general-topology",
-        "mathematics/abstract-algebra"
+        "mathematics/metric-and-general-topology",
+        "mathematics/group-theory"
       ],
       "recommended_after": [],
       "materialized": false,
@@ -5754,66 +6018,133 @@
       "generation_command": "flashcards curriculum materialize mathematics/algebraic-topology"
     },
     {
-      "id": "mathematics/harmonic-and-fourier-analysis",
+      "id": "mathematics/mathematical-writing-and-research-practice",
       "subject": "mathematics",
-      "deck": "harmonic-and-fourier-analysis",
-      "order": 35,
+      "deck": "mathematical-writing-and-research-practice",
+      "order": 47,
       "tier": "recommended",
-      "level": "graduate",
+      "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Analyze Fourier series and transforms on the circle and Euclidean space, convergence and summability, distributions, maximal functions, and singular integral operators.",
+      "description": "Find mathematical sources, reconstruct arguments, manage notation and citations, and produce a checked expository investigation.",
       "prerequisites": [
-        "mathematics/measure-theory-and-lebesgue-integration"
+        "mathematics/mathematical-reasoning-and-proof"
       ],
-      "recommended_after": [
-        "mathematics/functional-analysis",
-        "mathematics/complex-analysis"
-      ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/harmonic-and-fourier-analysis",
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-writing-and-research-practice",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/harmonic-and-fourier-analysis"
+      "generation_command": "flashcards curriculum materialize mathematics/mathematical-writing-and-research-practice"
     },
     {
-      "id": "mathematics/category-theory-and-homological-algebra",
+      "id": "mathematics/game-theory-and-mathematical-economics",
       "subject": "mathematics",
-      "deck": "category-theory-and-homological-algebra",
-      "order": 36,
-      "tier": "recommended",
-      "level": "graduate",
+      "deck": "game-theory-and-mathematical-economics",
+      "order": 48,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
       "status": "proposed",
-      "description": "Use categories, functors, natural transformations, limits, adjunctions, abelian categories, chain complexes, derived functors, and first spectral sequences as working tools.",
+      "description": "Analyze strategic interaction and economic allocation with equilibria, convexity, incentives, and welfare assumptions.",
       "prerequisites": [
-        "mathematics/advanced-algebra-and-galois-theory"
+        "mathematics/probability",
+        "mathematics/optimization-and-operations-research"
       ],
-      "recommended_after": [
-        "mathematics/algebraic-topology"
-      ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/category-theory-and-homological-algebra",
+        "url": "https://github.com/thomasrribeiro-flashcards/game-theory-and-mathematical-economics",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/category-theory-and-homological-algebra"
+      "generation_command": "flashcards curriculum materialize mathematics/game-theory-and-mathematical-economics"
+    },
+    {
+      "id": "mathematics/financial-and-actuarial-mathematics",
+      "subject": "mathematics",
+      "deck": "financial-and-actuarial-mathematics",
+      "order": 49,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Value deterministic and discrete stochastic cash flows and reason about survival, loss, reserves, and no-arbitrage pricing.",
+      "prerequisites": [
+        "mathematics/probability",
+        "mathematics/linear-algebra"
+      ],
+      "recommended_after": [
+        "mathematics/stochastic-processes"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/financial-and-actuarial-mathematics",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/financial-and-actuarial-mathematics"
+    },
+    {
+      "id": "mathematics/mathematical-biology-models",
+      "subject": "mathematics",
+      "deck": "mathematical-biology-models",
+      "order": 50,
+      "tier": "specialization",
+      "level": "undergraduate-advanced",
+      "status": "proposed",
+      "description": "Derive and test population and epidemic models using demographic, interaction, stochastic, and identifiability reasoning.",
+      "prerequisites": [
+        "mathematics/mathematical-modeling",
+        "mathematics/probability"
+      ],
+      "recommended_after": [
+        "biology/population-and-community-ecology"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-biology-models",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/mathematical-biology-models"
+    },
+    {
+      "id": "mathematics/homological-algebra",
+      "subject": "mathematics",
+      "deck": "homological-algebra",
+      "order": 51,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Compute homological invariants with chain complexes, projective and injective resolutions, and derived functors.",
+      "prerequisites": [
+        "mathematics/modules-and-linear-structures"
+      ],
+      "recommended_after": [
+        "mathematics/category-theory"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/homological-algebra",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/homological-algebra"
     },
     {
       "id": "mathematics/commutative-algebra",
       "subject": "mathematics",
       "deck": "commutative-algebra",
-      "order": 37,
-      "tier": "recommended",
+      "order": 52,
+      "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Work with Noetherian rings, modules, localization, primary decomposition, integral extensions, Hilbert basis and Nullstellensatz results, and dimension theory.",
+      "description": "Analyze commutative rings and modules using localization, finiteness, integral dependence, dimension, and local structure.",
       "prerequisites": [
-        "mathematics/advanced-algebra-and-galois-theory"
+        "mathematics/modules-and-linear-structures"
       ],
       "recommended_after": [
-        "mathematics/number-theory"
+        "mathematics/fields-and-galois-theory"
       ],
       "materialized": false,
       "repository": {
@@ -5824,41 +6155,17 @@
       "generation_command": "flashcards curriculum materialize mathematics/commutative-algebra"
     },
     {
-      "id": "mathematics/representation-theory-and-lie-theory",
-      "subject": "mathematics",
-      "deck": "representation-theory-and-lie-theory",
-      "order": 38,
-      "tier": "specialization",
-      "level": "graduate",
-      "status": "proposed",
-      "description": "Decompose representations of finite groups with characters and orthogonality, induce and restrict, and extend to Lie algebras, root systems, weights, and their classification.",
-      "prerequisites": [
-        "mathematics/advanced-algebra-and-galois-theory"
-      ],
-      "recommended_after": [
-        "mathematics/general-topology",
-        "mathematics/differential-geometry-and-manifolds"
-      ],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/representation-theory-and-lie-theory",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/representation-theory-and-lie-theory"
-    },
-    {
       "id": "mathematics/algebraic-number-theory",
       "subject": "mathematics",
       "deck": "algebraic-number-theory",
-      "order": 39,
+      "order": 53,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Study number fields, rings of integers, valuations, ideal factorization, class groups, units, local fields, ramification, and first class-field phenomena.",
+      "description": "Use number fields, integer rings, ideals, ramification, valuations, and local completions to solve arithmetic structure problems.",
       "prerequisites": [
-        "mathematics/advanced-algebra-and-galois-theory",
-        "mathematics/number-theory"
+        "mathematics/fields-and-galois-theory",
+        "mathematics/elementary-number-theory"
       ],
       "recommended_after": [
         "mathematics/commutative-algebra"
@@ -5875,19 +6182,17 @@
       "id": "mathematics/analytic-number-theory",
       "subject": "mathematics",
       "deck": "analytic-number-theory",
-      "order": 40,
+      "order": 54,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Use arithmetic functions, summation methods, Dirichlet series, zeta and L-functions, sieve ideas, and exponential sums to analyze the distribution of primes and other arithmetic sequences.",
+      "description": "Use asymptotic sums, Dirichlet series, complex methods, and elementary sieve estimates to study primes and arithmetic functions.",
       "prerequisites": [
+        "mathematics/elementary-number-theory",
         "mathematics/complex-analysis",
-        "mathematics/number-theory"
+        "mathematics/real-analysis"
       ],
-      "recommended_after": [
-        "mathematics/real-analysis",
-        "mathematics/harmonic-and-fourier-analysis"
-      ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
         "url": "https://github.com/thomasrribeiro-flashcards/analytic-number-theory",
@@ -5897,142 +6202,228 @@
       "generation_command": "flashcards curriculum materialize mathematics/analytic-number-theory"
     },
     {
-      "id": "mathematics/mathematical-statistics-and-asymptotic-inference",
+      "id": "mathematics/algebraic-geometry-of-varieties",
       "subject": "mathematics",
-      "deck": "mathematical-statistics-and-asymptotic-inference",
-      "order": 41,
+      "deck": "algebraic-geometry-of-varieties",
+      "order": 55,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Derive and compare likelihood, sufficiency, exponential-family, decision-theoretic, Bayesian, and asymptotic methods, and prove when estimators and tests achieve their guarantees.",
+      "description": "Translate polynomial equations into affine and projective varieties, morphisms, dimension, and local geometric structure.",
       "prerequisites": [
-        "mathematics/measure-theoretic-probability",
-        "mathematics/statistical-inference-and-data-analysis"
+        "mathematics/commutative-algebra",
+        "mathematics/metric-and-general-topology"
       ],
       "recommended_after": [
-        "mathematics/mathematical-computing-and-experimentation"
+        "mathematics/category-theory"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/mathematical-statistics-and-asymptotic-inference",
+        "url": "https://github.com/thomasrribeiro-flashcards/algebraic-geometry-of-varieties",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/mathematical-statistics-and-asymptotic-inference"
+      "generation_command": "flashcards curriculum materialize mathematics/algebraic-geometry-of-varieties"
     },
     {
-      "id": "mathematics/axiomatic-set-theory",
+      "id": "mathematics/schemes-and-sheaves",
       "subject": "mathematics",
-      "deck": "axiomatic-set-theory",
-      "order": 42,
+      "deck": "schemes-and-sheaves",
+      "order": 56,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Work in ZFC with ordinals, cardinals, transfinite recursion, choice principles, combinatorial set theory, constructibility, forcing, and independence arguments.",
+      "description": "Construct schemes by gluing locally ringed spaces and use sheaves, morphisms, divisors, and cohomology in controlled examples.",
       "prerequisites": [
-        "mathematics/mathematical-logic-and-computability"
+        "mathematics/algebraic-geometry-of-varieties",
+        "mathematics/category-theory"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/schemes-and-sheaves",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/schemes-and-sheaves"
+    },
+    {
+      "id": "mathematics/representation-theory-and-lie-theory",
+      "subject": "mathematics",
+      "deck": "representation-theory-and-lie-theory",
+      "order": 57,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Analyze linear representations through characters and matrix Lie groups, Lie algebras, and elementary highest-weight examples.",
+      "prerequisites": [
+        "mathematics/group-theory",
+        "mathematics/advanced-linear-algebra"
       ],
       "recommended_after": [
-        "mathematics/general-topology",
-        "mathematics/abstract-algebra"
+        "mathematics/differential-geometry-and-manifolds"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/axiomatic-set-theory",
+        "url": "https://github.com/thomasrribeiro-flashcards/representation-theory-and-lie-theory",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/axiomatic-set-theory"
+      "generation_command": "flashcards curriculum materialize mathematics/representation-theory-and-lie-theory"
     },
     {
-      "id": "mathematics/modern-pde-and-sobolev-theory",
+      "id": "mathematics/functional-analysis",
       "subject": "mathematics",
-      "deck": "modern-pde-and-sobolev-theory",
-      "order": 43,
+      "deck": "functional-analysis",
+      "order": 58,
+      "tier": "recommended",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Prove operator and function-space results using Banach and Hilbert structure, duality, weak convergence, and compactness.",
+      "prerequisites": [
+        "mathematics/measure-and-integration",
+        "mathematics/linear-algebra"
+      ],
+      "recommended_after": [
+        "mathematics/metric-and-general-topology"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/functional-analysis",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/functional-analysis"
+    },
+    {
+      "id": "mathematics/harmonic-analysis",
+      "subject": "mathematics",
+      "deck": "harmonic-analysis",
+      "order": 59,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Use distributions, Sobolev spaces, weak formulations, variational and energy methods, elliptic regularity, and semigroup techniques to establish existence, uniqueness, and regularity.",
+      "description": "Prove Fourier and convolution estimates and use maximal functions, interpolation, and singular-integral methods.",
       "prerequisites": [
         "mathematics/functional-analysis",
-        "mathematics/partial-differential-equations"
+        "mathematics/fourier-analysis-and-transforms"
       ],
       "recommended_after": [
-        "mathematics/harmonic-and-fourier-analysis"
+        "mathematics/complex-analysis"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/modern-pde-and-sobolev-theory",
+        "url": "https://github.com/thomasrribeiro-flashcards/harmonic-analysis",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/modern-pde-and-sobolev-theory"
+      "generation_command": "flashcards curriculum materialize mathematics/harmonic-analysis"
     },
     {
-      "id": "mathematics/algebraic-geometry",
+      "id": "mathematics/weak-solutions-and-sobolev-spaces",
       "subject": "mathematics",
-      "deck": "algebraic-geometry",
-      "order": 44,
+      "deck": "weak-solutions-and-sobolev-spaces",
+      "order": 60,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Relate ideals to affine and projective varieties, work with morphisms, sheaves, and first schemes, and analyze curves through divisors and Riemann-Roch.",
+      "description": "Formulate PDEs distributionally and prove weak existence, uniqueness, and basic regularity using Sobolev and energy methods.",
       "prerequisites": [
-        "mathematics/commutative-algebra"
-      ],
-      "recommended_after": [
-        "mathematics/complex-analysis",
-        "mathematics/category-theory-and-homological-algebra",
-        "mathematics/algebraic-topology"
-      ],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/algebraic-geometry",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/algebraic-geometry"
-    },
-    {
-      "id": "mathematics/riemannian-geometry-and-geometric-analysis",
-      "subject": "mathematics",
-      "deck": "riemannian-geometry-and-geometric-analysis",
-      "order": 45,
-      "tier": "specialization",
-      "level": "graduate",
-      "status": "proposed",
-      "description": "Use connections, curvature tensors, geodesics, Jacobi fields, and comparison theorems, and connect curvature to topology through Laplacians, heat flow, and minimal surfaces.",
-      "prerequisites": [
-        "mathematics/differential-geometry-and-manifolds",
-        "mathematics/real-analysis"
-      ],
-      "recommended_after": [
-        "mathematics/general-topology",
+        "mathematics/partial-differential-equations",
         "mathematics/functional-analysis"
       ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/riemannian-geometry-and-geometric-analysis",
+        "url": "https://github.com/thomasrribeiro-flashcards/weak-solutions-and-sobolev-spaces",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/riemannian-geometry-and-geometric-analysis"
+      "generation_command": "flashcards curriculum materialize mathematics/weak-solutions-and-sobolev-spaces"
+    },
+    {
+      "id": "mathematics/nonlinear-pde-and-variational-methods",
+      "subject": "mathematics",
+      "deck": "nonlinear-pde-and-variational-methods",
+      "order": 61,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Use direct methods, compactness, monotonicity, and regularity estimates to analyze nonlinear variational PDEs.",
+      "prerequisites": [
+        "mathematics/weak-solutions-and-sobolev-spaces"
+      ],
+      "recommended_after": [
+        "mathematics/harmonic-analysis"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/nonlinear-pde-and-variational-methods",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/nonlinear-pde-and-variational-methods"
+    },
+    {
+      "id": "mathematics/measure-theoretic-probability",
+      "subject": "mathematics",
+      "deck": "measure-theoretic-probability",
+      "order": 62,
+      "tier": "recommended",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Prove probabilistic limit and conditioning results using measure spaces, independence, conditional expectation, and martingales.",
+      "prerequisites": [
+        "mathematics/measure-and-integration",
+        "mathematics/probability"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/measure-theoretic-probability",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/measure-theoretic-probability"
+    },
+    {
+      "id": "mathematics/stochastic-calculus",
+      "subject": "mathematics",
+      "deck": "stochastic-calculus",
+      "order": 63,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Construct and use Brownian stochastic integration, Ito calculus, stochastic differential equations, and measure change.",
+      "prerequisites": [
+        "mathematics/measure-theoretic-probability"
+      ],
+      "recommended_after": [
+        "mathematics/stochastic-processes",
+        "mathematics/differential-equations"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/stochastic-calculus",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/stochastic-calculus"
     },
     {
       "id": "mathematics/dynamical-systems-and-ergodic-theory",
       "subject": "mathematics",
       "deck": "dynamical-systems-and-ergodic-theory",
-      "order": 46,
+      "order": 64,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Analyze flows and maps through invariant sets, stability, bifurcation, hyperbolicity, symbolic dynamics, invariant measures, ergodic theorems, mixing, and entropy.",
+      "description": "Connect deterministic dynamics to invariant measures, recurrence, ergodic averages, mixing, and entropy.",
       "prerequisites": [
-        "mathematics/measure-theory-and-lebesgue-integration",
-        "mathematics/differential-equations"
+        "mathematics/nonlinear-dynamics",
+        "mathematics/measure-theoretic-probability"
       ],
       "recommended_after": [
-        "mathematics/mathematical-computing-and-experimentation",
         "mathematics/functional-analysis"
       ],
       "materialized": false,
@@ -6044,71 +6435,68 @@
       "generation_command": "flashcards curriculum materialize mathematics/dynamical-systems-and-ergodic-theory"
     },
     {
-      "id": "mathematics/stochastic-analysis-and-sdes",
+      "id": "mathematics/riemannian-geometry",
       "subject": "mathematics",
-      "deck": "stochastic-analysis-and-sdes",
-      "order": 47,
+      "deck": "riemannian-geometry",
+      "order": 65,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Construct the Ito integral, apply Ito's formula, solve and approximate stochastic differential equations, and connect diffusions to parabolic equations and changes of measure.",
+      "description": "Compute and reason about metrics, connections, geodesics, curvature, completeness, and comparison on Riemannian manifolds.",
       "prerequisites": [
-        "mathematics/measure-theoretic-probability"
+        "mathematics/differential-geometry-and-manifolds",
+        "mathematics/differential-equations"
       ],
       "recommended_after": [
-        "mathematics/stochastic-processes",
-        "mathematics/partial-differential-equations"
+        "mathematics/algebraic-topology"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/stochastic-analysis-and-sdes",
+        "url": "https://github.com/thomasrribeiro-flashcards/riemannian-geometry",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/stochastic-analysis-and-sdes"
+      "generation_command": "flashcards curriculum materialize mathematics/riemannian-geometry"
     },
     {
-      "id": "mathematics/advanced-combinatorics-and-graph-theory",
+      "id": "mathematics/advanced-algebraic-topology",
       "subject": "mathematics",
-      "deck": "advanced-combinatorics-and-graph-theory",
-      "order": 48,
+      "deck": "advanced-algebraic-topology",
+      "order": 66,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Prove extremal, Ramsey, and probabilistic-method results, analyze random graphs and thresholds, and use spectral and algebraic methods on combinatorial structures.",
+      "description": "Compute cohomological and homotopical invariants using products, duality, bundles, and spectral-sequence methods.",
       "prerequisites": [
-        "mathematics/discrete-mathematics-and-combinatorics",
-        "mathematics/probability",
-        "mathematics/linear-algebra"
+        "mathematics/algebraic-topology",
+        "mathematics/homological-algebra"
       ],
       "recommended_after": [
-        "mathematics/theory-of-computation-and-complexity",
-        "mathematics/abstract-algebra"
+        "mathematics/category-theory"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/advanced-combinatorics-and-graph-theory",
+        "url": "https://github.com/thomasrribeiro-flashcards/advanced-algebraic-topology",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/advanced-combinatorics-and-graph-theory"
+      "generation_command": "flashcards curriculum materialize mathematics/advanced-algebraic-topology"
     },
     {
       "id": "mathematics/numerical-methods-for-differential-equations",
       "subject": "mathematics",
       "deck": "numerical-methods-for-differential-equations",
-      "order": 49,
+      "order": 67,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Design and analyze finite difference, finite element, and spectral discretizations with consistency, stability, convergence, conservation, and modern solver strategies.",
+      "description": "Design and verify time-stepping and spatial discretizations with consistency, stability, convergence, and conservation checks.",
       "prerequisites": [
         "mathematics/numerical-analysis",
         "mathematics/partial-differential-equations"
       ],
       "recommended_after": [
-        "mathematics/functional-analysis",
-        "mathematics/optimization-and-operations-research"
+        "mathematics/weak-solutions-and-sobolev-spaces"
       ],
       "materialized": false,
       "repository": {
@@ -6119,23 +6507,166 @@
       "generation_command": "flashcards curriculum materialize mathematics/numerical-methods-for-differential-equations"
     },
     {
-      "id": "mathematics/mathematics-of-machine-learning-and-data-science",
+      "id": "mathematics/convex-and-nonlinear-optimization",
       "subject": "mathematics",
-      "deck": "mathematics-of-machine-learning-and-data-science",
-      "order": 50,
+      "deck": "convex-and-nonlinear-optimization",
+      "order": 68,
       "tier": "specialization",
       "level": "graduate",
       "status": "proposed",
-      "description": "Establish learning guarantees with concentration, complexity measures, and empirical risk minimization, and analyze kernels, high-dimensional estimation, and optimization for modern learning models.",
+      "description": "Prove convergence and duality results for convex and constrained nonlinear optimization under explicit regularity conditions.",
       "prerequisites": [
-        "mathematics/statistical-inference-and-data-analysis",
         "mathematics/optimization-and-operations-research",
-        "mathematics/measure-theoretic-probability"
+        "mathematics/real-analysis"
       ],
       "recommended_after": [
-        "mathematics/numerical-analysis",
+        "mathematics/numerical-analysis"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/convex-and-nonlinear-optimization",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/convex-and-nonlinear-optimization"
+    },
+    {
+      "id": "mathematics/control-theory",
+      "subject": "mathematics",
+      "deck": "control-theory",
+      "order": 69,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Analyze controllability, observability, feedback stability, estimation, and deterministic optimal control.",
+      "prerequisites": [
+        "mathematics/differential-equations",
+        "mathematics/optimization-and-operations-research",
+        "mathematics/mathematical-reasoning-and-proof"
+      ],
+      "recommended_after": [
+        "mathematics/nonlinear-dynamics"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/control-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/control-theory"
+    },
+    {
+      "id": "mathematics/inverse-problems-and-regularization",
+      "subject": "mathematics",
+      "deck": "inverse-problems-and-regularization",
+      "order": 70,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Analyze identifiability and ill-posedness and construct stable regularized solutions with quantitative error diagnostics.",
+      "prerequisites": [
         "mathematics/functional-analysis",
-        "mathematics/mathematical-statistics-and-asymptotic-inference"
+        "mathematics/numerical-analysis"
+      ],
+      "recommended_after": [
+        "mathematics/convex-and-nonlinear-optimization"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/inverse-problems-and-regularization",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/inverse-problems-and-regularization"
+    },
+    {
+      "id": "mathematics/asymptotic-statistical-theory",
+      "subject": "mathematics",
+      "deck": "asymptotic-statistical-theory",
+      "order": 71,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Establish consistency, asymptotic distributions, efficiency, and resampling validity under explicit model and convergence conditions.",
+      "prerequisites": [
+        "mathematics/mathematical-statistics",
+        "mathematics/measure-theoretic-probability",
+        "mathematics/linear-algebra"
+      ],
+      "recommended_after": [
+        "mathematics/regression-and-statistical-models"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/asymptotic-statistical-theory",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/asymptotic-statistical-theory"
+    },
+    {
+      "id": "mathematics/bayesian-inference-and-computation",
+      "subject": "mathematics",
+      "deck": "bayesian-inference-and-computation",
+      "order": 72,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Build Bayesian models and audit posterior computation using conjugacy, hierarchical models, simulation, and predictive checks.",
+      "prerequisites": [
+        "mathematics/mathematical-statistics",
+        "mathematics/mathematical-computing-and-experimentation"
+      ],
+      "recommended_after": [
+        "mathematics/stochastic-processes"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/bayesian-inference-and-computation",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/bayesian-inference-and-computation"
+    },
+    {
+      "id": "mathematics/time-series-analysis",
+      "subject": "mathematics",
+      "deck": "time-series-analysis",
+      "order": 73,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Model dependent observations using stationarity, autoregression, moving averages, spectra, and forecasting diagnostics.",
+      "prerequisites": [
+        "mathematics/stochastic-processes",
+        "mathematics/regression-and-statistical-models"
+      ],
+      "recommended_after": [
+        "mathematics/fourier-analysis-and-transforms"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/time-series-analysis",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/time-series-analysis"
+    },
+    {
+      "id": "mathematics/mathematics-of-machine-learning-and-data-science",
+      "subject": "mathematics",
+      "deck": "mathematics-of-machine-learning-and-data-science",
+      "order": 74,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Derive statistical learning objectives, generalization bounds, regularization, kernels, low-rank methods, and optimization tradeoffs.",
+      "prerequisites": [
+        "mathematics/convex-and-nonlinear-optimization",
+        "mathematics/mathematical-statistics"
+      ],
+      "recommended_after": [
+        "computer-science/machine-learning-and-data-science"
       ],
       "materialized": false,
       "repository": {
@@ -6146,138 +6677,278 @@
       "generation_command": "flashcards curriculum materialize mathematics/mathematics-of-machine-learning-and-data-science"
     },
     {
-      "id": "mathematics/arithmetic-geometry-and-modern-number-theory",
+      "id": "mathematics/probabilistic-and-extremal-combinatorics",
       "subject": "mathematics",
-      "deck": "arithmetic-geometry-and-modern-number-theory",
-      "order": 51,
+      "deck": "probabilistic-and-extremal-combinatorics",
+      "order": 75,
       "tier": "specialization",
-      "level": "research-specialization",
+      "level": "graduate",
       "status": "proposed",
-      "description": "Read current work on elliptic curves, modular forms, Galois representations, rational points, L-functions, computational databases, and arithmetic statistics.",
+      "description": "Prove existence and extremal bounds with probabilistic, concentration, dependent-event, and structural methods.",
       "prerequisites": [
-        "mathematics/algebraic-number-theory",
-        "mathematics/analytic-number-theory",
-        "mathematics/algebraic-geometry",
-        "mathematics/mathematical-research-practice"
+        "mathematics/graph-theory",
+        "mathematics/probability"
       ],
-      "recommended_after": [
-        "mathematics/representation-theory-and-lie-theory"
-      ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/arithmetic-geometry-and-modern-number-theory",
+        "url": "https://github.com/thomasrribeiro-flashcards/probabilistic-and-extremal-combinatorics",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/arithmetic-geometry-and-modern-number-theory"
+      "generation_command": "flashcards curriculum materialize mathematics/probabilistic-and-extremal-combinatorics"
     },
     {
-      "id": "mathematics/low-dimensional-topology-and-geometric-topology",
+      "id": "mathematics/model-theory",
       "subject": "mathematics",
-      "deck": "low-dimensional-topology-and-geometric-topology",
-      "order": 52,
+      "deck": "model-theory",
+      "order": 76,
       "tier": "specialization",
-      "level": "research-specialization",
+      "level": "graduate",
       "status": "proposed",
-      "description": "Engage literature on knots and links, surfaces and mapping class groups, three-manifolds, hyperbolic structures, geometrization, and geometric invariants, while identifying where four-dimensional and gauge-theoretic work needs further analysis.",
+      "description": "Analyze structures and theories using elementary maps, types, quantifier elimination, and saturation.",
       "prerequisites": [
-        "mathematics/algebraic-topology",
-        "mathematics/riemannian-geometry-and-geometric-analysis",
-        "mathematics/mathematical-research-practice"
+        "mathematics/mathematical-logic-and-computability"
       ],
       "recommended_after": [
-        "mathematics/representation-theory-and-lie-theory"
+        "mathematics/axiomatic-set-theory",
+        "mathematics/fields-and-galois-theory"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/low-dimensional-topology-and-geometric-topology",
+        "url": "https://github.com/thomasrribeiro-flashcards/model-theory",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/low-dimensional-topology-and-geometric-topology"
+      "generation_command": "flashcards curriculum materialize mathematics/model-theory"
     },
     {
-      "id": "mathematics/topological-and-geometric-data-analysis",
+      "id": "mathematics/type-theory-and-formal-proof",
       "subject": "mathematics",
-      "deck": "topological-and-geometric-data-analysis",
-      "order": 53,
+      "deck": "type-theory-and-formal-proof",
+      "order": 77,
       "tier": "specialization",
-      "level": "research-specialization",
+      "level": "graduate",
       "status": "proposed",
-      "description": "Compute and interpret persistent homology and related invariants, justify stability and statistical guarantees, and critique applied topological and geometric inference in the literature.",
-      "prerequisites": [
-        "mathematics/algebraic-topology",
-        "mathematics/statistical-inference-and-data-analysis",
-        "mathematics/mathematical-computing-and-experimentation",
-        "mathematics/mathematical-research-practice"
-      ],
-      "recommended_after": [
-        "mathematics/mathematics-of-machine-learning-and-data-science",
-        "mathematics/mathematical-statistics-and-asymptotic-inference",
-        "mathematics/category-theory-and-homological-algebra"
-      ],
-      "materialized": false,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/topological-and-geometric-data-analysis",
-        "configured": false
-      },
-      "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/topological-and-geometric-data-analysis"
-    },
-    {
-      "id": "mathematics/formalization-and-proof-assistants",
-      "subject": "mathematics",
-      "deck": "formalization-and-proof-assistants",
-      "order": 54,
-      "tier": "specialization",
-      "level": "research-specialization",
-      "status": "proposed",
-      "description": "Formalize definitions, theorems, and proofs in a dependent-type proof assistant, navigate a mathematical library, and assess what machine-checked mathematics does and does not certify.",
+      "description": "Translate mathematical proofs into typed terms and checked formal developments while distinguishing kernel guarantees and axioms.",
       "prerequisites": [
         "mathematics/mathematical-logic-and-computability",
-        "mathematics/mathematical-computing-and-experimentation",
-        "mathematics/mathematical-research-practice"
+        "computer-science/programming-and-software-development-foundations"
       ],
       "recommended_after": [
-        "mathematics/abstract-algebra",
-        "mathematics/real-analysis",
-        "mathematics/category-theory-and-homological-algebra"
+        "mathematics/category-theory"
       ],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/formalization-and-proof-assistants",
+        "url": "https://github.com/thomasrribeiro-flashcards/type-theory-and-formal-proof",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/formalization-and-proof-assistants"
+      "generation_command": "flashcards curriculum materialize mathematics/type-theory-and-formal-proof"
     },
     {
-      "id": "mathematics/random-matrices-and-high-dimensional-probability",
+      "id": "mathematics/continuum-modeling-and-asymptotics",
       "subject": "mathematics",
-      "deck": "random-matrices-and-high-dimensional-probability",
-      "order": 55,
+      "deck": "continuum-modeling-and-asymptotics",
+      "order": 78,
+      "tier": "specialization",
+      "level": "graduate",
+      "status": "proposed",
+      "description": "Derive continuum balance models and analyze scale separation, perturbations, boundary layers, and reduced equations.",
+      "prerequisites": [
+        "mathematics/partial-differential-equations",
+        "mathematics/mathematical-modeling"
+      ],
+      "recommended_after": [
+        "physics/continuum-mechanics-and-fluid-dynamics"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/continuum-modeling-and-asymptotics",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/continuum-modeling-and-asymptotics"
+    },
+    {
+      "id": "mathematics/algebraic-geometry-research",
+      "subject": "mathematics",
+      "deck": "algebraic-geometry-research",
+      "order": 79,
       "tier": "specialization",
       "level": "research-specialization",
       "status": "proposed",
-      "description": "Work with concentration of measure, empirical processes, nonasymptotic random-matrix bounds, spectral limits, and universality, and read current high-dimensional probability literature.",
+      "description": "Read and reconstruct focused research arguments on curves and their deformations using scheme and sheaf methods.",
       "prerequisites": [
-        "mathematics/measure-theoretic-probability",
-        "mathematics/linear-algebra",
-        "mathematics/mathematical-research-practice"
+        "mathematics/schemes-and-sheaves",
+        "mathematics/mathematical-writing-and-research-practice"
       ],
-      "recommended_after": [
-        "mathematics/functional-analysis",
-        "mathematics/harmonic-and-fourier-analysis",
-        "mathematics/mathematical-statistics-and-asymptotic-inference",
-        "mathematics/mathematics-of-machine-learning-and-data-science"
-      ],
+      "recommended_after": [],
       "materialized": false,
       "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/random-matrices-and-high-dimensional-probability",
+        "url": "https://github.com/thomasrribeiro-flashcards/algebraic-geometry-research",
         "configured": false
       },
       "chapters": [],
-      "generation_command": "flashcards curriculum materialize mathematics/random-matrices-and-high-dimensional-probability"
+      "generation_command": "flashcards curriculum materialize mathematics/algebraic-geometry-research"
+    },
+    {
+      "id": "mathematics/geometric-topology-research",
+      "subject": "mathematics",
+      "deck": "geometric-topology-research",
+      "order": 80,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Evaluate focused research on topological invariants by reconstructing constructions, computations, and obstruction arguments.",
+      "prerequisites": [
+        "mathematics/advanced-algebraic-topology",
+        "mathematics/mathematical-writing-and-research-practice"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/geometric-topology-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/geometric-topology-research"
+    },
+    {
+      "id": "mathematics/nonlinear-analysis-research",
+      "subject": "mathematics",
+      "deck": "nonlinear-analysis-research",
+      "order": 81,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Reconstruct and critique research proofs for nonlinear elliptic variational problems using compactness and regularity estimates.",
+      "prerequisites": [
+        "mathematics/nonlinear-pde-and-variational-methods",
+        "mathematics/mathematical-writing-and-research-practice"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/nonlinear-analysis-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/nonlinear-analysis-research"
+    },
+    {
+      "id": "mathematics/stochastic-analysis-research",
+      "subject": "mathematics",
+      "deck": "stochastic-analysis-research",
+      "order": 82,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Read and verify focused diffusion research through stochastic representations, stopping, measure change, and pathwise assumptions.",
+      "prerequisites": [
+        "mathematics/stochastic-calculus",
+        "mathematics/mathematical-writing-and-research-practice"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/stochastic-analysis-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/stochastic-analysis-research"
+    },
+    {
+      "id": "mathematics/scientific-computing-research",
+      "subject": "mathematics",
+      "deck": "scientific-computing-research",
+      "order": 83,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Evaluate research on elliptic PDE discretization by connecting weak formulations, error arguments, and reproducible refinement studies.",
+      "prerequisites": [
+        "mathematics/numerical-methods-for-differential-equations",
+        "mathematics/weak-solutions-and-sobolev-spaces",
+        "mathematics/mathematical-writing-and-research-practice"
+      ],
+      "recommended_after": [
+        "computer-science/high-performance-and-scientific-computing"
+      ],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/scientific-computing-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/scientific-computing-research"
+    },
+    {
+      "id": "mathematics/statistical-learning-research",
+      "subject": "mathematics",
+      "deck": "statistical-learning-research",
+      "order": 84,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Critique focused statistical-learning research by reconstructing risk bounds, asymptotic arguments, and assumption-sensitive counterexamples.",
+      "prerequisites": [
+        "mathematics/mathematics-of-machine-learning-and-data-science",
+        "mathematics/asymptotic-statistical-theory",
+        "mathematics/mathematical-writing-and-research-practice"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/statistical-learning-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/statistical-learning-research"
+    },
+    {
+      "id": "mathematics/combinatorics-research",
+      "subject": "mathematics",
+      "deck": "combinatorics-research",
+      "order": 85,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Read and reconstruct finite extremal and probabilistic graph research through constructions, inequalities, and sharpness tests.",
+      "prerequisites": [
+        "mathematics/probabilistic-and-extremal-combinatorics",
+        "mathematics/mathematical-writing-and-research-practice"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/combinatorics-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/combinatorics-research"
+    },
+    {
+      "id": "mathematics/formal-mathematics-research",
+      "subject": "mathematics",
+      "deck": "formal-mathematics-research",
+      "order": 86,
+      "tier": "specialization",
+      "level": "research-specialization",
+      "status": "proposed",
+      "description": "Evaluate formal-mathematics research by auditing specifications, proof artifacts, trusted assumptions, and reproducible verification.",
+      "prerequisites": [
+        "mathematics/type-theory-and-formal-proof",
+        "mathematics/mathematical-writing-and-research-practice"
+      ],
+      "recommended_after": [],
+      "materialized": false,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/formal-mathematics-research",
+        "configured": false
+      },
+      "chapters": [],
+      "generation_command": "flashcards curriculum materialize mathematics/formal-mathematics-research"
     },
     {
       "id": "physics/measurement-and-physical-reasoning",

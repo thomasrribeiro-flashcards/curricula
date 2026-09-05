@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "request_id": 35,
+  "provider_id": "openai",
+  "model_id": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "operation": "fresh-subject-create",
+  "runner_handoff": "timeout reported after model turn.completed; recovered preserved snapshot plus logged final edits from item_37, then independently revalidated",
+  "recovered": true,
+  "subject_git_blob": "40c29c417710975a33329ed2882de961e14af686",
+  "started_at": "2026-09-05T18:34:18Z",
+  "workflow_version": "subject-design-v1",
+  "workflow_base_commit": "4577aeefc3bfe498a003ccf8503ab434abfd0db1",
+  "workflow_modified": true,
+  "registry_base_commit": "95d65dee8bd22ab00ef95832e9826a4217d116c1",
+  "registry_catalog_hash": "sha256:ae13c31e87da21ec5d8996b81f690218907d894daae8d7382520d5c32a3bb601",
+  "context_hash": "sha256:25c5b9b072f44ba84d71e83184d5aff3843e9beb22a1acbd0da12b237f4b0d4c",
+  "context": [
+    {
+      "role": "agent workflow",
+      "path": ".flashcards/context/01-SKILL.md",
+      "bytes": 12322,
+      "sha256": "cbaf37ed36d678b7cbdab5cec28f6dc6a8668e2f3a5f974b6e51c021880f058a"
+    },
+    {
+      "role": "subject curriculum workflow",
+      "path": ".flashcards/context/02-subject-workflow.md",
+      "bytes": 10039,
+      "sha256": "93fd4f92a31d2e2e810d1389ee20141a78a2a85257aee1347869292cbb610aff"
+    },
+    {
+      "role": "normative card standard",
+      "path": ".flashcards/context/03-CARD_STANDARD.md",
+      "bytes": 15986,
+      "sha256": "382c7a871cdaa3285180b4f8dac1a886d50d25c092f09200b8fd33835b968574"
+    },
+    {
+      "role": "universal authoring playbook",
+      "path": ".flashcards/context/04-AUTHORING_PLAYBOOK.md",
+      "bytes": 19547,
+      "sha256": "2124e4318381e86a29aacfe46893dc1c4b90e538ca9a17cc7d6df6260ea8f067"
+    },
+    {
+      "role": "mathematics domain guide",
+      "path": ".flashcards/context/05-mathematics.md",
+      "bytes": 6217,
+      "sha256": "e07e0df3cbe3d86a687c633e3db1c14035625dde96e5963c91de0df0252c0da2"
+    },
+    {
+      "role": "subject routing instructions",
+      "path": ".flashcards/context/06-AGENTS.md",
+      "bytes": 1096,
+      "sha256": "19059d27cb357b61abe8354bcb500db1d9cbe570aee5016e76ee8abec6b30847"
+    },
+    {
+      "role": "learner-specific subject roadmap",
+      "path": ".flashcards/context/07-ROADMAP.md",
+      "bytes": 1607,
+      "sha256": "be612371ad154faf4b603ad824fe82a9f0398291ac774baf167b490fe6acb4c7"
+    },
+    {
+      "role": "learner-specific subject brief",
+      "path": ".flashcards/context/08-SUBJECT_BRIEF.md",
+      "bytes": 1459,
+      "sha256": "1b0d8c5f8525bd35a1d941d815eddc221192814d94167aee39989759a173d036"
+    },
+    {
+      "role": "machine-readable subject curriculum",
+      "path": ".flashcards/context/09-subject.toml",
+      "bytes": 868,
+      "sha256": "fed1a9721e5f1f3a69c74a404e8b344af51acea7f4365a803ab1e7512a37761a"
+    },
+    {
+      "role": "generated cross-subject curriculum catalog",
+      "path": ".flashcards/context/10-global-curriculum.md",
+      "bytes": 85677,
+      "sha256": "186d757c7516b0783feadd382bacf65b3ae36699dceac49571cff5e3cae19071"
+    }
+  ]
+}
