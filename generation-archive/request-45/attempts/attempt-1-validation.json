@@ -1,0 +1,12 @@
+{
+  "issues": [
+    "The algorithms entry route unnecessarily inherits single-variable calculus through mathematics/probability solely to support elementary randomized cost analysis. A repair should extract a finite-probability bridge or teach finite expectation explicitly inside computer-science/algorithms, preserving the existing randomized-analysis outcome.",
+    "The first quantitative analytical-chemistry route requires the entire organic-chemistry deck because spectroscopy and quantitative analysis share one node. Splitting quantitative analytical methods from molecular structure determination would remove an unnecessary organic-mechanism prerequisite for learners entering measurement chemistry.",
+    "The advanced number-theory specification provides an undergraduate entrance to algebraic and analytic methods but not a graduate foundation in either branch. Additional graduate algebraic-number-theory and analytic-number-theory nodes are needed before the mathematical curriculum can be considered whole-field at the requested depth.",
+    "General ergodic theory, calculus of variations and optimal-control theory are not developed as independent mathematical capabilities. Variational mechanics and elementary dynamical diagnostics do not supply these established mathematical foundations.",
+    "The physics plan lacks a sufficiently developed graduate nonequilibrium statistical-physics route: elementary response, plasma kinetics and computational sampling do not together teach general kinetic theory, transport derivations and fluctuation relations.",
+    "The biological curriculum needs a distinct advanced developmental-mechanisms continuation covering quantitative morphogenesis and gene-regulatory developmental dynamics. The present graduate cell-regulation and systems-biology outcomes do not explicitly establish that capability.",
+    "The advanced structural-biophysics outcome for structure inference bundles diffraction, NMR and cryo-EM too broadly. It should be split into independently assessable reconstruction and validation outcomes, with Fourier and inverse-problem preparation made explicit.",
+    "Several mathematical and physical exclusions identify established extensions without corresponding coverage dispositions, notably ergodic theory, nonlinear PDE regularity, global comparison geometry, advanced turbulence and noncommutative harmonic analysis. These require individual inclusion or justified depth-specific deferral during repair rather than being treated as implicitly covered."
+  ]
+}
