@@ -1,0 +1,8 @@
+{
+  "issues": [
+    "The proposal does not yet supply sufficiently explicit graduate chemistry outcomes for advanced reaction dynamics, modern inorganic electronic-structure theory, and multivariate chemometrics. Their neighboring introductory and computational treatments do not establish those capabilities; additional deck specifications and coverage rows are needed before accepting whole-field chemistry coverage.",
+    "Mathematics still needs explicit coverage decisions and substantive outcomes for analytic number theory, advanced combinatorics, and a graduate continuation of numerical PDE discretization. Existing number theory, discrete mathematics, and weak PDE outcomes do not teach those branches.",
+    "Computer-science coverage needs an explicit reinforcement-learning route with Markov decision processes, Bellman theory, exploration, and off-policy evaluation. The included planning, probabilistic inference, and robotics outcomes do not substitute for its foundations.",
+    "Several important scope boundaries remain insufficiently reconciled at domain-and-depth level, including advanced quantum information, open quantum systems, and graduate evolutionary theory beyond the included population-genetic and evo-devo routes. These require explicit inclusion or justified specialist-extension decisions rather than assumed coverage."
+  ]
+}
