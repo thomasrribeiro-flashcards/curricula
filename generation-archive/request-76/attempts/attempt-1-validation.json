@@ -1,0 +1,8 @@
+{
+  "issues": [
+    "Physics: established working fluid mechanics and its advanced continuum continuation remain unfinished. Pressure, flow and diffusion applications appear in physical foundations, physiology, waves and statistical mechanics, but no contract teaches deriving and solving viscous incompressible flow or validating a fluid experiment. These neighboring outcomes do not provide full undergraduate-advanced fluid-mechanics coverage.",
+    "Physics: established plasma-physics foundations remain unfinished. Electromagnetism and statistical mechanics do not teach charged-fluid or kinetic plasma models, Debye screening, plasma oscillations and magnetized transport as a coherent graduate capability.",
+    "Chemistry: established graduate molecular spectroscopy remains unfinished. The included chemistry/molecular-spectroscopy outcomes provide working first-order interpretation and chemistry/quantum-chemistry provides basic quantum spectra, but no contract teaches multidimensional NMR pulse-sequence reasoning or time-resolved molecular spectroscopic inference at graduate depth.",
+    "Mathematics: linear programming has a teaching contract in computer-science/advanced-algorithms, but its only route imposes the complete advanced-algorithm curriculum rather than an independent undergraduate working entry. An accessible linear/discrete optimization route remains to be separated while preserving the graduate guarantees."
+  ]
+}
