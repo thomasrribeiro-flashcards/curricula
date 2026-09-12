@@ -1,0 +1,13 @@
+{
+  "responseId": "resp_0708cecba0d26b41006aa575b2b7bc87d0aeb9792d01435915",
+  "status": "completed",
+  "incompleteReason": null,
+  "maxOutputTokens": null,
+  "usage": {
+    "inputTokens": 4919,
+    "cachedInputTokens": 0,
+    "outputTokens": 45237,
+    "reasoningTokens": 3624,
+    "totalTokens": 50156
+  }
+}
