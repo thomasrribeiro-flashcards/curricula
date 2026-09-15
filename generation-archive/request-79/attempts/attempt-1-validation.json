@@ -1,0 +1,11 @@
+{
+  "issues": [
+    "Graduate systems biology and computational neuroscience currently share biology/systems-biology. Its earliest reaction-network and flux-balance tasks unnecessarily require the complete biology/neuroscience and animal-physiology ancestry; these working capabilities need a separate accessible quantitative-cellular destination connected to the neural continuation.",
+    "Graduate stochastic-process theory in mathematics/stochastic-processes currently requires numerical methods and differential equations for every learner, although its first measure-theoretic probability and Markov-chain tasks do not need that preparation. A separate probability/process foundation and connected stochastic-calculus continuation are needed.",
+    "Undergraduate computational physics in physics/computational-physics imposes optimization and statistical inference on first forward-simulation tasks. The forward simulation and field-solver route should be separated from the inverse-modeling continuation.",
+    "chemistry/advanced-inorganic-chemistry promises kinetic discrimination of catalytic mechanisms but does not require chemistry/kinetics or locally teach rate-law derivation and fitting. Its graduate catalytic-inference preparation remains insufficient.",
+    "The current inventory does not yet provide independently assessable graduate algebraic geometry or analytic/algebraic number-theory foundations beyond elementary number theory and graduate algebra; these established mathematical continuations remain unfinished.",
+    "Established working and graduate foundations for computer vision, robotics/control and information theory are not independently specified. Graphics, classical AI, optimization and signal analysis do not by themselves teach their distinctive inverse-inference, state-estimation and coding methods.",
+    "The coverage inventory lacks matching deferred rows for the unfinished mathematical and computing domains identified above; those domains must not be treated as available preparation."
+  ]
+}
