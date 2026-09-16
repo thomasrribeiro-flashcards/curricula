@@ -1,0 +1,20 @@
+{
+  "sourceRequestId": 80,
+  "originalRequestKey": "[\"curriculum-evaluation\",[\"biology\",\"chemistry\",\"computer-science\",\"mathematics\",\"physics\"],\"openai\",\"gpt-6-astra\",\"390ed20fc563ff9e859c32f50ac64c176ceb1f15\",\"medium\"]",
+  "originalPayload": {
+    "workflowVersion": "fresh-generation-v1",
+    "workflowCommit": "390ed20fc563ff9e859c32f50ac64c176ceb1f15",
+    "reasoningEffort": "medium",
+    "evaluationOnly": true,
+    "subjects": [
+      "biology",
+      "chemistry",
+      "computer-science",
+      "mathematics",
+      "physics"
+    ]
+  },
+  "originalEvaluationOnly": true,
+  "promotedAt": "2026-09-16T02:32:37.140Z",
+  "reason": "User requested the exact audited replication output be available for normal curriculum acceptance; no new generation or candidate edits."
+}
