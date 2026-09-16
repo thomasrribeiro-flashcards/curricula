@@ -2463,7 +2463,7 @@
       "required_outcomes": [],
       "deck": "foundations",
       "order": 1,
-      "status": "pilot-approved",
+      "status": "chapter-planned",
       "chapters": [
         {
           "id": "01_arithmetic_and_number_sense",
@@ -2485,7 +2485,7 @@
           "prerequisites": [],
           "order": 1,
           "file": "flashcards/01_arithmetic_and_number_sense.md",
-          "card_count": 98,
+          "card_count": 0,
           "resolved_dependencies": []
         },
         {
@@ -3025,11 +3025,8 @@
           ]
         }
       ],
-      "materialized": true,
-      "repository": {
-        "url": "https://github.com/thomasrribeiro-flashcards/mathematics-foundations",
-        "configured": true
-      },
+      "materialized": false,
+      "repository": null,
       "content_state": "needs-review",
       "chapter_curriculum_generation": {
         "workflowVersion": "fresh-generation-v1",
@@ -3103,290 +3100,8 @@
           "registry_base_commit": "776dfe5e06b8065a9d82a7ec3ae5e6900e3ea617",
           "workflow_commit": "7503191233cac052bd5ab931bbc758df8c55f9ec",
           "generated_at": "2026-09-16T03:49:13.776Z"
-        },
-        {
-          "workflowVersion": "fresh-generation-v1",
-          "providerId": "openai",
-          "modelId": "gpt-6-astra",
-          "reasoningEffort": "medium",
-          "resolvedModelId": "gpt-6-astra",
-          "inputHash": "sha256:ae2db471ff3378535244691ba9e37b4d70fbdca489844e04f124a5e706b61787",
-          "instructionsHash": "sha256:a668ac0de4c1db4ba6f50262b01950ba4fe4fc47fa7e47c2bac86e502ff1599c",
-          "schemaHash": "sha256:0bca53171b7b286f5488ebddcac4d5b3ec8ff9b277e05066426cdf0aba54d46b",
-          "responseId": "resp_0c8ebb94e32c0515016aaac7e52a3c87d0b400e48779824092",
-          "diagnostics": {
-            "responseId": "resp_0c8ebb94e32c0515016aaac7e52a3c87d0b400e48779824092",
-            "status": "completed",
-            "incompleteReason": null,
-            "maxOutputTokens": null,
-            "usage": {
-              "inputTokens": 11537,
-              "cachedInputTokens": 0,
-              "outputTokens": 25566,
-              "reasoningTokens": 3624,
-              "totalTokens": 37103
-            }
-          },
-          "run_id": "request-85",
-          "request_id": 85,
-          "operation": "chapter-content",
-          "artifacts": [
-            "flashcards/01_arithmetic_and_number_sense.md",
-            "figures/tikz-style.tex",
-            "figures/01_arithmetic_and_number_sense/collection-a.tex",
-            "figures/01_arithmetic_and_number_sense/collection-a.svg",
-            "figures/01_arithmetic_and_number_sense/collection-b.tex",
-            "figures/01_arithmetic_and_number_sense/collection-b.svg",
-            "figures/01_arithmetic_and_number_sense/collection-c.tex",
-            "figures/01_arithmetic_and_number_sense/collection-c.svg",
-            "figures/01_arithmetic_and_number_sense/collection-d.tex",
-            "figures/01_arithmetic_and_number_sense/collection-d.svg",
-            "figures/01_arithmetic_and_number_sense/collection-e.tex",
-            "figures/01_arithmetic_and_number_sense/collection-e.svg",
-            "figures/01_arithmetic_and_number_sense/bundle-bridge.tex",
-            "figures/01_arithmetic_and_number_sense/bundle-bridge.svg",
-            "figures/01_arithmetic_and_number_sense/place-collection.tex",
-            "figures/01_arithmetic_and_number_sense/place-collection.svg",
-            "figures/01_arithmetic_and_number_sense/whole-line.tex",
-            "figures/01_arithmetic_and_number_sense/whole-line.svg",
-            "figures/01_arithmetic_and_number_sense/equal-groups.tex",
-            "figures/01_arithmetic_and_number_sense/equal-groups.svg",
-            "figures/01_arithmetic_and_number_sense/partition-choice.tex",
-            "figures/01_arithmetic_and_number_sense/partition-choice.svg",
-            "figures/01_arithmetic_and_number_sense/fraction-strip.tex",
-            "figures/01_arithmetic_and_number_sense/fraction-strip.svg",
-            "figures/01_arithmetic_and_number_sense/multiple-wholes.tex",
-            "figures/01_arithmetic_and_number_sense/multiple-wholes.svg",
-            "figures/01_arithmetic_and_number_sense/equivalent-strips.tex",
-            "figures/01_arithmetic_and_number_sense/equivalent-strips.svg",
-            "figures/01_arithmetic_and_number_sense/fraction-line.tex",
-            "figures/01_arithmetic_and_number_sense/fraction-line.svg",
-            "figures/01_arithmetic_and_number_sense/fraction-product.tex",
-            "figures/01_arithmetic_and_number_sense/fraction-product.svg",
-            "figures/01_arithmetic_and_number_sense/decimal-strip.tex",
-            "figures/01_arithmetic_and_number_sense/decimal-strip.svg",
-            "figures/01_arithmetic_and_number_sense/decimal-line.tex",
-            "figures/01_arithmetic_and_number_sense/decimal-line.svg",
-            "figures/01_arithmetic_and_number_sense/signed-line.tex",
-            "figures/01_arithmetic_and_number_sense/signed-line.svg",
-            "figures/01_arithmetic_and_number_sense/signed-move.tex",
-            "figures/01_arithmetic_and_number_sense/signed-move.svg",
-            "figures/01_arithmetic_and_number_sense/negative-fraction-line.tex",
-            "figures/01_arithmetic_and_number_sense/negative-fraction-line.svg",
-            "figures/01_arithmetic_and_number_sense/negative-decimal-line.tex",
-            "figures/01_arithmetic_and_number_sense/negative-decimal-line.svg",
-            "figures/01_arithmetic_and_number_sense/rounding-line.tex",
-            "figures/01_arithmetic_and_number_sense/rounding-line.svg"
-          ],
-          "provider_id": "openai",
-          "model_id": "gpt-6-astra",
-          "reasoning_effort": "medium",
-          "registry_base_commit": "b3d992bed4c9d9ad7c7e7040651a612a4be63fcc",
-          "workflow_commit": "059c12507641b87a6c0f722a944ea4b228012592",
-          "generated_at": "2026-09-16 16:55:24",
-          "recovery": {
-            "publication_workflow_commit": "d534e9d188f668b0cc9a92af2e165b2ddada1168",
-            "candidate_sha256": "8db87d3b87324dcb3b81a5ac7cfe640d248ed3bb1a539283a658a5dcb7a0f08b",
-            "reason": "Host review corrected early vocabulary and clarified wording; original provider output retained unchanged; no additional model call.",
-            "reviewAmendments": {
-              "originalCandidateHash": "06a1546757e969fa79a4ab21cd8086aa5866279a609df0d0f1ec0bd3d6de6e89",
-              "reviewedCandidateHash": "8db87d3b87324dcb3b81a5ac7cfe640d248ed3bb1a539283a658a5dcb7a0f08b",
-              "originalScopeIssues": [
-                "U7/U11/D8: Card 85 requests an 'exact fraction' before the technical distinction between exact values and approximations is introduced on card 86. Before publication, remove 'exact' from card 85's front or relocate the exactness teaching bridge so it is established and retrieved first."
-              ],
-              "edits": [
-                [
-                  "A **digit** is a written mark used in writing numbers.",
-                  "A **digit** is a written mark used to record how many objects there are."
-                ],
-                [
-                  "A written number is called a **numeral**. In a whole-number numeral,",
-                  "A **numeral** is one or more digits written together to record how many objects there are. In a numeral recording a count,"
-                ],
-                [
-                  "when both divisions are exact.",
-                  "when both divisions give whole numbers, with no fractional part left over."
-                ],
-                [
-                  "When fractions have the same positive denominator,",
-                  "When fractions have the same denominator greater than zero,"
-                ],
-                [
-                  "the positive decimal parts that continue",
-                  "the additional decimal parts that continue"
-                ],
-                [
-                  "must be positive and less than 0.07",
-                  "must be greater than zero and less than 0.07"
-                ],
-                [
-                  "giving an exact fraction.",
-                  "giving the answer as a fraction."
-                ],
-                [
-                  "Equal signs give a positive product; different signs give a negative product.",
-                  "Matching signs (both positive or both negative) give a positive product; different signs give a negative product."
-                ],
-                [
-                  "equal signs give a positive quotient and different signs give a negative quotient.",
-                  "matching signs (both positive or both negative) give a positive quotient and different signs give a negative quotient."
-                ],
-                [
-                  "at a stated precision.",
-                  "at a stated precision, meaning the size of the rounding step."
-                ],
-                [
-                  "**The divisor becomes zero.**",
-                  "**The number being divided by becomes zero.**"
-                ]
-              ],
-              "reviewer": "Codex host reviewer",
-              "noAdditionalModelCall": true
-            }
-          }
         }
-      ],
-      "chapter_content_generation": {
-        "workflowVersion": "fresh-generation-v1",
-        "providerId": "openai",
-        "modelId": "gpt-6-astra",
-        "reasoningEffort": "medium",
-        "resolvedModelId": "gpt-6-astra",
-        "inputHash": "sha256:ae2db471ff3378535244691ba9e37b4d70fbdca489844e04f124a5e706b61787",
-        "instructionsHash": "sha256:a668ac0de4c1db4ba6f50262b01950ba4fe4fc47fa7e47c2bac86e502ff1599c",
-        "schemaHash": "sha256:0bca53171b7b286f5488ebddcac4d5b3ec8ff9b277e05066426cdf0aba54d46b",
-        "responseId": "resp_0c8ebb94e32c0515016aaac7e52a3c87d0b400e48779824092",
-        "diagnostics": {
-          "responseId": "resp_0c8ebb94e32c0515016aaac7e52a3c87d0b400e48779824092",
-          "status": "completed",
-          "incompleteReason": null,
-          "maxOutputTokens": null,
-          "usage": {
-            "inputTokens": 11537,
-            "cachedInputTokens": 0,
-            "outputTokens": 25566,
-            "reasoningTokens": 3624,
-            "totalTokens": 37103
-          }
-        },
-        "run_id": "request-85",
-        "request_id": 85,
-        "operation": "chapter-content",
-        "artifacts": [
-          "flashcards/01_arithmetic_and_number_sense.md",
-          "figures/tikz-style.tex",
-          "figures/01_arithmetic_and_number_sense/collection-a.tex",
-          "figures/01_arithmetic_and_number_sense/collection-a.svg",
-          "figures/01_arithmetic_and_number_sense/collection-b.tex",
-          "figures/01_arithmetic_and_number_sense/collection-b.svg",
-          "figures/01_arithmetic_and_number_sense/collection-c.tex",
-          "figures/01_arithmetic_and_number_sense/collection-c.svg",
-          "figures/01_arithmetic_and_number_sense/collection-d.tex",
-          "figures/01_arithmetic_and_number_sense/collection-d.svg",
-          "figures/01_arithmetic_and_number_sense/collection-e.tex",
-          "figures/01_arithmetic_and_number_sense/collection-e.svg",
-          "figures/01_arithmetic_and_number_sense/bundle-bridge.tex",
-          "figures/01_arithmetic_and_number_sense/bundle-bridge.svg",
-          "figures/01_arithmetic_and_number_sense/place-collection.tex",
-          "figures/01_arithmetic_and_number_sense/place-collection.svg",
-          "figures/01_arithmetic_and_number_sense/whole-line.tex",
-          "figures/01_arithmetic_and_number_sense/whole-line.svg",
-          "figures/01_arithmetic_and_number_sense/equal-groups.tex",
-          "figures/01_arithmetic_and_number_sense/equal-groups.svg",
-          "figures/01_arithmetic_and_number_sense/partition-choice.tex",
-          "figures/01_arithmetic_and_number_sense/partition-choice.svg",
-          "figures/01_arithmetic_and_number_sense/fraction-strip.tex",
-          "figures/01_arithmetic_and_number_sense/fraction-strip.svg",
-          "figures/01_arithmetic_and_number_sense/multiple-wholes.tex",
-          "figures/01_arithmetic_and_number_sense/multiple-wholes.svg",
-          "figures/01_arithmetic_and_number_sense/equivalent-strips.tex",
-          "figures/01_arithmetic_and_number_sense/equivalent-strips.svg",
-          "figures/01_arithmetic_and_number_sense/fraction-line.tex",
-          "figures/01_arithmetic_and_number_sense/fraction-line.svg",
-          "figures/01_arithmetic_and_number_sense/fraction-product.tex",
-          "figures/01_arithmetic_and_number_sense/fraction-product.svg",
-          "figures/01_arithmetic_and_number_sense/decimal-strip.tex",
-          "figures/01_arithmetic_and_number_sense/decimal-strip.svg",
-          "figures/01_arithmetic_and_number_sense/decimal-line.tex",
-          "figures/01_arithmetic_and_number_sense/decimal-line.svg",
-          "figures/01_arithmetic_and_number_sense/signed-line.tex",
-          "figures/01_arithmetic_and_number_sense/signed-line.svg",
-          "figures/01_arithmetic_and_number_sense/signed-move.tex",
-          "figures/01_arithmetic_and_number_sense/signed-move.svg",
-          "figures/01_arithmetic_and_number_sense/negative-fraction-line.tex",
-          "figures/01_arithmetic_and_number_sense/negative-fraction-line.svg",
-          "figures/01_arithmetic_and_number_sense/negative-decimal-line.tex",
-          "figures/01_arithmetic_and_number_sense/negative-decimal-line.svg",
-          "figures/01_arithmetic_and_number_sense/rounding-line.tex",
-          "figures/01_arithmetic_and_number_sense/rounding-line.svg"
-        ],
-        "provider_id": "openai",
-        "model_id": "gpt-6-astra",
-        "reasoning_effort": "medium",
-        "registry_base_commit": "b3d992bed4c9d9ad7c7e7040651a612a4be63fcc",
-        "workflow_commit": "059c12507641b87a6c0f722a944ea4b228012592",
-        "generated_at": "2026-09-16 16:55:24",
-        "recovery": {
-          "publication_workflow_commit": "d534e9d188f668b0cc9a92af2e165b2ddada1168",
-          "candidate_sha256": "8db87d3b87324dcb3b81a5ac7cfe640d248ed3bb1a539283a658a5dcb7a0f08b",
-          "reason": "Host review corrected early vocabulary and clarified wording; original provider output retained unchanged; no additional model call.",
-          "reviewAmendments": {
-            "originalCandidateHash": "06a1546757e969fa79a4ab21cd8086aa5866279a609df0d0f1ec0bd3d6de6e89",
-            "reviewedCandidateHash": "8db87d3b87324dcb3b81a5ac7cfe640d248ed3bb1a539283a658a5dcb7a0f08b",
-            "originalScopeIssues": [
-              "U7/U11/D8: Card 85 requests an 'exact fraction' before the technical distinction between exact values and approximations is introduced on card 86. Before publication, remove 'exact' from card 85's front or relocate the exactness teaching bridge so it is established and retrieved first."
-            ],
-            "edits": [
-              [
-                "A **digit** is a written mark used in writing numbers.",
-                "A **digit** is a written mark used to record how many objects there are."
-              ],
-              [
-                "A written number is called a **numeral**. In a whole-number numeral,",
-                "A **numeral** is one or more digits written together to record how many objects there are. In a numeral recording a count,"
-              ],
-              [
-                "when both divisions are exact.",
-                "when both divisions give whole numbers, with no fractional part left over."
-              ],
-              [
-                "When fractions have the same positive denominator,",
-                "When fractions have the same denominator greater than zero,"
-              ],
-              [
-                "the positive decimal parts that continue",
-                "the additional decimal parts that continue"
-              ],
-              [
-                "must be positive and less than 0.07",
-                "must be greater than zero and less than 0.07"
-              ],
-              [
-                "giving an exact fraction.",
-                "giving the answer as a fraction."
-              ],
-              [
-                "Equal signs give a positive product; different signs give a negative product.",
-                "Matching signs (both positive or both negative) give a positive product; different signs give a negative product."
-              ],
-              [
-                "equal signs give a positive quotient and different signs give a negative quotient.",
-                "matching signs (both positive or both negative) give a positive quotient and different signs give a negative quotient."
-              ],
-              [
-                "at a stated precision.",
-                "at a stated precision, meaning the size of the rounding step."
-              ],
-              [
-                "**The divisor becomes zero.**",
-                "**The number being divided by becomes zero.**"
-              ]
-            ],
-            "reviewer": "Codex host reviewer",
-            "noAdditionalModelCall": true
-          }
-        }
-      }
+      ]
     },
     {
       "id": "biology/organismal-biology",

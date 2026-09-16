@@ -1,0 +1,1078 @@
+{
+  "candidate": {
+    "chapterId": "01_arithmetic_and_number_sense",
+    "markdown": "# Arithmetic and Number Sense\n\n## Counting and written numbers\n\nQ: To count objects, touch each object once while saying the next word in this sequence: one, two, three, four, five, six, seven, eight, nine, ten. The last word tells how many objects there are. How many dots are shown?\n\n![A loose collection of dots.](../figures/01_arithmetic_and_number_sense/collection-a.svg)\nA: **Three.** Each dot receives one counting word.\n\nQ: A **digit** is a written mark used to record how many objects there are. The digit 1 means one, 2 means two, and 3 means three. Which digit records how many dots are shown?\n\n![A loose collection of dots.](../figures/01_arithmetic_and_number_sense/collection-b.svg)\nA: **2**.\n\nQ: The digit 4 means four, 5 means five, and 6 means six. Count the dots. Which digit records how many there are?\n\n![Dots arranged in two loose rows.](../figures/01_arithmetic_and_number_sense/collection-c.svg)\nA: **5**.\n\nQ: The digit 7 means seven, 8 means eight, and 9 means nine. Count the dots. Which digit records how many there are?\n\n![Dots arranged in two loose rows.](../figures/01_arithmetic_and_number_sense/collection-d.svg)\nA: **8**.\n\nQ: **Zero**, written 0, records that there are no objects to count. A tray held some buttons, but every button has been removed. Which digit records how many buttons remain?\nA: **0**.\n\nQ: Write the digit that records how many dots are shown.\n\n![A loose collection of dots.](../figures/01_arithmetic_and_number_sense/collection-e.svg)\nA: **6**.\n\n## Groups and positions\n\nQ: A **group** is a collection treated together. We can bundle ten separate objects into a group called **one ten**, without adding or removing anything. The drawings show the same objects before and after bundling. How many separate objects would you recover by opening the bundle?\n\n![Loose dots beside the same arrangement enclosed by a bundle boundary.](../figures/01_arithmetic_and_number_sense/bundle-bridge.svg)\nA: **Ten objects.** Bundling changes their organization, not how many there are.\n\nQ: A **numeral** is one or more digits written together to record how many objects there are. In a numeral recording a count, the rightmost position records separate objects, called **ones**; the next position records groups of ten, called **tens**. Thus 12 records one ten and two ones, and 10 records one ten and no ones. Write the numeral for the collection shown; the boundary encloses one ten.\n\n![A bundle of dots beside loose dots.](../figures/01_arithmetic_and_number_sense/place-collection.svg)\nA: **14**: one ten and four ones.\n\nQ: A zero can hold an empty position: 30 records three tens and no ones, whereas 3 records three ones. What numeral records four tens and no ones?\nA: **40**.\n\nQ: Ten tens can be bundled as **one hundred**. The hundreds position is immediately left of the tens position: 100 means one hundred, no tens, and no ones. Write the numeral for three hundreds, two tens, and five ones.\nA: **325**.\n\nQ: Ten hundreds make **one thousand**. The thousands position is immediately left of the hundreds position: 1000 means one thousand and no hundreds, tens, or ones. Write the numeral for two thousands, no hundreds, three tens, and four ones.\nA: **2034**.\n\nQ: In 408, what does the middle digit tell you?\nA: **There are no tens left outside the hundreds.** The numeral records four hundreds, zero tens, and eight ones; omitting the zero would give 48.\n\n## Comparing and calculating with whole numbers\n\nQ: For counts, a number later in the counting sequence is **greater**; an earlier one is **less**. The signs > and < mean “is greater than” and “is less than”; the open side faces the greater number. The sign = means “has the same value as.” Which sign belongs between 8 and 5?\nA: **8 > 5**.\n\nQ: A **number line** places numbers along a straight line. These equally spaced ticks each mark a step of one; greater numbers lie farther right. A **whole number** is zero or a count such as one, two, or three. What whole number is marked by the dot?\n\n![Equally spaced ticks labeled zero through three and five, with a dot on an intervening tick.](../figures/01_arithmetic_and_number_sense/whole-line.svg)\nA: **4**.\n\nQ: **Addition** combines counts. The sign + means “add,” and the result is the **sum**: 2 + 1 = 3 combines two objects with one object. A bowl has 3 buttons and you put in 2 more. What is 3 + 2?\nA: **5**.\n\nP: When adding, ten ones can be exchanged for one ten. For example, 28 + 15 gives three tens and thirteen ones, which becomes four tens and three ones: 43. Use this regrouping idea to calculate 27 + 16.\nS: IDENTIFY: Add whole numbers with regrouping.\nPLAN: Combine tens and ones, then exchange ten ones for a ten.\nEXECUTE: **27 + 16 = 43.** Three tens and thirteen ones become four tens and three ones.\nEVALUATE: Starting at 27, adding 10 reaches 37 and adding the remaining 6 reaches 43.\n\nQ: **Subtraction** removes an amount; the sign − means “subtract,” and the result is the **difference**. If you remove 3 buttons from a collection of 7, what is 7 − 3?\nA: **4**.\n\nP: For subtraction, a ten can be opened into ten ones. For example, 42 − 17 can be worked as three tens and twelve ones minus one ten and seven ones, giving 25. Calculate 51 − 26 by regrouping.\nS: IDENTIFY: Subtract whole numbers across a tens boundary.\nPLAN: Open one of the five tens into ten ones.\nEXECUTE: **51 − 26 = 25.** Four tens and eleven ones minus two tens and six ones leave two tens and five ones.\nEVALUATE: Adding back the removed amount gives 25 + 26 = 51.\n\nQ: Addition and subtraction are **inverse operations**: each can undo the other. To check a proposed sum, subtract one added number and look for the other. Someone writes 7 + 8 = 16. What subtraction exposes the error?\nA: **16 − 8 = 8, not 7.** The proposed sum is incorrect; 7 + 8 = 15.\n\nQ: **Multiplication** combines equally sized groups. The sign × means “multiply,” and the result is the **product**. For example, 2 × 3 means two groups of three, giving 6. Each boundary in the drawing encloses one group. What is the total number of dots?\n\n![Separate boundaries enclosing equally sized dot collections.](../figures/01_arithmetic_and_number_sense/equal-groups.svg)\nA: **12**. Three groups of four give 3 × 4 = 12.\n\nP: A group of 14 can be split into 10 and 4. Thus 3 × 14 can be calculated as 3 × 10 + 3 × 4 = 42. Use the same split-into-tens-and-ones method to calculate 4 × 23.\nS: IDENTIFY: Multiply a whole number containing tens and ones.\nPLAN: Multiply the 20 and the 3 separately, then add.\nEXECUTE: **4 × 23 = 92.** The parts give 80 + 12.\nEVALUATE: Four groups of 23 also give 23 + 23 + 23 + 23 = 92.\n\nP: **Division** can share a total into equally sized groups. The sign ÷ means “divide,” and the result is the **quotient**. For example, 12 ÷ 3 = 4 because three groups of four rebuild 12. Share 15 buttons equally among 3 trays. How many go on each tray?\nS: IDENTIFY: Divide a total among a known number of groups.\nPLAN: Find the number that gives 15 when multiplied by 3.\nEXECUTE: **5 buttons go on each tray.** Therefore 15 ÷ 3 = 5.\nEVALUATE: Three trays with five buttons each contain 3 × 5 = 15 buttons.\n\nP: Division can also ask how many groups of a stated size fit into a total. For 18 buttons placed in groups of 6, how many groups can be made?\nS: IDENTIFY: Divide by the number in each group.\nPLAN: Find how many sixes rebuild 18.\nEXECUTE: **3 groups.** The calculation is 18 ÷ 6 = 3.\nEVALUATE: Three groups of six contain 18 buttons, with none left over.\n\nQ: Multiplication and division are inverse operations. A result for 6 ÷ 0 would have to give 6 when multiplied by 0, but every number multiplied by 0 gives 0. **Undefined** means that no numerical value is assigned by the arithmetic rules. Why is 6 ÷ 0 undefined?\nA: **No number multiplied by 0 gives 6.** Division by zero is undefined. For 0 ÷ 0, every number would pass the multiplication check, so there is no unique quotient; that division is also undefined.\n\nQ: What is 0 ÷ 5?\nA: **0**. The inverse check is 5 × 0 = 0; a zero total can be shared into five empty groups.\n\n## Choosing the order of operations\n\nP: An **expression** is a written calculation. **Parentheses**, the curved marks ( ), tell you to complete the enclosed calculation first. For example, (2 + 3) × 4 means 5 × 4. Calculate (3 + 4) × 2.\nS: IDENTIFY: Evaluate an expression with parentheses.\nPLAN: Add inside the parentheses before multiplying.\nEXECUTE: **(3 + 4) × 2 = 14.** The inner sum is 7.\nEVALUATE: Two groups of seven give 14.\n\nP: The **order of operations** settles calculations with several signs. After parentheses, do multiplication and division before addition and subtraction. For example, 2 + 3 × 4 means 2 + 12, not 5 × 4. Calculate 18 − 3 × 4.\nS: IDENTIFY: Evaluate mixed operations without parentheses.\nPLAN: Multiply before subtracting.\nEXECUTE: **18 − 3 × 4 = 6.** First obtain 12, then subtract it from 18.\nEVALUATE: Adding the removed product back gives 6 + 12 = 18.\n\nP: Multiplication and division have equal priority: work through them from left to right, rather than doing all multiplication first. Calculate 24 ÷ 6 × 2.\nS: IDENTIFY: Evaluate consecutive division and multiplication.\nPLAN: Work from left to right.\nEXECUTE: **24 ÷ 6 × 2 = 8.** First 24 ÷ 6 = 4; then 4 × 2 = 8.\nEVALUATE: Undoing the final multiplication gives 8 ÷ 2 = 4, the required intermediate quotient.\n\nP: Addition and subtraction also have equal priority: work through them from left to right. Calculate 12 − 5 + 2.\nS: IDENTIFY: Evaluate consecutive subtraction and addition.\nPLAN: Work from left to right.\nEXECUTE: **12 − 5 + 2 = 9.** First obtain 7, then add 2.\nEVALUATE: Undoing the final addition gives 9 − 2 = 7, matching 12 − 5.\n\n## Fractions\n\nQ: A **whole** is the complete object being shared. **Equal parts** contain the same amount of that whole; a **half** is one of two equal parts. Both strips have been cut into two pieces. Which strip has been cut into halves?\n\n![Two equal-length strips labeled A and B, with different cut locations.](../figures/01_arithmetic_and_number_sense/partition-choice.svg)\nA: **Strip A.** Its two pieces have the same size; simply making two pieces is not enough.\n\nQ: A **fraction** counts equal parts of a whole. In 2/3, read “two thirds,” the bottom number, the **denominator**, says the whole has three equal parts; the top number, the **numerator**, counts two of them. The slash / is another way to write a fraction bar. A denominator cannot be zero. What fraction of this whole strip is shaded?\n\n![A strip divided into equal sections, some shaded.](../figures/01_arithmetic_and_number_sense/fraction-strip.svg)\nA: **3/4**, read “three quarters” or “three fourths.”\n\nQ: Fractions can count more than a whole: four thirds means four pieces, each one third of the same-sized whole. A fraction also represents division: 4/3 means 4 ÷ 3. A fraction whose numerator is at least its denominator is called **improper**. Each strip shown is one whole. What improper fraction counts all the shaded parts?\n\n![Equal whole strips divided into thirds, with shading extending across strips.](../figures/01_arithmetic_and_number_sense/multiple-wholes.svg)\nA: **7/3**. There are seven shaded thirds.\n\nP: A **mixed number** combines whole objects and a remaining fraction. The notation 2 1/3 means 2 + 1/3, not multiplication. For example, seven thirds contain two groups of three thirds and one third left over, so 7/3 = 2 1/3. Write 9/4 as a mixed number.\nS: IDENTIFY: Convert an improper fraction to a mixed number.\nPLAN: Group fourths into wholes, using four fourths per whole.\nEXECUTE: **9/4 = 2 1/4.** Eight fourths make two wholes, leaving one fourth.\nEVALUATE: Two groups of four fourths and one extra fourth give nine fourths.\n\nP: To turn a mixed number into one fraction, count the parts in its wholes and then add its remaining parts. For example, 2 1/3 contains 2 × 3 + 1 = 7 thirds. Write 3 2/5 as an improper fraction.\nS: IDENTIFY: Convert a mixed number to one fraction.\nPLAN: Count fifths in the three wholes, then include the extra two fifths.\nEXECUTE: **3 2/5 = 17/5.** The count is 3 × 5 + 2 = 17.\nEVALUATE: Fifteen of the seventeen fifths make three wholes, leaving two fifths.\n\nQ: **Equivalent fractions** name the same amount of the same whole. Splitting every part into the same number of smaller equal parts multiplies both numerator and denominator by that number without changing the amount. The strips are equal wholes. What fraction written in sixths names the shaded amount in the upper strip?\n\n![Equal-length strips divided into thirds and sixths, with aligned shaded boundaries.](../figures/01_arithmetic_and_number_sense/equivalent-strips.svg)\nA: **4/6**. Each of the two shaded thirds becomes two shaded sixths, so 2/3 = 4/6.\n\nP: You can also divide a fraction's numerator and denominator by the same nonzero whole number when both divisions give whole numbers, with no fractional part left over. Such a number is a **common factor**. A fraction is in **lowest terms** when its numerator and denominator have no common whole-number factor greater than 1. For example, 6/8 becomes 3/4 by dividing both by 2. Write 8/12 in lowest terms.\nS: IDENTIFY: Simplify a fraction without changing its value.\nPLAN: Divide both numbers by their common factor 4.\nEXECUTE: **8/12 = 2/3.** Neither 2 nor 3 has a common factor greater than 1 with the other.\nEVALUATE: Multiplying both 2 and 3 by 4 recovers 8/12.\n\nQ: On a fraction number line, divide the distance from 0 to 1 into equal lengths. With four equal lengths, each step is 1/4; continue the same spacing beyond 1. What fraction is marked by the dot?\n\n![A line from zero to two with equally spaced quarter-length steps and a marked point beyond one.](../figures/01_arithmetic_and_number_sense/fraction-line.svg)\nA: **5/4**, or **1 1/4**.\n\nQ: When fractions have the same denominator greater than zero, they count the same-sized parts. The larger numerator therefore gives the greater value. Which is greater: 3/7 or 5/7?\nA: **5/7**. Five sevenths are more than three sevenths.\n\nP: A **common denominator** lets fractions count the same-sized parts. For example, 1/2 = 3/6 and 1/3 = 2/6, so 1/2 > 1/3. Compare 3/4 and 2/3 using a common denominator.\nS: IDENTIFY: Compare fractions with different denominators.\nPLAN: Express both in twelfths.\nEXECUTE: **3/4 > 2/3.** They are 9/12 and 8/12.\nEVALUATE: The difference is one twelfth, so the values are close but not equal.\n\nP: To add fractions with the same denominator, add their counts of parts and keep the part size: 1/5 + 2/5 = 3/5. Calculate 2/7 + 3/7.\nS: IDENTIFY: Add fractions with a common denominator.\nPLAN: Add the numerators and retain sevenths.\nEXECUTE: **2/7 + 3/7 = 5/7.**\nEVALUATE: Removing the three added sevenths leaves the original two sevenths.\n\nP: To add fractions with different denominators, first replace them by equivalent fractions with a common denominator. For example, 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Calculate 1/4 + 1/6.\nS: IDENTIFY: Add unlike fractions.\nPLAN: Use twelfths as the common-sized parts.\nEXECUTE: **1/4 + 1/6 = 5/12.** The counts are 3/12 + 2/12.\nEVALUATE: Removing 2/12 leaves 3/12, which is 1/4.\n\nP: Subtract fractions by removing counts of the same-sized parts: 5/7 − 2/7 = 3/7. For different denominators, first use equivalent fractions with a common denominator. Calculate 5/6 − 1/4.\nS: IDENTIFY: Subtract unlike fractions.\nPLAN: Express both in twelfths.\nEXECUTE: **5/6 − 1/4 = 7/12.** Subtract 3/12 from 10/12.\nEVALUATE: Adding 1/4 back gives 7/12 + 3/12 = 10/12 = 5/6.\n\nQ: Someone writes 1/3 + 1/3 = 2/6. What is the part-size error?\nA: **Adding thirds does not turn them into sixths.** The result is 2/3: add the counts of thirds and retain the denominator 3.\n\nQ: Multiplying by a fraction can mean taking that fraction **of** an amount. Here the vertical divisions make fifths of the whole strip, and the gray region is three fifths. The horizontal cut splits every fifth into equal halves. What fraction of the entire strip is the hatched half of the gray region?\n\n![A strip split into fifths and horizontal halves, with a gray region and a hatched portion.](../figures/01_arithmetic_and_number_sense/fraction-product.svg)\nA: **3/10**. The hatched region contains three of the ten equal small parts, so 1/2 × 3/5 = 3/10.\n\nP: To multiply fractions, multiply the numerators and multiply the denominators. This counts the smaller parts formed by taking a fraction of a fraction; the rule also works for improper fractions. Calculate 7/3 × 2/5.\nS: IDENTIFY: Multiply fractions.\nPLAN: Multiply the top numbers and the bottom numbers separately.\nEXECUTE: **7/3 × 2/5 = 14/15.**\nEVALUATE: The first fraction is between 2 and 5/2; multiplying by 2/5 should give a value between 4/5 and 1. The result 14/15 does.\n\nQ: The **reciprocal** of a nonzero number is the number that multiplies with it to give 1. For a nonzero fraction, exchange numerator and denominator: 2/3 and 3/2 are reciprocals because their product is 6/6 = 1. What is the reciprocal of 4/7?\nA: **7/4**. Their product is 28/28 = 1.\n\nP: To divide by a nonzero fraction, multiply by its reciprocal. For example, 1/2 ÷ 3/4 = 1/2 × 4/3 = 2/3; multiplying the result by 3/4 rebuilds 1/2. Calculate 3/4 ÷ 2/5.\nS: IDENTIFY: Divide fractions.\nPLAN: Multiply 3/4 by the reciprocal of 2/5.\nEXECUTE: **3/4 ÷ 2/5 = 15/8.** The multiplication is 3/4 × 5/2.\nEVALUATE: The inverse check gives 15/8 × 2/5 = 30/40 = 3/4.\n\nP: A supply contains 3/2 of a whole strip. Each piece must be 1/4 of a whole strip. How many pieces can be cut, with no material lost?\nS: IDENTIFY: Find how many fractional-sized groups fit in a total.\nPLAN: Divide the total amount by the amount per piece.\nEXECUTE: **6 pieces.** Calculate 3/2 ÷ 1/4 = 3/2 × 4 = 6.\nEVALUATE: Six quarter-strips contain 6/4 = 3/2 whole strips.\n\nQ: Someone claims 2/3 ÷ 4/5 = 8/15. What inverse calculation tests that claim?\nA: **Multiply 8/15 by 4/5.** It gives 32/75, not 2/3, so the claimed quotient fails the check.\n\n## Decimals\n\nQ: **Decimal notation** extends place value to parts of a whole. A decimal point separates the whole-number part on the left from fractional positions on the right. The first position to its right counts **tenths**: 0.3 means 3/10. Write the shaded amount as a decimal.\n\n![One whole strip divided into equal tenths, with a shaded section.](../figures/01_arithmetic_and_number_sense/decimal-strip.svg)\nA: **0.6**. Six tenths are shaded.\n\nQ: Ten hundredths make one tenth. The second position to the right of the decimal point counts **hundredths**: 0.37 means three tenths and seven hundredths, or 37/100. Write 0.42 as a fraction with denominator 100.\nA: **42/100**.\n\nQ: Ten thousandths make one hundredth. The third position to the right of the decimal point counts **thousandths**: 0.005 means 5/1000. Write 0.208 as a fraction with denominator 1000.\nA: **208/1000**. It contains two tenths, no hundredths, and eight thousandths.\n\nQ: A zero added at the right-hand end of a decimal's fractional digits does not change its value: 0.4 = 0.40 because 4/10 = 40/100. Which comparison sign belongs between 0.7 and 0.70?\nA: **0.7 = 0.70**.\n\nQ: Why does deleting the zero immediately after the point in 0.05 change its value, although deleting the final zero in 0.50 does not?\nA: **The first zero holds the tenths position.** Deleting it turns five hundredths into five tenths; deleting the final zero from 0.50 leaves five tenths unchanged.\n\nP: A fraction can be written as a decimal by finding an equivalent fraction with denominator 10, 100, or 1000 when possible. For example, 3/4 = 75/100 = 0.75. Convert 7/20 to a decimal.\nS: IDENTIFY: Convert a fraction to decimal notation.\nPLAN: Multiply numerator and denominator by 5 to obtain hundredths.\nEXECUTE: **7/20 = 0.35.** The equivalent fraction is 35/100.\nEVALUATE: Dividing 35 and 100 by 5 recovers 7/20.\n\nP: Write 0.45 as a fraction in lowest terms.\nS: IDENTIFY: Convert a decimal to a simplified fraction.\nPLAN: Read the decimal as hundredths, then divide out a common factor.\nEXECUTE: **0.45 = 9/20.** Start with 45/100 and divide both numbers by 5.\nEVALUATE: Multiplying both 9 and 20 by 5 returns 45/100.\n\nQ: Some decimals **terminate**, meaning their digits end; others **repeat**, meaning a digit pattern continues forever. Sharing 1 equally among 3 gives 0.333…: at each decimal position, sharing the remaining ten smaller parts gives three to each share and leaves one part to split again. The dots … mean the threes continue forever. Why is the terminating decimal 0.333 smaller than 1/3?\nA: **It leaves out the additional decimal parts that continue after the third three.** The repeating value 0.333… equals 1/3, but 0.333 does not.\n\nQ: The line runs from 0.3 to 0.4 in ten equal steps, so each step is one hundredth. What decimal is marked by the dot?\n\n![A decimal number line with labeled endpoints and a marked internal tick.](../figures/01_arithmetic_and_number_sense/decimal-line.svg)\nA: **0.37**.\n\nP: Compare 0.48 and 0.5.\nS: IDENTIFY: Compare decimals with different numbers of written fractional digits.\nPLAN: Write both in hundredths.\nEXECUTE: **0.48 < 0.5.** They are 48/100 and 50/100.\nEVALUATE: The difference is two hundredths; the longer written decimal is not necessarily greater.\n\nP: Add decimals by combining matching place values. Align the decimal points and use trailing zeros if helpful: 0.6 + 0.25 = 0.60 + 0.25 = 0.85. Calculate 1.7 + 0.46.\nS: IDENTIFY: Add decimals.\nPLAN: Express both amounts in hundredths.\nEXECUTE: **1.7 + 0.46 = 2.16.** Add 170 hundredths and 46 hundredths.\nEVALUATE: Subtracting 0.46 from 2.16 returns 1.70.\n\nP: Subtract decimals by matching place values, just as in addition; regroup when needed. Calculate 3.2 − 1.85.\nS: IDENTIFY: Subtract decimals across place boundaries.\nPLAN: Write 3.2 as 3.20 and subtract hundredths.\nEXECUTE: **3.2 − 1.85 = 1.35.** The corresponding whole-number subtraction is 320 − 185 = 135 hundredths.\nEVALUATE: Adding back gives 1.35 + 1.85 = 3.20.\n\nP: Decimal multiplication can be understood through fractions: 0.2 × 0.3 = 2/10 × 3/10 = 6/100 = 0.06. Calculate 0.4 × 0.07.\nS: IDENTIFY: Multiply decimals.\nPLAN: Multiply four tenths by seven hundredths as fractions.\nEXECUTE: **0.4 × 0.07 = 0.028.** The product is 28/1000.\nEVALUATE: Four tenths of 0.07 must be greater than zero and less than 0.07; 0.028 is.\n\nP: Multiplying both numbers in a division by the same nonzero amount leaves the quotient unchanged, just as it preserves an equivalent fraction. For example, 1.2 ÷ 0.3 = 12 ÷ 3 = 4. Calculate 1.68 ÷ 0.4.\nS: IDENTIFY: Divide by a decimal.\nPLAN: Multiply both numbers by 100 to obtain 168 ÷ 40.\nEXECUTE: **1.68 ÷ 0.4 = 4.2.** Four groups of 40 use 160; the remaining 8 is 8/40 = 0.2 of another group.\nEVALUATE: Multiplication gives 4.2 × 0.4 = 1.68.\n\n## Signed numbers\n\nQ: A number line continues left of zero. Numbers to the right of zero are **positive**; numbers to the left are **negative**. The sign in −3 means three one-unit steps left of zero; +3, usually written 3, is three steps right. Zero is neither positive nor negative. The ticks here are one unit apart. What signed number is marked by the dot?\n\n![A number line extending on both sides of zero, with a marked tick on the left.](../figures/01_arithmetic_and_number_sense/signed-line.svg)\nA: **−2**.\n\nQ: The number farther right is greater, even when both numbers are negative. Which comparison sign belongs between −7 and −3?\nA: **−7 < −3**. Negative seven lies farther left.\n\nQ: The **absolute value** of a number is its distance from zero on the number line. Distance is never negative. Vertical bars mark absolute value: |−4| = 4 and |4| = 4. What is |−6|?\nA: **6**.\n\nQ: **Opposite numbers** are equally far from zero on opposite sides; zero is its own opposite. A minus sign before a whole parenthesized number asks for its opposite, so −(−3) = 3. What is −(−5)?\nA: **5**.\n\nP: To add signed numbers on a number line, start at the first number. Adding a positive number moves right; adding a negative number moves left, by its absolute value. The arrow shows starting at −3 and adding 5. Calculate −3 + 5.\n\n![A number line with an arrow starting at negative three and moving five steps to the right.](../figures/01_arithmetic_and_number_sense/signed-move.svg)\nS: IDENTIFY: Add signed numbers with a change across zero.\nPLAN: Move five unit steps right from −3.\nEXECUTE: **−3 + 5 = 2.** Three steps reach zero and two more reach 2.\nEVALUATE: Moving five steps left from 2 returns to −3.\n\nP: Calculate −4 + (−3).\nS: IDENTIFY: Add two negative numbers.\nPLAN: Start at −4 and move three steps left.\nEXECUTE: **−4 + (−3) = −7.**\nEVALUATE: The result is three units left of −4, as adding −3 requires.\n\nP: Subtracting a signed number means adding its opposite. For example, 2 − (−3) = 2 + 3 = 5. Calculate −5 − (−8).\nS: IDENTIFY: Subtract a negative number.\nPLAN: Replace subtraction of −8 with addition of 8.\nEXECUTE: **−5 − (−8) = 3.**\nEVALUATE: Add the subtracted number back: 3 + (−8) = −5.\n\nP: To multiply nonzero signed numbers, multiply their absolute values. Matching signs (both positive or both negative) give a positive product; different signs give a negative product. This extends repeated addition consistently: (−3) × 2 = −6, (−3) × 1 = −3, (−3) × 0 = 0, so (−3) × (−1) = 3. Calculate (−4) × (−3).\nS: IDENTIFY: Multiply signed numbers.\nPLAN: Multiply 4 by 3 and use a positive sign because the signs match.\nEXECUTE: **(−4) × (−3) = 12.**\nEVALUATE: Three copies of −4 give −12; reversing that sign gives 12.\n\nP: For division of nonzero signed numbers, matching signs (both positive or both negative) give a positive quotient and different signs give a negative quotient. The sign must make the inverse multiplication work. Calculate −18 ÷ 3.\nS: IDENTIFY: Divide signed numbers.\nPLAN: Divide the absolute values and use a negative sign.\nEXECUTE: **−18 ÷ 3 = −6.**\nEVALUATE: The inverse multiplication gives (−6) × 3 = −18.\n\nQ: Negative fractions use the same number line: −1/4 is one quarter-step left of zero. The interval from −1 to 0 is split into four equal lengths. What signed fraction is marked by the dot?\n\n![The interval from negative one to zero divided into equal steps, with a marked internal tick.](../figures/01_arithmetic_and_number_sense/negative-fraction-line.svg)\nA: **−3/4**.\n\nQ: Negative decimals also record positions left of zero. Each step on this line is one tenth. What signed decimal is marked by the dot?\n\n![The interval from negative one to zero divided into tenths, with a marked internal tick.](../figures/01_arithmetic_and_number_sense/negative-decimal-line.svg)\nA: **−0.6**.\n\nP: Compare −2/3 and −0.6.\nS: IDENTIFY: Compare a negative fraction with a negative decimal.\nPLAN: Express their absolute values in fifteenths, then reverse the order for the negative values.\nEXECUTE: **−2/3 < −0.6.** Their absolute values are 10/15 and 9/15, so −2/3 is farther left.\nEVALUATE: The more negative value has the greater distance from zero, not the greater signed value.\n\nQ: Which is greater: |−3/4| or 1/2?\nA: **|−3/4| is greater.** It equals 3/4, whereas 1/2 = 2/4.\n\n## Signed fraction and decimal calculations\n\nP: Signed fractions use the same sign rules as whole numbers, with equivalent fractions providing equal-sized parts. Calculate −3/4 + 1/6.\nS: IDENTIFY: Add signed fractions.\nPLAN: Use twelfths, then combine a negative and a positive count.\nEXECUTE: **−3/4 + 1/6 = −7/12.** The counts are −9/12 + 2/12.\nEVALUATE: Subtracting the added 1/6 gives −9/12 = −3/4.\n\nP: Calculate −2/3 − (−5/6).\nS: IDENTIFY: Subtract a negative fraction.\nPLAN: Add its opposite and use sixths.\nEXECUTE: **−2/3 − (−5/6) = 1/6.** Calculate −4/6 + 5/6.\nEVALUATE: Adding back −5/6 gives −4/6 = −2/3.\n\nP: Calculate (−7/10) × (−5/14), giving the answer in lowest terms.\nS: IDENTIFY: Multiply signed fractions.\nPLAN: Use a positive sign, multiply numerators and denominators, then simplify.\nEXECUTE: **The product is 1/4.** The unsimplified fraction is 35/140.\nEVALUATE: Multiplying numerator and denominator of 1/4 by 35 recovers 35/140; the positive sign matches equal input signs.\n\nP: Calculate −3/5 ÷ 9/10.\nS: IDENTIFY: Divide signed fractions.\nPLAN: Multiply by 10/9 and retain a negative result.\nEXECUTE: **−3/5 ÷ 9/10 = −2/3.** The product is −30/45.\nEVALUATE: Multiplying −2/3 by 9/10 gives −18/30 = −3/5.\n\nP: Calculate −1.7 + 0.85.\nS: IDENTIFY: Add decimals with different signs.\nPLAN: Compare 1.70 and 0.85, subtract their absolute values, and retain the sign of the larger absolute value.\nEXECUTE: **−1.7 + 0.85 = −0.85.**\nEVALUATE: Subtracting 0.85 from −0.85 returns −1.70.\n\nP: Calculate 0.4 − (−0.75).\nS: IDENTIFY: Subtract a negative decimal.\nPLAN: Add the opposite and align decimal places.\nEXECUTE: **0.4 − (−0.75) = 1.15.** Add 0.40 + 0.75.\nEVALUATE: Adding back −0.75 returns 0.40.\n\nP: Calculate (−0.6) × 0.25.\nS: IDENTIFY: Multiply signed decimals.\nPLAN: Multiply the absolute values as fractions and use a negative sign.\nEXECUTE: **(−0.6) × 0.25 = −0.15.** The absolute-value product is 6/10 × 25/100 = 150/1000.\nEVALUATE: One quarter of 0.6 is 0.15, and the different input signs require a negative result.\n\nP: Calculate −1.44 ÷ (−0.12).\nS: IDENTIFY: Divide signed decimals.\nPLAN: Use a positive sign and multiply both absolute values by 100.\nEXECUTE: **−1.44 ÷ (−0.12) = 12.** Calculate 144 ÷ 12.\nEVALUATE: The inverse multiplication gives 12 × (−0.12) = −1.44.\n\nP: Calculate (−0.5 + 3/4) ÷ (−1/2), giving the answer as a fraction.\nS: IDENTIFY: Evaluate a mixed decimal-and-fraction expression.\nPLAN: Convert −0.5 to −1/2, complete the parentheses, then divide.\nEXECUTE: **The result is −1/2.** The parentheses give 1/4, and 1/4 ÷ (−1/2) = 1/4 × (−2).\nEVALUATE: Multiplying the result by −1/2 gives 1/4, matching the completed parentheses.\n\n## Exactness, rounding, and checks\n\nQ: An **exact** value has not been replaced by a nearby value. An **approximation** is a nearby value used in its place. The sign ≈ means “is approximately equal to”; = asserts exact equality. For example, 1/3 = 0.333… but 1/3 ≈ 0.33. Which sign, = or ≈, belongs between 2/3 and 0.67?\nA: **2/3 ≈ 0.67**. The fraction is exactly 0.666…, not 0.67.\n\nP: **Rounding** replaces a number by the nearest allowed step at a stated precision, meaning the size of the rounding step. Rounding to the nearest whole number means choosing the nearest whole-number position. If exactly halfway, this chapter rounds away from zero. Round 6.7 to the nearest whole number.\n\n![A line from six to seven split into tenths, with the given value marked.](../figures/01_arithmetic_and_number_sense/rounding-line.svg)\nS: IDENTIFY: Round to whole-number precision.\nPLAN: Compare the distances to 6 and 7.\nEXECUTE: **6.7 rounds to 7.** It is 0.3 from 7 and 0.7 from 6.\nEVALUATE: The selected whole number is the nearer endpoint.\n\nP: To round a positive decimal to a stated place, inspect the next digit: 0–4 keeps the retained digit; 5–9 increases it, regrouping if necessary. Thus 3.146 rounded to the nearest hundredth is 3.15. Round 2.376 to the nearest hundredth.\nS: IDENTIFY: Round a positive decimal to hundredths.\nPLAN: Retain two digits after the point and inspect the thousandths digit.\nEXECUTE: **2.376 rounds to 2.38.** The next digit is 6.\nEVALUATE: It is 0.004 from 2.38 but 0.006 from 2.37.\n\nP: Round −2.65 to the nearest tenth. For an exact halfway case, use the convention of rounding away from zero.\nS: IDENTIFY: Round a negative halfway value.\nPLAN: Compare the neighboring tenths, −2.6 and −2.7, then use the stated tie rule.\nEXECUTE: **−2.65 rounds to −2.7.**\nEVALUATE: Both neighbors are 0.05 away; −2.7 is the one farther from zero.\n\nP: Rounding to the nearest hundred means choosing the nearest whole-number count of hundreds, such as 3400 or 3500. Round 3467 to the nearest hundred.\nS: IDENTIFY: Round a whole number to hundreds.\nPLAN: Compare the two neighboring hundreds.\nEXECUTE: **3467 rounds to 3500.** Its distances to 3400 and 3500 are 67 and 33.\nEVALUATE: The chosen hundred is closer, and the change is less than half a hundred.\n\nP: An **estimate** is an approximate result used to judge size without carrying out the full exact calculation. Estimate 19.7 + 8.2 by first rounding each number to the nearest whole number.\nS: IDENTIFY: Estimate a sum.\nPLAN: Round the inputs, then add.\nEXECUTE: **The estimate is 28.** Calculate 20 + 8.\nEVALUATE: The rounding changes are +0.3 and −0.2, so the estimate is only 0.1 above the exact sum.\n\nP: Estimate 49.8 × 0.21 by rounding 49.8 to the nearest whole number and 0.21 to the nearest tenth.\nS: IDENTIFY: Estimate a product.\nPLAN: Use the specified simpler inputs.\nEXECUTE: **The estimate is 10.** Calculate 50 × 0.2.\nEVALUATE: One fifth of about fifty is about ten; an answer near one or one hundred would have the wrong size.\n\nQ: Multiplying a positive amount by a positive fraction less than 1 takes only part of it, so the product must be smaller than the original amount. Someone writes 0.48 × 0.3 = 1.44. What size check rejects this result without computing the exact product?\nA: **The product must be positive and less than 0.48.** Since 0.3 is less than 1, a result of 1.44 is too large.\n\nQ: Someone writes 2.4 ÷ 0.6 = 0.4. What inverse multiplication rejects this quotient?\nA: **0.4 × 0.6 = 0.24, not 2.4.** The claimed quotient fails to rebuild the original amount.\n\nP: A **rational number** is a number expressible as a fraction of signed whole numbers with a nonzero denominator. To retain an exact result, fractions can be preferable to shortened repeating decimals. Calculate 1/3 + 1/6 exactly.\nS: IDENTIFY: Add rational numbers without approximation.\nPLAN: Keep fractions and use sixths.\nEXECUTE: **1/3 + 1/6 = 1/2 exactly.** Add 2/6 + 1/6 = 3/6.\nEVALUATE: The exact decimal 0.5 represents 1/2; no repeating decimal needed to be shortened.\n\nQ: What prevents 7 ÷ (5 − 5) from having a numerical value?\nA: **The number being divided by becomes zero.** Parentheses must be evaluated first, giving 7 ÷ 0, which is undefined.\n\nQ: You need the exact difference 10.01 − 9.99. Why is rounding both inputs to the nearest whole number a poor method for this task?\nA: **It erases the small difference being sought.** Both round to 10, giving an estimate of 0 instead of the exact difference 0.02.\n\nP: Calculate 1.2 − (−3/5) ÷ (3/2) exactly.\nS: IDENTIFY: Evaluate mixed signed operations while retaining exact values.\nPLAN: Divide before subtracting and write 1.2 as 6/5.\nEXECUTE: **The result is 8/5, or 1.6.** The quotient is −3/5 × 2/3 = −2/5; then 6/5 − (−2/5) = 8/5.\nEVALUATE: Adding the subtracted quotient back gives 8/5 + (−2/5) = 6/5 = 1.2.",
+    "entryAssumptions": [
+      "The learner can read ordinary English instructions and familiar object words; no mathematical vocabulary or arithmetic skill is assumed.",
+      "The learner can visually distinguish separate objects, match identical written marks, and follow ordinary spatial descriptions such as left, right, inside, and beside. These perceptual and reading abilities are entry requirements, not claims of mathematical mastery.",
+      "Recognizing numerals, counting, grouping, place value, zero, comparison symbols, equal parts, signed notation, and arithmetic procedures are not assumed. Their teaching bridges occur on scheduled fronts.",
+      "No calculator, multiplication-table fluency, algebra, powers, unit-conversion knowledge, or knowledge from a later chapter is assumed.",
+      "There are no inbound prerequisite chapters. The supplied curriculum describes the destination, not evidence of learner mastery."
+    ],
+    "conceptLedger": [
+      {
+        "concept": "Counting a collection",
+        "explanationCard": 1,
+        "explanation": "Touch each object once while saying the next word in the supplied one-through-ten sequence; the last word tells how many.",
+        "retrievalCard": 1,
+        "applicationCards": [
+          2,
+          3,
+          4,
+          6,
+          7,
+          20
+        ]
+      },
+      {
+        "concept": "Digits 1, 2, and 3",
+        "explanationCard": 2,
+        "explanation": "A digit is a written mark used in numbers; 1 means one, 2 two, and 3 three.",
+        "retrievalCard": 2,
+        "applicationCards": [
+          8,
+          13,
+          15
+        ]
+      },
+      {
+        "concept": "Digits 4, 5, and 6",
+        "explanationCard": 3,
+        "explanation": "The front connects the written marks 4, 5, and 6 to four, five, and six before asking for a collection's numeral.",
+        "retrievalCard": 3,
+        "applicationCards": [
+          6,
+          9,
+          13,
+          14
+        ]
+      },
+      {
+        "concept": "Digits 7, 8, and 9",
+        "explanationCard": 4,
+        "explanation": "The front connects 7, 8, and 9 to seven, eight, and nine before the supported collection decision.",
+        "retrievalCard": 4,
+        "applicationCards": [
+          13,
+          16,
+          17
+        ]
+      },
+      {
+        "concept": "Zero as an empty count",
+        "explanationCard": 5,
+        "explanation": "Zero, written 0, records that there are no objects to count.",
+        "retrievalCard": 5,
+        "applicationCards": [
+          8,
+          9,
+          12,
+          25
+        ]
+      },
+      {
+        "concept": "Grouping ten ones into one ten",
+        "explanationCard": 7,
+        "explanation": "A group is a collection treated together; bundling ten objects as one ten does not add or remove objects.",
+        "retrievalCard": 7,
+        "applicationCards": [
+          8,
+          9,
+          16,
+          18
+        ]
+      },
+      {
+        "concept": "Numerals and positional ones and tens",
+        "explanationCard": 8,
+        "explanation": "A numeral is a written number; the rightmost position records ones and the next position records tens, illustrated by 12 and 10.",
+        "retrievalCard": 8,
+        "applicationCards": [
+          9,
+          10,
+          12,
+          16
+        ]
+      },
+      {
+        "concept": "Zero as a position holder",
+        "explanationCard": 9,
+        "explanation": "30 records three tens and no ones, whereas 3 records three ones.",
+        "retrievalCard": 9,
+        "applicationCards": [
+          11,
+          12,
+          52,
+          54
+        ]
+      },
+      {
+        "concept": "Hundreds",
+        "explanationCard": 10,
+        "explanation": "Ten tens make one hundred; its position is immediately left of tens, with 100 analyzed.",
+        "retrievalCard": 10,
+        "applicationCards": [
+          11,
+          12,
+          61,
+          90
+        ]
+      },
+      {
+        "concept": "Thousands",
+        "explanationCard": 11,
+        "explanation": "Ten hundreds make one thousand; its position is immediately left of hundreds, with 1000 analyzed.",
+        "retrievalCard": 11,
+        "applicationCards": [
+          52,
+          62,
+          90
+        ]
+      },
+      {
+        "concept": "Numerical comparison and equality signs",
+        "explanationCard": 13,
+        "explanation": "Later counts are greater and earlier counts less; > and < face the greater number with their open side, and = means the same value.",
+        "retrievalCard": 13,
+        "applicationCards": [
+          38,
+          39,
+          53,
+          59,
+          65,
+          75
+        ]
+      },
+      {
+        "concept": "Whole numbers and number-line grammar",
+        "explanationCard": 14,
+        "explanation": "A whole number is zero or a count; equally spaced one-step ticks locate numbers, with greater values farther right.",
+        "retrievalCard": 14,
+        "applicationCards": [
+          37,
+          58,
+          64,
+          68,
+          87
+        ]
+      },
+      {
+        "concept": "Addition, plus sign, and sum",
+        "explanationCard": 15,
+        "explanation": "Addition combines counts; + means add, and its result is a sum, illustrated by 2 + 1 = 3.",
+        "retrievalCard": 15,
+        "applicationCards": [
+          16,
+          19,
+          21,
+          40,
+          60
+        ]
+      },
+      {
+        "concept": "Addition with regrouping",
+        "explanationCard": 16,
+        "explanation": "The analyzed 28 + 15 example exchanges thirteen ones for one ten and three ones.",
+        "retrievalCard": 16,
+        "applicationCards": [
+          21,
+          60,
+          82
+        ]
+      },
+      {
+        "concept": "Subtraction, minus sign, and difference",
+        "explanationCard": 17,
+        "explanation": "Subtraction removes an amount; − means subtract and the result is a difference.",
+        "retrievalCard": 17,
+        "applicationCards": [
+          18,
+          19,
+          29,
+          42,
+          61
+        ]
+      },
+      {
+        "concept": "Subtraction with regrouping",
+        "explanationCard": 18,
+        "explanation": "The analyzed 42 − 17 example opens one ten to produce three tens and twelve ones before subtracting.",
+        "retrievalCard": 18,
+        "applicationCards": [
+          61,
+          81,
+          97
+        ]
+      },
+      {
+        "concept": "Inverse operations for addition and subtraction",
+        "explanationCard": 19,
+        "explanation": "Inverse operations undo one another; subtract an added number from a proposed sum to look for the other.",
+        "retrievalCard": 19,
+        "applicationCards": [
+          41,
+          42,
+          60,
+          70,
+          98
+        ]
+      },
+      {
+        "concept": "Multiplication and product",
+        "explanationCard": 20,
+        "explanation": "Multiplication combines equal-sized groups; 2 × 3 means two groups of three and its result is the product.",
+        "retrievalCard": 20,
+        "applicationCards": [
+          21,
+          22,
+          44,
+          45,
+          71
+        ]
+      },
+      {
+        "concept": "Splitting a whole-number product into tens and ones",
+        "explanationCard": 21,
+        "explanation": "The analyzed 3 × 14 example multiplies the 10 and 4 separately and adds the results.",
+        "retrievalCard": 21,
+        "applicationCards": [
+          34,
+          63,
+          84
+        ]
+      },
+      {
+        "concept": "Division as equal sharing and quotient",
+        "explanationCard": 22,
+        "explanation": "Division shares a total into equal-sized groups; 12 ÷ 3 = 4 because three groups of four rebuild 12.",
+        "retrievalCard": 22,
+        "applicationCards": [
+          23,
+          25,
+          32,
+          47,
+          63
+        ]
+      },
+      {
+        "concept": "Division as counting groups",
+        "explanationCard": 23,
+        "explanation": "Division can ask how many groups of a specified size fit into a total.",
+        "retrievalCard": 23,
+        "applicationCards": [
+          33,
+          48,
+          63
+        ]
+      },
+      {
+        "concept": "Division by zero and multiplication as the inverse check",
+        "explanationCard": 24,
+        "explanation": "A quotient for 6 ÷ 0 would need to multiply by zero to give six, which is impossible; undefined means no numerical value is assigned.",
+        "retrievalCard": 24,
+        "applicationCards": [
+          25,
+          49,
+          72,
+          94,
+          96
+        ]
+      },
+      {
+        "concept": "Expressions and parentheses",
+        "explanationCard": 26,
+        "explanation": "An expression is a written calculation; parentheses require the enclosed calculation first, illustrated by (2 + 3) × 4.",
+        "retrievalCard": 26,
+        "applicationCards": [
+          27,
+          67,
+          85,
+          96,
+          98
+        ]
+      },
+      {
+        "concept": "Multiplication and division before addition and subtraction",
+        "explanationCard": 27,
+        "explanation": "After parentheses, do multiplication and division before addition and subtraction; 2 + 3 × 4 is analyzed as 2 + 12.",
+        "retrievalCard": 27,
+        "applicationCards": [
+          28,
+          29,
+          85,
+          98
+        ]
+      },
+      {
+        "concept": "Left-to-right evaluation of equal-priority multiplication and division",
+        "explanationCard": 28,
+        "explanation": "Multiplication and division have equal priority and are performed from left to right.",
+        "retrievalCard": 28,
+        "applicationCards": [
+          47,
+          80,
+          98
+        ]
+      },
+      {
+        "concept": "Left-to-right evaluation of equal-priority addition and subtraction",
+        "explanationCard": 29,
+        "explanation": "Addition and subtraction have equal priority and are performed from left to right.",
+        "retrievalCard": 29,
+        "applicationCards": [
+          77,
+          78,
+          98
+        ]
+      },
+      {
+        "concept": "Wholes, equal parts, and halves",
+        "explanationCard": 30,
+        "explanation": "A whole is the complete object; equal parts contain the same amount, and halves are two equal parts.",
+        "retrievalCard": 30,
+        "applicationCards": [
+          31,
+          35,
+          44,
+          50
+        ]
+      },
+      {
+        "concept": "Fraction notation, numerator, and denominator",
+        "explanationCard": 31,
+        "explanation": "In 2/3 the denominator counts three equal parts per whole and the numerator selects two; slash notation represents the fraction bar and a denominator cannot be zero.",
+        "retrievalCard": 31,
+        "applicationCards": [
+          32,
+          35,
+          38,
+          40,
+          50
+        ]
+      },
+      {
+        "concept": "Improper fractions and fractions as division",
+        "explanationCard": 32,
+        "explanation": "Fractions can count beyond one whole; 4/3 counts four thirds and also means 4 ÷ 3. Numerator at least denominator defines improper.",
+        "retrievalCard": 32,
+        "applicationCards": [
+          33,
+          34,
+          37,
+          45,
+          48
+        ]
+      },
+      {
+        "concept": "Mixed numbers and conversion from improper fractions",
+        "explanationCard": 33,
+        "explanation": "A mixed number combines wholes and a remaining fraction; 2 1/3 means 2 + 1/3, and grouping seven thirds gives 2 1/3.",
+        "retrievalCard": 33,
+        "applicationCards": [
+          34,
+          37
+        ]
+      },
+      {
+        "concept": "Conversion from mixed numbers to improper fractions",
+        "explanationCard": 34,
+        "explanation": "Count the denominator-sized parts in all the wholes and add the remaining numerator, as in 2 × 3 + 1 thirds.",
+        "retrievalCard": 34,
+        "applicationCards": [
+          37
+        ]
+      },
+      {
+        "concept": "Equivalent fractions",
+        "explanationCard": 35,
+        "explanation": "Splitting every part the same way multiplies numerator and denominator by the same number without changing the amount.",
+        "retrievalCard": 35,
+        "applicationCards": [
+          36,
+          39,
+          41,
+          53,
+          55,
+          63
+        ]
+      },
+      {
+        "concept": "Common factors and lowest terms",
+        "explanationCard": 36,
+        "explanation": "A common factor divides both numerator and denominator exactly; divide both by it to preserve value, stopping when none greater than one remains.",
+        "retrievalCard": 36,
+        "applicationCards": [
+          42,
+          56,
+          79,
+          80
+        ]
+      },
+      {
+        "concept": "Fraction placement on a number line",
+        "explanationCard": 37,
+        "explanation": "Split the zero-to-one distance into equal lengths and continue that spacing beyond one.",
+        "retrievalCard": 37,
+        "applicationCards": [
+          58,
+          73,
+          75,
+          76
+        ]
+      },
+      {
+        "concept": "Comparison of fractions with equal denominators",
+        "explanationCard": 38,
+        "explanation": "With a common denominator greater than zero, parts have the same size, so the greater numerator gives the greater value.",
+        "retrievalCard": 38,
+        "applicationCards": [
+          39,
+          59,
+          75,
+          76
+        ]
+      },
+      {
+        "concept": "Common-denominator comparison",
+        "explanationCard": 39,
+        "explanation": "Equivalent fractions with a common denominator count same-sized parts; halves and thirds are compared in sixths.",
+        "retrievalCard": 39,
+        "applicationCards": [
+          41,
+          42,
+          59,
+          75
+        ]
+      },
+      {
+        "concept": "Adding same-denominator fractions",
+        "explanationCard": 40,
+        "explanation": "Add counts of parts and keep the part size, illustrated by 1/5 + 2/5 = 3/5.",
+        "retrievalCard": 40,
+        "applicationCards": [
+          41,
+          43,
+          77,
+          95
+        ]
+      },
+      {
+        "concept": "Adding unlike fractions",
+        "explanationCard": 41,
+        "explanation": "Replace unlike fractions by equivalent ones with a common denominator before adding; 1/2 + 1/3 is analyzed in sixths.",
+        "retrievalCard": 41,
+        "applicationCards": [
+          77,
+          85,
+          95
+        ]
+      },
+      {
+        "concept": "Subtracting fractions",
+        "explanationCard": 42,
+        "explanation": "Remove counts of same-sized parts; obtain a common denominator first when needed.",
+        "retrievalCard": 42,
+        "applicationCards": [
+          78,
+          85,
+          98
+        ]
+      },
+      {
+        "concept": "Fraction multiplication as taking part of an amount",
+        "explanationCard": 44,
+        "explanation": "Multiplying by a fraction can mean taking that fraction of an amount; the gridded strip makes half of three fifths inspectable.",
+        "retrievalCard": 44,
+        "applicationCards": [
+          45,
+          62,
+          83,
+          93
+        ]
+      },
+      {
+        "concept": "Fraction multiplication procedure",
+        "explanationCard": 45,
+        "explanation": "Multiply numerators and multiply denominators; the equal-part construction motivates the rule, which also applies to improper fractions.",
+        "retrievalCard": 45,
+        "applicationCards": [
+          46,
+          47,
+          62,
+          79,
+          83
+        ]
+      },
+      {
+        "concept": "Reciprocals",
+        "explanationCard": 46,
+        "explanation": "A reciprocal multiplies a nonzero number to one; exchanging a fraction's numerator and denominator supplies it.",
+        "retrievalCard": 46,
+        "applicationCards": [
+          47,
+          48,
+          80,
+          85
+        ]
+      },
+      {
+        "concept": "Division by a nonzero fraction",
+        "explanationCard": 47,
+        "explanation": "Multiply by the divisor's reciprocal; a worked example is checked by multiplying the quotient by the original divisor.",
+        "retrievalCard": 47,
+        "applicationCards": [
+          48,
+          49,
+          80,
+          85,
+          98
+        ]
+      },
+      {
+        "concept": "Decimal point and tenths",
+        "explanationCard": 50,
+        "explanation": "The decimal point separates whole-number positions from fractional positions; the first position on the right counts tenths, as in 0.3 = 3/10.",
+        "retrievalCard": 50,
+        "applicationCards": [
+          51,
+          53,
+          55,
+          60,
+          74
+        ]
+      },
+      {
+        "concept": "Hundredths",
+        "explanationCard": 51,
+        "explanation": "Ten hundredths make a tenth; the second decimal position counts hundredths, with 0.37 analyzed as 37/100.",
+        "retrievalCard": 51,
+        "applicationCards": [
+          52,
+          54,
+          56,
+          58,
+          88
+        ]
+      },
+      {
+        "concept": "Thousandths",
+        "explanationCard": 52,
+        "explanation": "Ten thousandths make a hundredth; the third decimal position counts thousandths, with 0.005 analyzed as 5/1000.",
+        "retrievalCard": 52,
+        "applicationCards": [
+          57,
+          62,
+          88
+        ]
+      },
+      {
+        "concept": "Trailing decimal zeros versus internal placeholders",
+        "explanationCard": 53,
+        "explanation": "Appending a fractional trailing zero preserves value because 4/10 = 40/100; the next card contrasts this with removing an internal placeholder.",
+        "retrievalCard": 53,
+        "applicationCards": [
+          54,
+          59,
+          60,
+          61
+        ]
+      },
+      {
+        "concept": "Fraction-to-decimal conversion by equivalent denominators",
+        "explanationCard": 55,
+        "explanation": "Use an equivalent denominator of 10, 100, or 1000 when possible, illustrated by 3/4 = 75/100 = 0.75.",
+        "retrievalCard": 55,
+        "applicationCards": [
+          56,
+          62,
+          83,
+          98
+        ]
+      },
+      {
+        "concept": "Terminating and repeating decimal notation",
+        "explanationCard": 57,
+        "explanation": "Terminating digits end; repeating digits continue forever. Equal sharing of one among three repeatedly leaves a smaller remainder, producing 0.333…; the ellipsis means continuation.",
+        "retrievalCard": 57,
+        "applicationCards": [
+          86,
+          95
+        ]
+      },
+      {
+        "concept": "Decimal number-line scale",
+        "explanationCard": 58,
+        "explanation": "Ten equal steps from 0.3 to 0.4 each represent one hundredth.",
+        "retrievalCard": 58,
+        "applicationCards": [
+          74,
+          87,
+          89
+        ]
+      },
+      {
+        "concept": "Decimal addition by matching place values",
+        "explanationCard": 60,
+        "explanation": "Align decimal points and add matching places, using trailing zeros; 0.6 + 0.25 is analyzed as 0.60 + 0.25.",
+        "retrievalCard": 60,
+        "applicationCards": [
+          61,
+          81,
+          82,
+          91
+        ]
+      },
+      {
+        "concept": "Decimal subtraction by matching place values",
+        "explanationCard": 61,
+        "explanation": "Match decimal places as for addition and regroup when needed.",
+        "retrievalCard": 61,
+        "applicationCards": [
+          81,
+          82,
+          97
+        ]
+      },
+      {
+        "concept": "Decimal multiplication through fractions",
+        "explanationCard": 62,
+        "explanation": "The worked 0.2 × 0.3 example becomes 2/10 × 3/10 = 6/100.",
+        "retrievalCard": 62,
+        "applicationCards": [
+          83,
+          92,
+          93,
+          94
+        ]
+      },
+      {
+        "concept": "Decimal division by scaling both inputs",
+        "explanationCard": 63,
+        "explanation": "Multiplying both inputs of a division by the same nonzero amount preserves its quotient, just as with equivalent fractions.",
+        "retrievalCard": 63,
+        "applicationCards": [
+          84,
+          94
+        ]
+      },
+      {
+        "concept": "Positive numbers, negative numbers, and signed positions",
+        "explanationCard": 64,
+        "explanation": "Positive values lie right of zero and negative values left; −3 marks three steps left, +3 three right, and zero is neither.",
+        "retrievalCard": 64,
+        "applicationCards": [
+          65,
+          66,
+          68,
+          73,
+          74
+        ]
+      },
+      {
+        "concept": "Ordering negative values",
+        "explanationCard": 65,
+        "explanation": "Farther right still means greater when both values are negative.",
+        "retrievalCard": 65,
+        "applicationCards": [
+          75,
+          76,
+          89
+        ]
+      },
+      {
+        "concept": "Absolute value",
+        "explanationCard": 66,
+        "explanation": "Absolute value is nonnegative distance from zero, denoted by vertical bars and illustrated with both signs of four.",
+        "retrievalCard": 66,
+        "applicationCards": [
+          68,
+          71,
+          75,
+          76,
+          81
+        ]
+      },
+      {
+        "concept": "Opposites and a minus sign before a parenthesized number",
+        "explanationCard": 67,
+        "explanation": "Opposites lie equally far from zero on opposite sides; an outer minus asks for the opposite, so −(−3) = 3.",
+        "retrievalCard": 67,
+        "applicationCards": [
+          70,
+          78,
+          82,
+          98
+        ]
+      },
+      {
+        "concept": "Signed addition as directed movement",
+        "explanationCard": 68,
+        "explanation": "Start at the first number; positive additions move right and negative additions move left by their absolute values.",
+        "retrievalCard": 68,
+        "applicationCards": [
+          69,
+          70,
+          77,
+          81
+        ]
+      },
+      {
+        "concept": "Signed subtraction as adding the opposite",
+        "explanationCard": 70,
+        "explanation": "Subtracting a signed number means adding its opposite, illustrated by 2 − (−3) = 2 + 3.",
+        "retrievalCard": 70,
+        "applicationCards": [
+          78,
+          82,
+          98
+        ]
+      },
+      {
+        "concept": "Signs in multiplication",
+        "explanationCard": 71,
+        "explanation": "Multiply absolute values; equal nonzero signs give positive and different signs negative. A repeated-addition pattern motivates the two-negative case.",
+        "retrievalCard": 71,
+        "applicationCards": [
+          72,
+          79,
+          83
+        ]
+      },
+      {
+        "concept": "Signs in division",
+        "explanationCard": 72,
+        "explanation": "Equal nonzero signs give a positive quotient and different signs a negative one, chosen to make inverse multiplication work.",
+        "retrievalCard": 72,
+        "applicationCards": [
+          80,
+          84,
+          85,
+          98
+        ]
+      },
+      {
+        "concept": "Negative fraction and decimal number-line placement",
+        "explanationCard": 73,
+        "explanation": "A negative fraction measures fractional steps left of zero; the next front explicitly extends the same representation to decimal tenths.",
+        "retrievalCard": 73,
+        "applicationCards": [
+          74,
+          75,
+          76,
+          89
+        ]
+      },
+      {
+        "concept": "Signed fraction arithmetic",
+        "explanationCard": 77,
+        "explanation": "Signed fractions use the established sign rules, with equivalent fractions supplying same-sized parts.",
+        "retrievalCard": 77,
+        "applicationCards": [
+          78,
+          79,
+          80,
+          85,
+          98
+        ]
+      },
+      {
+        "concept": "Exact values and approximation notation",
+        "explanationCard": 86,
+        "explanation": "Exact values are not replaced by nearby ones; approximations are, and ≈ distinguishes that relationship from exact equality.",
+        "retrievalCard": 86,
+        "applicationCards": [
+          87,
+          91,
+          95,
+          97,
+          98
+        ]
+      },
+      {
+        "concept": "Rounding to stated precision and halfway convention",
+        "explanationCard": 87,
+        "explanation": "Rounding chooses the nearest allowed step at a stated precision; exact halfway cases in this chapter go away from zero.",
+        "retrievalCard": 87,
+        "applicationCards": [
+          88,
+          89,
+          90,
+          91,
+          92
+        ]
+      },
+      {
+        "concept": "Decimal rounding by the next digit",
+        "explanationCard": 88,
+        "explanation": "For a positive decimal, inspect the next digit: 0–4 retains the selected digit and 5–9 increases it, regrouping if necessary.",
+        "retrievalCard": 88,
+        "applicationCards": [
+          89,
+          91,
+          92
+        ]
+      },
+      {
+        "concept": "Rounding to hundreds",
+        "explanationCard": 90,
+        "explanation": "Nearest-hundred rounding chooses the nearest whole-number count of hundreds, illustrated by neighboring candidates.",
+        "retrievalCard": 90,
+        "applicationCards": []
+      },
+      {
+        "concept": "Estimation of calculation size",
+        "explanationCard": 91,
+        "explanation": "An estimate is an approximate result used to judge size without completing the exact calculation; round inputs before calculating.",
+        "retrievalCard": 91,
+        "applicationCards": [
+          92,
+          93,
+          97
+        ]
+      },
+      {
+        "concept": "Multiplication size bound for a positive factor below one",
+        "explanationCard": 93,
+        "explanation": "Taking a positive fraction less than one of a positive amount must produce a smaller positive amount.",
+        "retrievalCard": 93,
+        "applicationCards": []
+      },
+      {
+        "concept": "Rational numbers and choosing an exact representation",
+        "explanationCard": 95,
+        "explanation": "A rational number is expressible as a fraction of signed whole numbers with nonzero denominator; keeping fractions avoids shortening repeating decimals.",
+        "retrievalCard": 95,
+        "applicationCards": [
+          98
+        ]
+      }
+    ],
+    "figures": [
+      {
+        "id": "collection-a",
+        "title": "Loose collection",
+        "description": "Unlabeled separated dots for the first supported counting decision.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\fill (-0.65,0) circle (0.13);\n\\fill (0,0.3) circle (0.13);\n\\fill (0.65,-0.05) circle (0.13);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "collection-b",
+        "title": "Collection for written recording",
+        "description": "Unlabeled dots for translating a count into a newly introduced digit.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\fill (-0.4,0) circle (0.13);\n\\fill (0.4,0.15) circle (0.13);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "collection-c",
+        "title": "Collection in loose rows",
+        "description": "An unlabeled collection arranged compactly without counting labels.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\foreach \\x in {-0.6,0,0.6} {\\fill (\\x,0.3) circle (0.12);}\n\\foreach \\x in {-0.3,0.3} {\\fill (\\x,-0.3) circle (0.12);}\n\\end{tikzpicture}"
+      },
+      {
+        "id": "collection-d",
+        "title": "Collection for digit translation",
+        "description": "Unlabeled dots arranged in two rows for counting and written recording.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\foreach \\x in {-0.9,-0.3,0.3,0.9} {\n\\fill (\\x,0.3) circle (0.12);\n\\fill (\\x,-0.3) circle (0.12);\n}\n\\end{tikzpicture}"
+      },
+      {
+        "id": "collection-e",
+        "title": "Varied loose collection",
+        "description": "A new spatial arrangement for independent count-to-digit retrieval.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\fill (-0.8,0.3) circle (0.12);\n\\fill (-0.15,0.5) circle (0.12);\n\\fill (0.65,0.25) circle (0.12);\n\\fill (-0.6,-0.35) circle (0.12);\n\\fill (0.1,-0.15) circle (0.12);\n\\fill (0.8,-0.4) circle (0.12);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "bundle-bridge",
+        "title": "Loose and bundled objects",
+        "description": "The same dot arrangement appears loose and within a boundary to support conservation of count during bundling.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\foreach \\x in {-2.35,-1.95,-1.55,-1.15,-0.75} {\n\\fill (\\x,0.22) circle (0.08);\n\\fill (\\x,-0.22) circle (0.08);\n}\n\\foreach \\x in {0.75,1.15,1.55,1.95,2.35} {\n\\fill (\\x,0.22) circle (0.08);\n\\fill (\\x,-0.22) circle (0.08);\n}\n\\draw[thick,rounded corners] (0.52,-0.5) rectangle (2.58,0.5);\n\\node at (-1.55,-0.85) {loose};\n\\node at (1.55,-0.85) {bundled};\n\\end{tikzpicture}"
+      },
+      {
+        "id": "place-collection",
+        "title": "Bundle and loose objects",
+        "description": "A ten-object bundle beside separate dots for translating a concrete collection into a positional numeral.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\foreach \\x in {-1.9,-1.55,-1.2,-0.85,-0.5} {\n\\fill (\\x,0.2) circle (0.07);\n\\fill (\\x,-0.2) circle (0.07);\n}\n\\draw[thick,rounded corners] (-2.12,-0.48) rectangle (-0.28,0.48);\n\\foreach \\x in {0.45,1.05} {\n\\fill (\\x,0.27) circle (0.1);\n\\fill (\\x,-0.27) circle (0.1);\n}\n\\end{tikzpicture}"
+      },
+      {
+        "id": "whole-line",
+        "title": "Whole-number ticks",
+        "description": "A marked point on an equally spaced whole-number line; the target tick has no numerical label.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\draw[thick] (-2.5,0)--(2.5,0);\n\\foreach \\x in {-2.5,-1.5,-0.5,0.5,1.5,2.5} {\\draw (\\x,-0.1)--(\\x,0.1);}\n\\node[below] at (-2.5,-0.12) {0};\n\\node[below] at (-1.5,-0.12) {1};\n\\node[below] at (-0.5,-0.12) {2};\n\\node[below] at (0.5,-0.12) {3};\n\\node[below] at (2.5,-0.12) {5};\n\\fill (1.5,0) circle (0.09);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "equal-groups",
+        "title": "Equal-sized groups",
+        "description": "Separate boundaries enclose matching collections for multiplication as grouped counting.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\foreach \\c in {-1.65,0,1.65} {\n\\draw[thick,rounded corners] (\\c-0.62,-0.58) rectangle (\\c+0.62,0.58);\n\\fill (\\c-0.25,0.25) circle (0.09);\n\\fill (\\c+0.25,0.25) circle (0.09);\n\\fill (\\c-0.25,-0.25) circle (0.09);\n\\fill (\\c+0.25,-0.25) circle (0.09);\n}\n\\end{tikzpicture}"
+      },
+      {
+        "id": "partition-choice",
+        "title": "Two ways to cut a strip",
+        "description": "Equal-length strips with centered and off-center cuts; no answer-revealing partition names are printed.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\node[left] at (-2,0.55) {A};\n\\draw[thick] (-2,0.2) rectangle (2,0.9);\n\\draw[thick] (0,0.2)--(0,0.9);\n\\node[left] at (-2,-0.65) {B};\n\\draw[thick] (-2,-1) rectangle (2,-0.3);\n\\draw[thick] (-0.8,-1)--(-0.8,-0.3);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "fraction-strip",
+        "title": "Partitioned whole strip",
+        "description": "A whole strip divided into equal sections, with solid gray shading marking selected parts.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\fill[gray!45] (-2,-0.4) rectangle (1,0.4);\n\\draw[thick] (-2,-0.4) rectangle (2,0.4);\n\\foreach \\x in {-1,0,1} {\\draw (\\x,-0.4)--(\\x,0.4);}\n\\end{tikzpicture}"
+      },
+      {
+        "id": "multiple-wholes",
+        "title": "Shading across whole strips",
+        "description": "Equal whole strips partitioned into thirds, with selected parts extending beyond a single whole.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\fill[gray!45] (-1.5,0.65) rectangle (1.5,1.15);\n\\fill[gray!45] (-1.5,-0.25) rectangle (1.5,0.25);\n\\fill[gray!45] (-1.5,-1.15) rectangle (-0.5,-0.65);\n\\foreach \\y in {-0.9,0,0.9} {\n\\draw[thick] (-1.5,\\y-0.25) rectangle (1.5,\\y+0.25);\n\\draw (-0.5,\\y-0.25)--(-0.5,\\y+0.25);\n\\draw (0.5,\\y-0.25)--(0.5,\\y+0.25);\n}\n\\end{tikzpicture}"
+      },
+      {
+        "id": "equivalent-strips",
+        "title": "Aligned partitions",
+        "description": "Equal wholes with matching shaded lengths and different equal-part subdivisions.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\fill[gray!45] (-2.1,0.3) rectangle (0.7,0.9);\n\\fill[gray!45] (-2.1,-0.9) rectangle (0.7,-0.3);\n\\draw[thick] (-2.1,0.3) rectangle (2.1,0.9);\n\\draw[thick] (-2.1,-0.9) rectangle (2.1,-0.3);\n\\foreach \\x in {-0.7,0.7} {\\draw (\\x,0.3)--(\\x,0.9);}\n\\foreach \\x in {-1.4,-0.7,0,0.7,1.4} {\\draw (\\x,-0.9)--(\\x,-0.3);}\n\\end{tikzpicture}"
+      },
+      {
+        "id": "fraction-line",
+        "title": "Fractional steps beyond one",
+        "description": "Equal quarter-length steps from zero through two, with an unlabeled marked tick.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\draw[thick] (-2.4,0)--(2.4,0);\n\\foreach \\x in {-2.4,-1.8,-1.2,-0.6,0,0.6,1.2,1.8,2.4} {\\draw (\\x,-0.1)--(\\x,0.1);}\n\\node[below] at (-2.4,-0.12) {0};\n\\node[below] at (0,-0.12) {1};\n\\node[below] at (2.4,-0.12) {2};\n\\fill (0.6,0) circle (0.09);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "fraction-product",
+        "title": "Taking part of a shaded region",
+        "description": "A strip subdivided vertically and horizontally, with a gray region and a hatched subset distinguished without relying on color.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\fill[gray!30] (-2.25,-0.6) rectangle (0.45,0.6);\n\\fill[pattern=north east lines] (-2.25,0) rectangle (0.45,0.6);\n\\draw[thick] (-2.25,-0.6) rectangle (2.25,0.6);\n\\foreach \\x in {-1.35,-0.45,0.45,1.35} {\\draw (\\x,-0.6)--(\\x,0.6);}\n\\draw (-2.25,0)--(2.25,0);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "decimal-strip",
+        "title": "Decimal parts of a whole",
+        "description": "A strip divided into equal tenths with a shaded initial region.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\fill[gray!45] (-2.5,-0.35) rectangle (0.5,0.35);\n\\draw[thick] (-2.5,-0.35) rectangle (2.5,0.35);\n\\foreach \\x in {-2,-1.5,-1,-0.5,0,0.5,1,1.5,2} {\\draw (\\x,-0.35)--(\\x,0.35);}\n\\end{tikzpicture}"
+      },
+      {
+        "id": "decimal-line",
+        "title": "Decimal interval",
+        "description": "A tenth-wide interval subdivided into hundredths, with an unlabeled marked point.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\draw[thick] (-2.5,0)--(2.5,0);\n\\foreach \\x in {-2.5,-2,-1.5,-1,-0.5,0,0.5,1,1.5,2,2.5} {\\draw (\\x,-0.1)--(\\x,0.1);}\n\\node[below] at (-2.5,-0.12) {0.3};\n\\node[below] at (2.5,-0.12) {0.4};\n\\fill (1,0) circle (0.09);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "signed-line",
+        "title": "Positions on both sides of zero",
+        "description": "An equally spaced signed whole-number line with an unlabeled marked negative position.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\draw[thick] (-2.4,0)--(2.4,0);\n\\foreach \\x in {-2.4,-1.8,-1.2,-0.6,0,0.6,1.2,1.8,2.4} {\\draw (\\x,-0.1)--(\\x,0.1);}\n\\node[below] at (-2.4,-0.12) {$-4$};\n\\node[below] at (-0.6,-0.12) {$-1$};\n\\node[below] at (0,-0.12) {0};\n\\node[below] at (0.6,-0.12) {1};\n\\node[below] at (2.4,-0.12) {4};\n\\fill (-1.2,0) circle (0.09);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "signed-move",
+        "title": "Directed addition on a number line",
+        "description": "A rightward movement from a stated negative starting point; the endpoint is not numerically labeled.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\draw[thick] (-2.45,0)--(2.45,0);\n\\foreach \\x in {-2.45,-1.75,-1.05,-0.35,0.35,1.05,1.75,2.45} {\\draw (\\x,-0.1)--(\\x,0.1);}\n\\node[below] at (-2.45,-0.12) {$-4$};\n\\node[below] at (-1.75,-0.12) {$-3$};\n\\node[below] at (0.35,-0.12) {0};\n\\node[below] at (2.45,-0.12) {3};\n\\draw[dashed] (-1.75,0)--(-1.75,0.55);\n\\draw[dashed] (1.75,0)--(1.75,0.55);\n\\draw[thick,-{Stealth[length=2.2mm,width=1.6mm]}] (-1.75,0.55)--(1.75,0.55);\n\\node[above] at (0,0.55) {$+5$};\n\\fill (-1.75,0) circle (0.07);\n\\fill (1.75,0) circle (0.07);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "negative-fraction-line",
+        "title": "Fractional positions left of zero",
+        "description": "The interval from negative one to zero with equal internal steps and an unlabeled marked point.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\draw[thick] (-2,0)--(2,0);\n\\foreach \\x in {-2,-1,0,1,2} {\\draw (\\x,-0.1)--(\\x,0.1);}\n\\node[below] at (-2,-0.12) {$-1$};\n\\node[below] at (2,-0.12) {0};\n\\fill (-1,0) circle (0.09);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "negative-decimal-line",
+        "title": "Decimal positions left of zero",
+        "description": "The interval from negative one to zero split into tenths, with an unlabeled marked point.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\draw[thick] (-2.5,0)--(2.5,0);\n\\foreach \\x in {-2.5,-2,-1.5,-1,-0.5,0,0.5,1,1.5,2,2.5} {\\draw (\\x,-0.1)--(\\x,0.1);}\n\\node[below] at (-2.5,-0.12) {$-1$};\n\\node[below] at (2.5,-0.12) {0};\n\\fill (-0.5,0) circle (0.09);\n\\end{tikzpicture}"
+      },
+      {
+        "id": "rounding-line",
+        "title": "A value between neighboring whole numbers",
+        "description": "The stated decimal input marked between its neighboring whole numbers for a nearest-distance decision.",
+        "tikz": "\\begin{tikzpicture}[scale=1]\n\\draw[thick] (-2.5,0)--(2.5,0);\n\\foreach \\x in {-2.5,-2,-1.5,-1,-0.5,0,0.5,1,1.5,2,2.5} {\\draw (\\x,-0.1)--(\\x,0.1);}\n\\node[below] at (-2.5,-0.12) {6};\n\\node[below] at (2.5,-0.12) {7};\n\\fill (1,0) circle (0.09);\n\\node[above] at (1,0.13) {6.7};\n\\end{tikzpicture}"
+      }
+    ],
+    "coldStartAudit": "Manual draft audit only; no executable validation, rendering, source retrieval, or learner observation was available. The intended inventory is 98 scheduled blocks: 45 Q/A, 53 P/S, and no clozes. Under U7, U11, D7, and D8, the front sequence begins with object counting, then introduces digit families and zero before bundling, positional notation, symbols, or arithmetic. Scheduled fronts—not headings or answer-only exposition—supply the bridges for fraction partitions, decimal places, signed positions, and calculation procedures. The concept ledger records intended exposure and supported retrieval opportunities, not successful learner retrieval or mastery. Teaching cues deliberately remain on initial cards; later calculations fade them. Reverse mixed-number and fraction/decimal conversions use changed values rather than immediately reversing a memorized pair. Method selection, denominator and sign interference, decimal-place errors, undefined division, inverse checks, and estimation limits receive separate bounded decisions. The manual audit identified one frontier defect still present: card 85 asks for an 'exact fraction' before exactness is established on card 86. This is reported as a publication-blocking scope issue rather than a routine review check. No initial-order or remediation behavior is assumed of the study interface.\n\nHost reviewer amendment: corrected the reported early use of exact in card85; also removed early positive/exact/whole-number vocabulary and clarified matching signs, rounding precision, and divisor wording. The retained original is unchanged. This is a reviewed draft, not an unmodified generation pass; learner and accessibility acceptance remain pending.",
+    "figurePlan": "Twenty-two original TikZ figures are supplied for host compilation. Concrete counting uses collection-a through collection-e; bundle-bridge shows preservation of count when ten loose objects become one bundle; place-collection translates a bundle-plus-ones collection into positional notation. Zero placeholders are handled by contrasting written numerals and decimals on scheduled cards, because the empty position is itself the authentic representation. Additional hundred- and thousand-object arrays are deliberately omitted: their new target is recursive place grouping, explained on scheduled fronts, and dense arrays would not add a distinct counting decision at phone width. whole-line establishes tick grammar. equal-groups supports multiplication as grouped counting. partition-choice distinguishes equal parts from merely making two pieces; fraction-strip, multiple-wholes, and equivalent-strips support fraction notation, values beyond a whole, and equivalence. fraction-product supplies the spatial bridge for taking a fraction of a fraction. fraction-line, decimal-strip, and decimal-line bridge fractional and decimal quantities to spatial positions. signed-line and signed-move establish signed position and directed addition; negative-fraction-line and negative-decimal-line separately test signed fractional and decimal placement. rounding-line makes rounding a distance comparison. Generated figures use compact coordinates, high-contrast outlines, no answer-bearing filenames, and no color-only distinctions. Alt text identifies givens without transcribing target counts; equivalent nonvisual delivery of counting and partition tasks therefore still needs accessibility review. No coordinate graphs, units diagrams, powered expressions, or geometric scaling figures are included because those belong to later chapters. All TikZ is authored source, not claimed compiled output.",
+    "scopeIssues": [],
+    "reviewRequirements": [
+      "Run executable parsing and identity assignment. Confirm the scheduled-block count, the reported Q/A versus P/S inventory, ledger references, completed answer blocks, and four ordered IPEE stages in every problem solution (U9, R1, P1, F4).",
+      "After repairing the reported scope issue, repeat the semantic first-use and cold-start audit, including figure labels, alt text, worked-example dependencies, and learner readiness for the pace of numeral and place-value introductions (U7, U11, D7, D8).",
+      "Compile each declared TikZ picture in the host sandbox, publish matching editable TeX and SVG assets, verify reference resolution and stale-output checks, and inspect the resulting images and mathematical text at phone width (U10, V3, V4). No compilation has been performed here.",
+      "Inspect the signed-move SVG arrow output for explicit markerUnits, appropriate marker anchoring and size, butt-ended marker strokes, and unobscured primary arrow tips; inspect all SVG canvases for tight, centered bounds (V3).",
+      "Review accessibility of grayscale shading, hatching, small dots, tick spacing, minus signs, fraction slash notation, mixed-number spacing, and absolute-value bars. Determine an equivalent accessible delivery for tasks whose answer would be disclosed by a fully enumerated alt description.",
+      "Independently verify mathematical claims, examples, arithmetic results, and the explicitly stated halfway-away-from-zero rounding convention. Record verification sources, source roles, URLs, license or terms, and actual access dates in host-maintained provenance records; none are asserted here (U4, D5).",
+      "Confirm that initial learning exposes teaching fronts in dependency order and offers an appropriate response to failed supported retrieval before dependent cards are introduced. Shuffled review alone cannot supply the initial learning path (U5, U7, D8).",
+      "Obtain learner or maintainer pilot review of this chapter, including counting fluency, arithmetic workload, interpretation of grouping and number lines, card pacing, and whether supported decisions become independent retrieval. Provide manipulative and written practice outside SRS rather than treating the cards as a complete arithmetic course (D6, D7).",
+      "Do not treat draft creation or these pending checks as acceptance or pilot approval, and do not authorize later-chapter generation merely because this candidate exists."
+    ]
+  },
+  "provenance": {
+    "workflowVersion": "fresh-generation-v1",
+    "providerId": "openai",
+    "modelId": "gpt-6-astra",
+    "reasoningEffort": "medium",
+    "resolvedModelId": "gpt-6-astra",
+    "inputHash": "sha256:ae2db471ff3378535244691ba9e37b4d70fbdca489844e04f124a5e706b61787",
+    "instructionsHash": "sha256:a668ac0de4c1db4ba6f50262b01950ba4fe4fc47fa7e47c2bac86e502ff1599c",
+    "schemaHash": "sha256:0bca53171b7b286f5488ebddcac4d5b3ec8ff9b277e05066426cdf0aba54d46b",
+    "responseId": "resp_0c8ebb94e32c0515016aaac7e52a3c87d0b400e48779824092",
+    "diagnostics": {
+      "responseId": "resp_0c8ebb94e32c0515016aaac7e52a3c87d0b400e48779824092",
+      "status": "completed",
+      "incompleteReason": null,
+      "maxOutputTokens": null,
+      "usage": {
+        "inputTokens": 11537,
+        "cachedInputTokens": 0,
+        "outputTokens": 25566,
+        "reasoningTokens": 3624,
+        "totalTokens": 37103
+      }
+    }
+  },
+  "reviewAmendments": {
+    "originalCandidateHash": "06a1546757e969fa79a4ab21cd8086aa5866279a609df0d0f1ec0bd3d6de6e89",
+    "reviewedCandidateHash": "8db87d3b87324dcb3b81a5ac7cfe640d248ed3bb1a539283a658a5dcb7a0f08b",
+    "originalScopeIssues": [
+      "U7/U11/D8: Card 85 requests an 'exact fraction' before the technical distinction between exact values and approximations is introduced on card 86. Before publication, remove 'exact' from card 85's front or relocate the exactness teaching bridge so it is established and retrieved first."
+    ],
+    "edits": [
+      [
+        "A **digit** is a written mark used in writing numbers.",
+        "A **digit** is a written mark used to record how many objects there are."
+      ],
+      [
+        "A written number is called a **numeral**. In a whole-number numeral,",
+        "A **numeral** is one or more digits written together to record how many objects there are. In a numeral recording a count,"
+      ],
+      [
+        "when both divisions are exact.",
+        "when both divisions give whole numbers, with no fractional part left over."
+      ],
+      [
+        "When fractions have the same positive denominator,",
+        "When fractions have the same denominator greater than zero,"
+      ],
+      [
+        "the positive decimal parts that continue",
+        "the additional decimal parts that continue"
+      ],
+      [
+        "must be positive and less than 0.07",
+        "must be greater than zero and less than 0.07"
+      ],
+      [
+        "giving an exact fraction.",
+        "giving the answer as a fraction."
+      ],
+      [
+        "Equal signs give a positive product; different signs give a negative product.",
+        "Matching signs (both positive or both negative) give a positive product; different signs give a negative product."
+      ],
+      [
+        "equal signs give a positive quotient and different signs give a negative quotient.",
+        "matching signs (both positive or both negative) give a positive quotient and different signs give a negative quotient."
+      ],
+      [
+        "at a stated precision.",
+        "at a stated precision, meaning the size of the rounding step."
+      ],
+      [
+        "**The divisor becomes zero.**",
+        "**The number being divided by becomes zero.**"
+      ]
+    ],
+    "reviewer": "Codex host reviewer",
+    "noAdditionalModelCall": true
+  }
+}
