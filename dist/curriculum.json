@@ -2463,7 +2463,7 @@
       "required_outcomes": [],
       "deck": "foundations",
       "order": 1,
-      "status": "chapter-planned",
+      "status": "pilot-approved",
       "chapters": [
         {
           "id": "01_arithmetic_and_number_sense",
@@ -2485,7 +2485,7 @@
           "prerequisites": [],
           "order": 1,
           "file": "flashcards/01_arithmetic_and_number_sense.md",
-          "card_count": 0,
+          "card_count": 47,
           "resolved_dependencies": []
         },
         {
@@ -3025,8 +3025,11 @@
           ]
         }
       ],
-      "materialized": false,
-      "repository": null,
+      "materialized": true,
+      "repository": {
+        "url": "https://github.com/thomasrribeiro-flashcards/mathematics-foundations",
+        "configured": true
+      },
       "content_state": "needs-review",
       "chapter_curriculum_generation": {
         "workflowVersion": "fresh-generation-v1",
@@ -3100,8 +3103,90 @@
           "registry_base_commit": "776dfe5e06b8065a9d82a7ec3ae5e6900e3ea617",
           "workflow_commit": "7503191233cac052bd5ab931bbc758df8c55f9ec",
           "generated_at": "2026-09-16T03:49:13.776Z"
+        },
+        {
+          "workflowVersion": "fresh-generation-v1",
+          "providerId": "openai",
+          "modelId": "gpt-6-astra",
+          "reasoningEffort": "medium",
+          "resolvedModelId": "gpt-6-astra",
+          "inputHash": "sha256:ae2db471ff3378535244691ba9e37b4d70fbdca489844e04f124a5e706b61787",
+          "instructionsHash": "sha256:3b75bde5dc942f8ab81d09b1449676685076ad1eaca176eceb3f8302a13ebf3e",
+          "schemaHash": "sha256:0638e5f717fbec9cba77d153b268fa298f023a51b5e29c99b34e2b198454b5c4",
+          "responseId": "resp_06de91630c86621f016aaa46950da887d0bd1d80aebd31eb28",
+          "diagnostics": {
+            "responseId": "resp_06de91630c86621f016aaa46950da887d0bd1d80aebd31eb28",
+            "status": "completed",
+            "incompleteReason": null,
+            "maxOutputTokens": null,
+            "usage": {
+              "inputTokens": 10603,
+              "cachedInputTokens": 0,
+              "outputTokens": 9575,
+              "reasoningTokens": 2472,
+              "totalTokens": 20178
+            }
+          },
+          "run_id": "request-84",
+          "request_id": 84,
+          "operation": "chapter-content",
+          "artifacts": [
+            "flashcards/01_arithmetic_and_number_sense.md"
+          ],
+          "provider_id": "openai",
+          "model_id": "gpt-6-astra",
+          "reasoning_effort": "medium",
+          "registry_base_commit": "b3d992bed4c9d9ad7c7e7040651a612a4be63fcc",
+          "workflow_commit": "58c6a2ffc0b27d0187297e1d74a1ec27458536b6",
+          "generated_at": "2026-09-16 07:38:02",
+          "recovery": {
+            "publication_workflow_commit": "0604dbdfae9a305c41976bfd8d6927f15082ef25",
+            "candidate_sha256": "80bcaa18397d574ac3b8e3aff2d2e8af0cbc9b379795db4b29a588f573b9cd0b",
+            "reason": "Saved provider output recovered after solution heading parser fix; no additional model call."
+          }
         }
-      ]
+      ],
+      "chapter_content_generation": {
+        "workflowVersion": "fresh-generation-v1",
+        "providerId": "openai",
+        "modelId": "gpt-6-astra",
+        "reasoningEffort": "medium",
+        "resolvedModelId": "gpt-6-astra",
+        "inputHash": "sha256:ae2db471ff3378535244691ba9e37b4d70fbdca489844e04f124a5e706b61787",
+        "instructionsHash": "sha256:3b75bde5dc942f8ab81d09b1449676685076ad1eaca176eceb3f8302a13ebf3e",
+        "schemaHash": "sha256:0638e5f717fbec9cba77d153b268fa298f023a51b5e29c99b34e2b198454b5c4",
+        "responseId": "resp_06de91630c86621f016aaa46950da887d0bd1d80aebd31eb28",
+        "diagnostics": {
+          "responseId": "resp_06de91630c86621f016aaa46950da887d0bd1d80aebd31eb28",
+          "status": "completed",
+          "incompleteReason": null,
+          "maxOutputTokens": null,
+          "usage": {
+            "inputTokens": 10603,
+            "cachedInputTokens": 0,
+            "outputTokens": 9575,
+            "reasoningTokens": 2472,
+            "totalTokens": 20178
+          }
+        },
+        "run_id": "request-84",
+        "request_id": 84,
+        "operation": "chapter-content",
+        "artifacts": [
+          "flashcards/01_arithmetic_and_number_sense.md"
+        ],
+        "provider_id": "openai",
+        "model_id": "gpt-6-astra",
+        "reasoning_effort": "medium",
+        "registry_base_commit": "b3d992bed4c9d9ad7c7e7040651a612a4be63fcc",
+        "workflow_commit": "58c6a2ffc0b27d0187297e1d74a1ec27458536b6",
+        "generated_at": "2026-09-16 07:38:02",
+        "recovery": {
+          "publication_workflow_commit": "0604dbdfae9a305c41976bfd8d6927f15082ef25",
+          "candidate_sha256": "80bcaa18397d574ac3b8e3aff2d2e8af0cbc9b379795db4b29a588f573b9cd0b",
+          "reason": "Saved provider output recovered after solution heading parser fix; no additional model call."
+        }
+      }
     },
     {
       "id": "biology/organismal-biology",
